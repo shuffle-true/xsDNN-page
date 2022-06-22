@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xsdnn_80',['xsDNN',['../index.html',1,'']]]
+  ['Быстрый_20старт_80',['Быстрый старт',['../md__headers_sub_headers__quick_start.html',1,'']]]
 ];

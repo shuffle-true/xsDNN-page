@@ -24,6 +24,7 @@
 */
 var menudata={children:[
 {text:"Hello World!",url:"index.html"},
+{text:"Описания",url:"pages.html"},
 {text:"Классы",url:"annotated.html",children:[
 {text:"Классы управления",url:"annotated.html"},
 {text:"Алфавитный указатель классов",url:"classes.html"},

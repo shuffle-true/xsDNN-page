@@ -24,7 +24,17 @@
 */
 var NAVTREE =
 [
-  [ "xsDNN", "index.html", [
+  [ "xsDNN C++", "index.html", [
+    [ "Вступление и первое знакомство", "index.html", null ],
+    [ "Оглавление", "md__headers_sub_headers__chapter.html", [
+      [ "Функции активации", "md__headers_sub_headers__chapter.html#autotoc_md1", [
+        [ "Identity", "md__headers_sub_headers__chapter.html#autotoc_md2", null ],
+        [ "ReLU", "md__headers_sub_headers__chapter.html#autotoc_md3", null ],
+        [ "Sigmoid", "md__headers_sub_headers__chapter.html#autotoc_md4", null ],
+        [ "Softmax", "md__headers_sub_headers__chapter.html#autotoc_md5", null ]
+      ] ]
+    ] ],
+    [ "Быстрый старт", "md__headers_sub_headers__quick_start.html", null ],
     [ "Пространство имен", "namespaces.html", "namespaces" ],
     [ "Классы", "annotated.html", [
       [ "Классы управления", "annotated.html", "annotated_dup" ],
@@ -36,7 +46,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+""
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';
