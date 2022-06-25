@@ -106,6 +106,12 @@ $(document).ready(function(){initNavTree('namespaceinternal.html',''); initResiz
  }</td></tr>
 <tr class="memdesc:af22b4eec9ac692a7334ea550be120eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID функции активации  <a href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eab">Подробнее...</a><br /></td></tr>
 <tr class="separator:af22b4eec9ac692a7334ea550be120eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5910af6de47727626e888443c7b18c43"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43">DISTRIBUTION_ENUM</a> { <a class="el" href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43acbe15420f02aa16c27d55f76d8a2a194">UNIFORM</a> = 0
+, <a class="el" href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43a4a07fb04f19594592981c91a9d4e165e">EXPONENTIAL</a>
+, <a class="el" href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43a45ca318653594bc78e971e0c84182d35">NORMAL</a>
+ }</td></tr>
+<tr class="memdesc:a5910af6de47727626e888443c7b18c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID распределения при генерации весов  <a href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5910af6de47727626e888443c7b18c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa41d8740c2de155ef01df2d288fef445"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445">OUTPUT_ENUM</a> { <a class="el" href="namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445af183fae882f18e3a50fe2961b943dec9">REGRESSIONMSE</a> = 0
 , <a class="el" href="namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445ad3b8fb340c189068f1a5ca0ce629e300">BINARYCLASSENTROPY</a>
  }</td></tr>
@@ -118,6 +124,8 @@ $(document).ready(function(){initNavTree('namespaceinternal.html',''); initResiz
 <tr class="separator:aad429a1768927e66f1e6c2b64d946027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa764f1c79d0e36a83afe70d46d3cef7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#aa764f1c79d0e36a83afe70d46d3cef7d">activation_id</a> (const std::string &amp;type)</td></tr>
 <tr class="separator:aa764f1c79d0e36a83afe70d46d3cef7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132c969163b5898faa93428f39e68a74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a132c969163b5898faa93428f39e68a74">distribution_id</a> (const std::string &amp;type)</td></tr>
+<tr class="separator:a132c969163b5898faa93428f39e68a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a868a36cb50dad3821255259ca79db479"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a868a36cb50dad3821255259ca79db479">output_id</a> (const std::string &amp;type)</td></tr>
 <tr class="separator:a868a36cb50dad3821255259ca79db479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4548c561725c1d1addf33716b619167"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#aa4548c561725c1d1addf33716b619167">create_directory</a> (const std::string &amp;directory_name)</td></tr>
@@ -135,6 +143,11 @@ $(document).ready(function(){initNavTree('namespaceinternal.html',''); initResiz
 <tr class="separator:a18cfbdb7ba8d1ae1092a2c8ce4c8d077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad23ce3155423fa432a24bfffc51793a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#ad23ce3155423fa432a24bfffc51793a6">set_normal_random</a> (Scalar *arr, const int n, RNG &amp;rng, const Scalar &amp;mu=Scalar(0), const Scalar &amp;sigma=Scalar(1))</td></tr>
 <tr class="separator:ad23ce3155423fa432a24bfffc51793a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8977e6737be2f25d189c5e9b76232cd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a8977e6737be2f25d189c5e9b76232cd5">set_uniform_random</a> (Scalar *arr, const int n, RNG &amp;rng, const Scalar &amp;a=Scalar(0), const Scalar &amp;b=Scalar(1))</td></tr>
+<tr class="separator:a8977e6737be2f25d189c5e9b76232cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6fcf5f606e1adec9ea4e231df1c718f"><td class="memItemLeft" align="right" valign="top"><a id="ad6fcf5f606e1adec9ea4e231df1c718f"></a>
+Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>get_exponential</b> (const Scalar &amp;rate, RNG &amp;rng)</td></tr>
+<tr class="separator:ad6fcf5f606e1adec9ea4e231df1c718f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Этот файл служит как вспомогательная утилита для определения типа слоя, его функции активации и выходного слоя сетки. Все представлено ввиде enum перечисления, что позволит масштабировать эту систему до нужных размеров. </p>
@@ -160,6 +173,30 @@ $(document).ready(function(){initNavTree('namespaceinternal.html',''); initResiz
 <tr><td class="fieldname"><a id="af22b4eec9ac692a7334ea550be120eabad64825016900e252957c32c9c0851eec"></a>IDENTITY&#160;</td><td class="fielddoc"><p><a class="el" href="class_identity.html">Identity</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af22b4eec9ac692a7334ea550be120eabafbe869f0d87088abb0aefb6b5a506b71"></a>SOFTMAX&#160;</td><td class="fielddoc"><p><a class="el" href="class_softmax.html">Softmax</a>. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5910af6de47727626e888443c7b18c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5910af6de47727626e888443c7b18c43">&#9670;&nbsp;</a></span>DISTRIBUTION_ENUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43">internal::DISTRIBUTION_ENUM</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ID распределения при генерации весов </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a5910af6de47727626e888443c7b18c43acbe15420f02aa16c27d55f76d8a2a194"></a>UNIFORM&#160;</td><td class="fielddoc"><p>Равномерное </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5910af6de47727626e888443c7b18c43a4a07fb04f19594592981c91a9d4e165e"></a>EXPONENTIAL&#160;</td><td class="fielddoc"><p>Экспоненциальное </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5910af6de47727626e888443c7b18c43a45ca318653594bc78e971e0c84182d35"></a>NORMAL&#160;</td><td class="fielddoc"><p>Нормальное </p>
 </td></tr>
 </table>
 
@@ -348,6 +385,39 @@ template&lt;typename DerivedX , typename DerivedY , typename XType , typename YT
 
 </div>
 </div>
+<a id="a132c969163b5898faa93428f39e68a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a132c969163b5898faa93428f39e68a74">&#9670;&nbsp;</a></span>distribution_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int internal::distribution_id </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>тип распределения </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>ID распределения </dd></dl>
+
+</div>
+</div>
 <a id="aad429a1768927e66f1e6c2b64d946027"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad429a1768927e66f1e6c2b64d946027">&#9670;&nbsp;</a></span>layer_id()</h2>
 
@@ -472,6 +542,70 @@ template&lt;typename DerivedX , typename DerivedY , typename XType , typename YT
     <tr><td class="paramname">rng</td><td>генератор </td></tr>
     <tr><td class="paramname">mu</td><td>мат.ожидание </td></tr>
     <tr><td class="paramname">sigma</td><td>дисперсия </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8977e6737be2f25d189c5e9b76232cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8977e6737be2f25d189c5e9b76232cd5">&#9670;&nbsp;</a></span>set_uniform_random()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void internal::set_uniform_random </td>
+          <td>(</td>
+          <td class="paramtype">Scalar *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RNG &amp;&#160;</td>
+          <td class="paramname"><em>rng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Scalar &amp;&#160;</td>
+          <td class="paramname"><em>a</em> = <code>Scalar(0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Scalar &amp;&#160;</td>
+          <td class="paramname"><em>b</em> = <code>Scalar(1)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Генерация массива из равномерного распределения </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>массив </td></tr>
+    <tr><td class="paramname">n</td><td>размер массива </td></tr>
+    <tr><td class="paramname">rng</td><td>генератор натуральный чисел в диапазоне от 0 до RAND_MAX </td></tr>
+    <tr><td class="paramname">a</td><td>левая граница распределения </td></tr>
+    <tr><td class="paramname">b</td><td>правая граница распределения </td></tr>
   </table>
   </dd>
 </dl>

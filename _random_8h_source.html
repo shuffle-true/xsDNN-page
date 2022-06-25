@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('_random_8h_source.html',''); initResiz
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = n - 1; i &gt; 0; i--)</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> j = int(rng.rand() * (i + 1));</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> j = int(rng.rand() * (i + 1) / RAND_MAX);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> tmp = arr[i];</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            arr[i] = arr[j];</div>
@@ -165,27 +165,44 @@ $(document).ready(function(){initNavTree('_random_8h_source.html',''); initResiz
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">const</span> Scalar&amp; mu = Scalar(0),</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">const</span> Scalar&amp; sigma = Scalar(1))</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> two_pi = 6.283185307179586476925286766559;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n - 1; i += 2)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> t1 = sigma * std::sqrt(-2 * std::log(rng.rand()));</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> t2 = two_pi * rng.rand();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            arr[i] = t1 * std::cos(t2) + mu;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            arr[i + 1] = t1 * std::sin(t2) + mu;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">if</span> (n % 2 == 1)</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> t1 = sigma * std::sqrt(-2 * std::log(rng.rand()));</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> t2 = two_pi * rng.rand();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            arr[n - 1] = t1 * std::cos(t2) + mu;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> two_pi = 6.283185307179586476925286766559;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n - 1; i += 2)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> t1 = sigma * std::sqrt(-2 * std::log(rng.rand()));</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> t2 = two_pi * rng.rand();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            arr[i] = t1 * std::cos(t2) + mu;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            arr[i + 1] = t1 * std::sin(t2) + mu;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span> (n % 2 == 1)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> t1 = sigma * std::sqrt(-2 * std::log(rng.rand()));</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> t2 = two_pi * rng.rand();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            arr[n - 1] = t1 * std::cos(t2) + mu;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="namespaceinternal.html#a8977e6737be2f25d189c5e9b76232cd5">  124</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespaceinternal.html#a8977e6737be2f25d189c5e9b76232cd5">set_uniform_random</a>(</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            Scalar* arr,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> n,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            RNG&amp; rng,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keyword">const</span> Scalar&amp; a = Scalar(0),</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keyword">const</span> Scalar&amp; b = Scalar(1))</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">const</span> Scalar coefficent_ = (b - a);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            arr[i] = a + rng.rand() * coefficent_;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition:</b> DataLoader.h:18</div></div>
 <div class="ttc" id="anamespaceinternal_html_a18cfbdb7ba8d1ae1092a2c8ce4c8d077"><div class="ttname"><a href="namespaceinternal.html#a18cfbdb7ba8d1ae1092a2c8ce4c8d077">internal::create_shuffled_batches</a></div><div class="ttdeci">int create_shuffled_batches(const Eigen::MatrixBase&lt; DerivedX &gt; &amp;x, const Eigen::MatrixBase&lt; DerivedY &gt; &amp;y, int batch_size, RNG &amp;rng, std::vector&lt; XType &gt; &amp;x_batches, std::vector&lt; YType &gt; &amp;y_batches)</div><div class="ttdef"><b>Definition:</b> Random.h:39</div></div>
 <div class="ttc" id="anamespaceinternal_html_a1b8021e30d34fc051ac96750c5e4ea41"><div class="ttname"><a href="namespaceinternal.html#a1b8021e30d34fc051ac96750c5e4ea41">internal::shuffle</a></div><div class="ttdeci">void shuffle(int *arr, const int n, RNG &amp;rng)</div><div class="ttdef"><b>Definition:</b> Random.h:14</div></div>
+<div class="ttc" id="anamespaceinternal_html_a8977e6737be2f25d189c5e9b76232cd5"><div class="ttname"><a href="namespaceinternal.html#a8977e6737be2f25d189c5e9b76232cd5">internal::set_uniform_random</a></div><div class="ttdeci">void set_uniform_random(Scalar *arr, const int n, RNG &amp;rng, const Scalar &amp;a=Scalar(0), const Scalar &amp;b=Scalar(1))</div><div class="ttdef"><b>Definition:</b> Random.h:124</div></div>
 <div class="ttc" id="anamespaceinternal_html_ad23ce3155423fa432a24bfffc51793a6"><div class="ttname"><a href="namespaceinternal.html#ad23ce3155423fa432a24bfffc51793a6">internal::set_normal_random</a></div><div class="ttdeci">void set_normal_random(Scalar *arr, const int n, RNG &amp;rng, const Scalar &amp;mu=Scalar(0), const Scalar &amp;sigma=Scalar(1))</div><div class="ttdef"><b>Definition:</b> Random.h:92</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

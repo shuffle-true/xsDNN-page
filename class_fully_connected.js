@@ -1,17 +1,18 @@
 var class_fully_connected =
 [
-    [ "FullyConnected", "class_fully_connected.html#a0279654be206e4ac68781641a4268eff", null ],
-    [ "activation_type", "class_fully_connected.html#a9b70f2ba5a4fa5ec8dbaf942a975a749", null ],
-    [ "backprop", "class_fully_connected.html#a41796b96e30579ff95bb431a790a0278", null ],
-    [ "backprop_data", "class_fully_connected.html#ac086387a0d735269ff18d129520cdd73", null ],
-    [ "fill_meta_info", "class_fully_connected.html#af0eb3a46ee512b93d8c594288647cbe9", null ],
-    [ "forward", "class_fully_connected.html#a353890c868d804fdd4413391e47ddbf2", null ],
-    [ "get_derivatives", "class_fully_connected.html#aceb34071f12aba98136a9b5b8f2275dc", null ],
-    [ "get_parametrs", "class_fully_connected.html#a8a486eb0b003a733f3c151caff4d407d", null ],
-    [ "init", "class_fully_connected.html#ac3b2e13ebb5e01f40264ae2f284acfdb", null ],
-    [ "init", "class_fully_connected.html#a826a01dff0b93b28a1a2461b835805b0", null ],
-    [ "layer_type", "class_fully_connected.html#ae7a92b8c80cded3869a4f3951a61ea7b", null ],
-    [ "output", "class_fully_connected.html#ad48e07203091863a70eeab8067e9a874", null ],
-    [ "set_parametrs", "class_fully_connected.html#a77310b597d8105994fbb8af8fb9d4183", null ],
-    [ "update", "class_fully_connected.html#af2902ec5488f74f16a655a91bb0a4387", null ]
+    [ "FullyConnected", "class_fully_connected.html#a4b3e4a7379e0372f87203a3b5df12d87", null ],
+    [ "activation_type", "class_fully_connected.html#a1f00ac7831895953539b95e76d2cfe38", null ],
+    [ "backprop", "class_fully_connected.html#abc92fc51eb2dd0d64c5fb5bf2021e4c1", null ],
+    [ "backprop_data", "class_fully_connected.html#a874de85bb5b8377ffe24590a25f9f27c", null ],
+    [ "distribution_type", "class_fully_connected.html#a9d04183e6ab8f561858166016bd051f7", null ],
+    [ "fill_meta_info", "class_fully_connected.html#af87897142a76a9d9bc1cfc4c92633420", null ],
+    [ "forward", "class_fully_connected.html#a44dd0014fb832068c62567c71f9a588d", null ],
+    [ "get_derivatives", "class_fully_connected.html#a066e67d103bd6abbc947654bc55a62ff", null ],
+    [ "get_parametrs", "class_fully_connected.html#a5bffc6042e12afb6651995c727e38535", null ],
+    [ "init", "class_fully_connected.html#ae78ef8592318e8fc7ea8ef6227319192", null ],
+    [ "init", "class_fully_connected.html#aba1a1a561f7e09dd6b2bfc77dda3fd88", null ],
+    [ "layer_type", "class_fully_connected.html#a21a2fd0e1bfc0e45b35dfe40c4671417", null ],
+    [ "output", "class_fully_connected.html#a2c1b77310bd00ea5f107fe6bedd648d0", null ],
+    [ "set_parametrs", "class_fully_connected.html#a21dfd80fcb5b2c054f5c4c34598fb679", null ],
+    [ "update", "class_fully_connected.html#a5edfef61d185a3a7a2297b87f312fe61", null ]
 ];

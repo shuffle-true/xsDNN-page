@@ -97,7 +97,10 @@ $(document).ready(function(){initNavTree('class_identity.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Открытые статические члены</h2></td></tr>
+<tr class="memitem:abde71bb84ca05be656a6567a43b1f84c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_identity.html#abde71bb84ca05be656a6567a43b1f84c">activate</a> (const Matrix &amp;Z, Matrix &amp;A)</td></tr>
+<tr class="separator:abde71bb84ca05be656a6567a43b1f84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab06ce40690056de30d4d729b7afb3e9c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_identity.html#ab06ce40690056de30d4d729b7afb3e9c">apply_jacobian</a> (const Matrix &amp;Z, const Matrix &amp;A, const Matrix &amp;F, Matrix &amp;G)</td></tr>
+<tr class="memdesc:ab06ce40690056de30d4d729b7afb3e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Операция матричного дифференцирования.  <a href="class_identity.html#ab06ce40690056de30d4d729b7afb3e9c">Подробнее...</a><br /></td></tr>
 <tr class="separator:ab06ce40690056de30d4d729b7afb3e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac848818c232fde173b90877036c617a4"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_identity.html#ac848818c232fde173b90877036c617a4">return_type</a> ()</td></tr>
 <tr class="separator:ac848818c232fde173b90877036c617a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,6 +108,54 @@ $(document).ready(function(){initNavTree('class_identity.html',''); initResizabl
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс функции активации - <a class="el" href="class_identity.html">Identity</a>. </p>
 </div><h2 class="groupheader">Методы</h2>
+<a id="abde71bb84ca05be656a6567a43b1f84c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abde71bb84ca05be656a6567a43b1f84c">&#9670;&nbsp;</a></span>activate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Identity::activate </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>Z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matrix &amp;&#160;</td>
+          <td class="paramname"><em>A</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><b>Алгоритм</b>: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> identity_forward(<span class="keyword">const</span> Matrix&amp; Z, Matrix&amp; A){</div>
+<div class="line"> </div>
+<div class="line">    A = Z;</div>
+<div class="line"> </div>
+<div class="line">}</div>
+</div><!-- fragment --> <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Z</td><td>значения нейронов до активации </td></tr>
+    <tr><td class="paramname">A</td><td>значения нейронов после активации </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab06ce40690056de30d4d729b7afb3e9c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab06ce40690056de30d4d729b7afb3e9c">&#9670;&nbsp;</a></span>apply_jacobian()</h2>
 
@@ -150,28 +201,14 @@ $(document).ready(function(){initNavTree('class_identity.html',''); initResizabl
   </tr>
 </table>
 </div><div class="memdoc">
-<p><b>Алгоритм</b>: </p><div class="fragment"><div class="line">    <span class="keywordtype">int</span> identity_forward(<span class="keyword">const</span> Matrix&amp; Z, Matrix&amp; A){</div>
-<div class="line">   </div>
-<div class="line">        A = Z;</div>
-<div class="line">   </div>
-<div class="line">    }</div>
-<div class="line">    \param Z значения нейронов до активации</div>
-<div class="line">    \param A значения нейронов после активации</div>
-<div class="line"><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> activate(<span class="keyword">const</span> Matrix&amp; Z, Matrix&amp; A)</div>
-<div class="line">{</div>
-<div class="line">    A.array() = Z.array();</div>
+
+<p>Операция матричного дифференцирования. </p>
+<p><b>Алгоритм</b>: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> identity_backprop(<span class="keyword">const</span> Matrix&amp; Z, <span class="keyword">const</span> Matrix&amp; A,</div>
+<div class="line">    <span class="keyword">const</span> Matrix&amp; F, Matrix&amp; G) {</div>
+<div class="line"> </div>
+<div class="line">    G = F;</div>
+<div class="line"> </div>
 <div class="line">}</div>
-<div class="line"> </div>
-<div class="line">    Операция матричного дифференцирования.</div>
-<div class="line"> </div>
-<div class="line">    __Алгоритм__:</div>
-<div class="line">    \code</div>
-<div class="line">    <span class="keywordtype">int</span> identity_backprop(<span class="keyword">const</span> Matrix&amp; Z, <span class="keyword">const</span> Matrix&amp; A,</div>
-<div class="line">        <span class="keyword">const</span> Matrix&amp; F, Matrix&amp; G) {</div>
-<div class="line">   </div>
-<div class="line">        G = F;</div>
-<div class="line">   </div>
-<div class="line">    }</div>
 </div><!-- fragment --> <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
     <tr><td class="paramname">Z</td><td>нейроны слоя до активации. </td></tr>

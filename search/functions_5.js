@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['get_5fderivatives_113',['get_derivatives',['../class_fully_connected.html#aceb34071f12aba98136a9b5b8f2275dc',1,'FullyConnected']]],
-  ['get_5fparametrs_114',['get_parametrs',['../class_fully_connected.html#a8a486eb0b003a733f3c151caff4d407d',1,'FullyConnected']]]
+  ['fill_5fmeta_5finfo_124',['fill_meta_info',['../class_fully_connected.html#af87897142a76a9d9bc1cfc4c92633420',1,'FullyConnected']]],
+  ['forward_125',['forward',['../class_fully_connected.html#a44dd0014fb832068c62567c71f9a588d',1,'FullyConnected']]],
+  ['fullyconnected_126',['FullyConnected',['../class_fully_connected.html#a4b3e4a7379e0372f87203a3b5df12d87',1,'FullyConnected']]]
 ];

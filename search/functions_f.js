@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['update_230',['update',['../class_fully_connected.html#af2902ec5488f74f16a655a91bb0a4387',1,'FullyConnected::update()'],['../class_s_g_d.html#a0f825311969e0031e0b78c804df61e21',1,'SGD::update()']]]
+  ['write_5fmap_162',['write_map',['../namespaceinternal.html#af85d8e89869ef65d35459eb528791af1',1,'internal']]],
+  ['write_5fone_5fvector_163',['write_one_vector',['../namespaceinternal.html#ad3ce06b33fd4f205474a7c055b590737',1,'internal']]],
+  ['write_5fvector_164',['write_vector',['../namespaceinternal.html#aba1a0c067292e01ba5d405c7d843edf1',1,'internal']]]
 ];

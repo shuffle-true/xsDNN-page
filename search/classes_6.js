@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['verbosecallback_92',['VerboseCallback',['../class_verbose_callback.html',1,'']]]
+  ['regressionmse_99',['RegressionMSE',['../class_regression_m_s_e.html',1,'']]],
+  ['relu_100',['ReLU',['../class_re_l_u.html',1,'']]]
 ];

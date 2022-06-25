@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['binaryclassentropy_83',['BinaryClassEntropy',['../class_binary_class_entropy.html',1,'']]]
+  ['binaryclassentropy_93',['BinaryClassEntropy',['../class_binary_class_entropy.html',1,'']]]
 ];

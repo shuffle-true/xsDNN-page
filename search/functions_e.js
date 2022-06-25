@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['write_5fmap_146',['write_map',['../namespaceinternal.html#af85d8e89869ef65d35459eb528791af1',1,'internal']]],
-  ['write_5fone_5fvector_147',['write_one_vector',['../namespaceinternal.html#ad3ce06b33fd4f205474a7c055b590737',1,'internal']]],
-  ['write_5fvector_148',['write_vector',['../namespaceinternal.html#aba1a0c067292e01ba5d405c7d843edf1',1,'internal']]]
+  ['update_161',['update',['../class_fully_connected.html#a5edfef61d185a3a7a2297b87f312fe61',1,'FullyConnected::update()'],['../class_s_g_d.html#a0f825311969e0031e0b78c804df61e21',1,'SGD::update()']]]
 ];
