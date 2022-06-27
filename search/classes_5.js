@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['normal_98',['Normal',['../class_normal.html',1,'']]]
+  ['regressionmse_97',['RegressionMSE',['../class_regression_m_s_e.html',1,'']]]
 ];
