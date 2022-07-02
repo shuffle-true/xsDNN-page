@@ -138,14 +138,14 @@ $(document).ready(function(){initNavTree('_normal_8h_source.html',''); initResiz
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                Scalar y;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">if</span> (z &gt; 0)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    x = internal::get_exponential(x1, rng);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    x = <a class="code" href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">internal::get_exponential</a>(x1, rng);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    z -= 0.5 * x * x;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">if</span> (z &lt;= 0)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        x = internal::get_exponential(x1, rng);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        y = internal::get_exponential(1, rng);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        x = <a class="code" href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">internal::get_exponential</a>(x1, rng);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        y = <a class="code" href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">internal::get_exponential</a>(1, rng);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        z = y - 0.5 * x * x;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    } <span class="keywordflow">while</span> (z &lt;= 0);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                }</div>
@@ -193,6 +193,7 @@ $(document).ready(function(){initNavTree('_normal_8h_source.html',''); initResiz
 <div class="ttc" id="aclass_normal_html_a4706be7a50be6d7aae281bcfd8c3f04c"><div class="ttname"><a href="class_normal.html#a4706be7a50be6d7aae281bcfd8c3f04c">Normal::return_type</a></div><div class="ttdeci">static std::string return_type()</div><div class="ttdef"><b>Definition:</b> Normal.h:105</div></div>
 <div class="ttc" id="aclass_normal_html_a6a05ad3bf270de401be5c1e74527beae"><div class="ttname"><a href="class_normal.html#a6a05ad3bf270de401be5c1e74527beae">Normal::set_random_data</a></div><div class="ttdeci">static void set_random_data(Scalar *arr, const int n, RNG &amp;rng, const std::vector&lt; Scalar &gt; &amp;params)</div><div class="ttdef"><b>Definition:</b> Normal.h:85</div></div>
 <div class="ttc" id="aclass_uniform_html"><div class="ttname"><a href="class_uniform.html">Uniform</a></div><div class="ttdef"><b>Definition:</b> Uniform.h:16</div></div>
+<div class="ttc" id="anamespaceinternal_html_ad6fcf5f606e1adec9ea4e231df1c718f"><div class="ttname"><a href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">internal::get_exponential</a></div><div class="ttdeci">Scalar get_exponential(const Scalar &amp;rate, RNG &amp;rng)</div><div class="ttdef"><b>Definition:</b> Exponential.h:100</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

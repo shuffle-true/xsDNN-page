@@ -155,8 +155,7 @@ $(document).ready(function(){initNavTree('namespaceinternal.html',''); initResiz
 <tr class="separator:ad23ce3155423fa432a24bfffc51793a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8977e6737be2f25d189c5e9b76232cd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a8977e6737be2f25d189c5e9b76232cd5">set_uniform_random</a> (Scalar *arr, const int n, RNG &amp;rng, const Scalar &amp;a=Scalar(0), const Scalar &amp;b=Scalar(1))</td></tr>
 <tr class="separator:a8977e6737be2f25d189c5e9b76232cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6fcf5f606e1adec9ea4e231df1c718f"><td class="memItemLeft" align="right" valign="top"><a id="ad6fcf5f606e1adec9ea4e231df1c718f"></a>
-Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>get_exponential</b> (const Scalar &amp;rate, RNG &amp;rng)</td></tr>
+<tr class="memitem:ad6fcf5f606e1adec9ea4e231df1c718f"><td class="memItemLeft" align="right" valign="top">Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">get_exponential</a> (const Scalar &amp;rate, RNG &amp;rng)</td></tr>
 <tr class="separator:ad6fcf5f606e1adec9ea4e231df1c718f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
@@ -176,13 +175,13 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>get_exponential</b>
 
 <p>ID функции активации </p>
 <table class="fieldtable">
-<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="af22b4eec9ac692a7334ea550be120eaba9544d50c065b101d713dca7cffb2e9e1"></a>RELU&#160;</td><td class="fielddoc"><p>ReLU. </p>
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="af22b4eec9ac692a7334ea550be120eaba9544d50c065b101d713dca7cffb2e9e1"></a>RELU&#160;</td><td class="fielddoc"><p><a class="el" href="class_re_l_u.html">ReLU</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af22b4eec9ac692a7334ea550be120eaba4bd840f2b352b2f8144f4bba33d18e4e"></a>SIGMOID&#160;</td><td class="fielddoc"><p>Sigmoid. </p>
+<tr><td class="fieldname"><a id="af22b4eec9ac692a7334ea550be120eaba4bd840f2b352b2f8144f4bba33d18e4e"></a>SIGMOID&#160;</td><td class="fielddoc"><p><a class="el" href="class_sigmoid.html">Sigmoid</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af22b4eec9ac692a7334ea550be120eabad64825016900e252957c32c9c0851eec"></a>IDENTITY&#160;</td><td class="fielddoc"><p>Identity. </p>
+<tr><td class="fieldname"><a id="af22b4eec9ac692a7334ea550be120eabad64825016900e252957c32c9c0851eec"></a>IDENTITY&#160;</td><td class="fielddoc"><p><a class="el" href="class_identity.html">Identity</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af22b4eec9ac692a7334ea550be120eabafbe869f0d87088abb0aefb6b5a506b71"></a>SOFTMAX&#160;</td><td class="fielddoc"><p>Softmax. </p>
+<tr><td class="fieldname"><a id="af22b4eec9ac692a7334ea550be120eabafbe869f0d87088abb0aefb6b5a506b71"></a>SOFTMAX&#160;</td><td class="fielddoc"><p><a class="el" href="class_softmax.html">Softmax</a>. </p>
 </td></tr>
 </table>
 
@@ -502,6 +501,42 @@ template&lt;typename DerivedX , typename DerivedY , typename XType , typename YT
   </dd>
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>ID распределения </dd></dl>
+
+</div>
+</div>
+<a id="ad6fcf5f606e1adec9ea4e231df1c718f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6fcf5f606e1adec9ea4e231df1c718f">&#9670;&nbsp;</a></span>get_exponential()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Scalar internal::get_exponential </td>
+          <td>(</td>
+          <td class="paramtype">const Scalar &amp;&#160;</td>
+          <td class="paramname"><em>rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RNG &amp;&#160;</td>
+          <td class="paramname"><em>rng</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Получить одно значения из экспоненциального распределения </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rate</td><td>параметр распределения </td></tr>
+    <tr><td class="paramname">rng</td><td>ГСЧ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd></dd></dl>
 
 </div>
 </div>

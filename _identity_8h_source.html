@@ -94,33 +94,35 @@ $(document).ready(function(){initNavTree('_identity_8h_source.html',''); initRes
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"># include &lt;Eigen/Core&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"># include &quot;../Config.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_identity.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_identity.html">Identity</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">typedef</span> Eigen::Matrix&lt;Scalar, Eigen::Dynamic, Eigen::Dynamic&gt; Matrix;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_identity.html#abde71bb84ca05be656a6567a43b1f84c">   25</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_identity.html#abde71bb84ca05be656a6567a43b1f84c">activate</a>(<span class="keyword">const</span> Matrix&amp; Z, Matrix&amp; A)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        A.array() = Z.array();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// TODO: Обернуть активации в пространство имен activator</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_identity.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_identity.html">Identity</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">typedef</span> Eigen::Matrix&lt;Scalar, Eigen::Dynamic, Eigen::Dynamic&gt; Matrix;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_identity.html#abde71bb84ca05be656a6567a43b1f84c">   27</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_identity.html#abde71bb84ca05be656a6567a43b1f84c">activate</a>(<span class="keyword">const</span> Matrix&amp; Z, Matrix&amp; A)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        A.array() = Z.array();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_identity.html#ab06ce40690056de30d4d729b7afb3e9c">   45</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_identity.html#ab06ce40690056de30d4d729b7afb3e9c">apply_jacobian</a>(<span class="keyword">const</span> Matrix&amp; Z, <span class="keyword">const</span> Matrix&amp; A,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">const</span> Matrix&amp; F, Matrix&amp; G)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        G.array() = F.array();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_identity.html#ac848818c232fde173b90877036c617a4">   53</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="class_identity.html#ac848818c232fde173b90877036c617a4">return_type</a>()</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;Identity&quot;</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
-<div class="ttc" id="aclass_identity_html"><div class="ttname"><a href="class_identity.html">Identity</a></div><div class="ttdef"><b>Definition:</b> Identity.h:10</div></div>
-<div class="ttc" id="aclass_identity_html_ab06ce40690056de30d4d729b7afb3e9c"><div class="ttname"><a href="class_identity.html#ab06ce40690056de30d4d729b7afb3e9c">Identity::apply_jacobian</a></div><div class="ttdeci">static void apply_jacobian(const Matrix &amp;Z, const Matrix &amp;A, const Matrix &amp;F, Matrix &amp;G)</div><div class="ttdoc">Операция матричного дифференцирования.</div><div class="ttdef"><b>Definition:</b> Identity.h:45</div></div>
-<div class="ttc" id="aclass_identity_html_abde71bb84ca05be656a6567a43b1f84c"><div class="ttname"><a href="class_identity.html#abde71bb84ca05be656a6567a43b1f84c">Identity::activate</a></div><div class="ttdeci">static void activate(const Matrix &amp;Z, Matrix &amp;A)</div><div class="ttdef"><b>Definition:</b> Identity.h:25</div></div>
-<div class="ttc" id="aclass_identity_html_ac848818c232fde173b90877036c617a4"><div class="ttname"><a href="class_identity.html#ac848818c232fde173b90877036c617a4">Identity::return_type</a></div><div class="ttdeci">static std::string return_type()</div><div class="ttdef"><b>Definition:</b> Identity.h:53</div></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_identity.html#ab06ce40690056de30d4d729b7afb3e9c">   47</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_identity.html#ab06ce40690056de30d4d729b7afb3e9c">apply_jacobian</a>(<span class="keyword">const</span> Matrix&amp; Z, <span class="keyword">const</span> Matrix&amp; A,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">const</span> Matrix&amp; F, Matrix&amp; G)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        G.array() = F.array();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_identity.html#ac848818c232fde173b90877036c617a4">   55</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="class_identity.html#ac848818c232fde173b90877036c617a4">return_type</a>()</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;Identity&quot;</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="ttc" id="aclass_identity_html"><div class="ttname"><a href="class_identity.html">Identity</a></div><div class="ttdef"><b>Definition:</b> Identity.h:12</div></div>
+<div class="ttc" id="aclass_identity_html_ab06ce40690056de30d4d729b7afb3e9c"><div class="ttname"><a href="class_identity.html#ab06ce40690056de30d4d729b7afb3e9c">Identity::apply_jacobian</a></div><div class="ttdeci">static void apply_jacobian(const Matrix &amp;Z, const Matrix &amp;A, const Matrix &amp;F, Matrix &amp;G)</div><div class="ttdoc">Операция матричного дифференцирования.</div><div class="ttdef"><b>Definition:</b> Identity.h:47</div></div>
+<div class="ttc" id="aclass_identity_html_abde71bb84ca05be656a6567a43b1f84c"><div class="ttname"><a href="class_identity.html#abde71bb84ca05be656a6567a43b1f84c">Identity::activate</a></div><div class="ttdeci">static void activate(const Matrix &amp;Z, Matrix &amp;A)</div><div class="ttdef"><b>Definition:</b> Identity.h:27</div></div>
+<div class="ttc" id="aclass_identity_html_ac848818c232fde173b90877036c617a4"><div class="ttname"><a href="class_identity.html#ac848818c232fde173b90877036c617a4">Identity::return_type</a></div><div class="ttdeci">static std::string return_type()</div><div class="ttdef"><b>Definition:</b> Identity.h:55</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
