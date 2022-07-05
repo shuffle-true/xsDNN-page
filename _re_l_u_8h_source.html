@@ -94,34 +94,36 @@ $(document).ready(function(){initNavTree('_re_l_u_8h_source.html',''); initResiz
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"># include &lt;Eigen/Core&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"># include &quot;../Config.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_re_l_u.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_re_l_u.html">ReLU</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">typedef</span> Eigen::Matrix&lt;Scalar, Eigen::Dynamic, Eigen::Dynamic&gt; Matrix;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_re_l_u.html#a5ee051b38cd1782e463984673bf8c903">   29</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_re_l_u.html#a5ee051b38cd1782e463984673bf8c903">activate</a>(<span class="keyword">const</span> Matrix&amp; Z, Matrix&amp; A)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        A.array() = Z.array().cwiseMax(Scalar(0));</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_re_l_u.html#ab0d11863877e4e9dd20853e3f0aa14d8">   52</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_re_l_u.html#ab0d11863877e4e9dd20853e3f0aa14d8">apply_jacobian</a>(<span class="keyword">const</span> Matrix&amp; Z, <span class="keyword">const</span> Matrix&amp; A,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">const</span> Matrix&amp; F, Matrix&amp; G)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        G.array() = (A.array() &gt; Scalar(0)).select(F, Scalar(0));</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_re_l_u.html#ad7c87506543101a67310030d74ad367c">   60</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="class_re_l_u.html#ad7c87506543101a67310030d74ad367c">return_type</a>()</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;ReLU&quot;</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
-<div class="ttc" id="aclass_re_l_u_html"><div class="ttname"><a href="class_re_l_u.html">ReLU</a></div><div class="ttdef"><b>Definition:</b> ReLU.h:10</div></div>
-<div class="ttc" id="aclass_re_l_u_html_a5ee051b38cd1782e463984673bf8c903"><div class="ttname"><a href="class_re_l_u.html#a5ee051b38cd1782e463984673bf8c903">ReLU::activate</a></div><div class="ttdeci">static void activate(const Matrix &amp;Z, Matrix &amp;A)</div><div class="ttdef"><b>Definition:</b> ReLU.h:29</div></div>
-<div class="ttc" id="aclass_re_l_u_html_ab0d11863877e4e9dd20853e3f0aa14d8"><div class="ttname"><a href="class_re_l_u.html#ab0d11863877e4e9dd20853e3f0aa14d8">ReLU::apply_jacobian</a></div><div class="ttdeci">static void apply_jacobian(const Matrix &amp;Z, const Matrix &amp;A, const Matrix &amp;F, Matrix &amp;G)</div><div class="ttdoc">Операция матричного дифференцирования.</div><div class="ttdef"><b>Definition:</b> ReLU.h:52</div></div>
-<div class="ttc" id="aclass_re_l_u_html_ad7c87506543101a67310030d74ad367c"><div class="ttname"><a href="class_re_l_u.html#ad7c87506543101a67310030d74ad367c">ReLU::return_type</a></div><div class="ttdeci">static std::string return_type()</div><div class="ttdef"><b>Definition:</b> ReLU.h:60</div></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>activate{</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classactivate_1_1_re_l_u.html">   10</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classactivate_1_1_re_l_u.html">ReLU</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">typedef</span> Eigen::Matrix&lt;Scalar, Eigen::Dynamic, Eigen::Dynamic&gt; Matrix;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classactivate_1_1_re_l_u.html#a4fb5acfe73a0d6cbca5552478bcfb5d5">   30</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classactivate_1_1_re_l_u.html#a4fb5acfe73a0d6cbca5552478bcfb5d5">activate</a>(<span class="keyword">const</span> Matrix&amp; Z, Matrix&amp; A)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            A.array() = Z.array().cwiseMax(Scalar(0));</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classactivate_1_1_re_l_u.html#a45e3b97b629d6b2a92d2e2c36d37b45c">   53</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classactivate_1_1_re_l_u.html#a45e3b97b629d6b2a92d2e2c36d37b45c">apply_jacobian</a>(<span class="keyword">const</span> Matrix&amp; Z, <span class="keyword">const</span> Matrix&amp; A,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                          <span class="keyword">const</span> Matrix&amp; F, Matrix&amp; G)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            G.array() = (A.array() &gt; Scalar(0)).select(F, Scalar(0));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classactivate_1_1_re_l_u.html#a42292733fe96367a89e4629b518a2375">   61</a></span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classactivate_1_1_re_l_u.html#a42292733fe96367a89e4629b518a2375">return_type</a>()</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;ReLU&quot;</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    };</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="ttc" id="aclassactivate_1_1_re_l_u_html"><div class="ttname"><a href="classactivate_1_1_re_l_u.html">activate::ReLU</a></div><div class="ttdef"><b>Definition:</b> ReLU.h:11</div></div>
+<div class="ttc" id="aclassactivate_1_1_re_l_u_html_a42292733fe96367a89e4629b518a2375"><div class="ttname"><a href="classactivate_1_1_re_l_u.html#a42292733fe96367a89e4629b518a2375">activate::ReLU::return_type</a></div><div class="ttdeci">static std::string return_type()</div><div class="ttdef"><b>Definition:</b> ReLU.h:61</div></div>
+<div class="ttc" id="aclassactivate_1_1_re_l_u_html_a45e3b97b629d6b2a92d2e2c36d37b45c"><div class="ttname"><a href="classactivate_1_1_re_l_u.html#a45e3b97b629d6b2a92d2e2c36d37b45c">activate::ReLU::apply_jacobian</a></div><div class="ttdeci">static void apply_jacobian(const Matrix &amp;Z, const Matrix &amp;A, const Matrix &amp;F, Matrix &amp;G)</div><div class="ttdoc">Операция матричного дифференцирования.</div><div class="ttdef"><b>Definition:</b> ReLU.h:53</div></div>
+<div class="ttc" id="aclassactivate_1_1_re_l_u_html_a4fb5acfe73a0d6cbca5552478bcfb5d5"><div class="ttname"><a href="classactivate_1_1_re_l_u.html#a4fb5acfe73a0d6cbca5552478bcfb5d5">activate::ReLU::activate</a></div><div class="ttdeci">static void activate(const Matrix &amp;Z, Matrix &amp;A)</div><div class="ttdef"><b>Definition:</b> ReLU.h:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

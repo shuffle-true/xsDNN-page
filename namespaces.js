@@ -1,5 +1,16 @@
 var namespaces =
 [
+    [ "activate", null, [
+      [ "Identity", "classactivate_1_1_identity.html", null ],
+      [ "ReLU", "classactivate_1_1_re_l_u.html", null ],
+      [ "Sigmoid", "classactivate_1_1_sigmoid.html", null ],
+      [ "Softmax", "classactivate_1_1_softmax.html", null ]
+    ] ],
+    [ "init", null, [
+      [ "Exponential", "classinit_1_1_exponential.html", "classinit_1_1_exponential" ],
+      [ "Normal", "classinit_1_1_normal.html", null ],
+      [ "Uniform", "classinit_1_1_uniform.html", null ]
+    ] ],
     [ "internal", "namespaceinternal.html", [
       [ "ACTIVATION_FUNC_ENUM", "namespaceinternal.html#af22b4eec9ac692a7334ea550be120eab", [
         [ "RELU", "namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba9544d50c065b101d713dca7cffb2e9e1", null ],
@@ -37,6 +48,14 @@ var namespaces =
       [ "write_map", "namespaceinternal.html#af85d8e89869ef65d35459eb528791af1", null ],
       [ "write_one_vector", "namespaceinternal.html#ad3ce06b33fd4f205474a7c055b590737", null ],
       [ "write_vector", "namespaceinternal.html#aba1a0c067292e01ba5d405c7d843edf1", null ]
+    ] ],
+    [ "metrics", null, [
+      [ "accuracy_precision_recall_f1_calculate", "_metrics_8h.html#a8c96e11520dfe33fb739a10343154c3f", null ],
+      [ "MAE_calculate", "_metrics_8h.html#ab952c791e4ebc2da391a9110a81996e3", null ],
+      [ "MAPE_calculate", "_metrics_8h.html#a0db6e64db121fae347c5e4914e1d8297", null ],
+      [ "MSE_calculate", "_metrics_8h.html#ac81c787bce7405a11cd4bddd2bc6f408", null ],
+      [ "R_calculate", "_metrics_8h.html#aedc69b1f0e819847960d1b1fd57fbb53", null ],
+      [ "regressor_metrics_calculate", "_metrics_8h.html#a10994281c69df2453f8d733fb115a0bc", null ]
     ] ],
     [ "mnist", null, [
       [ "binarize_dataset", "mnist__utils_8hpp.html#a3bdbbaaf793e3a56e1d50fa164bce785", null ],

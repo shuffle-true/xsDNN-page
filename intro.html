@@ -115,9 +115,9 @@ $(document).ready(function(){initNavTree('intro.html',''); initResizable(); });
 <div class="line">    NeuralNetwork net;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// определяем слои сетки в формате Layer* layer_name = new Layer_type&lt;Activation_type&gt;(layer_params)</span></div>
-<div class="line">    Layer *l1 = <span class="keyword">new</span> <a class="code" href="class_fully_connected.html">FullyConnected&lt;Sigmoid, Normal&gt;</a>(1, 10);</div>
-<div class="line">    Layer *l2 = <span class="keyword">new</span> <a class="code" href="class_fully_connected.html">FullyConnected&lt;Sigmoid, Normal&gt;</a>(10, 10);</div>
-<div class="line">    Layer *l3 = <span class="keyword">new</span> <a class="code" href="class_fully_connected.html">FullyConnected&lt;Identity, Normal&gt;</a>(10, 1);</div>
+<div class="line">    Layer *l1 = <span class="keyword">new</span> <a class="code" href="class_fully_connected.html">FullyConnected&lt;activate::Sigmoid, init::Normal&gt;</a>(1, 10);</div>
+<div class="line">    Layer *l2 = <span class="keyword">new</span> <a class="code" href="class_fully_connected.html">FullyConnected&lt;activate::Sigmoid, init::Normal&gt;</a>(10, 10);</div>
+<div class="line">    Layer *l3 = <span class="keyword">new</span> <a class="code" href="class_fully_connected.html">FullyConnected&lt;activate::Identity, init::Normal&gt;</a>(10, 1);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// добавляем слои в сетку - важен порядок добавления: в каком добавили, в таком и будут производится вычисления</span></div>
 <div class="line">    net.add_layer(l1);</div>
@@ -147,10 +147,10 @@ $(document).ready(function(){initNavTree('intro.html',''); initResizable(); });
 <div class="line">    <span class="comment">// считаем различные метрики</span></div>
 <div class="line">    Matrix predict = net.predict(test_data);</div>
 <div class="line"> </div>
-<div class="line">    MSE_calculate(test_target, predict);    <span class="comment">// 0.191714</span></div>
-<div class="line">    MAE_calculate(test_target, predict);    <span class="comment">// 0.307732</span></div>
-<div class="line">    R_calculate(test_target, predict);      <span class="comment">// 0.61454</span></div>
-<div class="line">    MAPE_calculate(test_target, predict);   <span class="comment">// 0.686659 %</span></div>
+<div class="line">    metrics::MSE_calculate(test_target, predict);    <span class="comment">// 0.191714</span></div>
+<div class="line">    metrics::MAE_calculate(test_target, predict);    <span class="comment">// 0.307732</span></div>
+<div class="line">    metrics::R_calculate(test_target, predict);      <span class="comment">// 0.61454</span></div>
+<div class="line">    metrics::MAPE_calculate(test_target, predict);   <span class="comment">// 0.686659 %</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// можно так</span></div>
 <div class="line">    <span class="comment">//regressor_metrics_calculate(test_target, predict);</span></div>
