@@ -136,6 +136,9 @@ $(document).ready(function(){initNavTree('intro.html',''); initResizable(); });
 <div class="line">    <span class="comment">// инициализируем веса сетки со значениями параметров по умолчанию</span></div>
 <div class="line">    net.init();</div>
 <div class="line"> </div>
+<div class="line">    <span class="comment">// переводим сеть в процесс тренировки</span></div>
+<div class="line">    net.train()</div>
+<div class="line"> </div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Net init - start training&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">    <span class="comment">// начинаем обучение сети с batch_size = 20, кол-вом эпох = 5000 и random seed = 42</span></div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> start_time = clock();</div>
@@ -143,6 +146,9 @@ $(document).ready(function(){initNavTree('intro.html',''); initResizable(); });
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> end_time = clock();</div>
 <div class="line"> </div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Training completed, elapsed time = &quot;</span> &lt;&lt; (end_time - start_time) / 1000000.0 &lt;&lt; <span class="stringliteral">&quot; sec.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// переводим сеть в процесс тестирования</span></div>
+<div class="line">    net.eval()</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// считаем различные метрики</span></div>
 <div class="line">    Matrix predict = net.predict(test_data);</div>
