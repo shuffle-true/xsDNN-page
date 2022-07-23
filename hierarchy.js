@@ -3,7 +3,6 @@ var hierarchy =
     [ "Callback", null, [
       [ "VerboseCallback", "class_verbose_callback.html", null ]
     ] ],
-    [ "DataLoader< ImageFormat, LabelFormat >", "struct_data_loader.html", null ],
     [ "init::Exponential", "classinit_1_1_exponential.html", null ],
     [ "activate::Identity", "classactivate_1_1_identity.html", null ],
     [ "Layer", null, [

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dataloader_100',['DataLoader',['../struct_data_loader.html',1,'']]]
+  ['exponential_75',['Exponential',['../classinit_1_1_exponential.html',1,'init']]]
 ];

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['test_5fdata_85',['test_data',['../struct_data_loader.html#ae2d6549671b13f67dd915bd3b0e27d90',1,'DataLoader']]],
-  ['test_5flabel_86',['test_label',['../struct_data_loader.html#ab94f4ebe0f10dd2fb1c5ced56a9c8bbf',1,'DataLoader']]],
-  ['train_5fdata_87',['train_data',['../struct_data_loader.html#a42b3f7412e230c9e8342afd4f4c8d693',1,'DataLoader']]],
-  ['train_5flabel_88',['train_label',['../struct_data_loader.html#a136f26dfef9e51ec887da1890a28be6e',1,'DataLoader']]]
+  ['uniform_64',['Uniform',['../classinit_1_1_uniform.html',1,'init']]],
+  ['uniform_65',['UNIFORM',['../namespaceinternal.html#a5910af6de47727626e888443c7b18c43acbe15420f02aa16c27d55f76d8a2a194',1,'internal']]],
+  ['update_66',['update',['../class_fully_connected.html#a5edfef61d185a3a7a2297b87f312fe61',1,'FullyConnected::update()'],['../class_s_g_d.html#a53613e375797f28878cf77ece7f85618',1,'SGD::update()']]]
 ];

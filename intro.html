@@ -92,13 +92,8 @@ $(document).ready(function(){initNavTree('intro.html',''); initResizable(); });
 <div class="textblock"><p>Давайте попробуем обучить какую нибудь нейросеть.</p>
 <p>Существует <b><a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%A6%D1%8B%D0%B1%D0%B5%D0%BD%D0%BA%D0%BE">теорема Цыбенко</a></b>, которая утверждает, что полносвязная сеть может аппроксимировать любую непрерывную функцию многих переменных с заранее заданной точностью. Попробуем настроить сетку для проверки состоятельности теоремы.</p>
 <p><b>Шаг 0.</b></p><ul>
-<li>Прежде всего нужно установить <em>Eigen</em> в систему, положить его файлы в корень С++, из которого он импортирует основные библиотеки при помощи команды<div class="fragment"><div class="line"><span class="preprocessor">#include&lt;...&gt;</span> </div>
-</div><!-- fragment --></li>
-<li>Чтобы узнать, где находится корневая папка С++, откуда начинается поиск (при условии, что у вас компилятор gcc) выполните команду<div class="fragment"><div class="line">gcc -print-prog-name=cc1plus` -v </div>
-</div><!-- fragment --></li>
-<li>Если вы используете <b>Visual Studio</b>, то просто добавьте <em>Eigen</em> в текущий проект.</li>
+<li>Добавьте <em>Eigen</em> в текущий проект.</li>
 </ul>
-<p><b>После установки <em>Eigen</em> можно переходить к написанию нейросети.</b></p>
 <div class="fragment"><div class="line"><span class="preprocessor"># include &quot;../DNN.h&quot;</span></div>
 <div class="line"><span class="preprocessor"># include &lt;ctime&gt;</span></div>
 <div class="line"> </div>
@@ -168,7 +163,7 @@ $(document).ready(function(){initNavTree('intro.html',''); initResizable(); });
 <div class="ttc" id="aclass_fully_connected_html"><div class="ttname"><a href="class_fully_connected.html">FullyConnected</a></div><div class="ttdef"><b>Definition:</b> FullyConnected.h:15</div></div>
 <div class="ttc" id="aclass_regression_m_s_e_html"><div class="ttname"><a href="class_regression_m_s_e.html">RegressionMSE</a></div><div class="ttdef"><b>Definition:</b> RegressionMSE.h:13</div></div>
 <div class="ttc" id="aclass_s_g_d_html"><div class="ttname"><a href="class_s_g_d.html">SGD</a></div><div class="ttdef"><b>Definition:</b> SGD.h:11</div></div>
-<div class="ttc" id="aclass_s_g_d_html_a022ad12dff64d757823467dda852c541"><div class="ttname"><a href="class_s_g_d.html#a022ad12dff64d757823467dda852c541">SGD::m_lrate</a></div><div class="ttdeci">Scalar m_lrate</div><div class="ttdoc">длина шага.</div><div class="ttdef"><b>Definition:</b> SGD.h:13</div></div>
+<div class="ttc" id="aclass_s_g_d_html_a022ad12dff64d757823467dda852c541"><div class="ttname"><a href="class_s_g_d.html#a022ad12dff64d757823467dda852c541">SGD::m_lrate</a></div><div class="ttdeci">Scalar m_lrate</div><div class="ttdoc">длина шага.</div><div class="ttdef"><b>Definition:</b> SGD.h:17</div></div>
 <div class="ttc" id="aclass_verbose_callback_html"><div class="ttname"><a href="class_verbose_callback.html">VerboseCallback</a></div><div class="ttdef"><b>Definition:</b> VerboseCallback.h:13</div></div>
 </div><!-- fragment --><p>Теперь вы можете перейти к расширенному разделу <a class="el" href="advanced.html">Расширенное использование</a>. </p>
 </div></div><!-- contents -->

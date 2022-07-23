@@ -12,7 +12,6 @@ var annotated_dup =
       [ "Uniform", "classinit_1_1_uniform.html", null ]
     ] ],
     [ "BinaryClassEntropy", "class_binary_class_entropy.html", "class_binary_class_entropy" ],
-    [ "DataLoader", "struct_data_loader.html", "struct_data_loader" ],
     [ "FullyConnected", "class_fully_connected.html", "class_fully_connected" ],
     [ "RegressionMSE", "class_regression_m_s_e.html", "class_regression_m_s_e" ],
     [ "SGD", "class_s_g_d.html", "class_s_g_d" ],
