@@ -1,11 +1,15 @@
 var NAVTREEINDEX0 =
 {
+"":[1,0],
+"":[1,1],
+"":[1,3],
 "_metrics_8h.html#a0db6e64db121fae347c5e4914e1d8297":[1,3,2],
 "_metrics_8h.html#a10994281c69df2453f8d733fb115a0bc":[1,3,5],
 "_metrics_8h.html#a8c96e11520dfe33fb739a10343154c3f":[1,3,0],
 "_metrics_8h.html#ab952c791e4ebc2da391a9110a81996e3":[1,3,1],
 "_metrics_8h.html#ac81c787bce7405a11cd4bddd2bc6f408":[1,3,3],
 "_metrics_8h.html#aedc69b1f0e819847960d1b1fd57fbb53":[1,3,4],
+"activation.html":[0,1,2],
 "advanced.html":[0,1],
 "annotated.html":[2,0],
 "class_binary_class_entropy.html":[2,0,3],
@@ -83,10 +87,13 @@ var NAVTREEINDEX0 =
 "classinternal_1_1bernoulli.html#adeee9832f52f9e026f83039a4c7c1b23":[2,0,2,0,0],
 "classinternal_1_1bernoulli.html#ae0799918447cc899ae112307da752046":[2,0,2,0,1],
 "classinternal_1_1bernoulli.html#afd2f5c20c9126e1928d122227949654b":[2,0,2,0,2],
+"data.html":[0,1,0],
+"distribution.html":[0,1,3],
 "hierarchy.html":[2,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "intro.html":[0,0],
+"layer.html":[0,1,1],
 "namespaceinternal.html":[1,2],
 "namespaceinternal.html#a0ead1ef73a9ab504f3fd2635cc8bf108":[1,2,14],
 "namespaceinternal.html#a132c969163b5898faa93428f39e68a74":[1,2,10],
@@ -123,8 +130,8 @@ var NAVTREEINDEX0 =
 "namespaceinternal.html#af85d8e89869ef65d35459eb528791af1":[1,2,21],
 "namespaceinternal.html#afc9728409c3dec1a7e2532d77167f23d":[1,2,16],
 "namespaces.html":[1],
-"pages.html":[],
-"":[1,0],
-"":[1,3],
-"":[1,1]
+"net.html":[0,1,6],
+"optimizer.html":[0,1,4],
+"output.html":[0,1,5],
+"pages.html":[]
 };

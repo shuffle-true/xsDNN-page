@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['Введение_74',['Введение',['../intro.html',1,'index']]]
+  ['Активация_74',['Активация',['../activation.html',1,'advanced']]]
 ];
