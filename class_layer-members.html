@@ -5,14 +5,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>xsDNN: Cписок членов класса</title>
+<title>xsDNN C++: Cписок членов класса</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="header_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -22,7 +27,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">xsDNN
+   <div id="projectname">xsDNN C++
    &#160;<span id="projectnumber">0.0.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
@@ -48,6 +53,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_layer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,7 +84,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Layer Cписок членов класса</div>  </div>
@@ -74,30 +95,36 @@ $(function() {
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>activation_type</b>() const =0 (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_layer.html#a301b6101fc12b9b1578c72d93dfa029f">backprop</a>(const Matrix &amp;prev_layer_data, const Matrix &amp;next_layer_data)=0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_layer.html#ae30d9b11691bf94f234d105e2006d069">backprop_data</a>() const =0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>BIAS_ACTIVATE</b> (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#a714439c64a0adeae5bd1ba21cf5e6504">fill_meta_info</a>(Meta &amp;map, int index) const =0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_layer.html#adbf80e0fa5901464a56afaaea5f3f745">forward</a>(const Matrix &amp;prev_layer_data)=0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>get_derivatives</b>() const =0 (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>get_parametrs</b>() const =0 (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>distribution_type</b>() const =0 (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#a53846142753e1e5c2c1b67115dc64357">eval</a>()=0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer.html#a714439c64a0adeae5bd1ba21cf5e6504">fill_meta_info</a>(Meta &amp;map, int index) const =0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#adbf80e0fa5901464a56afaaea5f3f745">forward</a>(const Matrix &amp;prev_layer_data)=0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>get_derivatives</b>() const =0 (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>get_parametrs</b>() const =0 (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer.html#af54895d12ba7cd85cb314e08965ece9c">get_workflow</a>() const</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_layer.html#af2aa113e9b7938188d8da55b6950d0e5">in_size</a>() const</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_layer.html#a5ba40c0f8cb37c1758a8811fbdc70f53">init</a>(const Scalar &amp;mu, const Scalar &amp;sigma, RNG &amp;rng)=0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer.html#ac908166e081edd9ff3b3a35e187b5b63">init</a>(const std::vector&lt; Scalar &gt; &amp;params, RNG &amp;rng)=0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_layer.html#ad87780b777d48e388a8f8ecf9a33b33f">init</a>()=0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Layer</b>(const int in_size, const int out_size, bool bias_true_false) (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>Layer</b>(const int in_size, const int out_size, std::string init_workflow) (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>layer_type</b>() const =0 (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>m_in_size</b> (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>m_out_size</b> (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>Matrix</b> typedef (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Meta</b> typedef (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_layer.html#a10515e993c8de900ad32fa1884b5915f">out_size</a>() const</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#a96c6836c87e9d1f2c3f94f8243cc0718">output</a>()=0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#ad6d6d19aa819f10ebc019e985273ef8e">output</a>() const =0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>set_parametrs</b>(const std::vector&lt; Scalar &gt; &amp;param) (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#a305f7f9f92b9d60e6dca10accb7f062f">update</a>(Optimizer &amp;opt)=0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Vector</b> typedef (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Layer</b>()=default (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#a9a745a955de52cef25f1af3a97776d61">train</a>()=0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer.html#a305f7f9f92b9d60e6dca10accb7f062f">update</a>(Optimizer &amp;opt)=0</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>workflow</b> (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Layer</b>()=default (определено в <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

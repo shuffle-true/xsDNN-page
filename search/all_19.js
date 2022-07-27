@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['Слой_82',['Слой',['../layer.html',1,'advanced']]]
+  ['Оптимизация_102',['Оптимизация',['../optimizer.html',1,'advanced']]]
 ];

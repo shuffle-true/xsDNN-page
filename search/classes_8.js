@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['uniform_96',['Uniform',['../classinit_1_1_uniform.html',1,'init']]]
+  ['optimizer_117',['Optimizer',['../class_optimizer.html',1,'']]],
+  ['output_118',['Output',['../class_output.html',1,'']]]
 ];

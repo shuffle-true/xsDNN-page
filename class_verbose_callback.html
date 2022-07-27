@@ -93,14 +93,17 @@ $(document).ready(function(){initNavTree('class_verbose_callback.html',''); init
 </div><!--header-->
 <div class="contents">
 
+<p>Класс отображения информации при обучении (<a class="el" href="class_verbose_callback.html" title="Класс отображения информации при обучении (VerboseCallback)">VerboseCallback</a>)  
+ <a href="class_verbose_callback.html#details">Подробнее...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_verbose_callback_8h_source.html">VerboseCallback.h</a>&gt;</code></p>
 <div class="dynheader">
 Граф наследования:VerboseCallback:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_verbose_callback__inherit__graph.png" border="0" usemap="#a_verbose_callback_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_verbose_callback_inherit__map" id="a_verbose_callback_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,136,107"/>
-<area shape="rect" title=" " alt="" coords="31,5,110,32"/>
+<area shape="rect" title="Класс отображения информации при обучении (VerboseCallback)" alt="" coords="5,80,136,107"/>
+<area shape="rect" href="class_callback.html" title="Родительский класс вывода информации на экран" alt="" coords="31,5,110,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <div class="dynheader">
@@ -108,18 +111,45 @@ $(document).ready(function(){initNavTree('class_verbose_callback.html',''); init
 <div class="dyncontent">
 <div class="center"><img src="class_verbose_callback__coll__graph.png" border="0" usemap="#a_verbose_callback_coll__map" alt="Collaboration graph"/></div>
 <map name="a_verbose_callback_coll__map" id="a_verbose_callback_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,136,107"/>
-<area shape="rect" title=" " alt="" coords="31,5,110,32"/>
+<area shape="rect" title="Класс отображения информации при обучении (VerboseCallback)" alt="" coords="5,80,136,107"/>
+<area shape="rect" href="class_callback.html" title="Родительский класс вывода информации на экран" alt="" coords="31,5,110,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a1e0e4ed1bc3c8ee5c2d95155eef99e3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_verbose_callback.html#a1e0e4ed1bc3c8ee5c2d95155eef99e3b">post_trained_batch</a> (const NeuralNetwork *net, const Matrix &amp;x, const Matrix &amp;y) override</td></tr>
+<tr class="memitem:a1e0e4ed1bc3c8ee5c2d95155eef99e3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_verbose_callback.html#a1e0e4ed1bc3c8ee5c2d95155eef99e3b">post_trained_batch</a> (const <a class="el" href="class_neural_network.html">NeuralNetwork</a> *net, const Matrix &amp;x, const Matrix &amp;y) override</td></tr>
 <tr class="separator:a1e0e4ed1bc3c8ee5c2d95155eef99e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_callback"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_callback')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_callback.html">Callback</a></td></tr>
+<tr class="memitem:a284f748f97eb0b4b6f9180bbba53cb0e inherit pub_methods_class_callback"><td class="memItemLeft" align="right" valign="top"><a id="a284f748f97eb0b4b6f9180bbba53cb0e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>pre_trained_batch</b> (const <a class="el" href="class_neural_network.html">NeuralNetwork</a> *net, const Matrix &amp;x, const Matrix &amp;y)</td></tr>
+<tr class="separator:a284f748f97eb0b4b6f9180bbba53cb0e inherit pub_methods_class_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_callback"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_callback')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты унаследованные от <a class="el" href="class_callback.html">Callback</a></td></tr>
+<tr class="memitem:a703e84d7c447f4632714f7a5d96689a2 inherit pub_attribs_class_callback"><td class="memItemLeft" align="right" valign="top"><a id="a703e84d7c447f4632714f7a5d96689a2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_nbatch</b></td></tr>
+<tr class="separator:a703e84d7c447f4632714f7a5d96689a2 inherit pub_attribs_class_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab22dfa77c2415526fd4ba4331413d07d inherit pub_attribs_class_callback"><td class="memItemLeft" align="right" valign="top"><a id="ab22dfa77c2415526fd4ba4331413d07d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_batch_id</b></td></tr>
+<tr class="separator:ab22dfa77c2415526fd4ba4331413d07d inherit pub_attribs_class_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538af412b19b0d0caa2ba7c6f17b081e inherit pub_attribs_class_callback"><td class="memItemLeft" align="right" valign="top"><a id="a538af412b19b0d0caa2ba7c6f17b081e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_nepoch</b></td></tr>
+<tr class="separator:a538af412b19b0d0caa2ba7c6f17b081e inherit pub_attribs_class_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d1e00c63941c6bdf057c602fff17a0d inherit pub_attribs_class_callback"><td class="memItemLeft" align="right" valign="top"><a id="a2d1e00c63941c6bdf057c602fff17a0d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_epoch_id</b></td></tr>
+<tr class="separator:a2d1e00c63941c6bdf057c602fff17a0d inherit pub_attribs_class_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_class_callback"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_callback')"><img src="closed.png" alt="-"/>&#160;Защищенные типы унаследованные от <a class="el" href="class_callback.html">Callback</a></td></tr>
+<tr class="memitem:a8bb3fb0a7eb5c101c67bc967442afb65 inherit pro_types_class_callback"><td class="memItemLeft" align="right" valign="top"><a id="a8bb3fb0a7eb5c101c67bc967442afb65"></a>
+typedef Eigen::Matrix&lt; Scalar, Eigen::Dynamic, Eigen::Dynamic &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Matrix</b></td></tr>
+<tr class="separator:a8bb3fb0a7eb5c101c67bc967442afb65 inherit pro_types_class_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс отображения информации об обучении. </p>
+<div class="textblock"><p>Класс отображения информации при обучении (<a class="el" href="class_verbose_callback.html" title="Класс отображения информации при обучении (VerboseCallback)">VerboseCallback</a>) </p>
+<dl class="section author"><dt>Автор</dt><dd><b><a href="https://github.com/shuffle-true">shuffle-true</a></b> </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>0.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>Март 2022 года </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
 <a id="a1e0e4ed1bc3c8ee5c2d95155eef99e3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e0e4ed1bc3c8ee5c2d95155eef99e3b">&#9670;&nbsp;</a></span>post_trained_batch()</h2>
@@ -133,7 +163,7 @@ $(document).ready(function(){initNavTree('class_verbose_callback.html',''); init
         <tr>
           <td class="memname">void VerboseCallback::post_trained_batch </td>
           <td>(</td>
-          <td class="paramtype">const NeuralNetwork *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_neural_network.html">NeuralNetwork</a> *&#160;</td>
           <td class="paramname"><em>net</em>, </td>
         </tr>
         <tr>
@@ -156,7 +186,7 @@ $(document).ready(function(){initNavTree('class_verbose_callback.html',''); init
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -168,6 +198,8 @@ $(document).ready(function(){initNavTree('class_verbose_callback.html',''); init
   </table>
   </dd>
 </dl>
+
+<p>Переопределяет метод предка <a class="el" href="class_callback.html">Callback</a>.</p>
 
 </div>
 </div>

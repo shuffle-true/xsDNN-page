@@ -1,5 +1,4 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,72,57"/>
-<area shape="rect" id="node2" href="$class_binary_class_entropy.html" title=" " alt="" coords="120,5,269,32"/>
-<area shape="rect" id="node3" href="$class_regression_m_s_e.html" title=" " alt="" coords="133,56,256,83"/>
+<area shape="rect" id="node1" href="$class_callback.html" title="Родительский класс вывода информации на экран" alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node2" href="$class_verbose_callback.html" title="Класс отображения информации при обучении (VerboseCallback)" alt="" coords="132,5,263,32"/>
 </map>

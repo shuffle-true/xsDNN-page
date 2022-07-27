@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['output_122',['output',['../class_dropout.html#a11aebad6668ad92dfcef9da233d6aed8',1,'Dropout::output()'],['../class_fully_connected.html#a29294dd076ec9e34cb4e26eed44ba109',1,'FullyConnected::output()']]],
-  ['output_5fid_123',['output_id',['../namespaceinternal.html#a868a36cb50dad3821255259ca79db479',1,'internal']]],
-  ['output_5ftype_124',['output_type',['../class_binary_class_entropy.html#ae619a249c797f9db2b5ad3a4c1086e97',1,'BinaryClassEntropy::output_type()'],['../class_regression_m_s_e.html#a49d0650620bbdd7f1263b0fe259d6439',1,'RegressionMSE::output_type()']]]
+  ['layer_5fid_158',['layer_id',['../namespaceinternal.html#aad429a1768927e66f1e6c2b64d946027',1,'internal']]],
+  ['layer_5ftype_159',['layer_type',['../class_fully_connected.html#a21a2fd0e1bfc0e45b35dfe40c4671417',1,'FullyConnected']]],
+  ['loss_160',['loss',['../class_binary_class_entropy.html#a65b2ed352e4f981c1aac601b82a2ecac',1,'BinaryClassEntropy::loss()'],['../class_regression_m_s_e.html#a37b003083cab379a68b1f5d180c89744',1,'RegressionMSE::loss()'],['../class_output.html#a45d48c4933bf9ab6804ba1dafe7c6cfb',1,'Output::loss()']]]
 ];

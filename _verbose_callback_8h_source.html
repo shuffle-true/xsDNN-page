@@ -97,21 +97,25 @@ $(document).ready(function(){initNavTree('_verbose_callback_8h_source.html','');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"># include &quot;../Config.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"># include &quot;../NeuralNetwork.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_verbose_callback.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_verbose_callback.html">VerboseCallback</a> : <span class="keyword">public</span> Callback</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_verbose_callback.html#a1e0e4ed1bc3c8ee5c2d95155eef99e3b">   20</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_verbose_callback.html#a1e0e4ed1bc3c8ee5c2d95155eef99e3b">post_trained_batch</a>(<span class="keyword">const</span> NeuralNetwork* net,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">const</span> Matrix&amp; x,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">const</span> Matrix&amp; y)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">const</span> Scalar loss = net-&gt;get_output()-&gt;loss();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;[Epoch = &quot;</span> &lt;&lt; m_epoch_id &lt;&lt; <span class="stringliteral">&quot;, batch = &quot;</span> &lt;&lt; m_batch_id &lt;&lt; <span class="stringliteral">&quot;] Loss = &quot;</span> &lt;&lt; loss &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="ttc" id="aclass_verbose_callback_html"><div class="ttname"><a href="class_verbose_callback.html">VerboseCallback</a></div><div class="ttdef"><b>Definition:</b> VerboseCallback.h:13</div></div>
-<div class="ttc" id="aclass_verbose_callback_html_a1e0e4ed1bc3c8ee5c2d95155eef99e3b"><div class="ttname"><a href="class_verbose_callback.html#a1e0e4ed1bc3c8ee5c2d95155eef99e3b">VerboseCallback::post_trained_batch</a></div><div class="ttdeci">void post_trained_batch(const NeuralNetwork *net, const Matrix &amp;x, const Matrix &amp;y) override</div><div class="ttdef"><b>Definition:</b> VerboseCallback.h:20</div></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_verbose_callback.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_verbose_callback.html">VerboseCallback</a> : <span class="keyword">public</span> <a class="code" href="class_callback.html">Callback</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_verbose_callback.html#a1e0e4ed1bc3c8ee5c2d95155eef99e3b">   23</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_verbose_callback.html#a1e0e4ed1bc3c8ee5c2d95155eef99e3b">post_trained_batch</a>(<span class="keyword">const</span> <a class="code" href="class_neural_network.html">NeuralNetwork</a>* net,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">const</span> Matrix&amp; x,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">const</span> Matrix&amp; y)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">const</span> Scalar loss = net-&gt;<a class="code" href="class_neural_network.html#a7686eabf1c59519eda1bc3ca1ce9628e">get_output</a>()-&gt;<a class="code" href="class_output.html#a45d48c4933bf9ab6804ba1dafe7c6cfb">loss</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;[Epoch = &quot;</span> &lt;&lt; m_epoch_id &lt;&lt; <span class="stringliteral">&quot;, batch = &quot;</span> &lt;&lt; m_batch_id &lt;&lt; <span class="stringliteral">&quot;] Loss = &quot;</span> &lt;&lt; loss &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="ttc" id="aclass_callback_html"><div class="ttname"><a href="class_callback.html">Callback</a></div><div class="ttdoc">Родительский класс вывода информации на экран</div><div class="ttdef"><b>Definition:</b> Callback.h:16</div></div>
+<div class="ttc" id="aclass_neural_network_html"><div class="ttname"><a href="class_neural_network.html">NeuralNetwork</a></div><div class="ttdoc">Класс нейросети</div><div class="ttdef"><b>Definition:</b> NeuralNetwork.h:27</div></div>
+<div class="ttc" id="aclass_neural_network_html_a7686eabf1c59519eda1bc3ca1ce9628e"><div class="ttname"><a href="class_neural_network.html#a7686eabf1c59519eda1bc3ca1ce9628e">NeuralNetwork::get_output</a></div><div class="ttdeci">const Output * get_output() const</div><div class="ttdoc">None</div><div class="ttdef"><b>Definition:</b> NeuralNetwork.h:266</div></div>
+<div class="ttc" id="aclass_output_html_a45d48c4933bf9ab6804ba1dafe7c6cfb"><div class="ttname"><a href="class_output.html#a45d48c4933bf9ab6804ba1dafe7c6cfb">Output::loss</a></div><div class="ttdeci">virtual Scalar loss() const =0</div><div class="ttdoc">None</div></div>
+<div class="ttc" id="aclass_verbose_callback_html"><div class="ttname"><a href="class_verbose_callback.html">VerboseCallback</a></div><div class="ttdoc">Класс отображения информации при обучении (VerboseCallback)</div><div class="ttdef"><b>Definition:</b> VerboseCallback.h:16</div></div>
+<div class="ttc" id="aclass_verbose_callback_html_a1e0e4ed1bc3c8ee5c2d95155eef99e3b"><div class="ttname"><a href="class_verbose_callback.html#a1e0e4ed1bc3c8ee5c2d95155eef99e3b">VerboseCallback::post_trained_batch</a></div><div class="ttdeci">void post_trained_batch(const NeuralNetwork *net, const Matrix &amp;x, const Matrix &amp;y) override</div><div class="ttdef"><b>Definition:</b> VerboseCallback.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

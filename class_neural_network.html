@@ -5,14 +5,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>xsDNN: Класс NeuralNetwork</title>
+<title>xsDNN C++: Класс NeuralNetwork</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="header_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -22,7 +27,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">xsDNN
+   <div id="projectname">xsDNN C++
    &#160;<span id="projectnumber">0.0.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
@@ -48,6 +53,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_neural_network.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,7 +84,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
@@ -72,6 +93,9 @@ $(function() {
 <div class="title">Класс NeuralNetwork</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Класс нейросети  
+ <a href="class_neural_network.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_neural_network_8h_source.html">NeuralNetwork.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -86,9 +110,6 @@ $(function() {
 <tr class="memitem:a741eef5530cbbf605423a73ccfc0bea4"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a741eef5530cbbf605423a73ccfc0bea4">count_layers</a> () const</td></tr>
 <tr class="memdesc:a741eef5530cbbf605423a73ccfc0bea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подсчет кол-ва слоев  <a href="class_neural_network.html#a741eef5530cbbf605423a73ccfc0bea4">Подробнее...</a><br /></td></tr>
 <tr class="separator:a741eef5530cbbf605423a73ccfc0bea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af02c7fecdc06b95e0363b701206d4cc8"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#af02c7fecdc06b95e0363b701206d4cc8">get_last_hidden_layer</a> () const</td></tr>
-<tr class="memdesc:af02c7fecdc06b95e0363b701206d4cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить последний скрытый слой для подсчета метрик классификации. Используется в ClassificationCallback  <a href="class_neural_network.html#af02c7fecdc06b95e0363b701206d4cc8">Подробнее...</a><br /></td></tr>
-<tr class="separator:af02c7fecdc06b95e0363b701206d4cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c93c9359d97a972a9f5217844232515"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a9c93c9359d97a972a9f5217844232515">add_layer</a> (<a class="el" href="class_layer.html">Layer</a> *layer)</td></tr>
 <tr class="memdesc:a9c93c9359d97a972a9f5217844232515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить слой в сетку  <a href="class_neural_network.html#a9c93c9359d97a972a9f5217844232515">Подробнее...</a><br /></td></tr>
 <tr class="separator:a9c93c9359d97a972a9f5217844232515"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,16 +125,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_output</b> (<a cl
 <tr class="memitem:af75afc0507cbb73ef2026bcdc3dff8fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#af75afc0507cbb73ef2026bcdc3dff8fd">set_default_callback</a> ()</td></tr>
 <tr class="memdesc:af75afc0507cbb73ef2026bcdc3dff8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить дефолтный вывод.  <a href="class_neural_network.html#af75afc0507cbb73ef2026bcdc3dff8fd">Подробнее...</a><br /></td></tr>
 <tr class="separator:af75afc0507cbb73ef2026bcdc3dff8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fc1b272357d05d428ff56dd3d9baaff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a1fc1b272357d05d428ff56dd3d9baaff">init</a> (const Scalar &amp;mu=Scalar(0), const Scalar &amp;sigma=Scalar(0.01), int seed=-1)</td></tr>
-<tr class="memdesc:a1fc1b272357d05d428ff56dd3d9baaff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация слоев сетки. Первая генерация весов сетки</p><ul>
+<tr class="memitem:a1e68943eca881f87416c1663b57aed53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a1e68943eca881f87416c1663b57aed53">init</a> (int seed=-1, const std::vector&lt; std::vector&lt; Scalar &gt;&gt; &amp;params=std::vector&lt; std::vector&lt; Scalar &gt;&gt;())</td></tr>
+<tr class="memdesc:a1e68943eca881f87416c1663b57aed53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация слоев сетки. Первая генерация весов сетки</p><ul>
 <li>значения из нормального распределения. </li>
 </ul>
- <a href="class_neural_network.html#a1fc1b272357d05d428ff56dd3d9baaff">Подробнее...</a><br /></td></tr>
-<tr class="separator:a1fc1b272357d05d428ff56dd3d9baaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2610807f00844077ab61934577b7b52"><td class="memTemplParams" colspan="2">template&lt;typename DerivedX , typename DerivedY &gt; </td></tr>
-<tr class="memitem:aa2610807f00844077ab61934577b7b52"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_neural_network.html#aa2610807f00844077ab61934577b7b52">fit</a> (<a class="el" href="class_optimizer.html">Optimizer</a> &amp;opt, const Eigen::MatrixBase&lt; DerivedX &gt; &amp;x, const Eigen::MatrixBase&lt; DerivedY &gt; &amp;y, int batch_size, int epoch, int seed=-1)</td></tr>
-<tr class="memdesc:aa2610807f00844077ab61934577b7b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начать обучение сетки  <a href="class_neural_network.html#aa2610807f00844077ab61934577b7b52">Подробнее...</a><br /></td></tr>
-<tr class="separator:aa2610807f00844077ab61934577b7b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ <a href="class_neural_network.html#a1e68943eca881f87416c1663b57aed53">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1e68943eca881f87416c1663b57aed53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73df19ff71997aacd5bb8dc1b24b6790"><td class="memItemLeft" align="right" valign="top"><a id="a73df19ff71997aacd5bb8dc1b24b6790"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a73df19ff71997aacd5bb8dc1b24b6790">train</a> ()</td></tr>
+<tr class="memdesc:a73df19ff71997aacd5bb8dc1b24b6790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить рабочий процесс - тренировка <br /></td></tr>
+<tr class="separator:a73df19ff71997aacd5bb8dc1b24b6790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab6985271adb94b77445e1624006f2e1"><td class="memItemLeft" align="right" valign="top"><a id="aab6985271adb94b77445e1624006f2e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#aab6985271adb94b77445e1624006f2e1">eval</a> ()</td></tr>
+<tr class="memdesc:aab6985271adb94b77445e1624006f2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить рабочий процесс - тестирование <br /></td></tr>
+<tr class="separator:aab6985271adb94b77445e1624006f2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75e3f407ca266b378b21a4a8a19fe65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#aa75e3f407ca266b378b21a4a8a19fe65">fit</a> (<a class="el" href="class_optimizer.html">Optimizer</a> &amp;opt, const Matrix &amp;x, const Matrix &amp;y, int batch_size, int epoch, int seed=-1)</td></tr>
+<tr class="memdesc:aa75e3f407ca266b378b21a4a8a19fe65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начать обучение сети  <a href="class_neural_network.html#aa75e3f407ca266b378b21a4a8a19fe65">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa75e3f407ca266b378b21a4a8a19fe65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9df496ee112c5db84fdda8dd2e07def5"><td class="memItemLeft" align="right" valign="top"><a id="a9df496ee112c5db84fdda8dd2e07def5"></a>
 Matrix&#160;</td><td class="memItemRight" valign="bottom"><b>predict</b> (const Matrix &amp;x)</td></tr>
 <tr class="separator:a9df496ee112c5db84fdda8dd2e07def5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,9 +154,10 @@ Matrix&#160;</td><td class="memItemRight" valign="bottom"><b>predict</b> (const 
 <tr class="memitem:a6b9ed2f41de3a9380fc90577a5a17089"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Scalar &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a6b9ed2f41de3a9380fc90577a5a17089">get_derivatives</a> () const</td></tr>
 <tr class="memdesc:a6b9ed2f41de3a9380fc90577a5a17089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить производные всех слоев  <a href="class_neural_network.html#a6b9ed2f41de3a9380fc90577a5a17089">Подробнее...</a><br /></td></tr>
 <tr class="separator:a6b9ed2f41de3a9380fc90577a5a17089"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebf5e70cf5ed0729bcb87f4af72ea6f8"><td class="memItemLeft" align="right" valign="top"><a id="aebf5e70cf5ed0729bcb87f4af72ea6f8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>export_net</b> (std::string folder, std::string filename) const</td></tr>
-<tr class="separator:aebf5e70cf5ed0729bcb87f4af72ea6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf367188e3703049aec2687b3987a465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#adf367188e3703049aec2687b3987a465">export_net</a> (const std::string &amp;folder, const std::string &amp;filename) const</td></tr>
+<tr class="separator:adf367188e3703049aec2687b3987a465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8999f0e3a520af6b1822a2f2744f1e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#af8999f0e3a520af6b1822a2f2744f1e6">read_net</a> (const std::string &amp;folder, const std::string &amp;filename)</td></tr>
+<tr class="separator:af8999f0e3a520af6b1822a2f2744f1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Друзья</h2></td></tr>
@@ -137,7 +166,10 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 <tr class="separator:ae90d363c1f302b0cba3149e2c4cb7a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Этот модуль описывает интерфейс нейронной сети, которая будет использоваться пользователем </p>
+<div class="textblock"><p>Класс нейросети </p>
+<dl class="section author"><dt>Автор</dt><dd><b><a href="https://github.com/shuffle-true">shuffle-true</a></b> </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>0.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>Март 2022 года </dd></dl>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="accce4a7728e89a009a9d4ca1758c9b9d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accce4a7728e89a009a9d4ca1758c9b9d">&#9670;&nbsp;</a></span>NeuralNetwork() <span class="overload">[1/2]</span></h2>
@@ -281,13 +313,54 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 
 </div>
 </div>
-<a id="aa2610807f00844077ab61934577b7b52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2610807f00844077ab61934577b7b52">&#9670;&nbsp;</a></span>fit()</h2>
+<a id="adf367188e3703049aec2687b3987a465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf367188e3703049aec2687b3987a465">&#9670;&nbsp;</a></span>export_net()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename DerivedX , typename DerivedY &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NeuralNetwork::export_net </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>folder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Сохранение сети </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">folder</td><td>название папки </td></tr>
+    <tr><td class="paramname">filename</td><td>название файла модели. В одной папке может быть несколько моделей. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa75e3f407ca266b378b21a4a8a19fe65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa75e3f407ca266b378b21a4a8a19fe65">&#9670;&nbsp;</a></span>fit()</h2>
+
+<div class="memitem">
+<div class="memproto">
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -301,13 +374,13 @@ template&lt;typename DerivedX , typename DerivedY &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::MatrixBase&lt; DerivedX &gt; &amp;&#160;</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::MatrixBase&lt; DerivedY &gt; &amp;&#160;</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
@@ -341,26 +414,19 @@ template&lt;typename DerivedX , typename DerivedY &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Начать обучение сетки </p>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">DerivedX</td><td></td></tr>
-    <tr><td class="paramname">DerivedY</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Начать обучение сети </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opt</td><td>- оптимизатор</td></tr>
-    <tr><td class="paramname">x</td><td>- вектор для обучения</td></tr>
-    <tr><td class="paramname">y</td><td>- таргет</td></tr>
+    <tr><td class="paramname">opt</td><td>- оптимизатор: объект класса <a class="el" href="class_optimizer.html" title="Родительский класс оптимизаторов">Optimizer</a></td></tr>
+    <tr><td class="paramname">x</td><td>- данные для обучения</td></tr>
+    <tr><td class="paramname">y</td><td>- метки, таргет, лейблы и т.д.</td></tr>
     <tr><td class="paramname">batch_size</td><td>- размер батча</td></tr>
     <tr><td class="paramname">epoch</td><td>- кол-во эпох при обучении сетки</td></tr>
-    <tr><td class="paramname">seed</td><td>- сид для генерации случайных чисел</td></tr>
+    <tr><td class="paramname">seed</td><td>- сид для ГСЧ</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd>True если все прошло хорошо</dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>True</dd></dl>
 
 </div>
 </div>
@@ -388,34 +454,6 @@ template&lt;typename DerivedX , typename DerivedY &gt; </div>
 </div><div class="memdoc">
 
 <p>Получить производные всех слоев </p>
-<dl class="section return"><dt>Возвращает</dt><dd></dd></dl>
-
-</div>
-</div>
-<a id="af02c7fecdc06b95e0363b701206d4cc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af02c7fecdc06b95e0363b701206d4cc8">&#9670;&nbsp;</a></span>get_last_hidden_layer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Matrix NeuralNetwork::get_last_hidden_layer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Получить последний скрытый слой для подсчета метрик классификации. Используется в ClassificationCallback </p>
 <dl class="section return"><dt>Возвращает</dt><dd></dd></dl>
 
 </div>
@@ -476,8 +514,8 @@ template&lt;typename DerivedX , typename DerivedY &gt; </div>
 
 </div>
 </div>
-<a id="a1fc1b272357d05d428ff56dd3d9baaff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fc1b272357d05d428ff56dd3d9baaff">&#9670;&nbsp;</a></span>init()</h2>
+<a id="a1e68943eca881f87416c1663b57aed53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e68943eca881f87416c1663b57aed53">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,20 +526,14 @@ template&lt;typename DerivedX , typename DerivedY &gt; </div>
         <tr>
           <td class="memname">void NeuralNetwork::init </td>
           <td>(</td>
-          <td class="paramtype">const Scalar &amp;&#160;</td>
-          <td class="paramname"><em>mu</em> = <code>Scalar(0)</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Scalar &amp;&#160;</td>
-          <td class="paramname"><em>sigma</em> = <code>Scalar(0.01)</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>seed</em> = <code>-1</code>&#160;</td>
+          <td class="paramname"><em>seed</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; Scalar &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>params</em> = <code>std::vector&lt;std::vector&lt;Scalar&gt;&gt;()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -525,6 +557,49 @@ template&lt;typename DerivedX , typename DerivedY &gt; </div>
     <tr><td class="paramname">mu</td><td>- мат. ожидание нормального распределения.</td></tr>
     <tr><td class="paramname">sigma</td><td>- дисперсия нормального распределения.</td></tr>
     <tr><td class="paramname">seed</td><td>- сид для рандома.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af8999f0e3a520af6b1822a2f2744f1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8999f0e3a520af6b1822a2f2744f1e6">&#9670;&nbsp;</a></span>read_net()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NeuralNetwork::read_net </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>folder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Чтение и загрузка сети. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">folder</td><td>папка с моделью </td></tr>
+    <tr><td class="paramname">filename</td><td>название модели </td></tr>
   </table>
   </dd>
 </dl>
@@ -630,9 +705,13 @@ template&lt;typename DerivedX , typename DerivedY &gt; </div>
 <li>/home/shuffle/xsDNN/xsDNN-include/neuralnetwork/<a class="el" href="_neural_network_8h_source.html">NeuralNetwork.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_neural_network.html">NeuralNetwork</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

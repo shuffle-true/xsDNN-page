@@ -5,14 +5,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>xsDNN: Класс Output</title>
+<title>xsDNN C++: Класс Output</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="header_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -22,7 +27,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">xsDNN
+   <div id="projectname">xsDNN C++
    &#160;<span id="projectnumber">0.0.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
@@ -48,6 +53,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_output.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,7 +84,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
@@ -73,32 +94,29 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Родительский класс функционала ошибки  
+ <a href="class_output.html#details">Подробнее...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_output_8h_source.html">Output.h</a>&gt;</code></p>
 <div class="dynheader">
 Граф наследования:Output:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_output__inherit__graph.png" border="0" usemap="#a_output_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_output_inherit__map" id="a_output_inherit__map">
-<area shape="rect" title=" " alt="" coords="127,5,193,32"/>
-<area shape="rect" href="class_binary_class_entropy.html" title=" " alt="" coords="5,80,155,107"/>
-<area shape="rect" href="class_regression_m_s_e.html" title=" " alt="" coords="179,80,301,107"/>
+<area shape="rect" title="Родительский класс функционала ошибки" alt="" coords="127,5,193,32"/>
+<area shape="rect" href="class_binary_class_entropy.html" title="Класс функционала ошибки для бинарной классификации (BinaryClassEntropy)" alt="" coords="5,80,155,107"/>
+<area shape="rect" href="class_regression_m_s_e.html" title="Класс функционала ошибки для регрессии (RegressionMSE)" alt="" coords="179,80,301,107"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
 <tr class="memitem:ab3893f15f4682a8a31d0f5a5084fb033"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output.html#ab3893f15f4682a8a31d0f5a5084fb033">check_target_data</a> (const Matrix &amp;target) const</td></tr>
 <tr class="memdesc:ab3893f15f4682a8a31d0f5a5084fb033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Здесь проверяем целевую переменную на соотвествие задачи.  <a href="class_output.html#ab3893f15f4682a8a31d0f5a5084fb033">Подробнее...</a><br /></td></tr>
 <tr class="separator:ab3893f15f4682a8a31d0f5a5084fb033"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a452ab6fbb5424da5135304729eefe1f7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output.html#a452ab6fbb5424da5135304729eefe1f7">check_target_data</a> (IntegerVector &amp;target) const</td></tr>
-<tr class="memdesc:a452ab6fbb5424da5135304729eefe1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отдельный блок проверки для многоклассовой классификации. Может не подойти для регрессии поэтому сразу вызовем исключение  <a href="class_output.html#a452ab6fbb5424da5135304729eefe1f7">Подробнее...</a><br /></td></tr>
-<tr class="separator:a452ab6fbb5424da5135304729eefe1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb03ae6e65e96b20666f227a71bf6ffc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output.html#aeb03ae6e65e96b20666f227a71bf6ffc">evaluate</a> (const Matrix &amp;prev_layer_data, const Matrix &amp;target)=0</td></tr>
 <tr class="memdesc:aeb03ae6e65e96b20666f227a71bf6ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление прямого и обратного распространения для 2 слоев - перед выходным и таргетом  <a href="class_output.html#aeb03ae6e65e96b20666f227a71bf6ffc">Подробнее...</a><br /></td></tr>
 <tr class="separator:aeb03ae6e65e96b20666f227a71bf6ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae692205d42602bed17ff46db84bc82a8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output.html#ae692205d42602bed17ff46db84bc82a8">evaluate</a> (const Matrix &amp;prev_layer_data, const IntegerVector &amp;target)</td></tr>
-<tr class="memdesc:ae692205d42602bed17ff46db84bc82a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление прямого и обратного распространения для 2 слоев (Для многоклассовой классификации, !изначально выводится исключение!)  <a href="class_output.html#ae692205d42602bed17ff46db84bc82a8">Подробнее...</a><br /></td></tr>
-<tr class="separator:ae692205d42602bed17ff46db84bc82a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab324d6db9d8b84feca267f74b5f9a15d"><td class="memItemLeft" align="right" valign="top"><a id="ab324d6db9d8b84feca267f74b5f9a15d"></a>
 virtual const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>backprop_data</b> () const =0</td></tr>
 <tr class="separator:ab324d6db9d8b84feca267f74b5f9a15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,15 +132,15 @@ virtual const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="memitem:a043722417d38a5f8d3f58c10b613cb2e"><td class="memItemLeft" align="right" valign="top"><a id="a043722417d38a5f8d3f58c10b613cb2e"></a>
 typedef Eigen::Matrix&lt; Scalar, Eigen::Dynamic, Eigen::Dynamic &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Matrix</b></td></tr>
 <tr class="separator:a043722417d38a5f8d3f58c10b613cb2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad838af041a0821b478d0bbb8eadc7f1f"><td class="memItemLeft" align="right" valign="top"><a id="ad838af041a0821b478d0bbb8eadc7f1f"></a>
-typedef Eigen::RowVectorXi&#160;</td><td class="memItemRight" valign="bottom"><b>IntegerVector</b></td></tr>
-<tr class="separator:ad838af041a0821b478d0bbb8eadc7f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Интерфейс выходного слоя сетки. </p>
+<div class="textblock"><p>Родительский класс функционала ошибки </p>
+<dl class="section author"><dt>Автор</dt><dd><b><a href="https://github.com/shuffle-true">shuffle-true</a></b> </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>0.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>Март 2022 года </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
 <a id="ab3893f15f4682a8a31d0f5a5084fb033"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3893f15f4682a8a31d0f5a5084fb033">&#9670;&nbsp;</a></span>check_target_data() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3893f15f4682a8a31d0f5a5084fb033">&#9670;&nbsp;</a></span>check_target_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,94 +176,8 @@ typedef Eigen::RowVectorXi&#160;</td><td class="memItemRight" valign="bottom"><b
 
 </div>
 </div>
-<a id="a452ab6fbb5424da5135304729eefe1f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a452ab6fbb5424da5135304729eefe1f7">&#9670;&nbsp;</a></span>check_target_data() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Output::check_target_data </td>
-          <td>(</td>
-          <td class="paramtype">IntegerVector &amp;&#160;</td>
-          <td class="paramname"><em>target</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Отдельный блок проверки для многоклассовой классификации. Может не подойти для регрессии поэтому сразу вызовем исключение </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">target</td><td>- собственно таргет</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Переопределяется в <a class="el" href="class_binary_class_entropy.html#aedc88bff3dc71315bcd36233e0c25ceb">BinaryClassEntropy</a>.</p>
-
-</div>
-</div>
-<a id="ae692205d42602bed17ff46db84bc82a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae692205d42602bed17ff46db84bc82a8">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Output::evaluate </td>
-          <td>(</td>
-          <td class="paramtype">const Matrix &amp;&#160;</td>
-          <td class="paramname"><em>prev_layer_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const IntegerVector &amp;&#160;</td>
-          <td class="paramname"><em>target</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Вычисление прямого и обратного распространения для 2 слоев (Для многоклассовой классификации, !изначально выводится исключение!) </p>
-<ul>
-<li>перед выходным и таргетом</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">prev_layer_data</td><td></td></tr>
-    <tr><td class="paramname">target</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Переопределяется в <a class="el" href="class_binary_class_entropy.html#a8d49a657cbbdfee0cb117014982ecc45">BinaryClassEntropy</a>.</p>
-
-</div>
-</div>
 <a id="aeb03ae6e65e96b20666f227a71bf6ffc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb03ae6e65e96b20666f227a71bf6ffc">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb03ae6e65e96b20666f227a71bf6ffc">&#9670;&nbsp;</a></span>evaluate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,9 +287,13 @@ typedef Eigen::RowVectorXi&#160;</td><td class="memItemRight" valign="bottom"><b
 <li>/home/shuffle/xsDNN/xsDNN-include/neuralnetwork/<a class="el" href="_output_8h_source.html">Output.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_output.html">Output</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

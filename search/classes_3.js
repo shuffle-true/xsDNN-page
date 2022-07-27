@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fullyconnected_88',['FullyConnected',['../class_fully_connected.html',1,'']]]
+  ['exponential_111',['Exponential',['../classinit_1_1_exponential.html',1,'init']]]
 ];

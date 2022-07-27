@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['Введение_75',['Введение',['../intro.html',1,'index']]]
+  ['_7eneuralnetwork_96',['~NeuralNetwork',['../class_neural_network.html#a65475a7d7b05d302392333302626b2f8',1,'NeuralNetwork']]]
 ];
