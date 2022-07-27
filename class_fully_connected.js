@@ -13,8 +13,9 @@ var class_fully_connected =
     [ "init", "class_fully_connected.html#ae78ef8592318e8fc7ea8ef6227319192", null ],
     [ "init", "class_fully_connected.html#aba1a1a561f7e09dd6b2bfc77dda3fd88", null ],
     [ "layer_type", "class_fully_connected.html#a21a2fd0e1bfc0e45b35dfe40c4671417", null ],
-    [ "output", "class_fully_connected.html#a2c1b77310bd00ea5f107fe6bedd648d0", null ],
+    [ "output", "class_fully_connected.html#a29294dd076ec9e34cb4e26eed44ba109", null ],
     [ "set_parametrs", "class_fully_connected.html#a21dfd80fcb5b2c054f5c4c34598fb679", null ],
     [ "train", "class_fully_connected.html#ad6163e94dccc3fd35b1afb7a92c4925f", null ],
-    [ "update", "class_fully_connected.html#a5edfef61d185a3a7a2297b87f312fe61", null ]
+    [ "update", "class_fully_connected.html#a5edfef61d185a3a7a2297b87f312fe61", null ],
+    [ "operator<<", "class_fully_connected.html#a00b2195f62fdbf2546b7eb25f4614045", null ]
 ];

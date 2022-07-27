@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exponential_75',['Exponential',['../classinit_1_1_exponential.html',1,'init']]]
+  ['dropout_79',['Dropout',['../class_dropout.html',1,'']]]
 ];

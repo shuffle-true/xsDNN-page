@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>xsDNN C++: Класс Dropout</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="header_style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xsDNN C++
+   &#160;<span id="projectnumber">0.0.0</span>
+   </div>
+   <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_dropout.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="class_dropout-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Dropout</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Граф наследования:Dropout:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dropout__inherit__graph.png" border="0" usemap="#a_dropout_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_dropout_inherit__map" id="a_dropout_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,80,107"/>
+<area shape="rect" title=" " alt="" coords="13,5,72,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса Dropout:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dropout__coll__graph.png" border="0" usemap="#a_dropout_coll__map" alt="Collaboration graph"/></div>
+<map name="a_dropout_coll__map" id="a_dropout_coll__map">
+<area shape="rect" title=" " alt="" coords="5,80,80,107"/>
+<area shape="rect" title=" " alt="" coords="13,5,72,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ac3c604247c79782e96ed226115e2f89a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#ac3c604247c79782e96ed226115e2f89a">Dropout</a> (const int &amp;in_size, const Scalar &amp;dropout_rate)</td></tr>
+<tr class="separator:ac3c604247c79782e96ed226115e2f89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1fb18e576c975ce37d98339c40a5cea"><td class="memItemLeft" align="right" valign="top"><a id="ab1fb18e576c975ce37d98339c40a5cea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (const std::vector&lt; Scalar &gt; &amp;params, RNG &amp;rng_) override</td></tr>
+<tr class="separator:ab1fb18e576c975ce37d98339c40a5cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f6ccb6955226d5e1b5ef7bf189a9a5c"><td class="memItemLeft" align="right" valign="top"><a id="a7f6ccb6955226d5e1b5ef7bf189a9a5c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> () override</td></tr>
+<tr class="separator:a7f6ccb6955226d5e1b5ef7bf189a9a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72619b8c44f692d042d1138710701066"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a72619b8c44f692d042d1138710701066">forward</a> (const Matrix &amp;prev_layer_data) override</td></tr>
+<tr class="separator:a72619b8c44f692d042d1138710701066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11aebad6668ad92dfcef9da233d6aed8"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a11aebad6668ad92dfcef9da233d6aed8">output</a> () const override</td></tr>
+<tr class="separator:a11aebad6668ad92dfcef9da233d6aed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abacaaad48e579493b953dba0fb1f6c2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#abacaaad48e579493b953dba0fb1f6c2e">backprop</a> (const Matrix &amp;prev_layer_data, const Matrix &amp;next_layer_data) override</td></tr>
+<tr class="separator:abacaaad48e579493b953dba0fb1f6c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077a42da0941f5640862c141a88af90c"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a077a42da0941f5640862c141a88af90c">backprop_data</a> () const override</td></tr>
+<tr class="separator:a077a42da0941f5640862c141a88af90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afdaa20a319db229f7fd10324a8919f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a0afdaa20a319db229f7fd10324a8919f">update</a> (Optimizer &amp;opt) override</td></tr>
+<tr class="separator:a0afdaa20a319db229f7fd10324a8919f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f43a878799da47732ca15881db75fd7"><td class="memItemLeft" align="right" valign="top"><a id="a8f43a878799da47732ca15881db75fd7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>train</b> () override</td></tr>
+<tr class="separator:a8f43a878799da47732ca15881db75fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd54aa9ce7f5d19c564f5604ff6b10fc"><td class="memItemLeft" align="right" valign="top"><a id="afd54aa9ce7f5d19c564f5604ff6b10fc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>eval</b> () override</td></tr>
+<tr class="separator:afd54aa9ce7f5d19c564f5604ff6b10fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbdd40f65ba5a6df4f9ac5d2ecfec0b"><td class="memItemLeft" align="right" valign="top"><a id="a6fbdd40f65ba5a6df4f9ac5d2ecfec0b"></a>
+std::vector&lt; Scalar &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_parametrs</b> () const override</td></tr>
+<tr class="separator:a6fbdd40f65ba5a6df4f9ac5d2ecfec0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979bb56fa7ba9403f1b491e826e60e90"><td class="memItemLeft" align="right" valign="top"><a id="a979bb56fa7ba9403f1b491e826e60e90"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_parametrs</b> (const std::vector&lt; Scalar &gt; &amp;param) override</td></tr>
+<tr class="separator:a979bb56fa7ba9403f1b491e826e60e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f29e97ecbcf31c3414843d8600cd3d5"><td class="memItemLeft" align="right" valign="top"><a id="a0f29e97ecbcf31c3414843d8600cd3d5"></a>
+std::vector&lt; Scalar &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_derivatives</b> () const override</td></tr>
+<tr class="separator:a0f29e97ecbcf31c3414843d8600cd3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5950ecdc86bc600cde28eb8d53a0041"><td class="memItemLeft" align="right" valign="top"><a id="ac5950ecdc86bc600cde28eb8d53a0041"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>layer_type</b> () const override</td></tr>
+<tr class="separator:ac5950ecdc86bc600cde28eb8d53a0041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d0608fbf00cbf58f524798534cd458"><td class="memItemLeft" align="right" valign="top"><a id="a66d0608fbf00cbf58f524798534cd458"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>activation_type</b> () const override</td></tr>
+<tr class="separator:a66d0608fbf00cbf58f524798534cd458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c6adc3a52add068d8c3cd0d52449da"><td class="memItemLeft" align="right" valign="top"><a id="a89c6adc3a52add068d8c3cd0d52449da"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>distribution_type</b> () const override</td></tr>
+<tr class="separator:a89c6adc3a52add068d8c3cd0d52449da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a736b6c1b13b8603c8902bce49d0d6c60"><td class="memItemLeft" align="right" valign="top"><a id="a736b6c1b13b8603c8902bce49d0d6c60"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fill_meta_info</b> (Meta &amp;map, int index) const override</td></tr>
+<tr class="separator:a736b6c1b13b8603c8902bce49d0d6c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a3dc8fffe7430fa9cdfbdc904f8a53fd3"><td class="memItemLeft" align="right" valign="top"><a id="a3dc8fffe7430fa9cdfbdc904f8a53fd3"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, <a class="el" href="class_dropout.html">Dropout</a> &amp;obj)</td></tr>
+<tr class="separator:a3dc8fffe7430fa9cdfbdc904f8a53fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ac3c604247c79782e96ed226115e2f89a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3c604247c79782e96ed226115e2f89a">&#9670;&nbsp;</a></span>Dropout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dropout::Dropout </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>in_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Scalar &amp;&#160;</td>
+          <td class="paramname"><em>dropout_rate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Конструктор <a class="el" href="class_dropout.html">Dropout</a> слоя </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_size</td><td>кол-во нейронов на вход - выход </td></tr>
+    <tr><td class="paramname">dropout_rate</td><td>вероятность <b>отключения</b> нейрона </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="abacaaad48e579493b953dba0fb1f6c2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abacaaad48e579493b953dba0fb1f6c2e">&#9670;&nbsp;</a></span>backprop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dropout::backprop </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>prev_layer_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>next_layer_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Обратный проход по слою</p>
+<div class="image">
+<img src="dropout_back_derivative.png" alt=""/>
+</div>
+<p>Положение предыдущего - следующего слоя равносильно прямому проходу </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prev_layer_data</td><td>выходы нейронов предыдущего слоя </td></tr>
+    <tr><td class="paramname">next_layer_data</td><td>вектор градиента следующего слоя </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a077a42da0941f5640862c141a88af90c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077a42da0941f5640862c141a88af90c">&#9670;&nbsp;</a></span>backprop_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Matrix&amp; Dropout::backprop_data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор направления спуска (антиградиент) </dd></dl>
+
+</div>
+</div>
+<a id="a72619b8c44f692d042d1138710701066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72619b8c44f692d042d1138710701066">&#9670;&nbsp;</a></span>forward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dropout::forward </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>prev_layer_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Проход вперед по слою</p>
+<ol type="1">
+<li>Значения нейронов предыдущего слоя поэлементно домножаются на маску распределения Бернулли</li>
+<li>Получшиеся значения нормируются с коэффицентом || 1 / (1 - p) || <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prev_layer_data</td><td>значения нейронов предыдущего слоя </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ol>
+
+</div>
+</div>
+<a id="a11aebad6668ad92dfcef9da233d6aed8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11aebad6668ad92dfcef9da233d6aed8">&#9670;&nbsp;</a></span>output()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Matrix&amp; Dropout::output </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>значения нейронов после прямого прохода </dd></dl>
+
+</div>
+</div>
+<a id="a0afdaa20a319db229f7fd10324a8919f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afdaa20a319db229f7fd10324a8919f">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dropout::update </td>
+          <td>(</td>
+          <td class="paramtype">Optimizer &amp;&#160;</td>
+          <td class="paramname"><em>opt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>В этом слое не участвуют алгоритмы оптимизации </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opt</td><td>объект класса Optimizer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>/home/shuffle/xsDNN/xsDNN-include/neuralnetwork/Layer/<a class="el" href="_dropout_8h_source.html">Dropout.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_dropout.html">Dropout</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

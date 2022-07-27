@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['identity_77',['Identity',['../classactivate_1_1_identity.html',1,'activate']]]
+  ['fullyconnected_81',['FullyConnected',['../class_fully_connected.html',1,'']]]
 ];

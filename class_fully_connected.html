@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('class_fully_connected.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#friends">Друзья</a> &#124;
 <a href="class_fully_connected-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Шаблон класса FullyConnected&lt; Activation, Distribution &gt;</div>  </div>
@@ -123,8 +124,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> () override<
 <tr class="separator:ae78ef8592318e8fc7ea8ef6227319192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44dd0014fb832068c62567c71f9a588d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#a44dd0014fb832068c62567c71f9a588d">forward</a> (const Matrix &amp;prev_layer_data) override</td></tr>
 <tr class="separator:a44dd0014fb832068c62567c71f9a588d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c1b77310bd00ea5f107fe6bedd648d0"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#a2c1b77310bd00ea5f107fe6bedd648d0">output</a> () override</td></tr>
-<tr class="separator:a2c1b77310bd00ea5f107fe6bedd648d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29294dd076ec9e34cb4e26eed44ba109"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#a29294dd076ec9e34cb4e26eed44ba109">output</a> () const override</td></tr>
+<tr class="separator:a29294dd076ec9e34cb4e26eed44ba109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc92fc51eb2dd0d64c5fb5bf2021e4c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#abc92fc51eb2dd0d64c5fb5bf2021e4c1">backprop</a> (const Matrix &amp;prev_layer_data, const Matrix &amp;next_layer_data) override</td></tr>
 <tr class="separator:abc92fc51eb2dd0d64c5fb5bf2021e4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a874de85bb5b8377ffe24590a25f9f27c"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#a874de85bb5b8377ffe24590a25f9f27c">backprop_data</a> () const override</td></tr>
@@ -152,6 +153,12 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>distribution_t
 <tr class="separator:a9d04183e6ab8f561858166016bd051f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af87897142a76a9d9bc1cfc4c92633420"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#af87897142a76a9d9bc1cfc4c92633420">fill_meta_info</a> (Meta &amp;map, int index) const override</td></tr>
 <tr class="separator:af87897142a76a9d9bc1cfc4c92633420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a00b2195f62fdbf2546b7eb25f4614045"><td class="memItemLeft" align="right" valign="top"><a id="a00b2195f62fdbf2546b7eb25f4614045"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, <a class="el" href="class_fully_connected.html">FullyConnected</a> &amp;obj)</td></tr>
+<tr class="separator:a00b2195f62fdbf2546b7eb25f4614045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a4b3e4a7379e0372f87203a3b5df12d87"></a>
@@ -191,7 +198,7 @@ template&lt;typename Activation , typename Distribution &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -273,10 +280,10 @@ template&lt;typename Activation , typename Distribution &gt; </div>
 <p>Получаем производные этого слоя. Нужно получить производные по 3 вещам.</p><ol type="1">
 <li>Производные весов - считаем Якобиан и умножаем на предыдущий слой</li>
 <li>Производные смещения - среднее по строкам производных весов</li>
-<li>Производные текущих значений нейронов - текущий вес на Якобиан. Предыдущий / следующий слой считается слева направо. <dl class="params"><dt>Аргументы</dt><dd>
+<li>Производные текущих значений нейронов - текущий вес на Якобиан. Положение предыдущего - следующего слоя равносильно прямому проходу <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
     <tr><td class="paramname">prev_layer_data</td><td>значения нейронов предыдущего слоя </td></tr>
-    <tr><td class="paramname">next_layer_data</td><td>значения нейронов следующего слоя </td></tr>
+    <tr><td class="paramname">next_layer_data</td><td>вектор градиента следующего слоя (слева - направо) </td></tr>
   </table>
   </dd>
 </dl>
@@ -476,8 +483,8 @@ template&lt;typename Activation , typename Distribution &gt; </div>
 
 </div>
 </div>
-<a id="a2c1b77310bd00ea5f107fe6bedd648d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c1b77310bd00ea5f107fe6bedd648d0">&#9670;&nbsp;</a></span>output()</h2>
+<a id="a29294dd076ec9e34cb4e26eed44ba109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29294dd076ec9e34cb4e26eed44ba109">&#9670;&nbsp;</a></span>output()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -491,7 +498,7 @@ template&lt;typename Activation , typename Distribution &gt; </div>
           <td class="memname">const Matrix&amp; <a class="el" href="class_fully_connected.html">FullyConnected</a>&lt; Activation, Distribution &gt;::output </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>

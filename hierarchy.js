@@ -1,11 +1,13 @@
 var hierarchy =
 [
+    [ "internal::bernoulli", "classinternal_1_1bernoulli.html", null ],
     [ "Callback", null, [
       [ "VerboseCallback", "class_verbose_callback.html", null ]
     ] ],
     [ "init::Exponential", "classinit_1_1_exponential.html", null ],
     [ "activate::Identity", "classactivate_1_1_identity.html", null ],
     [ "Layer", null, [
+      [ "Dropout", "class_dropout.html", null ],
       [ "FullyConnected< Activation, Distribution >", "class_fully_connected.html", null ]
     ] ],
     [ "init::Normal", "classinit_1_1_normal.html", null ],
