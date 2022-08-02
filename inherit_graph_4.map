@@ -1,4 +1,3 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" href="$class_callback.html" title="Родительский класс вывода информации на экран" alt="" coords="5,5,84,32"/>
-<area shape="rect" id="node2" href="$class_verbose_callback.html" title="Класс отображения информации при обучении (VerboseCallback)" alt="" coords="132,5,263,32"/>
+<area shape="rect" id="node1" href="$classinit_1_1_exponential.html" title="Класс генерации экспоненциального (Exponential) распределения" alt="" coords="5,5,133,32"/>
 </map>

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['update_183',['update',['../class_dropout.html#a0afdaa20a319db229f7fd10324a8919f',1,'Dropout::update()'],['../class_fully_connected.html#a5edfef61d185a3a7a2297b87f312fe61',1,'FullyConnected::update()'],['../class_s_g_d.html#a53613e375797f28878cf77ece7f85618',1,'SGD::update()'],['../class_layer.html#a305f7f9f92b9d60e6dca10accb7f062f',1,'Layer::update()'],['../class_optimizer.html#a9fa89b4d7564c785e7362b048babc21b',1,'Optimizer::update()']]]
+  ['write_5fmap_182',['write_map',['../namespaceinternal.html#af85d8e89869ef65d35459eb528791af1',1,'internal']]],
+  ['write_5fone_5fvector_183',['write_one_vector',['../namespaceinternal.html#ad3ce06b33fd4f205474a7c055b590737',1,'internal']]],
+  ['write_5fvector_184',['write_vector',['../namespaceinternal.html#aba1a0c067292e01ba5d405c7d843edf1',1,'internal']]]
 ];

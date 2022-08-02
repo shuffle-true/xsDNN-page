@@ -1,0 +1,678 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>xsDNN C++: Шаблон класса BatchNorm1D&lt; Activate, Distribution &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="header_style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xsDNN C++
+   &#160;<span id="projectnumber">0.0.0</span>
+   </div>
+   <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_batch_norm1_d.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_batch_norm1_d-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Шаблон класса BatchNorm1D&lt; Activate, Distribution &gt;</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Граф наследования:BatchNorm1D&lt; Activate, Distribution &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_batch_norm1_d__inherit__graph.png" border="0" usemap="#a_batch_norm1_d_3_01_activate_00_01_distribution_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_batch_norm1_d_3_01_activate_00_01_distribution_01_4_inherit__map" id="a_batch_norm1_d_3_01_activate_00_01_distribution_01_4_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,192,121"/>
+<area shape="rect" href="class_layer.html" title="Родительский класс слоя" alt="" coords="69,5,128,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса BatchNorm1D&lt; Activate, Distribution &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_batch_norm1_d__coll__graph.png" border="0" usemap="#a_batch_norm1_d_3_01_activate_00_01_distribution_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="a_batch_norm1_d_3_01_activate_00_01_distribution_01_4_coll__map" id="a_batch_norm1_d_3_01_activate_00_01_distribution_01_4_coll__map">
+<area shape="rect" title=" " alt="" coords="5,80,192,121"/>
+<area shape="rect" href="class_layer.html" title="Родительский класс слоя" alt="" coords="69,5,128,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ade64f58c379d16d135a3f917cc444f6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#ade64f58c379d16d135a3f917cc444f6d">BatchNorm1D</a> (const int &amp;<a class="el" href="class_layer.html#af2aa113e9b7938188d8da55b6950d0e5">in_size</a>, const Scalar &amp;tolerance=Scalar(0.0001), const Scalar &amp;momentum=Scalar(0.35))</td></tr>
+<tr class="separator:ade64f58c379d16d135a3f917cc444f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a2ceb016aad4383fd6592eed200679"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#ae8a2ceb016aad4383fd6592eed200679">init</a> (const std::vector&lt; Scalar &gt; &amp;params, <a class="el" href="class_r_n_g.html">RNG</a> &amp;rng) override</td></tr>
+<tr class="separator:ae8a2ceb016aad4383fd6592eed200679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1915ed63040a37c502a3da977b6128cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a1915ed63040a37c502a3da977b6128cb">init</a> () override</td></tr>
+<tr class="memdesc:a1915ed63040a37c502a3da977b6128cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация слоя без входных параметров, будет использоваться при чтении сетки из файла  <a href="class_batch_norm1_d.html#a1915ed63040a37c502a3da977b6128cb">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1915ed63040a37c502a3da977b6128cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1eeb84ae6ce403066ba09abec504b2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#ad1eeb84ae6ce403066ba09abec504b2c">forward</a> (const Matrix &amp;prev_layer_data) override</td></tr>
+<tr class="memdesc:ad1eeb84ae6ce403066ba09abec504b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод прохода вперед по сетке.  <a href="class_batch_norm1_d.html#ad1eeb84ae6ce403066ba09abec504b2c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad1eeb84ae6ce403066ba09abec504b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a093c0b5d947be7eda84feff2bc892aee"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a093c0b5d947be7eda84feff2bc892aee">output</a> () const override</td></tr>
+<tr class="memdesc:a093c0b5d947be7eda84feff2bc892aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">None  <a href="class_batch_norm1_d.html#a093c0b5d947be7eda84feff2bc892aee">Подробнее...</a><br /></td></tr>
+<tr class="separator:a093c0b5d947be7eda84feff2bc892aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6502d05e6e4444ff4f1e82a0b84e35c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#ad6502d05e6e4444ff4f1e82a0b84e35c">backprop</a> (const Matrix &amp;prev_layer_data, const Matrix &amp;next_layer_data) override</td></tr>
+<tr class="memdesc:ad6502d05e6e4444ff4f1e82a0b84e35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация метода обратного распространения ошибки.  <a href="class_batch_norm1_d.html#ad6502d05e6e4444ff4f1e82a0b84e35c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad6502d05e6e4444ff4f1e82a0b84e35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e1e48dcb5a7a75b7c54dbeac876897f"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a8e1e48dcb5a7a75b7c54dbeac876897f">backprop_data</a> () const override</td></tr>
+<tr class="memdesc:a8e1e48dcb5a7a75b7c54dbeac876897f"><td class="mdescLeft">&#160;</td><td class="mdescRight">None  <a href="class_batch_norm1_d.html#a8e1e48dcb5a7a75b7c54dbeac876897f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8e1e48dcb5a7a75b7c54dbeac876897f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c5607bac656c891f8d007c021062e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a23c5607bac656c891f8d007c021062e2">update</a> (<a class="el" href="class_optimizer.html">Optimizer</a> &amp;opt) override</td></tr>
+<tr class="memdesc:a23c5607bac656c891f8d007c021062e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновление параметров сетки после обратного распространения  <a href="class_batch_norm1_d.html#a23c5607bac656c891f8d007c021062e2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a23c5607bac656c891f8d007c021062e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bad2c2a2dca54e6a507078c5c760577"><td class="memItemLeft" align="right" valign="top"><a id="a1bad2c2a2dca54e6a507078c5c760577"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a1bad2c2a2dca54e6a507078c5c760577">train</a> () override</td></tr>
+<tr class="memdesc:a1bad2c2a2dca54e6a507078c5c760577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить рабочий процесс - тренировка <br /></td></tr>
+<tr class="separator:a1bad2c2a2dca54e6a507078c5c760577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381334e82398f32fe2e810550dadc5e1"><td class="memItemLeft" align="right" valign="top"><a id="a381334e82398f32fe2e810550dadc5e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a381334e82398f32fe2e810550dadc5e1">eval</a> () override</td></tr>
+<tr class="memdesc:a381334e82398f32fe2e810550dadc5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить рабочий процесс - тестирование <br /></td></tr>
+<tr class="separator:a381334e82398f32fe2e810550dadc5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfc419f10d95a7939212877c49980465"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Scalar &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#abfc419f10d95a7939212877c49980465">get_parametrs</a> () const override</td></tr>
+<tr class="separator:abfc419f10d95a7939212877c49980465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab831d9d8f05f9324db980ba8c53e17b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#ab831d9d8f05f9324db980ba8c53e17b7">set_parametrs</a> (const std::vector&lt; Scalar &gt; &amp;param) override</td></tr>
+<tr class="separator:ab831d9d8f05f9324db980ba8c53e17b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8794f5b8b127987d254198c370a76b5c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Scalar &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a8794f5b8b127987d254198c370a76b5c">get_derivatives</a> () const override</td></tr>
+<tr class="separator:a8794f5b8b127987d254198c370a76b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618f6b50e44bb0840cb43a3f5c77475c"><td class="memItemLeft" align="right" valign="top"><a id="a618f6b50e44bb0840cb43a3f5c77475c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>layer_type</b> () const override</td></tr>
+<tr class="separator:a618f6b50e44bb0840cb43a3f5c77475c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949505566ab757a2659173a8f7eb1149"><td class="memItemLeft" align="right" valign="top"><a id="a949505566ab757a2659173a8f7eb1149"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>activation_type</b> () const override</td></tr>
+<tr class="separator:a949505566ab757a2659173a8f7eb1149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb7316e4b528bde6c6c68efb269d2a6c"><td class="memItemLeft" align="right" valign="top"><a id="acb7316e4b528bde6c6c68efb269d2a6c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>distribution_type</b> () const override</td></tr>
+<tr class="separator:acb7316e4b528bde6c6c68efb269d2a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5229c120cd10b4020b8c14f14c2a216"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#ae5229c120cd10b4020b8c14f14c2a216">fill_meta_info</a> (Meta &amp;map, int index) const override</td></tr>
+<tr class="memdesc:ae5229c120cd10b4020b8c14f14c2a216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод нужен для заполнения основной информации о слое - тип слоя, входные и выходные значения кол-ва нейронов и т.д. Нужен для импорта сетки в файл  <a href="class_batch_norm1_d.html#ae5229c120cd10b4020b8c14f14c2a216">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae5229c120cd10b4020b8c14f14c2a216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_layer')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_layer.html">Layer</a></td></tr>
+<tr class="memitem:ad5fbb4a1e913bf70813390ca9685db0d inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top"><a id="ad5fbb4a1e913bf70813390ca9685db0d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Layer</b> (const int <a class="el" href="class_layer.html#af2aa113e9b7938188d8da55b6950d0e5">in_size</a>, const int <a class="el" href="class_layer.html#a10515e993c8de900ad32fa1884b5915f">out_size</a>, std::string init_workflow)</td></tr>
+<tr class="separator:ad5fbb4a1e913bf70813390ca9685db0d inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2aa113e9b7938188d8da55b6950d0e5 inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#af2aa113e9b7938188d8da55b6950d0e5">in_size</a> () const</td></tr>
+<tr class="memdesc:af2aa113e9b7938188d8da55b6950d0e5 inherit pub_methods_class_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">None  <a href="class_layer.html#af2aa113e9b7938188d8da55b6950d0e5">Подробнее...</a><br /></td></tr>
+<tr class="separator:af2aa113e9b7938188d8da55b6950d0e5 inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10515e993c8de900ad32fa1884b5915f inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a10515e993c8de900ad32fa1884b5915f">out_size</a> () const</td></tr>
+<tr class="memdesc:a10515e993c8de900ad32fa1884b5915f inherit pub_methods_class_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">None  <a href="class_layer.html#a10515e993c8de900ad32fa1884b5915f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a10515e993c8de900ad32fa1884b5915f inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af54895d12ba7cd85cb314e08965ece9c inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top"><a id="af54895d12ba7cd85cb314e08965ece9c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#af54895d12ba7cd85cb314e08965ece9c">get_workflow</a> () const</td></tr>
+<tr class="memdesc:af54895d12ba7cd85cb314e08965ece9c inherit pub_methods_class_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить текущий процесс <br /></td></tr>
+<tr class="separator:af54895d12ba7cd85cb314e08965ece9c inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_types_class_layer"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_layer')"><img src="closed.png" alt="-"/>&#160;Защищенные типы унаследованные от <a class="el" href="class_layer.html">Layer</a></td></tr>
+<tr class="memitem:a6fa9c3dfcbefa5dd778fa5a8cafb651d inherit pro_types_class_layer"><td class="memItemLeft" align="right" valign="top"><a id="a6fa9c3dfcbefa5dd778fa5a8cafb651d"></a>
+typedef std::map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Meta</b></td></tr>
+<tr class="separator:a6fa9c3dfcbefa5dd778fa5a8cafb651d inherit pro_types_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_layer"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_layer')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="class_layer.html">Layer</a></td></tr>
+<tr class="memitem:a95a2bf495f2984a2f4875d1d7572804e inherit pro_attribs_class_layer"><td class="memItemLeft" align="right" valign="top"><a id="a95a2bf495f2984a2f4875d1d7572804e"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>m_in_size</b></td></tr>
+<tr class="separator:a95a2bf495f2984a2f4875d1d7572804e inherit pro_attribs_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9b7e1eaab63885d6c5e718c84934c8 inherit pro_attribs_class_layer"><td class="memItemLeft" align="right" valign="top"><a id="a5a9b7e1eaab63885d6c5e718c84934c8"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>m_out_size</b></td></tr>
+<tr class="separator:a5a9b7e1eaab63885d6c5e718c84934c8 inherit pro_attribs_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2a1bd8c9585afc5a0296fea7019c914 inherit pro_attribs_class_layer"><td class="memItemLeft" align="right" valign="top"><a id="ab2a1bd8c9585afc5a0296fea7019c914"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>workflow</b></td></tr>
+<tr class="separator:ab2a1bd8c9585afc5a0296fea7019c914 inherit pro_attribs_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ade64f58c379d16d135a3f917cc444f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade64f58c379d16d135a3f917cc444f6d">&#9670;&nbsp;</a></span>BatchNorm1D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Activate , typename Distribution &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Activate, Distribution &gt;::<a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a> </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>in_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Scalar &amp;&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code>Scalar(0.0001)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Scalar &amp;&#160;</td>
+          <td class="paramname"><em>momentum</em> = <code>Scalar(0.35)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_size</td><td>длина признакового описания <b>одного</b> объекта </td></tr>
+    <tr><td class="paramname">tolerance</td><td>equal eps </td></tr>
+    <tr><td class="paramname">momentum</td><td>momentum coefficient </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ad6502d05e6e4444ff4f1e82a0b84e35c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6502d05e6e4444ff4f1e82a0b84e35c">&#9670;&nbsp;</a></span>backprop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Activate , typename Distribution &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Activate, Distribution &gt;::backprop </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>prev_layer_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>next_layer_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Реализация метода обратного распространения ошибки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prev_layer_data</td><td>- значения нейронов предыдущего слоя, которые также являются входными значениями этого слоя.</td></tr>
+    <tr><td class="paramname">next_layer_data</td><td>- значения нейронов следующего слоя, которые также являются выходными значениями этого слоя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_layer.html#a301b6101fc12b9b1578c72d93dfa029f">Layer</a>.</p>
+
+</div>
+</div>
+<a id="a8e1e48dcb5a7a75b7c54dbeac876897f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1e48dcb5a7a75b7c54dbeac876897f">&#9670;&nbsp;</a></span>backprop_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Activate , typename Distribution &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Matrix&amp; <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Activate, Distribution &gt;::backprop_data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>None </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает next_layer_data в <a class="el" href="class_layer.html#a301b6101fc12b9b1578c72d93dfa029f" title="Реализация метода обратного распространения ошибки.">Layer::backprop()</a> </dd></dl>
+
+<p>Замещает <a class="el" href="class_layer.html#ae30d9b11691bf94f234d105e2006d069">Layer</a>.</p>
+
+</div>
+</div>
+<a id="ae5229c120cd10b4020b8c14f14c2a216"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5229c120cd10b4020b8c14f14c2a216">&#9670;&nbsp;</a></span>fill_meta_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Activate , typename Distribution &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Activate, Distribution &gt;::fill_meta_info </td>
+          <td>(</td>
+          <td class="paramtype">Meta &amp;&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод нужен для заполнения основной информации о слое - тип слоя, входные и выходные значения кол-ва нейронов и т.д. Нужен для импорта сетки в файл </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map</td><td>- словарь</td></tr>
+    <tr><td class="paramname">index</td><td>- индекс слоя в модели</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_layer.html#a714439c64a0adeae5bd1ba21cf5e6504">Layer</a>.</p>
+
+</div>
+</div>
+<a id="ad1eeb84ae6ce403066ba09abec504b2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1eeb84ae6ce403066ba09abec504b2c">&#9670;&nbsp;</a></span>forward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Activate , typename Distribution &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Activate, Distribution &gt;::forward </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>prev_layer_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод прохода вперед по сетке. </p>
+<p>Будет инициализировано n слоев, у каждого слоя есть такой метод, они будут поочередно вызываться из каждого слоя и таким образом, мы получим полный проход по всей сетке.</p>
+<p>Реализация метода отличается у каждого типа слоев</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prev_layer_data</td><td>- предыдущий слой, значения его нейронов</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_layer.html#adbf80e0fa5901464a56afaaea5f3f745">Layer</a>.</p>
+
+</div>
+</div>
+<a id="a8794f5b8b127987d254198c370a76b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8794f5b8b127987d254198c370a76b5c">&#9670;&nbsp;</a></span>get_derivatives()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Activate , typename Distribution &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Scalar&gt; <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Activate, Distribution &gt;::get_derivatives </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Получить производные по значениям нейрона, по гамме и бете </p><dl class="section return"><dt>Возвращает</dt><dd>m_din, m_dg, m_db </dd></dl>
+
+<p>Замещает <a class="el" href="class_layer.html">Layer</a>.</p>
+
+</div>
+</div>
+<a id="abfc419f10d95a7939212877c49980465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfc419f10d95a7939212877c49980465">&#9670;&nbsp;</a></span>get_parametrs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Activate , typename Distribution &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Scalar&gt; <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Activate, Distribution &gt;::get_parametrs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Получить вектор гаммы, беты и среднего мат.ожидания и дисперсии по всем батчам </p><dl class="section return"><dt>Возвращает</dt><dd>m_gammas, m_betas, m_mean, m_var </dd></dl>
+
+<p>Замещает <a class="el" href="class_layer.html">Layer</a>.</p>
+
+</div>
+</div>
+<a id="a1915ed63040a37c502a3da977b6128cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1915ed63040a37c502a3da977b6128cb">&#9670;&nbsp;</a></span>init() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Activate , typename Distribution &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Activate, Distribution &gt;::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Инициализация слоя без входных параметров, будет использоваться при чтении сетки из файла </p>
+
+<p>Замещает <a class="el" href="class_layer.html#ad87780b777d48e388a8f8ecf9a33b33f">Layer</a>.</p>
+
+</div>
+</div>
+<a id="ae8a2ceb016aad4383fd6592eed200679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8a2ceb016aad4383fd6592eed200679">&#9670;&nbsp;</a></span>init() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Activate , typename Distribution &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Activate, Distribution &gt;::init </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; Scalar &gt; &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_n_g.html">RNG</a> &amp;&#160;</td>
+          <td class="paramname"><em>rng</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Инициализация слоя </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>вектор параметров для конкретного распределения </td></tr>
+    <tr><td class="paramname">batch_size</td><td>размер батча </td></tr>
+    <tr><td class="paramname">rng</td><td>ГСЧ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_layer.html#ac908166e081edd9ff3b3a35e187b5b63">Layer</a>.</p>
+
+</div>
+</div>
+<a id="a093c0b5d947be7eda84feff2bc892aee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a093c0b5d947be7eda84feff2bc892aee">&#9670;&nbsp;</a></span>output()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Activate , typename Distribution &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Matrix&amp; <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Activate, Distribution &gt;::output </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>None </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Значения нейронов в слою после функции активации. Использование метода разрешено только после метода <a class="el" href="class_layer.html#adbf80e0fa5901464a56afaaea5f3f745" title="Метод прохода вперед по сетке.">Layer::forward()</a>!</dd></dl>
+
+<p>Замещает <a class="el" href="class_layer.html#ad6d6d19aa819f10ebc019e985273ef8e">Layer</a>.</p>
+
+</div>
+</div>
+<a id="ab831d9d8f05f9324db980ba8c53e17b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab831d9d8f05f9324db980ba8c53e17b7">&#9670;&nbsp;</a></span>set_parametrs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Activate , typename Distribution &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Activate, Distribution &gt;::set_parametrs </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; Scalar &gt; &amp;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Установить параметры слоя - гаммы, беты и среднего мат.ожидания и дисперсии по всем батчам </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">param</td><td>вектор всех параметров слоя </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Переопределяет метод предка <a class="el" href="class_layer.html">Layer</a>.</p>
+
+</div>
+</div>
+<a id="a23c5607bac656c891f8d007c021062e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c5607bac656c891f8d007c021062e2">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Activate , typename Distribution &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Activate, Distribution &gt;::update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_optimizer.html">Optimizer</a> &amp;&#160;</td>
+          <td class="paramname"><em>opt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обновление параметров сетки после обратного распространения </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opt</td><td>- алгоритм оптимизации градиента</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_layer.html#a305f7f9f92b9d60e6dca10accb7f062f">Layer</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>/home/shuffle/xsDNN/xsDNN-include/neuralnetwork/Layer/<a class="el" href="_batch_normalization_8h_source.html">BatchNormalization.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

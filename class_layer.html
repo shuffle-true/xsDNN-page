@@ -104,9 +104,10 @@ $(document).ready(function(){initNavTree('class_layer.html',''); initResizable()
 <div class="dyncontent">
 <div class="center"><img src="class_layer__inherit__graph.png" border="0" usemap="#a_layer_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_layer_inherit__map" id="a_layer_inherit__map">
-<area shape="rect" title="Родительский класс слоя" alt="" coords="96,5,155,32"/>
-<area shape="rect" href="class_dropout.html" title="Класс Dropout слоя" alt="" coords="5,87,80,114"/>
-<area shape="rect" href="class_fully_connected.html" title="Класс FullyConnected слоя" alt="" coords="105,80,311,121"/>
+<area shape="rect" title="Родительский класс слоя" alt="" coords="5,71,64,98"/>
+<area shape="rect" href="class_batch_norm1_d.html" title=" " alt="" coords="122,5,309,47"/>
+<area shape="rect" href="class_dropout.html" title="Класс Dropout слоя" alt="" coords="178,71,253,98"/>
+<area shape="rect" href="class_fully_connected.html" title="Класс FullyConnected слоя" alt="" coords="112,123,319,164"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
@@ -177,9 +178,6 @@ virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>distri
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Защищенные типы</h2></td></tr>
-<tr class="memitem:a61511b61a2f92879d8003cf91d1a914b"><td class="memItemLeft" align="right" valign="top"><a id="a61511b61a2f92879d8003cf91d1a914b"></a>
-typedef Eigen::Matrix&lt; Scalar, Eigen::Dynamic, Eigen::Dynamic &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Matrix</b></td></tr>
-<tr class="separator:a61511b61a2f92879d8003cf91d1a914b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fa9c3dfcbefa5dd778fa5a8cafb651d"><td class="memItemLeft" align="right" valign="top"><a id="a6fa9c3dfcbefa5dd778fa5a8cafb651d"></a>
 typedef std::map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Meta</b></td></tr>
 <tr class="separator:a6fa9c3dfcbefa5dd778fa5a8cafb651d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,7 +243,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>workflow</b></
   </dd>
 </dl>
 
-<p>Замещается в <a class="el" href="class_fully_connected.html#abc92fc51eb2dd0d64c5fb5bf2021e4c1">FullyConnected&lt; Activation, Distribution &gt;</a> и <a class="el" href="class_dropout.html#abacaaad48e579493b953dba0fb1f6c2e">Dropout</a>.</p>
+<p>Замещается в <a class="el" href="class_fully_connected.html#abc92fc51eb2dd0d64c5fb5bf2021e4c1">FullyConnected&lt; Activation, Distribution &gt;</a>, <a class="el" href="class_dropout.html#abacaaad48e579493b953dba0fb1f6c2e">Dropout</a> и <a class="el" href="class_batch_norm1_d.html#ad6502d05e6e4444ff4f1e82a0b84e35c">BatchNorm1D&lt; Activate, Distribution &gt;</a>.</p>
 
 </div>
 </div>
@@ -275,7 +273,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>workflow</b></
 <p>None </p>
 <dl class="section return"><dt>Возвращает</dt><dd>Возвращает next_layer_data в <a class="el" href="class_layer.html#a301b6101fc12b9b1578c72d93dfa029f" title="Реализация метода обратного распространения ошибки.">Layer::backprop()</a> </dd></dl>
 
-<p>Замещается в <a class="el" href="class_fully_connected.html#a874de85bb5b8377ffe24590a25f9f27c">FullyConnected&lt; Activation, Distribution &gt;</a> и <a class="el" href="class_dropout.html#a077a42da0941f5640862c141a88af90c">Dropout</a>.</p>
+<p>Замещается в <a class="el" href="class_fully_connected.html#a874de85bb5b8377ffe24590a25f9f27c">FullyConnected&lt; Activation, Distribution &gt;</a>, <a class="el" href="class_dropout.html#a077a42da0941f5640862c141a88af90c">Dropout</a> и <a class="el" href="class_batch_norm1_d.html#a8e1e48dcb5a7a75b7c54dbeac876897f">BatchNorm1D&lt; Activate, Distribution &gt;</a>.</p>
 
 </div>
 </div>
@@ -322,7 +320,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>workflow</b></
   </dd>
 </dl>
 
-<p>Замещается в <a class="el" href="class_fully_connected.html#af87897142a76a9d9bc1cfc4c92633420">FullyConnected&lt; Activation, Distribution &gt;</a> и <a class="el" href="class_dropout.html#a736b6c1b13b8603c8902bce49d0d6c60">Dropout</a>.</p>
+<p>Замещается в <a class="el" href="class_fully_connected.html#af87897142a76a9d9bc1cfc4c92633420">FullyConnected&lt; Activation, Distribution &gt;</a>, <a class="el" href="class_dropout.html#a736b6c1b13b8603c8902bce49d0d6c60">Dropout</a> и <a class="el" href="class_batch_norm1_d.html#ae5229c120cd10b4020b8c14f14c2a216">BatchNorm1D&lt; Activate, Distribution &gt;</a>.</p>
 
 </div>
 </div>
@@ -360,7 +358,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>workflow</b></
   </dd>
 </dl>
 
-<p>Замещается в <a class="el" href="class_fully_connected.html#a44dd0014fb832068c62567c71f9a588d">FullyConnected&lt; Activation, Distribution &gt;</a> и <a class="el" href="class_dropout.html#a72619b8c44f692d042d1138710701066">Dropout</a>.</p>
+<p>Замещается в <a class="el" href="class_fully_connected.html#a44dd0014fb832068c62567c71f9a588d">FullyConnected&lt; Activation, Distribution &gt;</a>, <a class="el" href="class_dropout.html#a72619b8c44f692d042d1138710701066">Dropout</a> и <a class="el" href="class_batch_norm1_d.html#ad1eeb84ae6ce403066ba09abec504b2c">BatchNorm1D&lt; Activate, Distribution &gt;</a>.</p>
 
 </div>
 </div>
@@ -417,7 +415,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>workflow</b></
 
 <p>Инициализация слоя без входных параметров, будет использоваться при чтении сетки из файла </p>
 
-<p>Замещается в <a class="el" href="class_fully_connected.html#ae78ef8592318e8fc7ea8ef6227319192">FullyConnected&lt; Activation, Distribution &gt;</a> и <a class="el" href="class_dropout.html#a7f6ccb6955226d5e1b5ef7bf189a9a5c">Dropout</a>.</p>
+<p>Замещается в <a class="el" href="class_fully_connected.html#ae78ef8592318e8fc7ea8ef6227319192">FullyConnected&lt; Activation, Distribution &gt;</a>, <a class="el" href="class_dropout.html#a7f6ccb6955226d5e1b5ef7bf189a9a5c">Dropout</a> и <a class="el" href="class_batch_norm1_d.html#a1915ed63040a37c502a3da977b6128cb">BatchNorm1D&lt; Activate, Distribution &gt;</a>.</p>
 
 </div>
 </div>
@@ -457,12 +455,13 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>workflow</b></
 <p>Инициализация слоя </p><dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
     <tr><td class="paramname">params</td><td>вектор параметров для конкретного распределения </td></tr>
+    <tr><td class="paramname">batch_size</td><td>размер батча </td></tr>
     <tr><td class="paramname">rng</td><td>ГСЧ </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Замещается в <a class="el" href="class_dropout.html#ab1fb18e576c975ce37d98339c40a5cea">Dropout</a> и <a class="el" href="class_fully_connected.html#aba1a1a561f7e09dd6b2bfc77dda3fd88">FullyConnected&lt; Activation, Distribution &gt;</a>.</p>
+<p>Замещается в <a class="el" href="class_fully_connected.html#aba1a1a561f7e09dd6b2bfc77dda3fd88">FullyConnected&lt; Activation, Distribution &gt;</a>, <a class="el" href="class_dropout.html#a0e61c56194926069355f685d902f2c5c">Dropout</a> и <a class="el" href="class_batch_norm1_d.html#ae8a2ceb016aad4383fd6592eed200679">BatchNorm1D&lt; Activate, Distribution &gt;</a>.</p>
 
 </div>
 </div>
@@ -520,7 +519,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>workflow</b></
 <p>None </p>
 <dl class="section return"><dt>Возвращает</dt><dd>Значения нейронов в слою после функции активации. Использование метода разрешено только после метода <a class="el" href="class_layer.html#adbf80e0fa5901464a56afaaea5f3f745" title="Метод прохода вперед по сетке.">Layer::forward()</a>!</dd></dl>
 
-<p>Замещается в <a class="el" href="class_fully_connected.html#a29294dd076ec9e34cb4e26eed44ba109">FullyConnected&lt; Activation, Distribution &gt;</a> и <a class="el" href="class_dropout.html#a11aebad6668ad92dfcef9da233d6aed8">Dropout</a>.</p>
+<p>Замещается в <a class="el" href="class_fully_connected.html#a29294dd076ec9e34cb4e26eed44ba109">FullyConnected&lt; Activation, Distribution &gt;</a>, <a class="el" href="class_dropout.html#a11aebad6668ad92dfcef9da233d6aed8">Dropout</a> и <a class="el" href="class_batch_norm1_d.html#a093c0b5d947be7eda84feff2bc892aee">BatchNorm1D&lt; Activate, Distribution &gt;</a>.</p>
 
 </div>
 </div>
@@ -556,7 +555,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>workflow</b></
   </dd>
 </dl>
 
-<p>Замещается в <a class="el" href="class_fully_connected.html#a5edfef61d185a3a7a2297b87f312fe61">FullyConnected&lt; Activation, Distribution &gt;</a> и <a class="el" href="class_dropout.html#a0afdaa20a319db229f7fd10324a8919f">Dropout</a>.</p>
+<p>Замещается в <a class="el" href="class_fully_connected.html#a5edfef61d185a3a7a2297b87f312fe61">FullyConnected&lt; Activation, Distribution &gt;</a>, <a class="el" href="class_dropout.html#a0afdaa20a319db229f7fd10324a8919f">Dropout</a> и <a class="el" href="class_batch_norm1_d.html#a23c5607bac656c891f8d007c021062e2">BatchNorm1D&lt; Activate, Distribution &gt;</a>.</p>
 
 </div>
 </div>

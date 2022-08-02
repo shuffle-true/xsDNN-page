@@ -1,5 +1,7 @@
 var namespaceinternal =
 [
+    [ "Timer", "classinternal_1_1_timer.html", "classinternal_1_1_timer" ],
+    [ "ProgressBar", "classinternal_1_1_progress_bar.html", "classinternal_1_1_progress_bar" ],
     [ "bernoulli", "classinternal_1_1bernoulli.html", "classinternal_1_1bernoulli" ],
     [ "ACTIVATION_FUNC_ENUM", "namespaceinternal.html#af22b4eec9ac692a7334ea550be120eab", [
       [ "RELU", "namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba9544d50c065b101d713dca7cffb2e9e1", null ],
@@ -14,13 +16,17 @@ var namespaceinternal =
     ] ],
     [ "LAYER_TYPE_ENUM", "namespaceinternal.html#a17d1c6853385e58f806748015a2ad03f", [
       [ "FULLYCONNECTED", "namespaceinternal.html#a17d1c6853385e58f806748015a2ad03fadf6ba8294220872c1b04b17f43136716", null ],
-      [ "DROPOUT", "namespaceinternal.html#a17d1c6853385e58f806748015a2ad03fa1f9ee6e0365b9b6008fe144ed66ecab3", null ]
+      [ "DROPOUT", "namespaceinternal.html#a17d1c6853385e58f806748015a2ad03fa1f9ee6e0365b9b6008fe144ed66ecab3", null ],
+      [ "BATCHNORM1D", "namespaceinternal.html#a17d1c6853385e58f806748015a2ad03fa48346ef91b2d5f1742414cb5e69395d8", null ]
     ] ],
     [ "OUTPUT_ENUM", "namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445", [
       [ "REGRESSIONMSE", "namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445af183fae882f18e3a50fe2961b943dec9", null ],
       [ "BINARYCLASSENTROPY", "namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445ad3b8fb340c189068f1a5ca0ce629e300", null ]
     ] ],
     [ "activation_id", "namespaceinternal.html#aa764f1c79d0e36a83afe70d46d3cef7d", null ],
+    [ "compute_backward_graph1D", "namespaceinternal.html#abc89c77c8c1f70bfd75271196e82ce10", null ],
+    [ "compute_statistic_graph1D_eval", "namespaceinternal.html#a6a68b31820e82a6ec6387872ca5fabea", null ],
+    [ "compute_statistic_graph1D_train", "namespaceinternal.html#a42e4ba7380b13157e4baffb1f0dca83c", null ],
     [ "create_directory", "namespaceinternal.html#aa4548c561725c1d1addf33716b619167", null ],
     [ "create_layer", "namespaceinternal.html#a35ddbac521974c646ddbd01a29173cd5", null ],
     [ "create_output", "namespaceinternal.html#a66872a3a44f6e7103116f5fd36fa9899", null ],

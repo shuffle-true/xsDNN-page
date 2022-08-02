@@ -119,18 +119,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_output</b> (<a cl
 <tr class="memitem:a7686eabf1c59519eda1bc3ca1ce9628e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_output.html">Output</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a7686eabf1c59519eda1bc3ca1ce9628e">get_output</a> () const</td></tr>
 <tr class="memdesc:a7686eabf1c59519eda1bc3ca1ce9628e"><td class="mdescLeft">&#160;</td><td class="mdescRight">None  <a href="class_neural_network.html#a7686eabf1c59519eda1bc3ca1ce9628e">Подробнее...</a><br /></td></tr>
 <tr class="separator:a7686eabf1c59519eda1bc3ca1ce9628e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b386e9db77b77839fee7414709832d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a2b386e9db77b77839fee7414709832d4">set_callback</a> (<a class="el" href="class_callback.html">Callback</a> &amp;callback)</td></tr>
-<tr class="memdesc:a2b386e9db77b77839fee7414709832d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить пользовательский вывод информации про обучение сетки.  <a href="class_neural_network.html#a2b386e9db77b77839fee7414709832d4">Подробнее...</a><br /></td></tr>
-<tr class="separator:a2b386e9db77b77839fee7414709832d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af75afc0507cbb73ef2026bcdc3dff8fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#af75afc0507cbb73ef2026bcdc3dff8fd">set_default_callback</a> ()</td></tr>
-<tr class="memdesc:af75afc0507cbb73ef2026bcdc3dff8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить дефолтный вывод.  <a href="class_neural_network.html#af75afc0507cbb73ef2026bcdc3dff8fd">Подробнее...</a><br /></td></tr>
-<tr class="separator:af75afc0507cbb73ef2026bcdc3dff8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e68943eca881f87416c1663b57aed53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a1e68943eca881f87416c1663b57aed53">init</a> (int seed=-1, const std::vector&lt; std::vector&lt; Scalar &gt;&gt; &amp;params=std::vector&lt; std::vector&lt; Scalar &gt;&gt;())</td></tr>
-<tr class="memdesc:a1e68943eca881f87416c1663b57aed53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация слоев сетки. Первая генерация весов сетки</p><ul>
-<li>значения из нормального распределения. </li>
-</ul>
- <a href="class_neural_network.html#a1e68943eca881f87416c1663b57aed53">Подробнее...</a><br /></td></tr>
-<tr class="separator:a1e68943eca881f87416c1663b57aed53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73df19ff71997aacd5bb8dc1b24b6790"><td class="memItemLeft" align="right" valign="top"><a id="a73df19ff71997aacd5bb8dc1b24b6790"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a73df19ff71997aacd5bb8dc1b24b6790">train</a> ()</td></tr>
 <tr class="memdesc:a73df19ff71997aacd5bb8dc1b24b6790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить рабочий процесс - тренировка <br /></td></tr>
@@ -139,9 +127,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#aab6985271adb94b77445e1624006f2e1">eval</a> ()</td></tr>
 <tr class="memdesc:aab6985271adb94b77445e1624006f2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить рабочий процесс - тестирование <br /></td></tr>
 <tr class="separator:aab6985271adb94b77445e1624006f2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa75e3f407ca266b378b21a4a8a19fe65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#aa75e3f407ca266b378b21a4a8a19fe65">fit</a> (<a class="el" href="class_optimizer.html">Optimizer</a> &amp;opt, const Matrix &amp;x, const Matrix &amp;y, int batch_size, int epoch, int seed=-1)</td></tr>
-<tr class="memdesc:aa75e3f407ca266b378b21a4a8a19fe65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начать обучение сети  <a href="class_neural_network.html#aa75e3f407ca266b378b21a4a8a19fe65">Подробнее...</a><br /></td></tr>
-<tr class="separator:aa75e3f407ca266b378b21a4a8a19fe65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac134f87b85d78c7b4b154f0990f9aa16"><td class="memItemLeft" align="right" valign="top"><a id="ac134f87b85d78c7b4b154f0990f9aa16"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fit</b> (<a class="el" href="class_optimizer.html">Optimizer</a> &amp;opt, const Matrix &amp;x, const Matrix &amp;y, int batch_size, int epoch, int batch_seed=-1, int init_seed=-1, const std::vector&lt; std::vector&lt; Scalar &gt;&gt; &amp;params=std::vector&lt; std::vector&lt; Scalar &gt;&gt;())</td></tr>
+<tr class="separator:ac134f87b85d78c7b4b154f0990f9aa16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9df496ee112c5db84fdda8dd2e07def5"><td class="memItemLeft" align="right" valign="top"><a id="a9df496ee112c5db84fdda8dd2e07def5"></a>
 Matrix&#160;</td><td class="memItemRight" valign="bottom"><b>predict</b> (const Matrix &amp;x)</td></tr>
 <tr class="separator:a9df496ee112c5db84fdda8dd2e07def5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -356,80 +344,6 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 
 </div>
 </div>
-<a id="aa75e3f407ca266b378b21a4a8a19fe65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa75e3f407ca266b378b21a4a8a19fe65">&#9670;&nbsp;</a></span>fit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool NeuralNetwork::fit </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_optimizer.html">Optimizer</a> &amp;&#160;</td>
-          <td class="paramname"><em>opt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Matrix &amp;&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Matrix &amp;&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>batch_size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>epoch</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>seed</em> = <code>-1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Начать обучение сети </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">opt</td><td>- оптимизатор: объект класса <a class="el" href="class_optimizer.html" title="Родительский класс оптимизаторов">Optimizer</a></td></tr>
-    <tr><td class="paramname">x</td><td>- данные для обучения</td></tr>
-    <tr><td class="paramname">y</td><td>- метки, таргет, лейблы и т.д.</td></tr>
-    <tr><td class="paramname">batch_size</td><td>- размер батча</td></tr>
-    <tr><td class="paramname">epoch</td><td>- кол-во эпох при обучении сетки</td></tr>
-    <tr><td class="paramname">seed</td><td>- сид для ГСЧ</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd>True</dd></dl>
-
-</div>
-</div>
 <a id="a6b9ed2f41de3a9380fc90577a5a17089"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b9ed2f41de3a9380fc90577a5a17089">&#9670;&nbsp;</a></span>get_derivatives()</h2>
 
@@ -514,55 +428,6 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 
 </div>
 </div>
-<a id="a1e68943eca881f87416c1663b57aed53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e68943eca881f87416c1663b57aed53">&#9670;&nbsp;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void NeuralNetwork::init </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>seed</em> = <code>-1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; std::vector&lt; Scalar &gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>params</em> = <code>std::vector&lt;std::vector&lt;Scalar&gt;&gt;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Инициализация слоев сетки. Первая генерация весов сетки</p><ul>
-<li>значения из нормального распределения. </li>
-</ul>
-</p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mu</td><td>- мат. ожидание нормального распределения.</td></tr>
-    <tr><td class="paramname">sigma</td><td>- дисперсия нормального распределения.</td></tr>
-    <tr><td class="paramname">seed</td><td>- сид для рандома.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="af8999f0e3a520af6b1822a2f2744f1e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8999f0e3a520af6b1822a2f2744f1e6">&#9670;&nbsp;</a></span>read_net()</h2>
 
@@ -603,67 +468,6 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a2b386e9db77b77839fee7414709832d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b386e9db77b77839fee7414709832d4">&#9670;&nbsp;</a></span>set_callback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void NeuralNetwork::set_callback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_callback.html">Callback</a> &amp;&#160;</td>
-          <td class="paramname"><em>callback</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Установить пользовательский вывод информации про обучение сетки. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">callback</td><td>- ссылка на объект класса, который будет здесь работать.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af75afc0507cbb73ef2026bcdc3dff8fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af75afc0507cbb73ef2026bcdc3dff8fd">&#9670;&nbsp;</a></span>set_default_callback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void NeuralNetwork::set_default_callback </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Установить дефолтный вывод. </p>
 
 </div>
 </div>

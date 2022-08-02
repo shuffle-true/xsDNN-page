@@ -1,6 +1,5 @@
 var class_layer =
 [
-    [ "Matrix", "class_layer.html#a61511b61a2f92879d8003cf91d1a914b", null ],
     [ "Meta", "class_layer.html#a6fa9c3dfcbefa5dd778fa5a8cafb651d", null ],
     [ "Layer", "class_layer.html#ad5fbb4a1e913bf70813390ca9685db0d", null ],
     [ "~Layer", "class_layer.html#a57e5a4a6ec188de4e7b8c894aac254ea", null ],

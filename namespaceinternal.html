@@ -96,6 +96,10 @@ $(document).ready(function(){initNavTree('namespaceinternal.html',''); initResiz
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinternal_1_1_timer.html">Timer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinternal_1_1_progress_bar.html">ProgressBar</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinternal_1_1bernoulli.html">bernoulli</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -103,6 +107,7 @@ $(document).ready(function(){initNavTree('namespaceinternal.html',''); initResiz
 Перечисления</h2></td></tr>
 <tr class="memitem:a17d1c6853385e58f806748015a2ad03f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a17d1c6853385e58f806748015a2ad03f">LAYER_TYPE_ENUM</a> { <a class="el" href="namespaceinternal.html#a17d1c6853385e58f806748015a2ad03fadf6ba8294220872c1b04b17f43136716">FULLYCONNECTED</a> = 0
 , <a class="el" href="namespaceinternal.html#a17d1c6853385e58f806748015a2ad03fa1f9ee6e0365b9b6008fe144ed66ecab3">DROPOUT</a>
+, <a class="el" href="namespaceinternal.html#a17d1c6853385e58f806748015a2ad03fa48346ef91b2d5f1742414cb5e69395d8">BATCHNORM1D</a>
  }</td></tr>
 <tr class="memdesc:a17d1c6853385e58f806748015a2ad03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID слоя  <a href="namespaceinternal.html#a17d1c6853385e58f806748015a2ad03f">Подробнее...</a><br /></td></tr>
 <tr class="separator:a17d1c6853385e58f806748015a2ad03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,6 +132,14 @@ $(document).ready(function(){initNavTree('namespaceinternal.html',''); initResiz
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Функции</h2></td></tr>
+<tr class="memitem:a42e4ba7380b13157e4baffb1f0dca83c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a42e4ba7380b13157e4baffb1f0dca83c">compute_statistic_graph1D_train</a> (const Matrix &amp;in, Matrix &amp;in_hat, Eigen::VectorXd &amp;m_mean, Eigen::VectorXd &amp;m_var, Eigen::VectorXd &amp;mu, Matrix &amp;inmu, Matrix &amp;carre, Eigen::VectorXd &amp;var, Eigen::VectorXd &amp;sqrtvar, Eigen::VectorXd &amp;invvar, const Scalar &amp;eps, const Scalar &amp;lbd)</td></tr>
+<tr class="separator:a42e4ba7380b13157e4baffb1f0dca83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a68b31820e82a6ec6387872ca5fabea"><td class="memItemLeft" align="right" valign="top"><a id="a6a68b31820e82a6ec6387872ca5fabea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_statistic_graph1D_eval</b> (Matrix &amp;in_hat, Eigen::VectorXd &amp;m_mean, Eigen::VectorXd &amp;m_var, const Scalar &amp;eps)</td></tr>
+<tr class="separator:a6a68b31820e82a6ec6387872ca5fabea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc89c77c8c1f70bfd75271196e82ce10"><td class="memItemLeft" align="right" valign="top"><a id="abc89c77c8c1f70bfd75271196e82ce10"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_backward_graph1D</b> (const Matrix &amp;next_layer_data, Matrix &amp;m_z, Eigen::VectorXd &amp;m_gammas, Matrix &amp;m_din, Eigen::VectorXd &amp;m_dg, Eigen::VectorXd &amp;m_db, Eigen::VectorXd &amp;mu, Matrix &amp;inmu, Matrix &amp;carre, Eigen::VectorXd &amp;var, Eigen::VectorXd &amp;sqrtvar, Eigen::VectorXd &amp;invvar, const Scalar &amp;eps)</td></tr>
+<tr class="separator:abc89c77c8c1f70bfd75271196e82ce10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35ddbac521974c646ddbd01a29173cd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a35ddbac521974c646ddbd01a29173cd5">create_layer</a> (const std::map&lt; std::string, int &gt; &amp;map, const int &amp;index)</td></tr>
 <tr class="separator:a35ddbac521974c646ddbd01a29173cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66872a3a44f6e7103116f5fd36fa9899"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_output.html">Output</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a66872a3a44f6e7103116f5fd36fa9899">create_output</a> (const std::map&lt; std::string, int &gt; &amp;map)</td></tr>
@@ -239,6 +252,8 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform_random<
 </td></tr>
 <tr><td class="fieldname"><a id="a17d1c6853385e58f806748015a2ad03fa1f9ee6e0365b9b6008fe144ed66ecab3"></a>DROPOUT&#160;</td><td class="fielddoc"><p><a class="el" href="class_dropout.html" title="Класс Dropout слоя">Dropout</a>. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a17d1c6853385e58f806748015a2ad03fa48346ef91b2d5f1742414cb5e69395d8"></a>BATCHNORM1D&#160;</td><td class="fielddoc"><p><a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>. </p>
+</td></tr>
 </table>
 
 </div>
@@ -296,6 +311,109 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform_random<
   </dd>
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>ID функции активации </dd></dl>
+
+</div>
+</div>
+<a id="a42e4ba7380b13157e4baffb1f0dca83c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42e4ba7380b13157e4baffb1f0dca83c">&#9670;&nbsp;</a></span>compute_statistic_graph1D_train()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void internal::compute_statistic_graph1D_train </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matrix &amp;&#160;</td>
+          <td class="paramname"><em>in_hat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramname"><em>m_mean</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramname"><em>m_var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramname"><em>mu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matrix &amp;&#160;</td>
+          <td class="paramname"><em>inmu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matrix &amp;&#160;</td>
+          <td class="paramname"><em>carre</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramname"><em>sqrtvar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramname"><em>invvar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Scalar &amp;&#160;</td>
+          <td class="paramname"><em>eps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Scalar &amp;&#160;</td>
+          <td class="paramname"><em>lbd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Получение нормированного входа по вычислительному графу для слоя <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a> </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>исходные входные данные </td></tr>
+    <tr><td class="paramname">in_hat</td><td>отнормированные входные данные </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

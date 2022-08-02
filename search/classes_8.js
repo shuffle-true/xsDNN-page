@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['optimizer_117',['Optimizer',['../class_optimizer.html',1,'']]],
-  ['output_118',['Output',['../class_output.html',1,'']]]
+  ['progressbar_118',['ProgressBar',['../classinternal_1_1_progress_bar.html',1,'internal']]]
 ];

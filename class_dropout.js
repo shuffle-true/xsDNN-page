@@ -11,7 +11,7 @@ var class_dropout =
     [ "get_derivatives", "class_dropout.html#a0f29e97ecbcf31c3414843d8600cd3d5", null ],
     [ "get_parametrs", "class_dropout.html#a6fbdd40f65ba5a6df4f9ac5d2ecfec0b", null ],
     [ "init", "class_dropout.html#a7f6ccb6955226d5e1b5ef7bf189a9a5c", null ],
-    [ "init", "class_dropout.html#ab1fb18e576c975ce37d98339c40a5cea", null ],
+    [ "init", "class_dropout.html#a0e61c56194926069355f685d902f2c5c", null ],
     [ "layer_type", "class_dropout.html#ac5950ecdc86bc600cde28eb8d53a0041", null ],
     [ "output", "class_dropout.html#a11aebad6668ad92dfcef9da233d6aed8", null ],
     [ "set_parametrs", "class_dropout.html#a979bb56fa7ba9403f1b491e826e60e90", null ],
