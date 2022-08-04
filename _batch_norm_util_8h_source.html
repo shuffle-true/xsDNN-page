@@ -188,21 +188,11 @@ $(document).ready(function(){initNavTree('_batch_norm_util_8h_source.html',''); 
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        Scalar     ncols  = <span class="keyword">static_cast&lt;</span>Scalar<span class="keyword">&gt;</span>(m_z.cols());</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">long</span> nrows  = m_z.rows();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        m_dg = next_layer_data.rowwise().sum();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        m_dg = m_z.cwiseProduct(next_layer_data).rowwise().sum();</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        m_din = ( Scalar (1.0) / ncols ) * m_gammas.array() * invvar.array() *</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                (ncols * next_layer_data - )</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//XSDNN_INCLUDE_BATCHNORMUTIL_H</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//XSDNN_INCLUDE_BATCHNORMUTIL_H</span></div>
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition:</b> BatchNormUtil.h:13</div></div>
 <div class="ttc" id="anamespaceinternal_html_a42e4ba7380b13157e4baffb1f0dca83c"><div class="ttname"><a href="namespaceinternal.html#a42e4ba7380b13157e4baffb1f0dca83c">internal::compute_statistic_graph1D_train</a></div><div class="ttdeci">void compute_statistic_graph1D_train(const Matrix &amp;in, Matrix &amp;in_hat, Eigen::VectorXd &amp;m_mean, Eigen::VectorXd &amp;m_var, Eigen::VectorXd &amp;mu, Matrix &amp;inmu, Matrix &amp;carre, Eigen::VectorXd &amp;var, Eigen::VectorXd &amp;sqrtvar, Eigen::VectorXd &amp;invvar, const Scalar &amp;eps, const Scalar &amp;lbd)</div><div class="ttdef"><b>Definition:</b> BatchNormUtil.h:17</div></div>
 </div><!-- fragment --></div><!-- contents -->

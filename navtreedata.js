@@ -37,7 +37,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-""
+"_metrics_8h.html#a0db6e64db121fae347c5e4914e1d8297"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

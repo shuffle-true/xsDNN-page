@@ -1,6 +1,6 @@
 var class_layer =
 [
-    [ "Meta", "class_layer.html#a6fa9c3dfcbefa5dd778fa5a8cafb651d", null ],
+    [ "Meta", "class_layer.html#aee4c728c138e60d11e6e0e76a0e85fdc", null ],
     [ "Layer", "class_layer.html#ad5fbb4a1e913bf70813390ca9685db0d", null ],
     [ "~Layer", "class_layer.html#a57e5a4a6ec188de4e7b8c894aac254ea", null ],
     [ "activation_type", "class_layer.html#a3d888555b318ed3e2f2dcae4b31f1d42", null ],

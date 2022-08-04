@@ -111,10 +111,14 @@ $(document).ready(function(){initNavTree('namespaceinternal.html',''); initResiz
  }</td></tr>
 <tr class="memdesc:a17d1c6853385e58f806748015a2ad03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID слоя  <a href="namespaceinternal.html#a17d1c6853385e58f806748015a2ad03f">Подробнее...</a><br /></td></tr>
 <tr class="separator:a17d1c6853385e58f806748015a2ad03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af22b4eec9ac692a7334ea550be120eab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eab">ACTIVATION_FUNC_ENUM</a> { <a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba9544d50c065b101d713dca7cffb2e9e1">RELU</a> = 0
+<tr class="memitem:af22b4eec9ac692a7334ea550be120eab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eab">ACTIVATION_FUNC_ENUM</a> { <br />
+&#160;&#160;<a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba9544d50c065b101d713dca7cffb2e9e1">RELU</a> = 0
+, <a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba6a27db799aca688bb98d8b12a4e6c13e">LEAKYRELU</a>
 , <a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba4bd840f2b352b2f8144f4bba33d18e4e">SIGMOID</a>
 , <a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eabad64825016900e252957c32c9c0851eec">IDENTITY</a>
-, <a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eabafbe869f0d87088abb0aefb6b5a506b71">SOFTMAX</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eabafbe869f0d87088abb0aefb6b5a506b71">SOFTMAX</a>
+<br />
  }</td></tr>
 <tr class="memdesc:af22b4eec9ac692a7334ea550be120eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID функции активации  <a href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eab">Подробнее...</a><br /></td></tr>
 <tr class="separator:af22b4eec9ac692a7334ea550be120eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,10 +144,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_statistic_gra
 <tr class="memitem:abc89c77c8c1f70bfd75271196e82ce10"><td class="memItemLeft" align="right" valign="top"><a id="abc89c77c8c1f70bfd75271196e82ce10"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_backward_graph1D</b> (const Matrix &amp;next_layer_data, Matrix &amp;m_z, Eigen::VectorXd &amp;m_gammas, Matrix &amp;m_din, Eigen::VectorXd &amp;m_dg, Eigen::VectorXd &amp;m_db, Eigen::VectorXd &amp;mu, Matrix &amp;inmu, Matrix &amp;carre, Eigen::VectorXd &amp;var, Eigen::VectorXd &amp;sqrtvar, Eigen::VectorXd &amp;invvar, const Scalar &amp;eps)</td></tr>
 <tr class="separator:abc89c77c8c1f70bfd75271196e82ce10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ddbac521974c646ddbd01a29173cd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a35ddbac521974c646ddbd01a29173cd5">create_layer</a> (const std::map&lt; std::string, int &gt; &amp;map, const int &amp;index)</td></tr>
-<tr class="separator:a35ddbac521974c646ddbd01a29173cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66872a3a44f6e7103116f5fd36fa9899"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_output.html">Output</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a66872a3a44f6e7103116f5fd36fa9899">create_output</a> (const std::map&lt; std::string, int &gt; &amp;map)</td></tr>
-<tr class="separator:a66872a3a44f6e7103116f5fd36fa9899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71c57474250cf86dd7e46d54f044603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#ae71c57474250cf86dd7e46d54f044603">create_layer</a> (const std::map&lt; std::string, Scalar &gt; &amp;map, const int &amp;index)</td></tr>
+<tr class="separator:ae71c57474250cf86dd7e46d54f044603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a90de85a907afc2ec45b98597c14cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_output.html">Output</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a58a90de85a907afc2ec45b98597c14cc">create_output</a> (const std::map&lt; std::string, Scalar &gt; &amp;map)</td></tr>
+<tr class="separator:a58a90de85a907afc2ec45b98597c14cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad429a1768927e66f1e6c2b64d946027"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#aad429a1768927e66f1e6c2b64d946027">layer_id</a> (const std::string &amp;type)</td></tr>
 <tr class="separator:aad429a1768927e66f1e6c2b64d946027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa764f1c79d0e36a83afe70d46d3cef7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#aa764f1c79d0e36a83afe70d46d3cef7d">activation_id</a> (const std::string &amp;type)</td></tr>
@@ -162,10 +166,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_backward_grap
 <tr class="separator:afc9728409c3dec1a7e2532d77167f23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16b2e7aa60b2c8b30d0dbfba6d4fa0ef"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Scalar &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a16b2e7aa60b2c8b30d0dbfba6d4fa0ef">read_parameter</a> (const std::string &amp;folder, const std::string &amp;filename, const int &amp;nlayer)</td></tr>
 <tr class="separator:a16b2e7aa60b2c8b30d0dbfba6d4fa0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af85d8e89869ef65d35459eb528791af1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#af85d8e89869ef65d35459eb528791af1">write_map</a> (const std::string &amp;filename, const std::map&lt; std::string, int &gt; &amp;map)</td></tr>
-<tr class="separator:af85d8e89869ef65d35459eb528791af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ead1ef73a9ab504f3fd2635cc8bf108"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a0ead1ef73a9ab504f3fd2635cc8bf108">read_map</a> (const std::string &amp;filename, std::map&lt; std::string, int &gt; &amp;map)</td></tr>
-<tr class="separator:a0ead1ef73a9ab504f3fd2635cc8bf108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbfc481753e0341442b8dd30f04609af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#abbfc481753e0341442b8dd30f04609af">write_map</a> (const std::string &amp;filename, const std::map&lt; std::string, Scalar &gt; &amp;map)</td></tr>
+<tr class="separator:abbfc481753e0341442b8dd30f04609af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986373a3bb1f04d18e5860715b595903"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a986373a3bb1f04d18e5860715b595903">read_map</a> (const std::string &amp;filename, std::map&lt; std::string, Scalar &gt; &amp;map)</td></tr>
+<tr class="separator:a986373a3bb1f04d18e5860715b595903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b8021e30d34fc051ac96750c5e4ea41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a1b8021e30d34fc051ac96750c5e4ea41">shuffle</a> (int *arr, const int n, <a class="el" href="class_r_n_g.html">RNG</a> &amp;rng)</td></tr>
 <tr class="separator:a1b8021e30d34fc051ac96750c5e4ea41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18cfbdb7ba8d1ae1092a2c8ce4c8d077"><td class="memTemplParams" colspan="2">template&lt;typename DerivedX , typename DerivedY , typename XType , typename YType &gt; </td></tr>
@@ -199,6 +203,8 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform_random<
 <p>ID функции активации </p>
 <table class="fieldtable">
 <tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="af22b4eec9ac692a7334ea550be120eaba9544d50c065b101d713dca7cffb2e9e1"></a>RELU&#160;</td><td class="fielddoc"><p>ReLU. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af22b4eec9ac692a7334ea550be120eaba6a27db799aca688bb98d8b12a4e6c13e"></a>LEAKYRELU&#160;</td><td class="fielddoc"><p>LeakyReLU. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af22b4eec9ac692a7334ea550be120eaba4bd840f2b352b2f8144f4bba33d18e4e"></a>SIGMOID&#160;</td><td class="fielddoc"><p>Sigmoid. </p>
 </td></tr>
@@ -441,8 +447,8 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform_random<
 
 </div>
 </div>
-<a id="a35ddbac521974c646ddbd01a29173cd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35ddbac521974c646ddbd01a29173cd5">&#9670;&nbsp;</a></span>create_layer()</h2>
+<a id="ae71c57474250cf86dd7e46d54f044603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71c57474250cf86dd7e46d54f044603">&#9670;&nbsp;</a></span>create_layer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -453,7 +459,7 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform_random<
         <tr>
           <td class="memname"><a class="el" href="class_layer.html">Layer</a>* internal::create_layer </td>
           <td>(</td>
-          <td class="paramtype">const std::map&lt; std::string, int &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::map&lt; std::string, Scalar &gt; &amp;&#160;</td>
           <td class="paramname"><em>map</em>, </td>
         </tr>
         <tr>
@@ -485,8 +491,8 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform_random<
 
 </div>
 </div>
-<a id="a66872a3a44f6e7103116f5fd36fa9899"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66872a3a44f6e7103116f5fd36fa9899">&#9670;&nbsp;</a></span>create_output()</h2>
+<a id="a58a90de85a907afc2ec45b98597c14cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58a90de85a907afc2ec45b98597c14cc">&#9670;&nbsp;</a></span>create_output()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -497,7 +503,7 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform_random<
         <tr>
           <td class="memname"><a class="el" href="class_output.html">Output</a>* internal::create_output </td>
           <td>(</td>
-          <td class="paramtype">const std::map&lt; std::string, int &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::map&lt; std::string, Scalar &gt; &amp;&#160;</td>
           <td class="paramname"><em>map</em></td><td>)</td>
           <td></td>
         </tr>
@@ -736,8 +742,8 @@ template&lt;typename DerivedX , typename DerivedY , typename XType , typename YT
 
 </div>
 </div>
-<a id="a0ead1ef73a9ab504f3fd2635cc8bf108"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ead1ef73a9ab504f3fd2635cc8bf108">&#9670;&nbsp;</a></span>read_map()</h2>
+<a id="a986373a3bb1f04d18e5860715b595903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a986373a3bb1f04d18e5860715b595903">&#9670;&nbsp;</a></span>read_map()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -754,7 +760,7 @@ template&lt;typename DerivedX , typename DerivedY , typename XType , typename YT
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; std::string, int &gt; &amp;&#160;</td>
+          <td class="paramtype">std::map&lt; std::string, Scalar &gt; &amp;&#160;</td>
           <td class="paramname"><em>map</em>&#160;</td>
         </tr>
         <tr>
@@ -1041,8 +1047,8 @@ template&lt;typename DerivedX , typename DerivedY , typename XType , typename YT
 
 </div>
 </div>
-<a id="af85d8e89869ef65d35459eb528791af1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af85d8e89869ef65d35459eb528791af1">&#9670;&nbsp;</a></span>write_map()</h2>
+<a id="abbfc481753e0341442b8dd30f04609af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbfc481753e0341442b8dd30f04609af">&#9670;&nbsp;</a></span>write_map()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1059,7 +1065,7 @@ template&lt;typename DerivedX , typename DerivedY , typename XType , typename YT
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::map&lt; std::string, int &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::map&lt; std::string, Scalar &gt; &amp;&#160;</td>
           <td class="paramname"><em>map</em>&#160;</td>
         </tr>
         <tr>

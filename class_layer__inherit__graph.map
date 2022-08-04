@@ -1,6 +1,6 @@
 <map id="Layer" name="Layer">
 <area shape="rect" id="node1" title="Родительский класс слоя" alt="" coords="5,71,64,98"/>
-<area shape="rect" id="node2" href="$class_batch_norm1_d.html" title=" " alt="" coords="122,5,309,47"/>
-<area shape="rect" id="node3" href="$class_dropout.html" title="Класс Dropout слоя" alt="" coords="178,71,253,98"/>
-<area shape="rect" id="node4" href="$class_fully_connected.html" title="Класс FullyConnected слоя" alt="" coords="112,123,319,164"/>
+<area shape="rect" id="node2" href="$class_batch_norm1_d.html" title=" " alt="" coords="117,5,325,47"/>
+<area shape="rect" id="node3" href="$class_dropout.html" title="Класс Dropout слоя" alt="" coords="135,71,306,98"/>
+<area shape="rect" id="node4" href="$class_fully_connected.html" title="Класс FullyConnected слоя" alt="" coords="112,123,329,164"/>
 </map>

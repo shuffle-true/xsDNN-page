@@ -4,10 +4,11 @@ var hierarchy =
     [ "init::Exponential", "classinit_1_1_exponential.html", null ],
     [ "activate::Identity", "classactivate_1_1_identity.html", null ],
     [ "Layer", "class_layer.html", [
-      [ "BatchNorm1D< Activate, Distribution >", "class_batch_norm1_d.html", null ],
-      [ "Dropout", "class_dropout.html", null ],
-      [ "FullyConnected< Activation, Distribution >", "class_fully_connected.html", null ]
+      [ "BatchNorm1D< Distribution, Activate >", "class_batch_norm1_d.html", null ],
+      [ "Dropout< Activation >", "class_dropout.html", null ],
+      [ "FullyConnected< Distribution, Activation >", "class_fully_connected.html", null ]
     ] ],
+    [ "activate::LeakyReLU", "classactivate_1_1_leaky_re_l_u.html", null ],
     [ "NeuralNetwork", "class_neural_network.html", null ],
     [ "init::Normal", "classinit_1_1_normal.html", null ],
     [ "Optimizer", "class_optimizer.html", [

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['Активация_96',['Активация',['../activation.html',1,'advanced']]]
+  ['_7eneuralnetwork_98',['~NeuralNetwork',['../class_neural_network.html#a65475a7d7b05d302392333302626b2f8',1,'NeuralNetwork']]]
 ];

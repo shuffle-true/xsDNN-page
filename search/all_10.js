@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['uniform_89',['Uniform',['../classinit_1_1_uniform.html',1,'init']]],
-  ['uniform_90',['UNIFORM',['../namespaceinternal.html#a5910af6de47727626e888443c7b18c43acbe15420f02aa16c27d55f76d8a2a194',1,'internal']]],
-  ['update_91',['update',['../class_batch_norm1_d.html#a23c5607bac656c891f8d007c021062e2',1,'BatchNorm1D::update()'],['../class_dropout.html#a0afdaa20a319db229f7fd10324a8919f',1,'Dropout::update()'],['../class_fully_connected.html#a5edfef61d185a3a7a2297b87f312fe61',1,'FullyConnected::update()'],['../class_s_g_d.html#a53613e375797f28878cf77ece7f85618',1,'SGD::update()'],['../class_layer.html#a305f7f9f92b9d60e6dca10accb7f062f',1,'Layer::update()'],['../class_optimizer.html#a9fa89b4d7564c785e7362b048babc21b',1,'Optimizer::update()']]]
+  ['timer_90',['Timer',['../classinternal_1_1_timer.html',1,'internal']]],
+  ['train_91',['train',['../class_batch_norm1_d.html#ad278818905156c7767ead868d295ef73',1,'BatchNorm1D::train()'],['../class_dropout.html#a349022cc840e162516fe2def5ce11b4d',1,'Dropout::train()'],['../class_fully_connected.html#a48162487ab4d70e7ea36fa30f2e3f6c9',1,'FullyConnected::train()'],['../class_layer.html#a9a745a955de52cef25f1af3a97776d61',1,'Layer::train()'],['../class_neural_network.html#a73df19ff71997aacd5bb8dc1b24b6790',1,'NeuralNetwork::train()']]]
 ];

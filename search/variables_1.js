@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['test_5fdata_179',['test_data',['../struct_data_loader.html#ae2d6549671b13f67dd915bd3b0e27d90',1,'DataLoader']]],
-  ['test_5flabel_180',['test_label',['../struct_data_loader.html#ab94f4ebe0f10dd2fb1c5ced56a9c8bbf',1,'DataLoader']]],
-  ['train_5fdata_181',['train_data',['../struct_data_loader.html#a42b3f7412e230c9e8342afd4f4c8d693',1,'DataLoader']]],
-  ['train_5flabel_182',['train_label',['../struct_data_loader.html#a136f26dfef9e51ec887da1890a28be6e',1,'DataLoader']]]
+  ['m_5fdampening_191',['m_dampening',['../class_s_g_d.html#acd91febcd70d43bc498ee708ec917458',1,'SGD']]],
+  ['m_5fdecay_192',['m_decay',['../class_s_g_d.html#a48ff7e4475ca615151ee0b5db8714c57',1,'SGD']]],
+  ['m_5flrate_193',['m_lrate',['../class_s_g_d.html#a022ad12dff64d757823467dda852c541',1,'SGD']]],
+  ['m_5fmomentum_194',['m_momentum',['../class_s_g_d.html#a02fa41d7868a9bb5272b4d7885422458',1,'SGD']]],
+  ['m_5fnesterov_195',['m_nesterov',['../class_s_g_d.html#a8f857296a4bb825814c319e88464fdc2',1,'SGD']]]
 ];

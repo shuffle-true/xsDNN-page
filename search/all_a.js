@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['neuralnetwork_54',['NeuralNetwork',['../class_neural_network.html',1,'NeuralNetwork'],['../class_neural_network.html#accce4a7728e89a009a9d4ca1758c9b9d',1,'NeuralNetwork::NeuralNetwork()'],['../class_neural_network.html#a2427bc1b8752a1c1d5aec7dbe1364b2c',1,'NeuralNetwork::NeuralNetwork(RNG &amp;rng)']]],
-  ['normal_55',['Normal',['../classinit_1_1_normal.html',1,'init']]],
-  ['normal_56',['NORMAL',['../namespaceinternal.html#a5910af6de47727626e888443c7b18c43a45ca318653594bc78e971e0c84182d35',1,'internal']]]
+  ['m_5fdampening_52',['m_dampening',['../class_s_g_d.html#acd91febcd70d43bc498ee708ec917458',1,'SGD']]],
+  ['m_5fdecay_53',['m_decay',['../class_s_g_d.html#a48ff7e4475ca615151ee0b5db8714c57',1,'SGD']]],
+  ['m_5flrate_54',['m_lrate',['../class_s_g_d.html#a022ad12dff64d757823467dda852c541',1,'SGD']]],
+  ['m_5fmomentum_55',['m_momentum',['../class_s_g_d.html#a02fa41d7868a9bb5272b4d7885422458',1,'SGD']]],
+  ['m_5fnesterov_56',['m_nesterov',['../class_s_g_d.html#a8f857296a4bb825814c319e88464fdc2',1,'SGD']]]
 ];

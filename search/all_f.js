@@ -1,5 +1,14 @@
 var searchData=
 [
-  ['timer_87',['Timer',['../classinternal_1_1_timer.html',1,'internal']]],
-  ['train_88',['train',['../class_batch_norm1_d.html#a1bad2c2a2dca54e6a507078c5c760577',1,'BatchNorm1D::train()'],['../class_dropout.html#a8f43a878799da47732ca15881db75fd7',1,'Dropout::train()'],['../class_fully_connected.html#ad6163e94dccc3fd35b1afb7a92c4925f',1,'FullyConnected::train()'],['../class_layer.html#a9a745a955de52cef25f1af3a97776d61',1,'Layer::train()'],['../class_neural_network.html#a73df19ff71997aacd5bb8dc1b24b6790',1,'NeuralNetwork::train()']]]
+  ['set_5fnormal_5frandom_79',['set_normal_random',['../namespaceinternal.html#ad23ce3155423fa432a24bfffc51793a6',1,'internal']]],
+  ['set_5fparameters_80',['set_parameters',['../class_neural_network.html#a1fb4700cb175ea0899d4ba6230c4ad8e',1,'NeuralNetwork']]],
+  ['set_5fparametrs_81',['set_parametrs',['../class_batch_norm1_d.html#a7dcdd21025938713e03ce622dd19c90b',1,'BatchNorm1D::set_parametrs()'],['../class_fully_connected.html#ac4a92d50c7593aa21902d273e37e5ecd',1,'FullyConnected::set_parametrs()']]],
+  ['set_5frandom_5fdata_82',['set_random_data',['../classinit_1_1_exponential.html#a14f0fb71e7fa1601e502e36ccdda9108',1,'init::Exponential::set_random_data()'],['../classinit_1_1_normal.html#ac6fae62420c264be555200c9dc43c5bb',1,'init::Normal::set_random_data()'],['../classinit_1_1_uniform.html#a56b905e34c9539752fa464d9ee0f5ac4',1,'init::Uniform::set_random_data()']]],
+  ['set_5funiform_5frandom_83',['set_uniform_random',['../namespaceinternal.html#a8977e6737be2f25d189c5e9b76232cd5',1,'internal']]],
+  ['sgd_84',['SGD',['../class_s_g_d.html',1,'SGD'],['../class_s_g_d.html#addd410f9d43dba3c83b545eb0d555df1',1,'SGD::SGD()']]],
+  ['shuffle_85',['shuffle',['../namespaceinternal.html#a1b8021e30d34fc051ac96750c5e4ea41',1,'internal']]],
+  ['sigmoid_86',['Sigmoid',['../classactivate_1_1_sigmoid.html',1,'activate']]],
+  ['sigmoid_87',['SIGMOID',['../namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba4bd840f2b352b2f8144f4bba33d18e4e',1,'internal']]],
+  ['softmax_88',['Softmax',['../classactivate_1_1_softmax.html',1,'activate']]],
+  ['softmax_89',['SOFTMAX',['../namespaceinternal.html#af22b4eec9ac692a7334ea550be120eabafbe869f0d87088abb0aefb6b5a506b71',1,'internal']]]
 ];

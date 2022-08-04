@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['Оптимизация_101',['Оптимизация',['../optimizer.html',1,'advanced']]]
+  ['Нейросеть_103',['Нейросеть',['../net.html',1,'advanced']]]
 ];

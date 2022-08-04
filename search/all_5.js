@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['fill_5fmeta_5finfo_29',['fill_meta_info',['../class_batch_norm1_d.html#ae5229c120cd10b4020b8c14f14c2a216',1,'BatchNorm1D::fill_meta_info()'],['../class_dropout.html#a736b6c1b13b8603c8902bce49d0d6c60',1,'Dropout::fill_meta_info()'],['../class_fully_connected.html#af87897142a76a9d9bc1cfc4c92633420',1,'FullyConnected::fill_meta_info()'],['../class_layer.html#a714439c64a0adeae5bd1ba21cf5e6504',1,'Layer::fill_meta_info()']]],
-  ['forward_30',['forward',['../class_batch_norm1_d.html#ad1eeb84ae6ce403066ba09abec504b2c',1,'BatchNorm1D::forward()'],['../class_dropout.html#a72619b8c44f692d042d1138710701066',1,'Dropout::forward()'],['../class_fully_connected.html#a44dd0014fb832068c62567c71f9a588d',1,'FullyConnected::forward()'],['../class_layer.html#adbf80e0fa5901464a56afaaea5f3f745',1,'Layer::forward()']]],
-  ['fullyconnected_31',['FullyConnected',['../class_fully_connected.html',1,'FullyConnected&lt; Activation, Distribution &gt;'],['../class_fully_connected.html#a4b3e4a7379e0372f87203a3b5df12d87',1,'FullyConnected::FullyConnected()']]],
-  ['fullyconnected_32',['FULLYCONNECTED',['../namespaceinternal.html#a17d1c6853385e58f806748015a2ad03fadf6ba8294220872c1b04b17f43136716',1,'internal']]]
+  ['eval_25',['eval',['../class_batch_norm1_d.html#a6a53334860c7a37909a05d92bb58978c',1,'BatchNorm1D::eval()'],['../class_dropout.html#a2e76035dfd736fc52e48f0bc8a533707',1,'Dropout::eval()'],['../class_fully_connected.html#a4bafb8470c6dfd3081e0052ddd64e6c5',1,'FullyConnected::eval()'],['../class_layer.html#a53846142753e1e5c2c1b67115dc64357',1,'Layer::eval()'],['../class_neural_network.html#aab6985271adb94b77445e1624006f2e1',1,'NeuralNetwork::eval()']]],
+  ['evaluate_26',['evaluate',['../class_binary_class_entropy.html#afeb8256e046d5490e9a9e3774bb4bf35',1,'BinaryClassEntropy::evaluate()'],['../class_regression_m_s_e.html#a132f8d9b5c178760f2e9820639357959',1,'RegressionMSE::evaluate()'],['../class_output.html#aeb03ae6e65e96b20666f227a71bf6ffc',1,'Output::evaluate()']]],
+  ['exponential_27',['EXPONENTIAL',['../namespaceinternal.html#a5910af6de47727626e888443c7b18c43a4a07fb04f19594592981c91a9d4e165e',1,'internal']]],
+  ['exponential_28',['Exponential',['../classinit_1_1_exponential.html',1,'init']]],
+  ['export_5fnet_29',['export_net',['../class_neural_network.html#adf367188e3703049aec2687b3987a465',1,'NeuralNetwork']]]
 ];

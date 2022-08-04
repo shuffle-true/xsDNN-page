@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['_7eneuralnetwork_95',['~NeuralNetwork',['../class_neural_network.html#a65475a7d7b05d302392333302626b2f8',1,'NeuralNetwork']]]
+  ['write_5fmap_95',['write_map',['../namespaceinternal.html#abbfc481753e0341442b8dd30f04609af',1,'internal']]],
+  ['write_5fone_5fvector_96',['write_one_vector',['../namespaceinternal.html#ad3ce06b33fd4f205474a7c055b590737',1,'internal']]],
+  ['write_5fvector_97',['write_vector',['../namespaceinternal.html#aba1a0c067292e01ba5d405c7d843edf1',1,'internal']]]
 ];

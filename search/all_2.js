@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['check_5ftarget_5fdata_13',['check_target_data',['../class_binary_class_entropy.html#ac38fe8b3cb72ec7cef75b8c588409e1a',1,'BinaryClassEntropy::check_target_data()'],['../class_output.html#ab3893f15f4682a8a31d0f5a5084fb033',1,'Output::check_target_data()']]],
-  ['compute_5fstatistic_5fgraph1d_5ftrain_14',['compute_statistic_graph1D_train',['../namespaceinternal.html#a42e4ba7380b13157e4baffb1f0dca83c',1,'internal']]],
-  ['count_5flayers_15',['count_layers',['../class_neural_network.html#a741eef5530cbbf605423a73ccfc0bea4',1,'NeuralNetwork']]],
-  ['create_5fdirectory_16',['create_directory',['../namespaceinternal.html#aa4548c561725c1d1addf33716b619167',1,'internal']]],
-  ['create_5flayer_17',['create_layer',['../namespaceinternal.html#a35ddbac521974c646ddbd01a29173cd5',1,'internal']]],
-  ['create_5foutput_18',['create_output',['../namespaceinternal.html#a66872a3a44f6e7103116f5fd36fa9899',1,'internal']]],
-  ['create_5fshuffled_5fbatches_19',['create_shuffled_batches',['../namespaceinternal.html#a18cfbdb7ba8d1ae1092a2c8ce4c8d077',1,'internal']]]
+  ['backprop_7',['backprop',['../class_batch_norm1_d.html#a57716f6ca9010c76b0b881ba76b6c9a7',1,'BatchNorm1D::backprop()'],['../class_dropout.html#ad08260f163fc2ff4a36ae1694014393b',1,'Dropout::backprop()'],['../class_fully_connected.html#ad30224a8257142e13f8186c9412ddd13',1,'FullyConnected::backprop()'],['../class_layer.html#a301b6101fc12b9b1578c72d93dfa029f',1,'Layer::backprop()']]],
+  ['backprop_5fdata_8',['backprop_data',['../class_batch_norm1_d.html#af91e0384550f81fd01455845652dd97e',1,'BatchNorm1D::backprop_data()'],['../class_dropout.html#a89bf126c1189d67c510136ed00c5f856',1,'Dropout::backprop_data()'],['../class_fully_connected.html#ac3f35923ba3b084bf07dacdb176e630c',1,'FullyConnected::backprop_data()'],['../class_binary_class_entropy.html#a16e60f3331867cc0d76e72b099f01ad1',1,'BinaryClassEntropy::backprop_data()'],['../class_regression_m_s_e.html#a49f194c8fababec75361e83e6d9d720a',1,'RegressionMSE::backprop_data()'],['../class_layer.html#ae30d9b11691bf94f234d105e2006d069',1,'Layer::backprop_data()']]],
+  ['batchnorm1d_9',['BatchNorm1D',['../class_batch_norm1_d.html',1,'BatchNorm1D&lt; Distribution, Activate &gt;'],['../class_batch_norm1_d.html#a206ff06a573403aa94e9a0b3b496a23a',1,'BatchNorm1D::BatchNorm1D()']]],
+  ['batchnorm1d_10',['BATCHNORM1D',['../namespaceinternal.html#a17d1c6853385e58f806748015a2ad03fa48346ef91b2d5f1742414cb5e69395d8',1,'internal']]],
+  ['bernoulli_11',['bernoulli',['../classinternal_1_1bernoulli.html',1,'internal']]],
+  ['binaryclassentropy_12',['BinaryClassEntropy',['../class_binary_class_entropy.html',1,'']]],
+  ['binaryclassentropy_13',['BINARYCLASSENTROPY',['../namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445ad3b8fb340c189068f1a5ca0ce629e300',1,'internal']]]
 ];
