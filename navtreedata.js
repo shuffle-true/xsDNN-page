@@ -37,7 +37,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-""
+"_exponential_8h.html#a5618131a2cd93c3e432cb0a9c0c82d28",
+"classinit_1_1_uniform.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

@@ -87,6 +87,9 @@ $(document).ready(function(){initNavTree('class_neural_network.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-types">Закрытые типы</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="#friends">Друзья</a> &#124;
 <a href="class_neural_network-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
@@ -98,6 +101,16 @@ $(document).ready(function(){initNavTree('class_neural_network.html',''); initRe
  <a href="class_neural_network.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_neural_network_8h_source.html">NeuralNetwork.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса NeuralNetwork:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_neural_network__coll__graph.png" border="0" usemap="#a_neural_network_coll__map" alt="Collaboration graph"/></div>
+<map name="a_neural_network_coll__map" id="a_neural_network_coll__map">
+<area shape="rect" title="Класс нейросети" alt="" coords="35,109,155,136"/>
+<area shape="rect" href="class_r_n_g.html" title="Класс ГСЧ" alt="" coords="5,5,56,32"/>
+<area shape="rect" href="class_output.html" title="Родительский класс функционала ошибки" alt="" coords="127,5,193,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
@@ -146,6 +159,63 @@ Matrix&#160;</td><td class="memItemRight" valign="bottom"><b>predict</b> (const 
 <tr class="separator:adf367188e3703049aec2687b3987a465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8999f0e3a520af6b1822a2f2744f1e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#af8999f0e3a520af6b1822a2f2744f1e6">read_net</a> (const std::string &amp;folder, const std::string &amp;filename)</td></tr>
 <tr class="separator:af8999f0e3a520af6b1822a2f2744f1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Закрытые типы</h2></td></tr>
+<tr class="memitem:ac994b62eb7bc5bad62d34bf8ef8cca01"><td class="memItemLeft" align="right" valign="top"><a id="ac994b62eb7bc5bad62d34bf8ef8cca01"></a>
+typedef Eigen::Matrix&lt; Scalar, Eigen::Dynamic, Eigen::Dynamic &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Matrix</b></td></tr>
+<tr class="separator:ac994b62eb7bc5bad62d34bf8ef8cca01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ef53398806fc4d0b086b10cd284f26"><td class="memItemLeft" align="right" valign="top"><a id="ad2ef53398806fc4d0b086b10cd284f26"></a>
+typedef std::map&lt; std::string, Scalar &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Meta</b></td></tr>
+<tr class="separator:ad2ef53398806fc4d0b086b10cd284f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:aedb1edc218280dcd8bf11c5403999084"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#aedb1edc218280dcd8bf11c5403999084">check_unit_sizes</a> () const</td></tr>
+<tr class="memdesc:aedb1edc218280dcd8bf11c5403999084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка всех слоев на соотвествие вход текущего == выход предыдущего  <a href="class_neural_network.html#aedb1edc218280dcd8bf11c5403999084">Подробнее...</a><br /></td></tr>
+<tr class="separator:aedb1edc218280dcd8bf11c5403999084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97899ddaf9c831578e4571c8d0e7631"><td class="memItemLeft" align="right" valign="top"><a id="af97899ddaf9c831578e4571c8d0e7631"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>check_unit_workflow</b> () const</td></tr>
+<tr class="separator:af97899ddaf9c831578e4571c8d0e7631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4764f886d7b44b4e461f5bacd9be7c3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a4764f886d7b44b4e461f5bacd9be7c3a">init</a> (int seed, const std::vector&lt; std::vector&lt; Scalar &gt;&gt; &amp;params)</td></tr>
+<tr class="separator:a4764f886d7b44b4e461f5bacd9be7c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfdd81cd4c15e42a11acd7844daeffdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#acfdd81cd4c15e42a11acd7844daeffdf">forward</a> (const Matrix &amp;input)</td></tr>
+<tr class="memdesc:acfdd81cd4c15e42a11acd7844daeffdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проход по всей сетке.  <a href="class_neural_network.html#acfdd81cd4c15e42a11acd7844daeffdf">Подробнее...</a><br /></td></tr>
+<tr class="separator:acfdd81cd4c15e42a11acd7844daeffdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dbe6b89304cdd44a798090baee83c26"><td class="memTemplParams" colspan="2">template&lt;typename TargetType &gt; </td></tr>
+<tr class="memitem:a1dbe6b89304cdd44a798090baee83c26"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a1dbe6b89304cdd44a798090baee83c26">backprop</a> (const Matrix &amp;input, const TargetType &amp;target)</td></tr>
+<tr class="memdesc:a1dbe6b89304cdd44a798090baee83c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backprop для всей сетки. Просто идем из конца сетки в ее начало и вызываем у каждого слоя метод обратного распространения  <a href="class_neural_network.html#a1dbe6b89304cdd44a798090baee83c26">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1dbe6b89304cdd44a798090baee83c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6de55b9112a4f00b2ea9534a10d0e68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#ae6de55b9112a4f00b2ea9534a10d0e68">update</a> (<a class="el" href="class_optimizer.html">Optimizer</a> &amp;opt)</td></tr>
+<tr class="memdesc:ae6de55b9112a4f00b2ea9534a10d0e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновление весов модели  <a href="class_neural_network.html#ae6de55b9112a4f00b2ea9534a10d0e68">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae6de55b9112a4f00b2ea9534a10d0e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05c077fab00e72016577082a5203aea"><td class="memItemLeft" align="right" valign="top"><a id="ac05c077fab00e72016577082a5203aea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mean_loss_update</b> ()</td></tr>
+<tr class="separator:ac05c077fab00e72016577082a5203aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c27e0c73c39602275a5e94181f8ed29"><td class="memItemLeft" align="right" valign="top"><a id="a0c27e0c73c39602275a5e94181f8ed29"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mean_loss_reset</b> ()</td></tr>
+<tr class="separator:a0c27e0c73c39602275a5e94181f8ed29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac593a1bd5f078eb93169ce362aa4892f"><td class="memItemLeft" align="right" valign="top">Meta&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#ac593a1bd5f078eb93169ce362aa4892f">get_meta_info</a> () const</td></tr>
+<tr class="memdesc:ac593a1bd5f078eb93169ce362aa4892f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заполняем словарь для дальнейшего экспортирования сетки  <a href="class_neural_network.html#ac593a1bd5f078eb93169ce362aa4892f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac593a1bd5f078eb93169ce362aa4892f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a524ed324162c3909df942ad1d31187e7"><td class="memItemLeft" align="right" valign="top"><a id="a524ed324162c3909df942ad1d31187e7"></a>
+<a class="el" href="class_r_n_g.html">RNG</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_default_rng</b></td></tr>
+<tr class="separator:a524ed324162c3909df942ad1d31187e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ffb0db9be6839d7ed760f0e941234b5"><td class="memItemLeft" align="right" valign="top"><a id="a4ffb0db9be6839d7ed760f0e941234b5"></a>
+<a class="el" href="class_r_n_g.html">RNG</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_rng</b></td></tr>
+<tr class="separator:a4ffb0db9be6839d7ed760f0e941234b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ccfa01f98822025cf642c8a0ae6ef0"><td class="memItemLeft" align="right" valign="top"><a id="ae0ccfa01f98822025cf642c8a0ae6ef0"></a>
+std::vector&lt; <a class="el" href="class_layer.html">Layer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_layers</b></td></tr>
+<tr class="separator:ae0ccfa01f98822025cf642c8a0ae6ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd2352c46ee6e50b057c58ac48200ce"><td class="memItemLeft" align="right" valign="top"><a id="addd2352c46ee6e50b057c58ac48200ce"></a>
+<a class="el" href="class_output.html">Output</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_output</b></td></tr>
+<tr class="separator:addd2352c46ee6e50b057c58ac48200ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f48744751be00299de75190ae74d689"><td class="memItemLeft" align="right" valign="top"><a id="a9f48744751be00299de75190ae74d689"></a>
+Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>mean_loss</b></td></tr>
+<tr class="separator:a9f48744751be00299de75190ae74d689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Друзья</h2></td></tr>
@@ -273,6 +343,86 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 
 </div>
 </div>
+<a id="a1dbe6b89304cdd44a798090baee83c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dbe6b89304cdd44a798090baee83c26">&#9670;&nbsp;</a></span>backprop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TargetType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NeuralNetwork::backprop </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TargetType &amp;&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Backprop для всей сетки. Просто идем из конца сетки в ее начало и вызываем у каждого слоя метод обратного распространения </p>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TargetType</td><td>- тип таргета, отедльно для задач бинарной классификации и регрессии, а также для многоклассовой классификации</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>- входные данные</td></tr>
+    <tr><td class="paramname">target</td><td>- собственно таргет</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aedb1edc218280dcd8bf11c5403999084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb1edc218280dcd8bf11c5403999084">&#9670;&nbsp;</a></span>check_unit_sizes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NeuralNetwork::check_unit_sizes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка всех слоев на соотвествие вход текущего == выход предыдущего </p>
+
+</div>
+</div>
 <a id="a741eef5530cbbf605423a73ccfc0bea4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a741eef5530cbbf605423a73ccfc0bea4">&#9670;&nbsp;</a></span>count_layers()</h2>
 
@@ -344,6 +494,41 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 
 </div>
 </div>
+<a id="acfdd81cd4c15e42a11acd7844daeffdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfdd81cd4c15e42a11acd7844daeffdf">&#9670;&nbsp;</a></span>forward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NeuralNetwork::forward </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проход по всей сетке. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>- входные данные. Убедитесь, что их длина равна длине входного слоя сетки</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Проверим нулевой слой на соотвествие правилу вход данных == вход нулевого слоя</p>
+
+</div>
+</div>
 <a id="a6b9ed2f41de3a9380fc90577a5a17089"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b9ed2f41de3a9380fc90577a5a17089">&#9670;&nbsp;</a></span>get_derivatives()</h2>
 
@@ -368,6 +553,34 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 </div><div class="memdoc">
 
 <p>Получить производные всех слоев </p>
+<dl class="section return"><dt>Возвращает</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ac593a1bd5f078eb93169ce362aa4892f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac593a1bd5f078eb93169ce362aa4892f">&#9670;&nbsp;</a></span>get_meta_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Meta NeuralNetwork::get_meta_info </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Заполняем словарь для дальнейшего экспортирования сетки </p>
 <dl class="section return"><dt>Возвращает</dt><dd></dd></dl>
 
 </div>
@@ -425,6 +638,49 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 
 <p>Получить параметры сетки </p>
 <dl class="section return"><dt>Возвращает</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a4764f886d7b44b4e461f5bacd9be7c3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4764f886d7b44b4e461f5bacd9be7c3a">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NeuralNetwork::init </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>seed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; Scalar &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Инициализация необходимых параметров сети </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seed</td><td>зерно генерации </td></tr>
+    <tr><td class="paramname">params</td><td>параметры распределений </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -499,6 +755,40 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
     <tr><td class="paramname">param</td><td>- матрица параметров</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae6de55b9112a4f00b2ea9534a10d0e68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6de55b9112a4f00b2ea9534a10d0e68">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NeuralNetwork::update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_optimizer.html">Optimizer</a> &amp;&#160;</td>
+          <td class="paramname"><em>opt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обновление весов модели </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opt</td><td>- собственно оптимайзер</td></tr>
   </table>
   </dd>
 </dl>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['alignedmapvec_252',['AlignedMapVec',['../class_fully_connected.html#aabae8417c6340363fa4b2657408361c1',1,'FullyConnected']]]
+  ['alignedmapvec_328',['AlignedMapVec',['../class_optimizer.html#a008217325d5d27934b1a9aace340235e',1,'Optimizer']]]
 ];

@@ -1,16 +1,20 @@
 var namespaces =
 [
     [ "activate", null, [
-      [ "Identity", "classactivate_1_1_identity.html", null ],
-      [ "LeakyReLU", "classactivate_1_1_leaky_re_l_u.html", null ],
-      [ "ReLU", "classactivate_1_1_re_l_u.html", null ],
-      [ "Sigmoid", "classactivate_1_1_sigmoid.html", null ],
-      [ "Softmax", "classactivate_1_1_softmax.html", null ]
+      [ "Identity", "classactivate_1_1_identity.html", "classactivate_1_1_identity" ],
+      [ "LeakyReLU", "classactivate_1_1_leaky_re_l_u.html", "classactivate_1_1_leaky_re_l_u" ],
+      [ "ReLU", "classactivate_1_1_re_l_u.html", "classactivate_1_1_re_l_u" ],
+      [ "Sigmoid", "classactivate_1_1_sigmoid.html", "classactivate_1_1_sigmoid" ],
+      [ "Softmax", "classactivate_1_1_softmax.html", "classactivate_1_1_softmax" ]
     ] ],
     [ "init", null, [
       [ "Exponential", "classinit_1_1_exponential.html", "classinit_1_1_exponential" ],
-      [ "Normal", "classinit_1_1_normal.html", null ],
-      [ "Uniform", "classinit_1_1_uniform.html", null ]
+      [ "Normal", "classinit_1_1_normal.html", "classinit_1_1_normal" ],
+      [ "Uniform", "classinit_1_1_uniform.html", "classinit_1_1_uniform" ],
+      [ "stairHeight", "_exponential_8h.html#a5618131a2cd93c3e432cb0a9c0c82d28", null ],
+      [ "stairHeightNormal", "_normal_8h.html#a0efc57a2a340f2704f88531c1c7cee7a", null ],
+      [ "stairWidth", "_exponential_8h.html#a6c256b96dced0d04abb1c0bb76cf31b4", null ],
+      [ "stairWidthNormal", "_normal_8h.html#a55e15b670483a2649fd30243fdfff531", null ]
     ] ],
     [ "internal", "namespaceinternal.html", "namespaceinternal" ],
     [ "metrics", null, [

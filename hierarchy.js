@@ -4,7 +4,7 @@ var hierarchy =
     [ "init::Exponential", "classinit_1_1_exponential.html", null ],
     [ "activate::Identity", "classactivate_1_1_identity.html", null ],
     [ "Layer", "class_layer.html", [
-      [ "BatchNorm1D< Distribution, Activate >", "class_batch_norm1_d.html", null ],
+      [ "BatchNorm1D< Distribution, Activation >", "class_batch_norm1_d.html", null ],
       [ "Dropout< Activation >", "class_dropout.html", null ],
       [ "FullyConnected< Distribution, Activation >", "class_fully_connected.html", null ]
     ] ],

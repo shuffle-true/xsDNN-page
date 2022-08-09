@@ -87,6 +87,8 @@ $(document).ready(function(){initNavTree('class_fully_connected.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-types">Закрытые типы</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="#friends">Друзья</a> &#124;
 <a href="class_fully_connected-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
@@ -173,6 +175,50 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>distribution_t
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#af54895d12ba7cd85cb314e08965ece9c">get_workflow</a> () const</td></tr>
 <tr class="memdesc:af54895d12ba7cd85cb314e08965ece9c inherit pub_methods_class_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить текущий процесс <br /></td></tr>
 <tr class="separator:af54895d12ba7cd85cb314e08965ece9c inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Закрытые типы</h2></td></tr>
+<tr class="memitem:a2e93431dd222d34064347f5128e6c8c5"><td class="memItemLeft" align="right" valign="top"><a id="a2e93431dd222d34064347f5128e6c8c5"></a>
+typedef Eigen::Matrix&lt; Scalar, Eigen::Dynamic, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Vector</b></td></tr>
+<tr class="separator:a2e93431dd222d34064347f5128e6c8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2bf5bd5be9bfab48e977729256f776d"><td class="memItemLeft" align="right" valign="top"><a id="ae2bf5bd5be9bfab48e977729256f776d"></a>
+typedef Vector::AlignedMapType&#160;</td><td class="memItemRight" valign="bottom"><b>AlignedMapVec</b></td></tr>
+<tr class="separator:ae2bf5bd5be9bfab48e977729256f776d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a887cc503acbb885dd68cfad8efd533b8"><td class="memItemLeft" align="right" valign="top"><a id="a887cc503acbb885dd68cfad8efd533b8"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#a887cc503acbb885dd68cfad8efd533b8">m_weight</a></td></tr>
+<tr class="memdesc:a887cc503acbb885dd68cfad8efd533b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Веса модели <br /></td></tr>
+<tr class="separator:a887cc503acbb885dd68cfad8efd533b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f55ff124981d34675dbddda13f34f0"><td class="memItemLeft" align="right" valign="top"><a id="ad0f55ff124981d34675dbddda13f34f0"></a>
+Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#ad0f55ff124981d34675dbddda13f34f0">m_bias</a></td></tr>
+<tr class="memdesc:ad0f55ff124981d34675dbddda13f34f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Смещение весов <br /></td></tr>
+<tr class="separator:ad0f55ff124981d34675dbddda13f34f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ddb6188f06ecc1f04f5af6971ca5a6"><td class="memItemLeft" align="right" valign="top"><a id="a61ddb6188f06ecc1f04f5af6971ca5a6"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#a61ddb6188f06ecc1f04f5af6971ca5a6">m_dw</a></td></tr>
+<tr class="memdesc:a61ddb6188f06ecc1f04f5af6971ca5a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Производная весов <br /></td></tr>
+<tr class="separator:a61ddb6188f06ecc1f04f5af6971ca5a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf2f1615c3654e146acf42578935f7d"><td class="memItemLeft" align="right" valign="top"><a id="a2cf2f1615c3654e146acf42578935f7d"></a>
+Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#a2cf2f1615c3654e146acf42578935f7d">m_db</a></td></tr>
+<tr class="memdesc:a2cf2f1615c3654e146acf42578935f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Производная смещения <br /></td></tr>
+<tr class="separator:a2cf2f1615c3654e146acf42578935f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d6fcc2d4eaca8391f3540a4394170a6"><td class="memItemLeft" align="right" valign="top"><a id="a9d6fcc2d4eaca8391f3540a4394170a6"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#a9d6fcc2d4eaca8391f3540a4394170a6">m_z</a></td></tr>
+<tr class="memdesc:a9d6fcc2d4eaca8391f3540a4394170a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значения нейронов до активации <br /></td></tr>
+<tr class="separator:a9d6fcc2d4eaca8391f3540a4394170a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9c420a5f70f8d0558ed33dd2836143"><td class="memItemLeft" align="right" valign="top"><a id="a5a9c420a5f70f8d0558ed33dd2836143"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#a5a9c420a5f70f8d0558ed33dd2836143">m_a</a></td></tr>
+<tr class="memdesc:a5a9c420a5f70f8d0558ed33dd2836143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значения нейронов после активации <br /></td></tr>
+<tr class="separator:a5a9c420a5f70f8d0558ed33dd2836143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b6b72c2e5f6ebdb8f2dbe8d9dce8553"><td class="memItemLeft" align="right" valign="top"><a id="a8b6b72c2e5f6ebdb8f2dbe8d9dce8553"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#a8b6b72c2e5f6ebdb8f2dbe8d9dce8553">m_din</a></td></tr>
+<tr class="memdesc:a8b6b72c2e5f6ebdb8f2dbe8d9dce8553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проивзодная значений нейронов после backprop. <br /></td></tr>
+<tr class="separator:a8b6b72c2e5f6ebdb8f2dbe8d9dce8553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dfdfd0b55caee6550d266577996d8fd"><td class="memItemLeft" align="right" valign="top"><a id="a2dfdfd0b55caee6550d266577996d8fd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#a2dfdfd0b55caee6550d266577996d8fd">BIAS_ACTIVATE</a></td></tr>
+<tr class="memdesc:a2dfdfd0b55caee6550d266577996d8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Применять смещение? <br /></td></tr>
+<tr class="separator:a2dfdfd0b55caee6550d266577996d8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Друзья</h2></td></tr>

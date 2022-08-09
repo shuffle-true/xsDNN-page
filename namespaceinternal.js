@@ -25,9 +25,10 @@ var namespaceinternal =
       [ "BINARYCLASSENTROPY", "namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445ad3b8fb340c189068f1a5ca0ce629e300", null ]
     ] ],
     [ "activation_id", "namespaceinternal.html#aa764f1c79d0e36a83afe70d46d3cef7d", null ],
-    [ "compute_backward_graph1D", "namespaceinternal.html#abc89c77c8c1f70bfd75271196e82ce10", null ],
+    [ "build_confusion_matrix", "namespaceinternal.html#ad117d9780efd3d4660d201a225151443", null ],
+    [ "compute_backward_graph1D", "namespaceinternal.html#aeaec91d38d6255a91ec814f72a1a8f64", null ],
     [ "compute_statistic_graph1D_eval", "namespaceinternal.html#a6a68b31820e82a6ec6387872ca5fabea", null ],
-    [ "compute_statistic_graph1D_train", "namespaceinternal.html#a42e4ba7380b13157e4baffb1f0dca83c", null ],
+    [ "compute_statistic_graph1D_train", "namespaceinternal.html#a5ffb5daa5e8432e0a6acd0c66f0df74f", null ],
     [ "create_directory", "namespaceinternal.html#aa4548c561725c1d1addf33716b619167", null ],
     [ "create_layer", "namespaceinternal.html#ae71c57474250cf86dd7e46d54f044603", null ],
     [ "create_output", "namespaceinternal.html#a58a90de85a907afc2ec45b98597c14cc", null ],

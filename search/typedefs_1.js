@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['constalignedmapvec_253',['ConstAlignedMapVec',['../class_fully_connected.html#a2717486c8de5d8da83f6469c3d4df603',1,'FullyConnected']]]
+  ['meta_329',['Meta',['../class_layer.html#aee4c728c138e60d11e6e0e76a0e85fdc',1,'Layer']]]
 ];

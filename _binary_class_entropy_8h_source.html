@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_binary_class_entropy_8h_source.html',
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_binary_class_entropy.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_binary_class_entropy.html">BinaryClassEntropy</a> : <span class="keyword">public</span> <a class="code" href="class_output.html">Output</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    Matrix m_din;           </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_binary_class_entropy.html#a438ce6164a0db4daff1eb96f57c6fb61">   12</a></span>&#160;    Matrix <a class="code" href="class_binary_class_entropy.html#a438ce6164a0db4daff1eb96f57c6fb61">m_din</a>;           </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_binary_class_entropy.html#ac38fe8b3cb72ec7cef75b8c588409e1a">   17</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_binary_class_entropy.html#ac38fe8b3cb72ec7cef75b8c588409e1a">check_target_data</a>(<span class="keyword">const</span> Matrix&amp; target)<span class="keyword"> const override</span></div>
@@ -125,18 +125,18 @@ $(document).ready(function(){initNavTree('_binary_class_entropy_8h_source.html',
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">//  in = phat</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">//  d (L) / d(in) = -(y) / phat + (1 - y) / (1 - phat)</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        m_din.resize(nrows, ncols);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_binary_class_entropy.html#a438ce6164a0db4daff1eb96f57c6fb61">m_din</a>.resize(nrows, ncols);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">//  Если &#39;y&#39; = 0 -&gt;  d (L) / d(in) = (1) / (1 - phat)</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">//  Если &#39;y&#39; = 1 -&gt;  d (L) / d(in) = - (1) / phat</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        m_din.array() = (target.array() == Scalar(0)).select((Scalar(1) - prev_layer_data.array()).cwiseInverse(),</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class_binary_class_entropy.html#a438ce6164a0db4daff1eb96f57c6fb61">m_din</a>.array() = (target.array() == Scalar(0)).select((Scalar(1) - prev_layer_data.array()).cwiseInverse(),</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            -prev_layer_data.array().cwiseInverse());</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_binary_class_entropy.html#a16e60f3331867cc0d76e72b099f01ad1">   59</a></span>&#160;    <span class="keyword">const</span> Matrix&amp; <a class="code" href="class_binary_class_entropy.html#a16e60f3331867cc0d76e72b099f01ad1">backprop_data</a>()<span class="keyword"> const override</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> m_din;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_binary_class_entropy.html#a438ce6164a0db4daff1eb96f57c6fb61">m_din</a>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_binary_class_entropy.html#a65b2ed352e4f981c1aac601b82a2ecac">   66</a></span>&#160;    Scalar <a class="code" href="class_binary_class_entropy.html#a65b2ed352e4f981c1aac601b82a2ecac">loss</a>()<span class="keyword"> const override</span></div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('_binary_class_entropy_8h_source.html',
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">//  Получим -&gt;</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">//  L = E( log(|m_din|) ) / N</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> Scalar(m_din.array().abs().log().sum()) / <span class="keyword">static_cast&lt;</span>Scalar<span class="keyword">&gt;</span>(m_din.cols());</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> Scalar(<a class="code" href="class_binary_class_entropy.html#a438ce6164a0db4daff1eb96f57c6fb61">m_din</a>.array().abs().log().sum()) / <span class="keyword">static_cast&lt;</span>Scalar<span class="keyword">&gt;</span>(<a class="code" href="class_binary_class_entropy.html#a438ce6164a0db4daff1eb96f57c6fb61">m_din</a>.cols());</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_binary_class_entropy.html#ae619a249c797f9db2b5ad3a4c1086e97">   77</a></span>&#160;    std::string <a class="code" href="class_binary_class_entropy.html#ae619a249c797f9db2b5ad3a4c1086e97">output_type</a>()<span class="keyword"> const override</span></div>
@@ -156,6 +156,7 @@ $(document).ready(function(){initNavTree('_binary_class_entropy_8h_source.html',
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
 <div class="ttc" id="aclass_binary_class_entropy_html"><div class="ttname"><a href="class_binary_class_entropy.html">BinaryClassEntropy</a></div><div class="ttdoc">Класс функционала ошибки для бинарной классификации (BinaryClassEntropy)</div><div class="ttdef"><b>Definition:</b> BinaryClassEntropy.h:10</div></div>
 <div class="ttc" id="aclass_binary_class_entropy_html_a16e60f3331867cc0d76e72b099f01ad1"><div class="ttname"><a href="class_binary_class_entropy.html#a16e60f3331867cc0d76e72b099f01ad1">BinaryClassEntropy::backprop_data</a></div><div class="ttdeci">const Matrix &amp; backprop_data() const override</div><div class="ttdef"><b>Definition:</b> BinaryClassEntropy.h:59</div></div>
+<div class="ttc" id="aclass_binary_class_entropy_html_a438ce6164a0db4daff1eb96f57c6fb61"><div class="ttname"><a href="class_binary_class_entropy.html#a438ce6164a0db4daff1eb96f57c6fb61">BinaryClassEntropy::m_din</a></div><div class="ttdeci">Matrix m_din</div><div class="ttdoc">производные по выходному слою</div><div class="ttdef"><b>Definition:</b> BinaryClassEntropy.h:12</div></div>
 <div class="ttc" id="aclass_binary_class_entropy_html_a65b2ed352e4f981c1aac601b82a2ecac"><div class="ttname"><a href="class_binary_class_entropy.html#a65b2ed352e4f981c1aac601b82a2ecac">BinaryClassEntropy::loss</a></div><div class="ttdeci">Scalar loss() const override</div><div class="ttdef"><b>Definition:</b> BinaryClassEntropy.h:66</div></div>
 <div class="ttc" id="aclass_binary_class_entropy_html_ac38fe8b3cb72ec7cef75b8c588409e1a"><div class="ttname"><a href="class_binary_class_entropy.html#ac38fe8b3cb72ec7cef75b8c588409e1a">BinaryClassEntropy::check_target_data</a></div><div class="ttdeci">void check_target_data(const Matrix &amp;target) const override</div><div class="ttdef"><b>Definition:</b> BinaryClassEntropy.h:17</div></div>
 <div class="ttc" id="aclass_binary_class_entropy_html_ae619a249c797f9db2b5ad3a4c1086e97"><div class="ttname"><a href="class_binary_class_entropy.html#ae619a249c797f9db2b5ad3a4c1086e97">BinaryClassEntropy::output_type</a></div><div class="ttdeci">std::string output_type() const override</div><div class="ttdef"><b>Definition:</b> BinaryClassEntropy.h:77</div></div>

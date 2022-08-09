@@ -1,5 +1,7 @@
 var class_fully_connected =
 [
+    [ "AlignedMapVec", "class_fully_connected.html#ae2bf5bd5be9bfab48e977729256f776d", null ],
+    [ "Vector", "class_fully_connected.html#a2e93431dd222d34064347f5128e6c8c5", null ],
     [ "FullyConnected", "class_fully_connected.html#a738b2e8837b13df25b811156f9336bac", null ],
     [ "activation_type", "class_fully_connected.html#aa6f5483f1daea960ee903b1022817880", null ],
     [ "backprop", "class_fully_connected.html#ad30224a8257142e13f8186c9412ddd13", null ],
@@ -17,5 +19,13 @@ var class_fully_connected =
     [ "set_parametrs", "class_fully_connected.html#ac4a92d50c7593aa21902d273e37e5ecd", null ],
     [ "train", "class_fully_connected.html#a48162487ab4d70e7ea36fa30f2e3f6c9", null ],
     [ "update", "class_fully_connected.html#a076a7fb210d3e16086015adca1944b25", null ],
-    [ "operator<<", "class_fully_connected.html#a00b2195f62fdbf2546b7eb25f4614045", null ]
+    [ "operator<<", "class_fully_connected.html#a00b2195f62fdbf2546b7eb25f4614045", null ],
+    [ "BIAS_ACTIVATE", "class_fully_connected.html#a2dfdfd0b55caee6550d266577996d8fd", null ],
+    [ "m_a", "class_fully_connected.html#a5a9c420a5f70f8d0558ed33dd2836143", null ],
+    [ "m_bias", "class_fully_connected.html#ad0f55ff124981d34675dbddda13f34f0", null ],
+    [ "m_db", "class_fully_connected.html#a2cf2f1615c3654e146acf42578935f7d", null ],
+    [ "m_din", "class_fully_connected.html#a8b6b72c2e5f6ebdb8f2dbe8d9dce8553", null ],
+    [ "m_dw", "class_fully_connected.html#a61ddb6188f06ecc1f04f5af6971ca5a6", null ],
+    [ "m_weight", "class_fully_connected.html#a887cc503acbb885dd68cfad8efd533b8", null ],
+    [ "m_z", "class_fully_connected.html#a9d6fcc2d4eaca8391f3540a4394170a6", null ]
 ];

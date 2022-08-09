@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>xsDNN: Файл /home/shuffle/xsDNN/xsDNN-include/neuralnetwork/Utils/Metrics.h</title>
+<title>xsDNN C++: Файл /home/shuffle/xsDNN/xsDNN-include/neuralnetwork/Utils/Metrics.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">xsDNN
+   <div id="projectname">xsDNN C++
    &#160;<span id="projectnumber">0.0.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
@@ -87,253 +87,36 @@ $(document).ready(function(){initNavTree('_metrics_8h.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Пространства имен</a> &#124;
-<a href="#typedef-members">Определения типов</a> &#124;
 <a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
 <div class="title">Файл Metrics.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;../Config.h&quot;</code><br />
-<code>#include &lt;Eigen/Core&gt;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;stdexcept&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для Metrics.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="_metrics_8h__incl.png" border="0" usemap="#a_2home_2shuffle_2xs_d_n_n_2xs_d_n_n-include_2neuralnetwork_2_utils_2_metrics_8h" alt=""/></div>
-<map name="a_2home_2shuffle_2xs_d_n_n_2xs_d_n_n-include_2neuralnetwork_2_utils_2_metrics_8h" id="a_2home_2shuffle_2xs_d_n_n_2xs_d_n_n-include_2neuralnetwork_2_utils_2_metrics_8h">
-<area shape="rect" title=" " alt="" coords="102,5,323,61"/>
-<area shape="rect" title=" " alt="" coords="5,109,92,136"/>
-<area shape="rect" title=" " alt="" coords="116,109,208,136"/>
-<area shape="rect" title=" " alt="" coords="232,109,295,136"/>
-<area shape="rect" title=" " alt="" coords="319,109,405,136"/>
-</map>
-</div>
-</div>
+
 <p><a href="_metrics_8h_source.html">См. исходные тексты.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Пространства имен</h2></td></tr>
+<tr class="memitem:namespacemetrics"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemetrics.html">metrics</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceinternal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html">internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Определения типов</h2></td></tr>
-<tr class="memitem:a1d362ae157dce5276747d8c9503bcf3b"><td class="memItemLeft" align="right" valign="top">typedef Eigen::Matrix&lt; Scalar, Eigen::Dynamic, Eigen::Dynamic &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a></td></tr>
-<tr class="separator:a1d362ae157dce5276747d8c9503bcf3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Функции</h2></td></tr>
-<tr class="memitem:a9f84cbb711cf5c2b5fefa0a8abfd781e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_metrics_8h.html#a9f84cbb711cf5c2b5fefa0a8abfd781e">MSE_calculate</a> (<a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;target_data, <a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;net_output, bool sqrt=false)</td></tr>
-<tr class="separator:a9f84cbb711cf5c2b5fefa0a8abfd781e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c5cd4a64498974178bdb48100db4c8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_metrics_8h.html#a4c5cd4a64498974178bdb48100db4c8c">MAE_calculate</a> (<a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;target_data, <a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;net_output)</td></tr>
-<tr class="separator:a4c5cd4a64498974178bdb48100db4c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39d989f64aee5b618842d8adc60557a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_metrics_8h.html#a39d989f64aee5b618842d8adc60557a7">R_calculate</a> (<a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;target_data, <a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;net_output)</td></tr>
-<tr class="separator:a39d989f64aee5b618842d8adc60557a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bbff620eda26741462df8138c2764b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_metrics_8h.html#a8bbff620eda26741462df8138c2764b0">MAPE_calculate</a> (<a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;target_data, <a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;net_output)</td></tr>
-<tr class="separator:a8bbff620eda26741462df8138c2764b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dd84cf70570d95393283170160d052a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_metrics_8h.html#a9dd84cf70570d95393283170160d052a">regressor_metrics_calculate</a> (<a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;target_data, <a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;net_output)</td></tr>
-<tr class="separator:a9dd84cf70570d95393283170160d052a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2fb435c36abe6977227d2501e8dd7f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_metrics_8h.html#ac2fb435c36abe6977227d2501e8dd7f1">accuracy_precision_recall_f1_calculate</a> (const <a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;y_true, const <a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;y_pred)</td></tr>
-<tr class="separator:ac2fb435c36abe6977227d2501e8dd7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac81c787bce7405a11cd4bddd2bc6f408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemetrics.html#ac81c787bce7405a11cd4bddd2bc6f408">metrics::MSE_calculate</a> (Matrix &amp;target_data, Matrix &amp;net_output, bool sqrt=false)</td></tr>
+<tr class="separator:ac81c787bce7405a11cd4bddd2bc6f408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab952c791e4ebc2da391a9110a81996e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemetrics.html#ab952c791e4ebc2da391a9110a81996e3">metrics::MAE_calculate</a> (Matrix &amp;target_data, Matrix &amp;net_output)</td></tr>
+<tr class="separator:ab952c791e4ebc2da391a9110a81996e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc69b1f0e819847960d1b1fd57fbb53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemetrics.html#aedc69b1f0e819847960d1b1fd57fbb53">metrics::R_calculate</a> (Matrix &amp;target_data, Matrix &amp;net_output)</td></tr>
+<tr class="separator:aedc69b1f0e819847960d1b1fd57fbb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db6e64db121fae347c5e4914e1d8297"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemetrics.html#a0db6e64db121fae347c5e4914e1d8297">metrics::MAPE_calculate</a> (Matrix &amp;target_data, Matrix &amp;net_output)</td></tr>
+<tr class="separator:a0db6e64db121fae347c5e4914e1d8297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10994281c69df2453f8d733fb115a0bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemetrics.html#a10994281c69df2453f8d733fb115a0bc">metrics::regressor_metrics_calculate</a> (Matrix &amp;target_data, Matrix &amp;net_output)</td></tr>
+<tr class="separator:a10994281c69df2453f8d733fb115a0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c96e11520dfe33fb739a10343154c3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemetrics.html#a8c96e11520dfe33fb739a10343154c3f">metrics::accuracy_precision_recall_f1_calculate</a> (const Matrix &amp;y_true, const Matrix &amp;y_pred)</td></tr>
+<tr class="separator:a8c96e11520dfe33fb739a10343154c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Типы</h2>
-<a id="a1d362ae157dce5276747d8c9503bcf3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d362ae157dce5276747d8c9503bcf3b">&#9670;&nbsp;</a></span>Matrix</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Eigen::Matrix&lt;Scalar, Eigen::Dynamic, Eigen::Dynamic&gt; <a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Функции</h2>
-<a id="ac2fb435c36abe6977227d2501e8dd7f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2fb435c36abe6977227d2501e8dd7f1">&#9670;&nbsp;</a></span>accuracy_precision_recall_f1_calculate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void accuracy_precision_recall_f1_calculate </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>y_true</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>y_pred</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Подсчет основных метрик классификации. Строится confusion matrix и по правилам вычисляются нужные метрики </p><dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">y_true</td><td>матрица ответов </td></tr>
-    <tr><td class="paramname">y_pred</td><td>матрица предсказаний, выданная сеткой </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a4c5cd4a64498974178bdb48100db4c8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c5cd4a64498974178bdb48100db4c8c">&#9670;&nbsp;</a></span>MAE_calculate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MAE_calculate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>target_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>net_output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8bbff620eda26741462df8138c2764b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bbff620eda26741462df8138c2764b0">&#9670;&nbsp;</a></span>MAPE_calculate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MAPE_calculate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>target_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>net_output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9f84cbb711cf5c2b5fefa0a8abfd781e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f84cbb711cf5c2b5fefa0a8abfd781e">&#9670;&nbsp;</a></span>MSE_calculate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MSE_calculate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>target_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>net_output</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>sqrt</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a39d989f64aee5b618842d8adc60557a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39d989f64aee5b618842d8adc60557a7">&#9670;&nbsp;</a></span>R_calculate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void R_calculate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>target_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>net_output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9dd84cf70570d95393283170160d052a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dd84cf70570d95393283170160d052a">&#9670;&nbsp;</a></span>regressor_metrics_calculate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void regressor_metrics_calculate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>target_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_metrics_8h.html#a1d362ae157dce5276747d8c9503bcf3b">Matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>net_output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -17,5 +17,12 @@ var class_dropout =
     [ "set_parametrs", "class_dropout.html#a7c4b6237bff4f8bfdf3f3b2dc97a1069", null ],
     [ "train", "class_dropout.html#a349022cc840e162516fe2def5ce11b4d", null ],
     [ "update", "class_dropout.html#a1dc41e6b75800dfb0a0c8212585bcc60", null ],
-    [ "operator<<", "class_dropout.html#a3dc8fffe7430fa9cdfbdc904f8a53fd3", null ]
+    [ "operator<<", "class_dropout.html#a3dc8fffe7430fa9cdfbdc904f8a53fd3", null ],
+    [ "bernoulli", "class_dropout.html#ab797f6c32a43e2d20897f67a01cb2944", null ],
+    [ "dropout_rate_", "class_dropout.html#a15ec0d1802adcd5474919e758ff60bde", null ],
+    [ "m_a", "class_dropout.html#aa5ca952c93a6e8c04d4cde9d66f71fba", null ],
+    [ "m_din", "class_dropout.html#a1bf17ebca6733320d2133929167dd837", null ],
+    [ "m_z", "class_dropout.html#a1c3a0e8365bba72ac6c15d1df2572323", null ],
+    [ "mask_", "class_dropout.html#a3cd76f079a8499dcbeedd077ce348d64", null ],
+    [ "scale_", "class_dropout.html#a210bf46b90143e5a53928f223ce03bd0", null ]
 ];

@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['m_5fdampening_197',['m_dampening',['../class_s_g_d.html#acd91febcd70d43bc498ee708ec917458',1,'SGD']]],
-  ['m_5fdecay_198',['m_decay',['../class_s_g_d.html#a48ff7e4475ca615151ee0b5db8714c57',1,'SGD']]],
-  ['m_5flrate_199',['m_lrate',['../class_s_g_d.html#a022ad12dff64d757823467dda852c541',1,'SGD']]],
-  ['m_5fmomentum_200',['m_momentum',['../class_s_g_d.html#a02fa41d7868a9bb5272b4d7885422458',1,'SGD']]],
-  ['m_5fnesterov_201',['m_nesterov',['../class_s_g_d.html#a8f857296a4bb825814c319e88464fdc2',1,'SGD']]]
+  ['array_5fsize_5f_224',['array_size_',['../classinternal_1_1bernoulli.html#ae3a23de6704d5a2ba4cad0c1013705ae',1,'internal::bernoulli']]]
 ];

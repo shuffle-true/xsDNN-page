@@ -4,5 +4,6 @@ var class_binary_class_entropy =
     [ "check_target_data", "class_binary_class_entropy.html#ac38fe8b3cb72ec7cef75b8c588409e1a", null ],
     [ "evaluate", "class_binary_class_entropy.html#afeb8256e046d5490e9a9e3774bb4bf35", null ],
     [ "loss", "class_binary_class_entropy.html#a65b2ed352e4f981c1aac601b82a2ecac", null ],
-    [ "output_type", "class_binary_class_entropy.html#ae619a249c797f9db2b5ad3a4c1086e97", null ]
+    [ "output_type", "class_binary_class_entropy.html#ae619a249c797f9db2b5ad3a4c1086e97", null ],
+    [ "m_din", "class_binary_class_entropy.html#a438ce6164a0db4daff1eb96f57c6fb61", null ]
 ];

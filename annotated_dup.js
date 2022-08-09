@@ -1,16 +1,16 @@
 var annotated_dup =
 [
     [ "activate", null, [
-      [ "Identity", "classactivate_1_1_identity.html", null ],
-      [ "LeakyReLU", "classactivate_1_1_leaky_re_l_u.html", null ],
-      [ "ReLU", "classactivate_1_1_re_l_u.html", null ],
-      [ "Sigmoid", "classactivate_1_1_sigmoid.html", null ],
-      [ "Softmax", "classactivate_1_1_softmax.html", null ]
+      [ "Identity", "classactivate_1_1_identity.html", "classactivate_1_1_identity" ],
+      [ "LeakyReLU", "classactivate_1_1_leaky_re_l_u.html", "classactivate_1_1_leaky_re_l_u" ],
+      [ "ReLU", "classactivate_1_1_re_l_u.html", "classactivate_1_1_re_l_u" ],
+      [ "Sigmoid", "classactivate_1_1_sigmoid.html", "classactivate_1_1_sigmoid" ],
+      [ "Softmax", "classactivate_1_1_softmax.html", "classactivate_1_1_softmax" ]
     ] ],
     [ "init", null, [
       [ "Exponential", "classinit_1_1_exponential.html", "classinit_1_1_exponential" ],
-      [ "Normal", "classinit_1_1_normal.html", null ],
-      [ "Uniform", "classinit_1_1_uniform.html", null ]
+      [ "Normal", "classinit_1_1_normal.html", "classinit_1_1_normal" ],
+      [ "Uniform", "classinit_1_1_uniform.html", "classinit_1_1_uniform" ]
     ] ],
     [ "internal", "namespaceinternal.html", [
       [ "Timer", "classinternal_1_1_timer.html", "classinternal_1_1_timer" ],

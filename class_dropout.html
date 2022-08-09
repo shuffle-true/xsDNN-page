@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('class_dropout.html',''); initResizable
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="#friends">Друзья</a> &#124;
 <a href="class_dropout-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
@@ -112,8 +113,10 @@ $(document).ready(function(){initNavTree('class_dropout.html',''); initResizable
 <div class="dyncontent">
 <div class="center"><img src="class_dropout__coll__graph.png" border="0" usemap="#a_dropout_3_01_activation_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="a_dropout_3_01_activation_01_4_coll__map" id="a_dropout_3_01_activation_01_4_coll__map">
-<area shape="rect" title="Класс Dropout слоя" alt="" coords="5,80,176,107"/>
-<area shape="rect" href="class_layer.html" title="Родительский класс слоя" alt="" coords="61,5,120,32"/>
+<area shape="rect" title="Класс Dropout слоя" alt="" coords="5,184,176,211"/>
+<area shape="rect" href="class_layer.html" title="Родительский класс слоя" alt="" coords="40,95,99,121"/>
+<area shape="rect" href="classinternal_1_1bernoulli.html" title="Класс генерации распределения Бернулли" alt="" coords="123,95,261,121"/>
+<area shape="rect" href="class_r_n_g.html" title="Класс ГСЧ" alt="" coords="167,5,217,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
@@ -179,6 +182,37 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>distribution_t
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#af54895d12ba7cd85cb314e08965ece9c">get_workflow</a> () const</td></tr>
 <tr class="memdesc:af54895d12ba7cd85cb314e08965ece9c inherit pub_methods_class_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить текущий процесс <br /></td></tr>
 <tr class="separator:af54895d12ba7cd85cb314e08965ece9c inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a1c3a0e8365bba72ac6c15d1df2572323"><td class="memItemLeft" align="right" valign="top"><a id="a1c3a0e8365bba72ac6c15d1df2572323"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a1c3a0e8365bba72ac6c15d1df2572323">m_z</a></td></tr>
+<tr class="memdesc:a1c3a0e8365bba72ac6c15d1df2572323"><td class="mdescLeft">&#160;</td><td class="mdescRight">значения выходных нейронов до активации <br /></td></tr>
+<tr class="separator:a1c3a0e8365bba72ac6c15d1df2572323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ca952c93a6e8c04d4cde9d66f71fba"><td class="memItemLeft" align="right" valign="top"><a id="aa5ca952c93a6e8c04d4cde9d66f71fba"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#aa5ca952c93a6e8c04d4cde9d66f71fba">m_a</a></td></tr>
+<tr class="memdesc:aa5ca952c93a6e8c04d4cde9d66f71fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">значения выходных нейронов после активации <br /></td></tr>
+<tr class="separator:aa5ca952c93a6e8c04d4cde9d66f71fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf17ebca6733320d2133929167dd837"><td class="memItemLeft" align="right" valign="top"><a id="a1bf17ebca6733320d2133929167dd837"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a1bf17ebca6733320d2133929167dd837">m_din</a></td></tr>
+<tr class="memdesc:a1bf17ebca6733320d2133929167dd837"><td class="mdescLeft">&#160;</td><td class="mdescRight">вектор градиента по этому слою <br /></td></tr>
+<tr class="separator:a1bf17ebca6733320d2133929167dd837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd76f079a8499dcbeedd077ce348d64"><td class="memItemLeft" align="right" valign="top"><a id="a3cd76f079a8499dcbeedd077ce348d64"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a3cd76f079a8499dcbeedd077ce348d64">mask_</a></td></tr>
+<tr class="memdesc:a3cd76f079a8499dcbeedd077ce348d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">маска, содержащая распределение Бернулли для отключения нейронов <br /></td></tr>
+<tr class="separator:a3cd76f079a8499dcbeedd077ce348d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ec0d1802adcd5474919e758ff60bde"><td class="memItemLeft" align="right" valign="top"><a id="a15ec0d1802adcd5474919e758ff60bde"></a>
+Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a15ec0d1802adcd5474919e758ff60bde">dropout_rate_</a></td></tr>
+<tr class="memdesc:a15ec0d1802adcd5474919e758ff60bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">вероятность отключения нейронов (p) <br /></td></tr>
+<tr class="separator:a15ec0d1802adcd5474919e758ff60bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210bf46b90143e5a53928f223ce03bd0"><td class="memItemLeft" align="right" valign="top"><a id="a210bf46b90143e5a53928f223ce03bd0"></a>
+Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a210bf46b90143e5a53928f223ce03bd0">scale_</a></td></tr>
+<tr class="memdesc:a210bf46b90143e5a53928f223ce03bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">коэффицент масштабирования || 1 / (1 - p) ||. <br /></td></tr>
+<tr class="separator:a210bf46b90143e5a53928f223ce03bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab797f6c32a43e2d20897f67a01cb2944"><td class="memItemLeft" align="right" valign="top"><a id="ab797f6c32a43e2d20897f67a01cb2944"></a>
+<a class="el" href="classinternal_1_1bernoulli.html">internal::bernoulli</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#ab797f6c32a43e2d20897f67a01cb2944">bernoulli</a></td></tr>
+<tr class="memdesc:ab797f6c32a43e2d20897f67a01cb2944"><td class="mdescLeft">&#160;</td><td class="mdescRight">заполнение маски слоя из распределения Бернулли <br /></td></tr>
+<tr class="separator:ab797f6c32a43e2d20897f67a01cb2944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Друзья</h2></td></tr>

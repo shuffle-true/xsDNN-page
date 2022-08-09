@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>xsDNN: Файл /home/shuffle/xsDNN/xsDNN-include/neuralnetwork/Utils/Enum.h</title>
+<title>xsDNN C++: Файл /home/shuffle/xsDNN/xsDNN-include/neuralnetwork/Utils/Enum.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">xsDNN
+   <div id="projectname">xsDNN C++
    &#160;<span id="projectnumber">0.0.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
@@ -93,23 +93,14 @@ $(document).ready(function(){initNavTree('_enum_8h.html',''); initResizable(); }
 <div class="title">Файл Enum.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdexcept&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для Enum.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="_enum_8h__incl.png" border="0" usemap="#a_2home_2shuffle_2xs_d_n_n_2xs_d_n_n-include_2neuralnetwork_2_utils_2_enum_8h" alt=""/></div>
-<map name="a_2home_2shuffle_2xs_d_n_n_2xs_d_n_n-include_2neuralnetwork_2_utils_2_enum_8h" id="a_2home_2shuffle_2xs_d_n_n_2xs_d_n_n-include_2neuralnetwork_2_utils_2_enum_8h">
-<area shape="rect" title=" " alt="" coords="5,5,227,61"/>
-<area shape="rect" title=" " alt="" coords="73,109,159,136"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
+<div class="textblock"><div class="dynheader">
 Граф файлов, в которые включается этот файл:</div>
 <div class="dyncontent">
 <div class="center"><img src="_enum_8h__dep__incl.png" border="0" usemap="#a_2home_2shuffle_2xs_d_n_n_2xs_d_n_n-include_2neuralnetwork_2_utils_2_enum_8hdep" alt=""/></div>
 <map name="a_2home_2shuffle_2xs_d_n_n_2xs_d_n_n-include_2neuralnetwork_2_utils_2_enum_8hdep" id="a_2home_2shuffle_2xs_d_n_n_2xs_d_n_n-include_2neuralnetwork_2_utils_2_enum_8hdep">
 <area shape="rect" title=" " alt="" coords="5,5,227,61"/>
-<area shape="rect" href="_fully_connected_8h.html" title=" " alt="" coords="5,109,227,165"/>
+<area shape="rect" href="_cr_layer_8h.html" title=" " alt="" coords="5,109,227,165"/>
+<area shape="rect" href="_neural_network_8h.html" title=" " alt="" coords="5,213,227,269"/>
 </map>
 </div>
 </div>
@@ -123,17 +114,32 @@ $(document).ready(function(){initNavTree('_enum_8h.html',''); initResizable(); }
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Перечисления</h2></td></tr>
 <tr class="memitem:a17d1c6853385e58f806748015a2ad03f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a17d1c6853385e58f806748015a2ad03f">internal::LAYER_TYPE_ENUM</a> { <a class="el" href="namespaceinternal.html#a17d1c6853385e58f806748015a2ad03fadf6ba8294220872c1b04b17f43136716">internal::FULLYCONNECTED</a> = 0
+, <a class="el" href="namespaceinternal.html#a17d1c6853385e58f806748015a2ad03fa1f9ee6e0365b9b6008fe144ed66ecab3">internal::DROPOUT</a>
+, <a class="el" href="namespaceinternal.html#a17d1c6853385e58f806748015a2ad03fa48346ef91b2d5f1742414cb5e69395d8">internal::BATCHNORM1D</a>
  }</td></tr>
+<tr class="memdesc:a17d1c6853385e58f806748015a2ad03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID слоя  <a href="namespaceinternal.html#a17d1c6853385e58f806748015a2ad03f">Подробнее...</a><br /></td></tr>
 <tr class="separator:a17d1c6853385e58f806748015a2ad03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af22b4eec9ac692a7334ea550be120eab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eab">internal::ACTIVATION_FUNC_ENUM</a> { <a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba9544d50c065b101d713dca7cffb2e9e1">internal::RELU</a> = 0
+<tr class="memitem:af22b4eec9ac692a7334ea550be120eab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eab">internal::ACTIVATION_FUNC_ENUM</a> { <br />
+&#160;&#160;<a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba9544d50c065b101d713dca7cffb2e9e1">internal::RELU</a> = 0
+, <a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba6a27db799aca688bb98d8b12a4e6c13e">internal::LEAKYRELU</a>
 , <a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba4bd840f2b352b2f8144f4bba33d18e4e">internal::SIGMOID</a>
 , <a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eabad64825016900e252957c32c9c0851eec">internal::IDENTITY</a>
-, <a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eabafbe869f0d87088abb0aefb6b5a506b71">internal::SOFTMAX</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eabafbe869f0d87088abb0aefb6b5a506b71">internal::SOFTMAX</a>
+<br />
  }</td></tr>
+<tr class="memdesc:af22b4eec9ac692a7334ea550be120eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID функции активации  <a href="namespaceinternal.html#af22b4eec9ac692a7334ea550be120eab">Подробнее...</a><br /></td></tr>
 <tr class="separator:af22b4eec9ac692a7334ea550be120eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5910af6de47727626e888443c7b18c43"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43">internal::DISTRIBUTION_ENUM</a> { <a class="el" href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43acbe15420f02aa16c27d55f76d8a2a194">internal::UNIFORM</a> = 0
+, <a class="el" href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43a4a07fb04f19594592981c91a9d4e165e">internal::EXPONENTIAL</a>
+, <a class="el" href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43a45ca318653594bc78e971e0c84182d35">internal::NORMAL</a>
+ }</td></tr>
+<tr class="memdesc:a5910af6de47727626e888443c7b18c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID распределения при генерации весов  <a href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5910af6de47727626e888443c7b18c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa41d8740c2de155ef01df2d288fef445"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445">internal::OUTPUT_ENUM</a> { <a class="el" href="namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445af183fae882f18e3a50fe2961b943dec9">internal::REGRESSIONMSE</a> = 0
 , <a class="el" href="namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445ad3b8fb340c189068f1a5ca0ce629e300">internal::BINARYCLASSENTROPY</a>
  }</td></tr>
+<tr class="memdesc:aa41d8740c2de155ef01df2d288fef445"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID выходного слоя  <a href="namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445">Подробнее...</a><br /></td></tr>
 <tr class="separator:aa41d8740c2de155ef01df2d288fef445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -142,6 +148,8 @@ $(document).ready(function(){initNavTree('_enum_8h.html',''); initResizable(); }
 <tr class="separator:aad429a1768927e66f1e6c2b64d946027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa764f1c79d0e36a83afe70d46d3cef7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#aa764f1c79d0e36a83afe70d46d3cef7d">internal::activation_id</a> (const std::string &amp;type)</td></tr>
 <tr class="separator:aa764f1c79d0e36a83afe70d46d3cef7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132c969163b5898faa93428f39e68a74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a132c969163b5898faa93428f39e68a74">internal::distribution_id</a> (const std::string &amp;type)</td></tr>
+<tr class="separator:a132c969163b5898faa93428f39e68a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a868a36cb50dad3821255259ca79db479"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a868a36cb50dad3821255259ca79db479">internal::output_id</a> (const std::string &amp;type)</td></tr>
 <tr class="separator:a868a36cb50dad3821255259ca79db479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['m_5fa_231',['m_a',['../class_dropout.html#aa5ca952c93a6e8c04d4cde9d66f71fba',1,'Dropout::m_a()'],['../class_fully_connected.html#a5a9c420a5f70f8d0558ed33dd2836143',1,'FullyConnected::m_a()'],['../class_batch_norm1_d.html#a1937824c7b8f655549de5786869155a7',1,'BatchNorm1D::m_a()']]],
+  ['m_5fbetas_232',['m_betas',['../class_batch_norm1_d.html#af3b0cee2beb3b67da60a6a36cecb3b8a',1,'BatchNorm1D']]],
+  ['m_5fbias_233',['m_bias',['../class_fully_connected.html#ad0f55ff124981d34675dbddda13f34f0',1,'FullyConnected']]],
+  ['m_5fdampening_234',['m_dampening',['../class_s_g_d.html#acd91febcd70d43bc498ee708ec917458',1,'SGD']]],
+  ['m_5fdb_235',['m_db',['../class_fully_connected.html#a2cf2f1615c3654e146acf42578935f7d',1,'FullyConnected']]],
+  ['m_5fdecay_236',['m_decay',['../class_s_g_d.html#a48ff7e4475ca615151ee0b5db8714c57',1,'SGD']]],
+  ['m_5fdin_237',['m_din',['../class_binary_class_entropy.html#a438ce6164a0db4daff1eb96f57c6fb61',1,'BinaryClassEntropy::m_din()'],['../class_regression_m_s_e.html#a4cb584a0b7601f05564400285f0517ca',1,'RegressionMSE::m_din()'],['../class_dropout.html#a1bf17ebca6733320d2133929167dd837',1,'Dropout::m_din()'],['../class_fully_connected.html#a8b6b72c2e5f6ebdb8f2dbe8d9dce8553',1,'FullyConnected::m_din()']]],
+  ['m_5fdw_238',['m_dw',['../class_fully_connected.html#a61ddb6188f06ecc1f04f5af6971ca5a6',1,'FullyConnected']]],
+  ['m_5fgammas_239',['m_gammas',['../class_batch_norm1_d.html#a93768af7c9477a14c6b4889fd37d98a4',1,'BatchNorm1D']]],
+  ['m_5flrate_240',['m_lrate',['../class_s_g_d.html#a022ad12dff64d757823467dda852c541',1,'SGD']]],
+  ['m_5fmean_241',['m_mean',['../class_batch_norm1_d.html#a2c57ea82adbcfe229ae6d6a6768f0bbb',1,'BatchNorm1D']]],
+  ['m_5fmomentum_242',['m_momentum',['../class_s_g_d.html#a02fa41d7868a9bb5272b4d7885422458',1,'SGD']]],
+  ['m_5fnesterov_243',['m_nesterov',['../class_s_g_d.html#a8f857296a4bb825814c319e88464fdc2',1,'SGD']]],
+  ['m_5fvar_244',['m_var',['../class_batch_norm1_d.html#ac49f20d8369d180b7dbc442b539e00e7',1,'BatchNorm1D']]],
+  ['m_5fweight_245',['m_weight',['../class_fully_connected.html#a887cc503acbb885dd68cfad8efd533b8',1,'FullyConnected']]],
+  ['m_5fz_246',['m_z',['../class_batch_norm1_d.html#a1180a9f0c56219363adfa8f18b43f0ca',1,'BatchNorm1D::m_z()'],['../class_dropout.html#a1c3a0e8365bba72ac6c15d1df2572323',1,'Dropout::m_z()'],['../class_fully_connected.html#a9d6fcc2d4eaca8391f3540a4394170a6',1,'FullyConnected::m_z()']]],
+  ['mask_5f_247',['mask_',['../class_dropout.html#a3cd76f079a8499dcbeedd077ce348d64',1,'Dropout']]]
+];

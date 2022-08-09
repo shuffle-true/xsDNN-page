@@ -1,0 +1,5 @@
+<map id="NeuralNetwork" name="NeuralNetwork">
+<area shape="rect" id="node1" title="Класс нейросети" alt="" coords="35,109,155,136"/>
+<area shape="rect" id="node2" href="$class_r_n_g.html" title="Класс ГСЧ" alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node3" href="$class_output.html" title="Родительский класс функционала ошибки" alt="" coords="127,5,193,32"/>
+</map>
