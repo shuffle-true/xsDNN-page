@@ -1,5 +1,8 @@
 var NAVTREEINDEX0 =
 {
+"":[1,0],
+"":[1,1],
+"":[1,3],
 "_metrics_8h.html#a0db6e64db121fae347c5e4914e1d8297":[1,3,2],
 "_metrics_8h.html#a10994281c69df2453f8d733fb115a0bc":[1,3,5],
 "_metrics_8h.html#a8c96e11520dfe33fb739a10343154c3f":[1,3,0],
@@ -226,8 +229,5 @@ var NAVTREEINDEX0 =
 "net.html":[0,1,6],
 "optimizer.html":[0,1,4],
 "output.html":[0,1,5],
-"pages.html":[],
-"":[1,1],
-"":[1,3],
-"":[1,0]
+"pages.html":[]
 };
