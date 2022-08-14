@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('_s_g_d_8h_source.html',''); initResiza
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_s_g_d.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_g_d.html">SGD</a> : <span class="keyword">public</span> <a class="code" href="class_optimizer.html">Optimizer</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_s_g_d.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_g_d.html">SGD</a> : <span class="keyword">public</span> Optimizer</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">typedef</span> Eigen::Array&lt;Scalar, Eigen::Dynamic, 1&gt; Vector;</div>
@@ -142,7 +142,6 @@ $(document).ready(function(){initNavTree('_s_g_d_8h_source.html',''); initResiza
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        theta.noalias() -= <a class="code" href="class_s_g_d.html#a022ad12dff64d757823467dda852c541">m_lrate</a> * grad;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="ttc" id="aclass_optimizer_html"><div class="ttname"><a href="class_optimizer.html">Optimizer</a></div><div class="ttdoc">Родительский класс оптимизаторов</div><div class="ttdef"><b>Definition:</b> Optimizer.h:10</div></div>
 <div class="ttc" id="aclass_s_g_d_html"><div class="ttname"><a href="class_s_g_d.html">SGD</a></div><div class="ttdoc">Класс стохастического градиентного спуска (SGD)</div><div class="ttdef"><b>Definition:</b> SGD.h:10</div></div>
 <div class="ttc" id="aclass_s_g_d_html_a022ad12dff64d757823467dda852c541"><div class="ttname"><a href="class_s_g_d.html#a022ad12dff64d757823467dda852c541">SGD::m_lrate</a></div><div class="ttdeci">Scalar m_lrate</div><div class="ttdoc">длина шага.</div><div class="ttdef"><b>Definition:</b> SGD.h:16</div></div>
 <div class="ttc" id="aclass_s_g_d_html_a02fa41d7868a9bb5272b4d7885422458"><div class="ttname"><a href="class_s_g_d.html#a02fa41d7868a9bb5272b4d7885422458">SGD::m_momentum</a></div><div class="ttdeci">Scalar m_momentum</div><div class="ttdoc">импульс спуска</div><div class="ttdef"><b>Definition:</b> SGD.h:18</div></div>

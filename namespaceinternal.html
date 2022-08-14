@@ -100,6 +100,8 @@ $(document).ready(function(){initNavTree('namespaceinternal.html',''); initResiz
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinternal_1_1_progress_bar.html">ProgressBar</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinternal_1_1mnist__header.html">mnist_header</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinternal_1_1bernoulli.html">bernoulli</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс генерации распределения Бернулли  <a href="classinternal_1_1bernoulli.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,6 +133,7 @@ $(document).ready(function(){initNavTree('namespaceinternal.html',''); initResiz
 <tr class="separator:a5910af6de47727626e888443c7b18c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa41d8740c2de155ef01df2d288fef445"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445">OUTPUT_ENUM</a> { <a class="el" href="namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445af183fae882f18e3a50fe2961b943dec9">REGRESSIONMSE</a> = 0
 , <a class="el" href="namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445ad3b8fb340c189068f1a5ca0ce629e300">BINARYCLASSENTROPY</a>
+, <b>MULTICLASSENTROPY</b>
  }</td></tr>
 <tr class="memdesc:aa41d8740c2de155ef01df2d288fef445"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID выходного слоя  <a href="namespaceinternal.html#aa41d8740c2de155ef01df2d288fef445">Подробнее...</a><br /></td></tr>
 <tr class="separator:aa41d8740c2de155ef01df2d288fef445"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,7 +150,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_backward_grap
 <tr class="separator:aeaec91d38d6255a91ec814f72a1a8f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae71c57474250cf86dd7e46d54f044603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#ae71c57474250cf86dd7e46d54f044603">create_layer</a> (const std::map&lt; std::string, Scalar &gt; &amp;map, const int &amp;index)</td></tr>
 <tr class="separator:ae71c57474250cf86dd7e46d54f044603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58a90de85a907afc2ec45b98597c14cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_output.html">Output</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a58a90de85a907afc2ec45b98597c14cc">create_output</a> (const std::map&lt; std::string, Scalar &gt; &amp;map)</td></tr>
+<tr class="memitem:a58a90de85a907afc2ec45b98597c14cc"><td class="memItemLeft" align="right" valign="top">Output *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a58a90de85a907afc2ec45b98597c14cc">create_output</a> (const std::map&lt; std::string, Scalar &gt; &amp;map)</td></tr>
 <tr class="separator:a58a90de85a907afc2ec45b98597c14cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad429a1768927e66f1e6c2b64d946027"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#aad429a1768927e66f1e6c2b64d946027">layer_id</a> (const std::string &amp;type)</td></tr>
 <tr class="separator:aad429a1768927e66f1e6c2b64d946027"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +177,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_backward_grap
 <tr class="memitem:ad117d9780efd3d4660d201a225151443"><td class="memItemLeft" align="right" valign="top"><a id="ad117d9780efd3d4660d201a225151443"></a>
 static Matrix&#160;</td><td class="memItemRight" valign="bottom"><b>build_confusion_matrix</b> (const Scalar *real, const Scalar *predict, const long &amp;sample_size)</td></tr>
 <tr class="separator:ad117d9780efd3d4660d201a225151443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6cfc4495db68703fa47622e3129d32"><td class="memTemplParams" colspan="2"><a id="a8e6cfc4495db68703fa47622e3129d32"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8e6cfc4495db68703fa47622e3129d32"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>reverse_endian</b> (T *p)</td></tr>
+<tr class="separator:a8e6cfc4495db68703fa47622e3129d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac07355ec8461746f49e52d1fff4439c6"><td class="memItemLeft" align="right" valign="top"><a id="ac07355ec8461746f49e52d1fff4439c6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_little_endian</b> ()</td></tr>
+<tr class="separator:ac07355ec8461746f49e52d1fff4439c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2f177696d5b5b4f1af1fae9e5e7a78"><td class="memItemLeft" align="right" valign="top"><a id="a0c2f177696d5b5b4f1af1fae9e5e7a78"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>parse_mnist_header</b> (std::ifstream &amp;ifs, <a class="el" href="structinternal_1_1mnist__header.html">mnist_header</a> &amp;header)</td></tr>
+<tr class="separator:a0c2f177696d5b5b4f1af1fae9e5e7a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6552431ec68293b082f37fe81afb5e88"><td class="memItemLeft" align="right" valign="top"><a id="a6552431ec68293b082f37fe81afb5e88"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>parse_mnist_image</b> (std::ifstream &amp;ifs, const <a class="el" href="structinternal_1_1mnist__header.html">mnist_header</a> &amp;header, const int width, const int height, const Scalar &amp;scale_min, const Scalar &amp;scale_max, const int x_padding, const int y_padding, Eigen::VectorXd &amp;col)</td></tr>
+<tr class="separator:a6552431ec68293b082f37fe81afb5e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b8021e30d34fc051ac96750c5e4ea41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a1b8021e30d34fc051ac96750c5e4ea41">shuffle</a> (int *arr, const int n, <a class="el" href="class_r_n_g.html">RNG</a> &amp;rng)</td></tr>
 <tr class="separator:a1b8021e30d34fc051ac96750c5e4ea41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18cfbdb7ba8d1ae1092a2c8ce4c8d077"><td class="memTemplParams" colspan="2">template&lt;typename DerivedX , typename DerivedY , typename XType , typename YType &gt; </td></tr>
@@ -481,7 +497,7 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform_random<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_output.html">Output</a>* internal::create_output </td>
+          <td class="memname">Output* internal::create_output </td>
           <td>(</td>
           <td class="paramtype">const std::map&lt; std::string, Scalar &gt; &amp;&#160;</td>
           <td class="paramname"><em>map</em></td><td>)</td>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dropout_140',['Dropout',['../class_dropout.html',1,'']]]
+  ['crossentropyloss_148',['CrossEntropyLoss',['../class_cross_entropy_loss.html',1,'']]]
 ];

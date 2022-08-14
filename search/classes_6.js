@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['neuralnetwork_146',['NeuralNetwork',['../class_neural_network.html',1,'']]],
-  ['normal_147',['Normal',['../classinit_1_1_normal.html',1,'init']]]
+  ['layer_153',['Layer',['../class_layer.html',1,'']]],
+  ['leakyrelu_154',['LeakyReLU',['../classactivate_1_1_leaky_re_l_u.html',1,'activate']]]
 ];

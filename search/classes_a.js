@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['sgd_154',['SGD',['../class_s_g_d.html',1,'']]],
-  ['sigmoid_155',['Sigmoid',['../classactivate_1_1_sigmoid.html',1,'activate']]],
-  ['softmax_156',['Softmax',['../classactivate_1_1_softmax.html',1,'activate']]]
+  ['relu_160',['ReLU',['../classactivate_1_1_re_l_u.html',1,'activate']]],
+  ['rng_161',['RNG',['../class_r_n_g.html',1,'']]]
 ];

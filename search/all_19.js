@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['Оптимизация_132',['Оптимизация',['../optimizer.html',1,'advanced']]]
+  ['Оптимизация_139',['Оптимизация',['../optimizer.html',1,'advanced']]]
 ];

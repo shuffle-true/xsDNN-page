@@ -1,4 +1,6 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" href="$class_optimizer.html" title="Родительский класс оптимизаторов" alt="" coords="5,5,92,32"/>
-<area shape="rect" id="node2" href="$class_s_g_d.html" title="Класс стохастического градиентного спуска (SGD)" alt="" coords="140,5,191,32"/>
+<area shape="rect" id="node1" href="$class_layer.html" title="Родительский класс слоя" alt="" coords="5,71,64,98"/>
+<area shape="rect" id="node2" href="$class_batch_norm1_d.html" title="Класс слоя пакетной нормализации (BatchNorm1D)" alt="" coords="117,5,325,47"/>
+<area shape="rect" id="node3" href="$class_dropout.html" title="Класс Dropout слоя" alt="" coords="135,71,306,98"/>
+<area shape="rect" id="node4" href="$class_fully_connected.html" title="Класс FullyConnected слоя" alt="" coords="112,123,329,164"/>
 </map>

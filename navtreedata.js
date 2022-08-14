@@ -26,6 +26,7 @@ var NAVTREE =
 [
   [ "xsDNN C++", "index.html", [
     [ "Руководство пользователя", "index.html", "index" ],
+    [ "Список задач", "todo.html", null ],
     [ "Пространство имен", "namespaces.html", "namespaces" ],
     [ "Классы", "annotated.html", [
       [ "Классы управления", "annotated.html", "annotated_dup" ],
@@ -38,7 +39,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_exponential_8h.html#a5618131a2cd93c3e432cb0a9c0c82d28",
-"classinit_1_1_uniform.html"
+"classinit_1_1_uniform.html#a56b905e34c9539752fa464d9ee0f5ac4"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

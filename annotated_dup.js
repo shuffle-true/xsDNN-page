@@ -15,17 +15,17 @@ var annotated_dup =
     [ "internal", "namespaceinternal.html", [
       [ "Timer", "classinternal_1_1_timer.html", "classinternal_1_1_timer" ],
       [ "ProgressBar", "classinternal_1_1_progress_bar.html", "classinternal_1_1_progress_bar" ],
+      [ "mnist_header", "structinternal_1_1mnist__header.html", "structinternal_1_1mnist__header" ],
       [ "bernoulli", "classinternal_1_1bernoulli.html", "classinternal_1_1bernoulli" ]
     ] ],
     [ "BatchNorm1D", "class_batch_norm1_d.html", "class_batch_norm1_d" ],
-    [ "BinaryClassEntropy", "class_binary_class_entropy.html", "class_binary_class_entropy" ],
+    [ "BinaryEntropyLoss", "class_binary_entropy_loss.html", "class_binary_entropy_loss" ],
+    [ "CrossEntropyLoss", "class_cross_entropy_loss.html", "class_cross_entropy_loss" ],
     [ "Dropout", "class_dropout.html", "class_dropout" ],
     [ "FullyConnected", "class_fully_connected.html", "class_fully_connected" ],
     [ "Layer", "class_layer.html", "class_layer" ],
+    [ "MSELoss", "class_m_s_e_loss.html", "class_m_s_e_loss" ],
     [ "NeuralNetwork", "class_neural_network.html", "class_neural_network" ],
-    [ "Optimizer", "class_optimizer.html", "class_optimizer" ],
-    [ "Output", "class_output.html", "class_output" ],
-    [ "RegressionMSE", "class_regression_m_s_e.html", "class_regression_m_s_e" ],
     [ "RNG", "class_r_n_g.html", "class_r_n_g" ],
     [ "SGD", "class_s_g_d.html", "class_s_g_d" ]
 ];

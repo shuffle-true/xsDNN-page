@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('class_dropout.html',''); initResizable
 <tr class="separator:ad08260f163fc2ff4a36ae1694014393b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89bf126c1189d67c510136ed00c5f856"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a89bf126c1189d67c510136ed00c5f856">backprop_data</a> () const override</td></tr>
 <tr class="separator:a89bf126c1189d67c510136ed00c5f856"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dc41e6b75800dfb0a0c8212585bcc60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a1dc41e6b75800dfb0a0c8212585bcc60">update</a> (<a class="el" href="class_optimizer.html">Optimizer</a> &amp;opt) override</td></tr>
+<tr class="memitem:a1dc41e6b75800dfb0a0c8212585bcc60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a1dc41e6b75800dfb0a0c8212585bcc60">update</a> (Optimizer &amp;opt) override</td></tr>
 <tr class="separator:a1dc41e6b75800dfb0a0c8212585bcc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a349022cc840e162516fe2def5ce11b4d"><td class="memItemLeft" align="right" valign="top"><a id="a349022cc840e162516fe2def5ce11b4d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a349022cc840e162516fe2def5ce11b4d">train</a> () override</td></tr>
@@ -586,7 +586,7 @@ template&lt;typename Activation &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_dropout.html">Dropout</a>&lt; Activation &gt;::update </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_optimizer.html">Optimizer</a> &amp;&#160;</td>
+          <td class="paramtype">Optimizer &amp;&#160;</td>
           <td class="paramname"><em>opt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -599,7 +599,7 @@ template&lt;typename Activation &gt; </div>
 </div><div class="memdoc">
 <p>В этом слое не участвуют алгоритмы оптимизации </p><dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opt</td><td>объект класса <a class="el" href="class_optimizer.html" title="Родительский класс оптимизаторов">Optimizer</a> </td></tr>
+    <tr><td class="paramname">opt</td><td>объект класса Optimizer </td></tr>
   </table>
   </dd>
 </dl>

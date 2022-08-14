@@ -1,5 +1,3 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" href="$class_output.html" title="Родительский класс функционала ошибки" alt="" coords="5,31,72,57"/>
-<area shape="rect" id="node2" href="$class_binary_class_entropy.html" title="Класс функционала ошибки для бинарной классификации (BinaryClassEntropy)" alt="" coords="120,5,269,32"/>
-<area shape="rect" id="node3" href="$class_regression_m_s_e.html" title="Класс функционала ошибки для регрессии (RegressionMSE)" alt="" coords="133,56,256,83"/>
+<area shape="rect" id="node1" href="$class_neural_network.html" title="Класс нейросети" alt="" coords="5,5,125,32"/>
 </map>

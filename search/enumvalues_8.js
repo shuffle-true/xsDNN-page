@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['sigmoid_266',['SIGMOID',['../namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba4bd840f2b352b2f8144f4bba33d18e4e',1,'internal']]],
-  ['softmax_267',['SOFTMAX',['../namespaceinternal.html#af22b4eec9ac692a7334ea550be120eabafbe869f0d87088abb0aefb6b5a506b71',1,'internal']]]
+  ['sigmoid_282',['SIGMOID',['../namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba4bd840f2b352b2f8144f4bba33d18e4e',1,'internal']]],
+  ['softmax_283',['SOFTMAX',['../namespaceinternal.html#af22b4eec9ac692a7334ea550be120eabafbe869f0d87088abb0aefb6b5a506b71',1,'internal']]]
 ];

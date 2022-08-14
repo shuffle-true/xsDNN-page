@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('class_fully_connected.html',''); initR
 <tr class="separator:ad30224a8257142e13f8186c9412ddd13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3f35923ba3b084bf07dacdb176e630c"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#ac3f35923ba3b084bf07dacdb176e630c">backprop_data</a> () const override</td></tr>
 <tr class="separator:ac3f35923ba3b084bf07dacdb176e630c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a076a7fb210d3e16086015adca1944b25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#a076a7fb210d3e16086015adca1944b25">update</a> (<a class="el" href="class_optimizer.html">Optimizer</a> &amp;opt) override</td></tr>
+<tr class="memitem:a076a7fb210d3e16086015adca1944b25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#a076a7fb210d3e16086015adca1944b25">update</a> (Optimizer &amp;opt) override</td></tr>
 <tr class="separator:a076a7fb210d3e16086015adca1944b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f4b8a29d156db5fba7d872fb2ff0e10"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Scalar &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fully_connected.html#a8f4b8a29d156db5fba7d872fb2ff0e10">get_parametrs</a> () const override</td></tr>
 <tr class="separator:a8f4b8a29d156db5fba7d872fb2ff0e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -749,7 +749,7 @@ template&lt;typename Distribution , typename Activation &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_fully_connected.html">FullyConnected</a>&lt; Distribution, Activation &gt;::update </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_optimizer.html">Optimizer</a> &amp;&#160;</td>
+          <td class="paramtype">Optimizer &amp;&#160;</td>
           <td class="paramname"><em>opt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -760,9 +760,9 @@ template&lt;typename Distribution , typename Activation &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Обновление весов и смещений используя переданный алгоритм оптимизации (см. <a class="el" href="class_optimizer.html" title="Родительский класс оптимизаторов">Optimizer</a>) </p><dl class="params"><dt>Аргументы</dt><dd>
+<p>Обновление весов и смещений используя переданный алгоритм оптимизации (см. Optimizer) </p><dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opt</td><td>оптимайзер. Объект класса, унаследованного от <a class="el" href="class_optimizer.html" title="Родительский класс оптимизаторов">Optimizer</a>. </td></tr>
+    <tr><td class="paramname">opt</td><td>оптимайзер. Объект класса, унаследованного от Optimizer. </td></tr>
   </table>
   </dd>
 </dl>

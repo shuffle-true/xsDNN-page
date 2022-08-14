@@ -7,6 +7,10 @@ var namespaces =
       [ "Sigmoid", "classactivate_1_1_sigmoid.html", "classactivate_1_1_sigmoid" ],
       [ "Softmax", "classactivate_1_1_softmax.html", "classactivate_1_1_softmax" ]
     ] ],
+    [ "dataset", "namespacedataset.html", [
+      [ "parse_mnist_image", "namespacedataset.html#a00bd78672877e899b3ad1373188508f2", null ],
+      [ "parse_mnist_label", "namespacedataset.html#a5ad7f8b1238302bb99cb28e3f6877de1", null ]
+    ] ],
     [ "init", null, [
       [ "Exponential", "classinit_1_1_exponential.html", "classinit_1_1_exponential" ],
       [ "Normal", "classinit_1_1_normal.html", "classinit_1_1_normal" ],

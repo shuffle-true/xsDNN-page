@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('class_batch_norm1_d.html',''); initRes
 <tr class="separator:a00579c1e8f1af68413e78574f75ee49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83325a899c78379c2fbf18ed0026e4c0"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a83325a899c78379c2fbf18ed0026e4c0">backprop_data</a> () const override</td></tr>
 <tr class="separator:a83325a899c78379c2fbf18ed0026e4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3429d6f38f448d093ae86733942d6141"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a3429d6f38f448d093ae86733942d6141">update</a> (<a class="el" href="class_optimizer.html">Optimizer</a> &amp;opt) override</td></tr>
+<tr class="memitem:a3429d6f38f448d093ae86733942d6141"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a3429d6f38f448d093ae86733942d6141">update</a> (Optimizer &amp;opt) override</td></tr>
 <tr class="separator:a3429d6f38f448d093ae86733942d6141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d94a991a3bcd6c4009cde79de78c2a5"><td class="memItemLeft" align="right" valign="top"><a id="a2d94a991a3bcd6c4009cde79de78c2a5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a2d94a991a3bcd6c4009cde79de78c2a5">train</a> () override</td></tr>
@@ -710,7 +710,7 @@ template&lt;typename Distribution , typename Activation &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Distribution, Activation &gt;::update </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_optimizer.html">Optimizer</a> &amp;&#160;</td>
+          <td class="paramtype">Optimizer &amp;&#160;</td>
           <td class="paramname"><em>opt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -723,7 +723,7 @@ template&lt;typename Distribution , typename Activation &gt; </div>
 </div><div class="memdoc">
 <p>Обновление параметров слоя - векторов <em>gammas</em> и <em>betas</em> </p><dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opt</td><td>- объект класса <a class="el" href="class_optimizer.html" title="Родительский класс оптимизаторов">Optimizer</a> </td></tr>
+    <tr><td class="paramname">opt</td><td>- объект класса Optimizer </td></tr>
   </table>
   </dd>
 </dl>

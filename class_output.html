@@ -102,9 +102,10 @@ $(document).ready(function(){initNavTree('class_output.html',''); initResizable(
 <div class="dyncontent">
 <div class="center"><img src="class_output__inherit__graph.png" border="0" usemap="#a_output_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_output_inherit__map" id="a_output_inherit__map">
-<area shape="rect" title="Родительский класс функционала ошибки" alt="" coords="127,5,193,32"/>
-<area shape="rect" href="class_binary_class_entropy.html" title="Класс функционала ошибки для бинарной классификации (BinaryClassEntropy)" alt="" coords="5,80,155,107"/>
-<area shape="rect" href="class_regression_m_s_e.html" title="Класс функционала ошибки для регрессии (RegressionMSE)" alt="" coords="179,80,301,107"/>
+<area shape="rect" title="Родительский класс функционала ошибки" alt="" coords="207,5,274,32"/>
+<area shape="rect" href="class_binary_entropy_loss.html" title="Класс функционала ошибки для бинарной классификации (BinaryClassEntropy)" alt="" coords="5,80,148,107"/>
+<area shape="rect" href="class_cross_entropy_loss.html" title=" " alt="" coords="172,80,309,107"/>
+<area shape="rect" href="class_m_s_e_loss.html" title="Класс функционала ошибки для регрессии (RegressionMSE)" alt="" coords="333,80,412,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
@@ -165,7 +166,7 @@ virtual const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><b
   </dd>
 </dl>
 
-<p>Переопределяется в <a class="el" href="class_binary_class_entropy.html#ac38fe8b3cb72ec7cef75b8c588409e1a">BinaryClassEntropy</a>.</p>
+<p>Переопределяется в <a class="el" href="class_cross_entropy_loss.html#ab4b330c2dc717d59cde310bd7ea06ebc">CrossEntropyLoss</a> и <a class="el" href="class_binary_entropy_loss.html#aa528779b2abf7fd5e4754a5c5f8bf41b">BinaryEntropyLoss</a>.</p>
 
 </div>
 </div>
@@ -212,7 +213,7 @@ virtual const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><b
   </dd>
 </dl>
 
-<p>Замещается в <a class="el" href="class_regression_m_s_e.html#a132f8d9b5c178760f2e9820639357959">RegressionMSE</a> и <a class="el" href="class_binary_class_entropy.html#afeb8256e046d5490e9a9e3774bb4bf35">BinaryClassEntropy</a>.</p>
+<p>Замещается в <a class="el" href="class_m_s_e_loss.html#a047946b722896c8fc086d6ea73710ea4">MSELoss</a>, <a class="el" href="class_cross_entropy_loss.html#a370ce9dd85a7ba5e50e4757e8b9331a3">CrossEntropyLoss</a> и <a class="el" href="class_binary_entropy_loss.html#a824e6bc9659c22c98024c9504df57efa">BinaryEntropyLoss</a>.</p>
 
 </div>
 </div>
@@ -242,7 +243,7 @@ virtual const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><b
 <p>None </p>
 <dl class="section return"><dt>Возвращает</dt><dd>Вычисляет лосс</dd></dl>
 
-<p>Замещается в <a class="el" href="class_regression_m_s_e.html#a37b003083cab379a68b1f5d180c89744">RegressionMSE</a> и <a class="el" href="class_binary_class_entropy.html#a65b2ed352e4f981c1aac601b82a2ecac">BinaryClassEntropy</a>.</p>
+<p>Замещается в <a class="el" href="class_m_s_e_loss.html#a24fdad3b7ff10462f74c8e8923b4ba74">MSELoss</a>, <a class="el" href="class_cross_entropy_loss.html#a144b171ae67a5e9ab50725f73bf5d512">CrossEntropyLoss</a> и <a class="el" href="class_binary_entropy_loss.html#ae9f860a95220f41c411c9029762eef0e">BinaryEntropyLoss</a>.</p>
 
 </div>
 </div>
@@ -272,7 +273,7 @@ virtual const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><b
 <p>None </p>
 <dl class="section return"><dt>Возвращает</dt><dd>Тип выходного слоя, нужно для записи модели в файл</dd></dl>
 
-<p>Замещается в <a class="el" href="class_regression_m_s_e.html#a49d0650620bbdd7f1263b0fe259d6439">RegressionMSE</a> и <a class="el" href="class_binary_class_entropy.html#ae619a249c797f9db2b5ad3a4c1086e97">BinaryClassEntropy</a>.</p>
+<p>Замещается в <a class="el" href="class_m_s_e_loss.html#acc0eefa97e47d480611d82b981713cf2">MSELoss</a>, <a class="el" href="class_cross_entropy_loss.html#a284d92375aab31dc79ed41a0ba6deb52">CrossEntropyLoss</a> и <a class="el" href="class_binary_entropy_loss.html#a66e104e01e8d8750fb49525f9cbf59db">BinaryEntropyLoss</a>.</p>
 
 </div>
 </div>

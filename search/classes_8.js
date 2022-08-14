@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['progressbar_150',['ProgressBar',['../classinternal_1_1_progress_bar.html',1,'internal']]]
+  ['neuralnetwork_157',['NeuralNetwork',['../class_neural_network.html',1,'']]],
+  ['normal_158',['Normal',['../classinit_1_1_normal.html',1,'init']]]
 ];

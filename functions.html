@@ -127,15 +127,21 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 , <a class="el" href="class_dropout.html#ad08260f163fc2ff4a36ae1694014393b">Dropout&lt; Activation &gt;</a>
 , <a class="el" href="class_fully_connected.html#ad30224a8257142e13f8186c9412ddd13">FullyConnected&lt; Distribution, Activation &gt;</a>
 , <a class="el" href="class_layer.html#a301b6101fc12b9b1578c72d93dfa029f">Layer</a>
-, <a class="el" href="class_neural_network.html#a1dbe6b89304cdd44a798090baee83c26">NeuralNetwork</a>
+</li>
+<li>Backprop()
+: <a class="el" href="class_neural_network.html#a6c23e78607779f00a3ab336dc09cfa9a">NeuralNetwork</a>
+</li>
+<li>backprop()
+: <a class="el" href="class_neural_network.html#a80546ccdf7b3c03361e3e599014e1da7">NeuralNetwork</a>
 </li>
 <li>backprop_data()
 : <a class="el" href="class_batch_norm1_d.html#a83325a899c78379c2fbf18ed0026e4c0">BatchNorm1D&lt; Distribution, Activation &gt;</a>
-, <a class="el" href="class_binary_class_entropy.html#a16e60f3331867cc0d76e72b099f01ad1">BinaryClassEntropy</a>
+, <a class="el" href="class_binary_entropy_loss.html#af36820752e750b18e74d6fa7533bf54e">BinaryEntropyLoss</a>
+, <a class="el" href="class_cross_entropy_loss.html#aa7759d7aa2023203e3d4d372b24dc1fc">CrossEntropyLoss</a>
 , <a class="el" href="class_dropout.html#a89bf126c1189d67c510136ed00c5f856">Dropout&lt; Activation &gt;</a>
 , <a class="el" href="class_fully_connected.html#ac3f35923ba3b084bf07dacdb176e630c">FullyConnected&lt; Distribution, Activation &gt;</a>
 , <a class="el" href="class_layer.html#ae30d9b11691bf94f234d105e2006d069">Layer</a>
-, <a class="el" href="class_regression_m_s_e.html#a49f194c8fababec75361e83e6d9d720a">RegressionMSE</a>
+, <a class="el" href="class_m_s_e_loss.html#ad6768d36d56206721112f317858d4fc9">MSELoss</a>
 </li>
 <li>BatchNorm1D()
 : <a class="el" href="class_batch_norm1_d.html#af26ce8b1cc2f361a7106ae0affbaa345">BatchNorm1D&lt; Distribution, Activation &gt;</a>
@@ -151,8 +157,8 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
 <li>check_target_data()
-: <a class="el" href="class_binary_class_entropy.html#ac38fe8b3cb72ec7cef75b8c588409e1a">BinaryClassEntropy</a>
-, <a class="el" href="class_output.html#ab3893f15f4682a8a31d0f5a5084fb033">Output</a>
+: <a class="el" href="class_binary_entropy_loss.html#aa528779b2abf7fd5e4754a5c5f8bf41b">BinaryEntropyLoss</a>
+, <a class="el" href="class_cross_entropy_loss.html#ab4b330c2dc717d59cde310bd7ea06ebc">CrossEntropyLoss</a>
 </li>
 <li>check_unit_sizes()
 : <a class="el" href="class_neural_network.html#aedb1edc218280dcd8bf11c5403999084">NeuralNetwork</a>
@@ -182,9 +188,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 , <a class="el" href="class_neural_network.html#aab6985271adb94b77445e1624006f2e1">NeuralNetwork</a>
 </li>
 <li>evaluate()
-: <a class="el" href="class_binary_class_entropy.html#afeb8256e046d5490e9a9e3774bb4bf35">BinaryClassEntropy</a>
-, <a class="el" href="class_output.html#aeb03ae6e65e96b20666f227a71bf6ffc">Output</a>
-, <a class="el" href="class_regression_m_s_e.html#a132f8d9b5c178760f2e9820639357959">RegressionMSE</a>
+: <a class="el" href="class_binary_entropy_loss.html#a824e6bc9659c22c98024c9504df57efa">BinaryEntropyLoss</a>
+, <a class="el" href="class_cross_entropy_loss.html#a370ce9dd85a7ba5e50e4757e8b9331a3">CrossEntropyLoss</a>
+, <a class="el" href="class_m_s_e_loss.html#a047946b722896c8fc086d6ea73710ea4">MSELoss</a>
 </li>
 <li>export_net()
 : <a class="el" href="class_neural_network.html#adf367188e3703049aec2687b3987a465">NeuralNetwork</a>
@@ -206,6 +212,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 , <a class="el" href="class_layer.html#adbf80e0fa5901464a56afaaea5f3f745">Layer</a>
 , <a class="el" href="class_neural_network.html#acfdd81cd4c15e42a11acd7844daeffdf">NeuralNetwork</a>
 </li>
+<li>Forward()
+: <a class="el" href="class_neural_network.html#a109fb29afd1ebb3c1548d38f5dc53e42">NeuralNetwork</a>
+</li>
 <li>FullyConnected()
 : <a class="el" href="class_fully_connected.html#a738b2e8837b13df25b811156f9336bac">FullyConnected&lt; Distribution, Activation &gt;</a>
 </li>
@@ -213,6 +222,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_g"></a>- g -</h3><ul>
+<li>generate_batch()
+: <a class="el" href="class_neural_network.html#a1b357e88ad6f9eb4ce97583a2a37a5e5">NeuralNetwork</a>
+</li>
 <li>get_derivatives()
 : <a class="el" href="class_batch_norm1_d.html#a5c09b01a94decc15a9c98f50ef691589">BatchNorm1D&lt; Distribution, Activation &gt;</a>
 , <a class="el" href="class_fully_connected.html#a141846dc46d93c1ae6a28b9a713640a9">FullyConnected&lt; Distribution, Activation &gt;</a>
@@ -248,6 +260,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 , <a class="el" href="class_layer.html#ac908166e081edd9ff3b3a35e187b5b63">Layer</a>
 , <a class="el" href="class_neural_network.html#a4764f886d7b44b4e461f5bacd9be7c3a">NeuralNetwork</a>
 </li>
+<li>Init()
+: <a class="el" href="class_neural_network.html#ad665996cec0d54e7685fa53eddfe0cd2">NeuralNetwork</a>
+</li>
 <li>inmu
 : <a class="el" href="class_batch_norm1_d.html#ab77648d62f0c73d78211218d4937ae6e">BatchNorm1D&lt; Distribution, Activation &gt;</a>
 </li>
@@ -265,9 +280,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="class_batch_norm1_d.html#a897b117a5508e7776962e5cd0fc77533">BatchNorm1D&lt; Distribution, Activation &gt;</a>
 </li>
 <li>loss()
-: <a class="el" href="class_binary_class_entropy.html#a65b2ed352e4f981c1aac601b82a2ecac">BinaryClassEntropy</a>
-, <a class="el" href="class_output.html#a45d48c4933bf9ab6804ba1dafe7c6cfb">Output</a>
-, <a class="el" href="class_regression_m_s_e.html#a37b003083cab379a68b1f5d180c89744">RegressionMSE</a>
+: <a class="el" href="class_binary_entropy_loss.html#ae9f860a95220f41c411c9029762eef0e">BinaryEntropyLoss</a>
+, <a class="el" href="class_cross_entropy_loss.html#a144b171ae67a5e9ab50725f73bf5d512">CrossEntropyLoss</a>
+, <a class="el" href="class_m_s_e_loss.html#a24fdad3b7ff10462f74c8e8923b4ba74">MSELoss</a>
 </li>
 </ul>
 
@@ -294,10 +309,11 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="class_s_g_d.html#a48ff7e4475ca615151ee0b5db8714c57">SGD</a>
 </li>
 <li>m_din
-: <a class="el" href="class_binary_class_entropy.html#a438ce6164a0db4daff1eb96f57c6fb61">BinaryClassEntropy</a>
+: <a class="el" href="class_binary_entropy_loss.html#ac02b22af563333056b231cc8278d9a9b">BinaryEntropyLoss</a>
+, <a class="el" href="class_cross_entropy_loss.html#a148b0b6b717d30edca0fc6bdbb838cc0">CrossEntropyLoss</a>
 , <a class="el" href="class_dropout.html#a1bf17ebca6733320d2133929167dd837">Dropout&lt; Activation &gt;</a>
 , <a class="el" href="class_fully_connected.html#a8b6b72c2e5f6ebdb8f2dbe8d9dce8553">FullyConnected&lt; Distribution, Activation &gt;</a>
-, <a class="el" href="class_regression_m_s_e.html#a4cb584a0b7601f05564400285f0517ca">RegressionMSE</a>
+, <a class="el" href="class_m_s_e_loss.html#a5f3bc734ace17b6c1f898401470682dd">MSELoss</a>
 </li>
 <li>m_dw
 : <a class="el" href="class_fully_connected.html#a61ddb6188f06ecc1f04f5af6971ca5a6">FullyConnected&lt; Distribution, Activation &gt;</a>
@@ -355,9 +371,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 , <a class="el" href="class_layer.html#ad6d6d19aa819f10ebc019e985273ef8e">Layer</a>
 </li>
 <li>output_type()
-: <a class="el" href="class_binary_class_entropy.html#ae619a249c797f9db2b5ad3a4c1086e97">BinaryClassEntropy</a>
-, <a class="el" href="class_output.html#a08be90646104d92d8d2897794ce6d4eb">Output</a>
-, <a class="el" href="class_regression_m_s_e.html#a49d0650620bbdd7f1263b0fe259d6439">RegressionMSE</a>
+: <a class="el" href="class_binary_entropy_loss.html#a66e104e01e8d8750fb49525f9cbf59db">BinaryEntropyLoss</a>
+, <a class="el" href="class_cross_entropy_loss.html#a284d92375aab31dc79ed41a0ba6deb52">CrossEntropyLoss</a>
+, <a class="el" href="class_m_s_e_loss.html#acc0eefa97e47d480611d82b981713cf2">MSELoss</a>
 </li>
 </ul>
 
@@ -380,8 +396,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="class_neural_network.html#af8999f0e3a520af6b1822a2f2744f1e6">NeuralNetwork</a>
 </li>
 <li>reset()
-: <a class="el" href="class_optimizer.html#aa65d38318c6da9ed15f7e56c9c4fc78e">Optimizer</a>
-, <a class="el" href="class_s_g_d.html#a41d2538db3a3122f72572e71f902c806">SGD</a>
+: <a class="el" href="class_s_g_d.html#a41d2538db3a3122f72572e71f902c806">SGD</a>
 </li>
 <li>return_type()
 : <a class="el" href="classactivate_1_1_identity.html#a4e51141d2ce42f48d5a27b360f467a92">activate::Identity</a>
@@ -441,8 +456,12 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 , <a class="el" href="class_dropout.html#a1dc41e6b75800dfb0a0c8212585bcc60">Dropout&lt; Activation &gt;</a>
 , <a class="el" href="class_fully_connected.html#a076a7fb210d3e16086015adca1944b25">FullyConnected&lt; Distribution, Activation &gt;</a>
 , <a class="el" href="class_layer.html#a305f7f9f92b9d60e6dca10accb7f062f">Layer</a>
-, <a class="el" href="class_neural_network.html#ae6de55b9112a4f00b2ea9534a10d0e68">NeuralNetwork</a>
-, <a class="el" href="class_optimizer.html#a9fa89b4d7564c785e7362b048babc21b">Optimizer</a>
+</li>
+<li>Update()
+: <a class="el" href="class_neural_network.html#a3bdde9e2d20fb1cda6d8c2d81176f44e">NeuralNetwork</a>
+</li>
+<li>update()
+: <a class="el" href="class_neural_network.html#ae6de55b9112a4f00b2ea9534a10d0e68">NeuralNetwork</a>
 , <a class="el" href="class_s_g_d.html#a53613e375797f28878cf77ece7f85618">SGD</a>
 </li>
 </ul>
