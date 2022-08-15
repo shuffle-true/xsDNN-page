@@ -89,9 +89,121 @@ $(document).ready(function(){initNavTree('intro.html',''); initResizable(); });
 <div class="title">Введение </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Этот раздел в разработке. Обратитесь к странице позже.</p>
-<p><b>Планируемое содержание - обучение на сете MNIST (FashinMNIST, CIFAR-10) полносвязной сети архитектуры FBAD.</b></p>
-<p><b>После написания сверточных слоев, обновить архитектуру сети.</b></p>
+<div class="textblock"><p>Обучим простую сеть на MNISTе.</p>
+<p><br  />
+ <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md0"></a>
+Функция обучения</h1>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Загрузка данных</h2>
+<div class="fragment"><div class="line">Matrix train_image, train_label;</div>
+<div class="line"> </div>
+<div class="line"><a class="code" href="namespacedataset.html#a00bd78672877e899b3ad1373188508f2">dataset::parse_mnist_image</a>(<span class="stringliteral">&quot;../datasets/mnist/train-images-idx3-ubyte&quot;</span>,</div>
+<div class="line">                           train_image,</div>
+<div class="line">                           0,</div>
+<div class="line">                           1,</div>
+<div class="line">                           0,</div>
+<div class="line">                           0);</div>
+<div class="line"> </div>
+<div class="line"><a class="code" href="namespacedataset.html#a5ad7f8b1238302bb99cb28e3f6877de1">dataset::parse_mnist_label</a>(<span class="stringliteral">&quot;../datasets/mnist/train-labels-idx1-ubyte&quot;</span>, train_label);</div>
+<div class="ttc" id="anamespacedataset_html_a00bd78672877e899b3ad1373188508f2"><div class="ttname"><a href="namespacedataset.html#a00bd78672877e899b3ad1373188508f2">dataset::parse_mnist_image</a></div><div class="ttdeci">void parse_mnist_image(const std::string &amp;image_filename, Matrix &amp;images, const Scalar &amp;scale_min, const Scalar &amp;scale_max, const int x_padding, const int y_padding)</div><div class="ttdoc">Чтение изображений MNIST из файла</div><div class="ttdef"><b>Definition:</b> mnist_io.h:136</div></div>
+<div class="ttc" id="anamespacedataset_html_a5ad7f8b1238302bb99cb28e3f6877de1"><div class="ttname"><a href="namespacedataset.html#a5ad7f8b1238302bb99cb28e3f6877de1">dataset::parse_mnist_label</a></div><div class="ttdeci">void parse_mnist_label(const std::string &amp;label_filename, Matrix &amp;label)</div><div class="ttdoc">Чтение меток дата-сета MNIST.</div><div class="ttdef"><b>Definition:</b> mnist_io.h:87</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md2"></a>
+Построение архитектуры сети</h2>
+<div class="fragment"><div class="line"><a class="code" href="class_neural_network.html">NeuralNetwork</a> baseline;</div>
+<div class="line"> </div>
+<div class="line">baseline    &lt;&lt; new FullyConnected&lt;init::Normal, activate::ReLU&gt;(784, 128)</div>
+<div class="line">            &lt;&lt; <span class="keyword">new</span> <a class="code" href="class_fully_connected.html">FullyConnected&lt;init::Normal, activate::Softmax&gt;</a>(128, 10);</div>
+<div class="line"> </div>
+<div class="line">Output* criterion = <span class="keyword">new</span> <a class="code" href="class_cross_entropy_loss.html">CrossEntropyLoss</a>();</div>
+<div class="line">baseline.set_output(criterion);</div>
+<div class="line"> </div>
+<div class="line">std::vector&lt; std::vector&lt;Scalar&gt; &gt; init_params = {</div>
+<div class="line">        {0.0, 1.0 / (784.0 + 128.0)},</div>
+<div class="line">        {0.0, 1.0 / (128.0 + 10.0)}</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><a class="code" href="class_s_g_d.html">SGD</a> opt; opt.<a class="code" href="class_s_g_d.html#a022ad12dff64d757823467dda852c541">m_lrate</a> = 0.01;</div>
+<div class="ttc" id="aclass_cross_entropy_loss_html"><div class="ttname"><a href="class_cross_entropy_loss.html">CrossEntropyLoss</a></div><div class="ttdoc">Класс функционала ошибки для мультиклассовой классификации (MultiClassEntropy)</div><div class="ttdef"><b>Definition:</b> MultiClassEntropy.h:15</div></div>
+<div class="ttc" id="aclass_fully_connected_html"><div class="ttname"><a href="class_fully_connected.html">FullyConnected</a></div><div class="ttdoc">Класс FullyConnected слоя</div><div class="ttdef"><b>Definition:</b> FullyConnected.h:11</div></div>
+<div class="ttc" id="aclass_neural_network_html"><div class="ttname"><a href="class_neural_network.html">NeuralNetwork</a></div><div class="ttdoc">Класс нейросети</div><div class="ttdef"><b>Definition:</b> NeuralNetwork.h:18</div></div>
+<div class="ttc" id="aclass_s_g_d_html"><div class="ttname"><a href="class_s_g_d.html">SGD</a></div><div class="ttdoc">Класс стохастического градиентного спуска (SGD)</div><div class="ttdef"><b>Definition:</b> SGD.h:10</div></div>
+<div class="ttc" id="aclass_s_g_d_html_a022ad12dff64d757823467dda852c541"><div class="ttname"><a href="class_s_g_d.html#a022ad12dff64d757823467dda852c541">SGD::m_lrate</a></div><div class="ttdeci">Scalar m_lrate</div><div class="ttdoc">длина шага.</div><div class="ttdef"><b>Definition:</b> SGD.h:16</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3"></a>
+Обучение и сохранение</h2>
+<div class="fragment"><div class="line">baseline.fit(opt, train_image, train_label, 16, 5, 42);</div>
+<div class="line"> </div>
+<div class="line">baseline.<a class="code" href="class_neural_network.html#adf367188e3703049aec2687b3987a465">export_net</a>(<span class="stringliteral">&quot;example-mnist&quot;</span>, <span class="stringliteral">&quot;baseline&quot;</span>);</div>
+<div class="ttc" id="aclass_neural_network_html_adf367188e3703049aec2687b3987a465"><div class="ttname"><a href="class_neural_network.html#adf367188e3703049aec2687b3987a465">NeuralNetwork::export_net</a></div><div class="ttdeci">void export_net(const std::string &amp;folder, const std::string &amp;filename) const</div><div class="ttdef"><b>Definition:</b> NeuralNetwork.h:570</div></div>
+</div><!-- fragment --><p><br  />
+ <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Функция тестирования</h1>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Загрузка данных</h2>
+<div class="fragment"><div class="line">Matrix test_image, test_label;</div>
+<div class="line"><a class="code" href="namespacedataset.html#a00bd78672877e899b3ad1373188508f2">dataset::parse_mnist_image</a>(<span class="stringliteral">&quot;../datasets/mnist/t10k-images-idx3-ubyte&quot;</span>,</div>
+<div class="line">                           test_image,</div>
+<div class="line">                           0.0,</div>
+<div class="line">                           1.0,</div>
+<div class="line">                           0.0,</div>
+<div class="line">                           0.0);</div>
+<div class="line"><a class="code" href="namespacedataset.html#a5ad7f8b1238302bb99cb28e3f6877de1">dataset::parse_mnist_label</a>(<span class="stringliteral">&quot;../datasets/mnist/t10k-labels-idx1-ubyte&quot;</span>, test_label);</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
+Чтение сети и предсказание</h2>
+<div class="fragment"><div class="line"><a class="code" href="class_neural_network.html">NeuralNetwork</a> net;</div>
+<div class="line">net.<a class="code" href="class_neural_network.html#af8999f0e3a520af6b1822a2f2744f1e6">read_net</a>(<span class="stringliteral">&quot;example-mnist&quot;</span>, <span class="stringliteral">&quot;baseline&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">net.<a class="code" href="class_neural_network.html#aab6985271adb94b77445e1624006f2e1">eval</a>();</div>
+<div class="line">Matrix predict = net.predict(test_image);</div>
+<div class="ttc" id="aclass_neural_network_html_aab6985271adb94b77445e1624006f2e1"><div class="ttname"><a href="class_neural_network.html#aab6985271adb94b77445e1624006f2e1">NeuralNetwork::eval</a></div><div class="ttdeci">void eval()</div><div class="ttdoc">Установить рабочий процесс - тестирование</div><div class="ttdef"><b>Definition:</b> NeuralNetwork.h:319</div></div>
+<div class="ttc" id="aclass_neural_network_html_af8999f0e3a520af6b1822a2f2744f1e6"><div class="ttname"><a href="class_neural_network.html#af8999f0e3a520af6b1822a2f2744f1e6">NeuralNetwork::read_net</a></div><div class="ttdeci">void read_net(const std::string &amp;folder, const std::string &amp;filename)</div><div class="ttdef"><b>Definition:</b> NeuralNetwork.h:590</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
+Подсчет метрики</h2>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> calculate_mseloss(Matrix&amp; label, Matrix&amp; predict)</div>
+<div class="line">{</div>
+<div class="line">   <span class="keyword">const</span> <span class="keywordtype">long</span> ncols = predict.cols();</div>
+<div class="line">   Matrix model_answer(1, ncols);</div>
+<div class="line">   Matrix relabel(1, ncols);</div>
+<div class="line"> </div>
+<div class="line">   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ncols; i++)</div>
+<div class="line">   {</div>
+<div class="line">       Scalar max_elem = predict.col(i).maxCoeff();</div>
+<div class="line"> </div>
+<div class="line">       <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; 10; j++)</div>
+<div class="line">       {</div>
+<div class="line">           <span class="keywordflow">if</span> (predict(j, i) == max_elem)</div>
+<div class="line">           {</div>
+<div class="line">               model_answer(0, i) = j;</div>
+<div class="line">               <span class="keywordflow">break</span>;</div>
+<div class="line">           }</div>
+<div class="line">       }</div>
+<div class="line">   }</div>
+<div class="line"> </div>
+<div class="line">   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ncols; i++)</div>
+<div class="line">   {</div>
+<div class="line">       <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; 10; j++)</div>
+<div class="line">       {</div>
+<div class="line">           <span class="keywordflow">if</span> (label(j, i) == 1)</div>
+<div class="line">           {</div>
+<div class="line">               relabel(0, i) = j;</div>
+<div class="line">               <span class="keywordflow">break</span>;</div>
+<div class="line">           }</div>
+<div class="line">       }</div>
+<div class="line">   }</div>
+<div class="line"> </div>
+<div class="line">   Scalar error = (relabel - model_answer).squaredNorm() / ncols;</div>
+<div class="line">   std::cout &lt;&lt; <span class="stringliteral">&quot;RMSE Error = &quot;</span> &lt;&lt; std::sqrt(error) &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p><br  />
+ <br  />
+ <br  />
+</p>
+<p>Полный исходный код доступен <b><a href="https://github.com/shuffle-true/dl_new/tree/main/example/mnist">здесь</a></b>.</p>
 <p>Теперь вы можете перейти к расширенному разделу <a class="el" href="advanced.html">Расширенное использование</a>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

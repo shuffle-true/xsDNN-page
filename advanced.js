@@ -1,19 +1,19 @@
 var advanced =
 [
     [ "Загрузка данных", "data.html", [
-      [ "О хранении", "data.html#autotoc_md0", null ],
-      [ "Встроенные и пользовательские данные", "data.html#autotoc_md1", null ]
+      [ "О хранении", "data.html#autotoc_md8", null ],
+      [ "Встроенные и пользовательские данные", "data.html#autotoc_md9", null ]
     ] ],
     [ "Слой", "layer.html", [
-      [ "Полносвязный", "layer.html#autotoc_md2", [
-        [ "Реализовано", "layer.html#autotoc_md3", null ]
+      [ "Полносвязный", "layer.html#autotoc_md10", [
+        [ "Реализовано", "layer.html#autotoc_md11", null ]
       ] ],
-      [ "Dropout", "layer.html#autotoc_md4", [
-        [ "Реализовано", "layer.html#autotoc_md5", null ]
+      [ "Dropout", "layer.html#autotoc_md12", [
+        [ "Реализовано", "layer.html#autotoc_md13", null ]
       ] ],
-      [ "Пакетная нормализация", "layer.html#autotoc_md6", [
-        [ "Реализовано", "layer.html#autotoc_md7", null ],
-        [ "Будет реализовано", "layer.html#autotoc_md8", null ]
+      [ "Пакетная нормализация", "layer.html#autotoc_md14", [
+        [ "Реализовано", "layer.html#autotoc_md15", null ],
+        [ "Будет реализовано", "layer.html#autotoc_md16", null ]
       ] ]
     ] ],
     [ "Активация", "activation.html", null ],
