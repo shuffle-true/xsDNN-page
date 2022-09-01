@@ -4,7 +4,7 @@ var class_fully_connected =
     [ "Vector", "class_fully_connected.html#a2e93431dd222d34064347f5128e6c8c5", null ],
     [ "FullyConnected", "class_fully_connected.html#a738b2e8837b13df25b811156f9336bac", null ],
     [ "activation_type", "class_fully_connected.html#aa6f5483f1daea960ee903b1022817880", null ],
-    [ "backprop", "class_fully_connected.html#ad30224a8257142e13f8186c9412ddd13", null ],
+    [ "backprop", "class_fully_connected.html#ad4710d15776347dc9fbfbd66ecd5829e", null ],
     [ "backprop_data", "class_fully_connected.html#ac3f35923ba3b084bf07dacdb176e630c", null ],
     [ "distribution_type", "class_fully_connected.html#a452fe887fee9e3570b1a5017c1c2600c", null ],
     [ "eval", "class_fully_connected.html#a4bafb8470c6dfd3081e0052ddd64e6c5", null ],

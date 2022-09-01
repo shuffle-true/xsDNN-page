@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['array_5fsize_5f_240',['array_size_',['../classinternal_1_1bernoulli.html#ae3a23de6704d5a2ba4cad0c1013705ae',1,'internal::bernoulli']]]
+  ['bernoulli_226',['bernoulli',['../class_dropout.html#a926ae6d7dd816b1ce9755d3d6e499578',1,'Dropout']]],
+  ['bias_5factivate_227',['BIAS_ACTIVATE',['../class_fully_connected.html#a2dfdfd0b55caee6550d266577996d8fd',1,'FullyConnected']]]
 ];

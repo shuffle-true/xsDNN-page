@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="header_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -28,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xsDNN C++
-   &#160;<span id="projectnumber">0.0.0</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
   </td>
@@ -92,11 +91,13 @@ $(document).ready(function(){initNavTree('class_m_s_e_loss.html',''); initResiza
 
 <p>Полный список членов класса <a class="el" href="class_m_s_e_loss.html">MSELoss</a>, включая наследуемые из базового класса</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_m_s_e_loss.html#ad6768d36d56206721112f317858d4fc9">backprop_data</a>() const override</td><td class="entry"><a class="el" href="class_m_s_e_loss.html">MSELoss</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_m_s_e_loss.html#a047946b722896c8fc086d6ea73710ea4">evaluate</a>(const Matrix &amp;prev_layer_data, const Matrix &amp;target) override</td><td class="entry"><a class="el" href="class_m_s_e_loss.html">MSELoss</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_m_s_e_loss.html#a24fdad3b7ff10462f74c8e8923b4ba74">loss</a>() const override</td><td class="entry"><a class="el" href="class_m_s_e_loss.html">MSELoss</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_m_s_e_loss.html#a5f3bc734ace17b6c1f898401470682dd">m_din</a></td><td class="entry"><a class="el" href="class_m_s_e_loss.html">MSELoss</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_m_s_e_loss.html#acc0eefa97e47d480611d82b981713cf2">output_type</a>() const override</td><td class="entry"><a class="el" href="class_m_s_e_loss.html">MSELoss</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_m_s_e_loss.html#ad6768d36d56206721112f317858d4fc9">backprop_data</a>() const override</td><td class="entry"><a class="el" href="class_m_s_e_loss.html">MSELoss</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_output.html#ab3893f15f4682a8a31d0f5a5084fb033">check_target_data</a>(const Matrix &amp;target) const</td><td class="entry"><a class="el" href="class_output.html">Output</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_m_s_e_loss.html#a047946b722896c8fc086d6ea73710ea4">evaluate</a>(const Matrix &amp;prev_layer_data, const Matrix &amp;target) override</td><td class="entry"><a class="el" href="class_m_s_e_loss.html">MSELoss</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_m_s_e_loss.html#a24fdad3b7ff10462f74c8e8923b4ba74">loss</a>() const override</td><td class="entry"><a class="el" href="class_m_s_e_loss.html">MSELoss</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_m_s_e_loss.html#a5f3bc734ace17b6c1f898401470682dd">m_din</a></td><td class="entry"><a class="el" href="class_m_s_e_loss.html">MSELoss</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_m_s_e_loss.html#acc0eefa97e47d480611d82b981713cf2">output_type</a>() const override</td><td class="entry"><a class="el" href="class_m_s_e_loss.html">MSELoss</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Output</b>()=default (определено в <a class="el" href="class_output.html">Output</a>)</td><td class="entry"><a class="el" href="class_output.html">Output</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

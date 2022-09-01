@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['normal_279',['NORMAL',['../namespaceinternal.html#a5910af6de47727626e888443c7b18c43a45ca318653594bc78e971e0c84182d35',1,'internal']]]
+  ['leakyrelu_264',['LEAKYRELU',['../namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba6a27db799aca688bb98d8b12a4e6c13e',1,'internal']]]
 ];

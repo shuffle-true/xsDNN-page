@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="header_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -28,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xsDNN C++
-   &#160;<span id="projectnumber">0.0.0</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
   </td>
@@ -122,14 +121,15 @@ $(document).ready(function(){initNavTree('class_neural_network.html',''); initRe
   <tr><td class="entry"><a class="el" href="class_neural_network.html#a2427bc1b8752a1c1d5aec7dbe1364b2c">NeuralNetwork</a>(RNG &amp;rng)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator&lt;&lt;</b> (определено в <a class="el" href="class_neural_network.html">NeuralNetwork</a>)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>operator&lt;&lt;</b> (определено в <a class="el" href="class_neural_network.html">NeuralNetwork</a>)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>predict</b>(const Matrix &amp;x) (определено в <a class="el" href="class_neural_network.html">NeuralNetwork</a>)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_neural_network.html#af8999f0e3a520af6b1822a2f2744f1e6">read_net</a>(const std::string &amp;folder, const std::string &amp;filename)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>set_output</b>(Output *output) (определено в <a class="el" href="class_neural_network.html">NeuralNetwork</a>)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_neural_network.html#a1fb4700cb175ea0899d4ba6230c4ad8e">set_parameters</a>(const std::vector&lt; std::vector&lt; Scalar &gt; &gt; &amp;param)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_neural_network.html#a73df19ff71997aacd5bb8dc1b24b6790">train</a>()</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_neural_network.html#ae6de55b9112a4f00b2ea9534a10d0e68">update</a>(Optimizer &amp;opt)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_neural_network.html#a3bdde9e2d20fb1cda6d8c2d81176f44e">Update</a>(Optimizer &amp;opt)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_neural_network.html#a65475a7d7b05d302392333302626b2f8">~NeuralNetwork</a>()</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_neural_network.html#ac792b8324890be8fcdd3647c820c847e">operator[]</a>(const int &amp;index)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>predict</b>(const Matrix &amp;x) (определено в <a class="el" href="class_neural_network.html">NeuralNetwork</a>)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_neural_network.html#af8999f0e3a520af6b1822a2f2744f1e6">read_net</a>(const std::string &amp;folder, const std::string &amp;filename)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>set_output</b>(Output *output) (определено в <a class="el" href="class_neural_network.html">NeuralNetwork</a>)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_neural_network.html#a1fb4700cb175ea0899d4ba6230c4ad8e">set_parameters</a>(const std::vector&lt; std::vector&lt; Scalar &gt; &gt; &amp;param)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_neural_network.html#a73df19ff71997aacd5bb8dc1b24b6790">train</a>()</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_neural_network.html#ae6de55b9112a4f00b2ea9534a10d0e68">update</a>(Optimizer &amp;opt)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_neural_network.html#a3bdde9e2d20fb1cda6d8c2d81176f44e">Update</a>(Optimizer &amp;opt)</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_neural_network.html#a65475a7d7b05d302392333302626b2f8">~NeuralNetwork</a>()</td><td class="entry"><a class="el" href="class_neural_network.html">NeuralNetwork</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

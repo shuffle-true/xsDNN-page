@@ -4,7 +4,7 @@ var class_layer =
     [ "Layer", "class_layer.html#ad5fbb4a1e913bf70813390ca9685db0d", null ],
     [ "~Layer", "class_layer.html#a57e5a4a6ec188de4e7b8c894aac254ea", null ],
     [ "activation_type", "class_layer.html#a3d888555b318ed3e2f2dcae4b31f1d42", null ],
-    [ "backprop", "class_layer.html#a301b6101fc12b9b1578c72d93dfa029f", null ],
+    [ "backprop", "class_layer.html#a0f982388361f0ac8af33409f951758f8", null ],
     [ "backprop_data", "class_layer.html#ae30d9b11691bf94f234d105e2006d069", null ],
     [ "distribution_type", "class_layer.html#a829dd171f1b4eb45da060fab314770f7", null ],
     [ "eval", "class_layer.html#a53846142753e1e5c2c1b67115dc64357", null ],

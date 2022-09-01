@@ -27,11 +27,27 @@ var NAVTREE =
   [ "xsDNN C++", "index.html", [
     [ "Руководство пользователя", "index.html", "index" ],
     [ "Список задач", "todo.html", null ],
-    [ "Пространство имен", "namespaces.html", "namespaces" ],
+    [ "Пространства имен", "namespaces.html", [
+      [ "Пространства имен", "namespaces.html", "namespaces_dup" ],
+      [ "Члены пространств имен", "namespacemembers.html", [
+        [ "Указатель", "namespacemembers.html", null ],
+        [ "Функции", "namespacemembers_func.html", null ],
+        [ "Перечисления", "namespacemembers_enum.html", null ],
+        [ "Элементы перечислений", "namespacemembers_eval.html", null ]
+      ] ]
+    ] ],
     [ "Классы", "annotated.html", [
-      [ "Классы управления", "annotated.html", "annotated_dup" ],
+      [ "Классы", "annotated.html", "annotated_dup" ],
       [ "Алфавитный указатель классов", "classes.html", null ],
-      [ "Иерархия классов", "hierarchy.html", "hierarchy" ]
+      [ "Иерархия классов", "hierarchy.html", "hierarchy" ],
+      [ "Члены классов", "functions.html", [
+        [ "Указатель", "functions.html", null ],
+        [ "Функции", "functions_func.html", null ],
+        [ "Переменные", "functions_vars.html", null ]
+      ] ]
+    ] ],
+    [ "Файлы", "files.html", [
+      [ "Файлы", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
@@ -39,7 +55,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "",
-"classinit_1_1_normal.html#af0b5d5bc7f11f9ec33080d6ac76759d3"
+"class_optimizer.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

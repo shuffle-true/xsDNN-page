@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="header_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -28,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xsDNN C++
-   &#160;<span id="projectnumber">0.0.0</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
   </td>
@@ -106,8 +105,9 @@ $(document).ready(function(){initNavTree('class_neural_network.html',''); initRe
 <div class="dyncontent">
 <div class="center"><img src="class_neural_network__coll__graph.png" border="0" usemap="#a_neural_network_coll__map" alt="Collaboration graph"/></div>
 <map name="a_neural_network_coll__map" id="a_neural_network_coll__map">
-<area shape="rect" title="Класс нейросети" alt="" coords="5,109,125,136"/>
-<area shape="rect" href="class_r_n_g.html" title="Класс ГСЧ" alt="" coords="40,5,91,32"/>
+<area shape="rect" title="Класс нейросети" alt="" coords="35,109,155,136"/>
+<area shape="rect" href="class_r_n_g.html" title="Класс ГСЧ" alt="" coords="5,5,56,32"/>
+<area shape="rect" href="class_output.html" title="Родительский класс функционала ошибки" alt="" coords="127,5,193,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
@@ -126,9 +126,9 @@ $(document).ready(function(){initNavTree('class_neural_network.html',''); initRe
 <tr class="memdesc:a9c93c9359d97a972a9f5217844232515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить слой в сетку  <a href="class_neural_network.html#a9c93c9359d97a972a9f5217844232515">Подробнее...</a><br /></td></tr>
 <tr class="separator:a9c93c9359d97a972a9f5217844232515"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3381186802b58d23489e13bb6946a8c6"><td class="memItemLeft" align="right" valign="top"><a id="a3381186802b58d23489e13bb6946a8c6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_output</b> (Output *output)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_output</b> (<a class="el" href="class_output.html">Output</a> *output)</td></tr>
 <tr class="separator:a3381186802b58d23489e13bb6946a8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7686eabf1c59519eda1bc3ca1ce9628e"><td class="memItemLeft" align="right" valign="top">const Output *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a7686eabf1c59519eda1bc3ca1ce9628e">get_output</a> () const</td></tr>
+<tr class="memitem:a7686eabf1c59519eda1bc3ca1ce9628e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_output.html">Output</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a7686eabf1c59519eda1bc3ca1ce9628e">get_output</a> () const</td></tr>
 <tr class="memdesc:a7686eabf1c59519eda1bc3ca1ce9628e"><td class="mdescLeft">&#160;</td><td class="mdescRight">None  <a href="class_neural_network.html#a7686eabf1c59519eda1bc3ca1ce9628e">Подробнее...</a><br /></td></tr>
 <tr class="separator:a7686eabf1c59519eda1bc3ca1ce9628e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73df19ff71997aacd5bb8dc1b24b6790"><td class="memItemLeft" align="right" valign="top"><a id="a73df19ff71997aacd5bb8dc1b24b6790"></a>
@@ -140,7 +140,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:aab6985271adb94b77445e1624006f2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить рабочий процесс - тестирование <br /></td></tr>
 <tr class="separator:aab6985271adb94b77445e1624006f2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac134f87b85d78c7b4b154f0990f9aa16"><td class="memItemLeft" align="right" valign="top"><a id="ac134f87b85d78c7b4b154f0990f9aa16"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>fit</b> (Optimizer &amp;opt, const Matrix &amp;x, const Matrix &amp;y, int batch_size, int epoch, int batch_seed=-1, int init_seed=-1, const std::vector&lt; std::vector&lt; Scalar &gt;&gt; &amp;params=std::vector&lt; std::vector&lt; Scalar &gt;&gt;())</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fit</b> (<a class="el" href="class_optimizer.html">Optimizer</a> &amp;opt, const Matrix &amp;x, const Matrix &amp;y, int batch_size, int epoch, int batch_seed=-1, int init_seed=-1, const std::vector&lt; std::vector&lt; Scalar &gt;&gt; &amp;params=std::vector&lt; std::vector&lt; Scalar &gt;&gt;())</td></tr>
 <tr class="separator:ac134f87b85d78c7b4b154f0990f9aa16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9df496ee112c5db84fdda8dd2e07def5"><td class="memItemLeft" align="right" valign="top"><a id="a9df496ee112c5db84fdda8dd2e07def5"></a>
 Matrix&#160;</td><td class="memItemRight" valign="bottom"><b>predict</b> (const Matrix &amp;x)</td></tr>
@@ -162,8 +162,10 @@ Matrix&#160;</td><td class="memItemRight" valign="bottom"><b>predict</b> (const 
 <tr class="separator:acfdd81cd4c15e42a11acd7844daeffdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80546ccdf7b3c03361e3e599014e1da7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a80546ccdf7b3c03361e3e599014e1da7">backprop</a> (const Matrix &amp;input, const Matrix &amp;target)</td></tr>
 <tr class="separator:a80546ccdf7b3c03361e3e599014e1da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6de55b9112a4f00b2ea9534a10d0e68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#ae6de55b9112a4f00b2ea9534a10d0e68">update</a> (Optimizer &amp;opt)</td></tr>
+<tr class="memitem:ae6de55b9112a4f00b2ea9534a10d0e68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#ae6de55b9112a4f00b2ea9534a10d0e68">update</a> (<a class="el" href="class_optimizer.html">Optimizer</a> &amp;opt)</td></tr>
 <tr class="separator:ae6de55b9112a4f00b2ea9534a10d0e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac792b8324890be8fcdd3647c820c847e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#ac792b8324890be8fcdd3647c820c847e">operator[]</a> (const int &amp;index)</td></tr>
+<tr class="separator:ac792b8324890be8fcdd3647c820c847e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf367188e3703049aec2687b3987a465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#adf367188e3703049aec2687b3987a465">export_net</a> (const std::string &amp;folder, const std::string &amp;filename) const</td></tr>
 <tr class="separator:adf367188e3703049aec2687b3987a465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8999f0e3a520af6b1822a2f2744f1e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#af8999f0e3a520af6b1822a2f2744f1e6">read_net</a> (const std::string &amp;folder, const std::string &amp;filename)</td></tr>
@@ -191,7 +193,7 @@ typedef std::map&lt; std::string, Scalar &gt;&#160;</td><td class="memItemRight"
 <tr class="memitem:a6c23e78607779f00a3ab336dc09cfa9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a6c23e78607779f00a3ab336dc09cfa9a">Backprop</a> (const Matrix &amp;input, const Matrix &amp;target)</td></tr>
 <tr class="memdesc:a6c23e78607779f00a3ab336dc09cfa9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backprop для всей сетки. Просто идем из конца сетки в ее начало и вызываем у каждого слоя метод обратного распространения  <a href="class_neural_network.html#a6c23e78607779f00a3ab336dc09cfa9a">Подробнее...</a><br /></td></tr>
 <tr class="separator:a6c23e78607779f00a3ab336dc09cfa9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bdde9e2d20fb1cda6d8c2d81176f44e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a3bdde9e2d20fb1cda6d8c2d81176f44e">Update</a> (Optimizer &amp;opt)</td></tr>
+<tr class="memitem:a3bdde9e2d20fb1cda6d8c2d81176f44e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a3bdde9e2d20fb1cda6d8c2d81176f44e">Update</a> (<a class="el" href="class_optimizer.html">Optimizer</a> &amp;opt)</td></tr>
 <tr class="memdesc:a3bdde9e2d20fb1cda6d8c2d81176f44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновление весов модели  <a href="class_neural_network.html#a3bdde9e2d20fb1cda6d8c2d81176f44e">Подробнее...</a><br /></td></tr>
 <tr class="separator:a3bdde9e2d20fb1cda6d8c2d81176f44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac05c077fab00e72016577082a5203aea"><td class="memItemLeft" align="right" valign="top"><a id="ac05c077fab00e72016577082a5203aea"></a>
@@ -216,7 +218,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mean_loss_reset</b> (
 std::vector&lt; <a class="el" href="class_layer.html">Layer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_layers</b></td></tr>
 <tr class="separator:ae0ccfa01f98822025cf642c8a0ae6ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd2352c46ee6e50b057c58ac48200ce"><td class="memItemLeft" align="right" valign="top"><a id="addd2352c46ee6e50b057c58ac48200ce"></a>
-Output *&#160;</td><td class="memItemRight" valign="bottom"><b>m_output</b></td></tr>
+<a class="el" href="class_output.html">Output</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_output</b></td></tr>
 <tr class="separator:addd2352c46ee6e50b057c58ac48200ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f48744751be00299de75190ae74d689"><td class="memItemLeft" align="right" valign="top"><a id="a9f48744751be00299de75190ae74d689"></a>
 Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>mean_loss</b></td></tr>
@@ -575,7 +577,6 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
   </table>
   </dd>
 </dl>
-<p>Проверим нулевой слой на соотвествие правилу вход данных == вход нулевого слоя</p>
 
 </div>
 </div>
@@ -738,7 +739,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Output* NeuralNetwork::get_output </td>
+          <td class="memname">const <a class="el" href="class_output.html">Output</a>* NeuralNetwork::get_output </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -871,6 +872,39 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 
 </div>
 </div>
+<a id="ac792b8324890be8fcdd3647c820c847e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac792b8324890be8fcdd3647c820c847e">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_layer.html">Layer</a>* NeuralNetwork::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Получить index-ый слой </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="af8999f0e3a520af6b1822a2f2744f1e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8999f0e3a520af6b1822a2f2744f1e6">&#9670;&nbsp;</a></span>read_net()</h2>
 
@@ -960,7 +994,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
         <tr>
           <td class="memname">void NeuralNetwork::Update </td>
           <td>(</td>
-          <td class="paramtype">Optimizer &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_optimizer.html">Optimizer</a> &amp;&#160;</td>
           <td class="paramname"><em>opt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -994,7 +1028,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
         <tr>
           <td class="memname">void NeuralNetwork::update </td>
           <td>(</td>
-          <td class="paramtype">Optimizer &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_optimizer.html">Optimizer</a> &amp;&#160;</td>
           <td class="paramname"><em>opt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1008,7 +1042,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 <p>Обновление параметров сети - итерация градиентного спуска </p><dl class="section warning"><dt>Предупреждения</dt><dd>Этот метод следует использовать с осторожностью. Многие проверки выключены. </dd></dl>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opt</td><td>оптимизатор - объект класса Optimizer. </td></tr>
+    <tr><td class="paramname">opt</td><td>оптимизатор - объект класса <a class="el" href="class_optimizer.html" title="Родительский класс оптимизаторов">Optimizer</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1016,7 +1050,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>/home/shuffle/xsDNN/xsDNN-include/neuralnetwork/<a class="el" href="_neural_network_8h_source.html">NeuralNetwork.h</a></li>
+<li>/home/shuffle/xsDNN/xsDNN-include/xsDNN/<a class="el" href="_neural_network_8h_source.html">NeuralNetwork.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

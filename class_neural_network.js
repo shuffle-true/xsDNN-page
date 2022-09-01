@@ -24,6 +24,7 @@ var class_neural_network =
     [ "init", "class_neural_network.html#a4764f886d7b44b4e461f5bacd9be7c3a", null ],
     [ "mean_loss_reset", "class_neural_network.html#a0c27e0c73c39602275a5e94181f8ed29", null ],
     [ "mean_loss_update", "class_neural_network.html#ac05c077fab00e72016577082a5203aea", null ],
+    [ "operator[]", "class_neural_network.html#ac792b8324890be8fcdd3647c820c847e", null ],
     [ "predict", "class_neural_network.html#a9df496ee112c5db84fdda8dd2e07def5", null ],
     [ "read_net", "class_neural_network.html#af8999f0e3a520af6b1822a2f2744f1e6", null ],
     [ "set_output", "class_neural_network.html#a3381186802b58d23489e13bb6946a8c6", null ],

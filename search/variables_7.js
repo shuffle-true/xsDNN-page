@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['p_5fvalue_5f_264',['p_value_',['../classinternal_1_1bernoulli.html#a1a7c7c1650d2d72c2420aae111340130',1,'internal::bernoulli']]]
+  ['var_5fcurr_252',['var_curr',['../class_batch_norm1_d.html#a596076a927237b8eec9690ad12314b80',1,'BatchNorm1D']]]
 ];

@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['eval_32',['eval',['../class_layer.html#a53846142753e1e5c2c1b67115dc64357',1,'Layer::eval()'],['../class_neural_network.html#aab6985271adb94b77445e1624006f2e1',1,'NeuralNetwork::eval()'],['../class_batch_norm1_d.html#a1e69493408e4774c74c3d2b41d93ddd6',1,'BatchNorm1D::eval()'],['../class_dropout.html#a2e76035dfd736fc52e48f0bc8a533707',1,'Dropout::eval()'],['../class_fully_connected.html#a4bafb8470c6dfd3081e0052ddd64e6c5',1,'FullyConnected::eval()']]],
-  ['evaluate_33',['evaluate',['../class_binary_entropy_loss.html#a824e6bc9659c22c98024c9504df57efa',1,'BinaryEntropyLoss::evaluate()'],['../class_cross_entropy_loss.html#a370ce9dd85a7ba5e50e4757e8b9331a3',1,'CrossEntropyLoss::evaluate()'],['../class_m_s_e_loss.html#a047946b722896c8fc086d6ea73710ea4',1,'MSELoss::evaluate()']]],
-  ['exponential_34',['EXPONENTIAL',['../namespaceinternal.html#a5910af6de47727626e888443c7b18c43a4a07fb04f19594592981c91a9d4e165e',1,'internal']]],
-  ['exponential_35',['Exponential',['../classinit_1_1_exponential.html',1,'init']]],
-  ['export_5fnet_36',['export_net',['../class_neural_network.html#adf367188e3703049aec2687b3987a465',1,'NeuralNetwork']]]
+  ['fill_5fmeta_5finfo_36',['fill_meta_info',['../class_batch_norm1_d.html#a6187cec88496d4ed5ab9f4e8a5474b2b',1,'BatchNorm1D::fill_meta_info()'],['../class_dropout.html#a90cdf4fe31a0bee47a9ec3f48d10e73b',1,'Dropout::fill_meta_info()'],['../class_fully_connected.html#afc0fd23dc8d7f6e90d4e5e547930a8cc',1,'FullyConnected::fill_meta_info()'],['../class_layer.html#a714439c64a0adeae5bd1ba21cf5e6504',1,'Layer::fill_meta_info()']]],
+  ['forward_37',['forward',['../class_batch_norm1_d.html#a29b499df0c841307dc5b02e12b540ac4',1,'BatchNorm1D::forward()'],['../class_dropout.html#a8cdde824bbbf9b0df3d1cd94faf71b9f',1,'Dropout::forward()'],['../class_fully_connected.html#abfa9334624f3b0f94785d43af35a8b23',1,'FullyConnected::forward()'],['../class_layer.html#adbf80e0fa5901464a56afaaea5f3f745',1,'Layer::forward()'],['../class_neural_network.html#acfdd81cd4c15e42a11acd7844daeffdf',1,'NeuralNetwork::forward(const Matrix &amp;input)']]],
+  ['forward_38',['Forward',['../class_neural_network.html#a109fb29afd1ebb3c1548d38f5dc53e42',1,'NeuralNetwork']]],
+  ['fullyconnected_39',['FullyConnected',['../class_fully_connected.html',1,'FullyConnected&lt; Distribution, Activation &gt;'],['../class_fully_connected.html#a738b2e8837b13df25b811156f9336bac',1,'FullyConnected::FullyConnected()']]],
+  ['fullyconnected_40',['FULLYCONNECTED',['../namespaceinternal.html#a17d1c6853385e58f806748015a2ad03fadf6ba8294220872c1b04b17f43136716',1,'internal']]]
 ];

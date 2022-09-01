@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>xsDNN C++: Исходный файл /home/shuffle/xsDNN/xsDNN-include/neuralnetwork/Output/BinaryClassEntropy.h</title>
+<title>xsDNN C++: Исходный файл /home/shuffle/xsDNN/xsDNN-include/xsDNN/Output/BinaryClassEntropy.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="header_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -28,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xsDNN C++
-   &#160;<span id="projectnumber">0.0.0</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
   </td>
@@ -91,7 +90,7 @@ $(document).ready(function(){initNavTree('_binary_class_entropy_8h_source.html',
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_binary_entropy_loss.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_binary_entropy_loss.html">BinaryEntropyLoss</a> : <span class="keyword">public</span> Output</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_binary_entropy_loss.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_binary_entropy_loss.html">BinaryEntropyLoss</a> : <span class="keyword">public</span> <a class="code" href="class_output.html">Output</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_binary_entropy_loss.html#ac02b22af563333056b231cc8278d9a9b">   12</a></span>&#160;    Matrix <a class="code" href="class_binary_entropy_loss.html#ac02b22af563333056b231cc8278d9a9b">m_din</a>;           </div>
@@ -160,12 +159,13 @@ $(document).ready(function(){initNavTree('_binary_class_entropy_8h_source.html',
 <div class="ttc" id="aclass_binary_entropy_loss_html_ac02b22af563333056b231cc8278d9a9b"><div class="ttname"><a href="class_binary_entropy_loss.html#ac02b22af563333056b231cc8278d9a9b">BinaryEntropyLoss::m_din</a></div><div class="ttdeci">Matrix m_din</div><div class="ttdoc">производные по выходному слою</div><div class="ttdef"><b>Definition:</b> BinaryClassEntropy.h:12</div></div>
 <div class="ttc" id="aclass_binary_entropy_loss_html_ae9f860a95220f41c411c9029762eef0e"><div class="ttname"><a href="class_binary_entropy_loss.html#ae9f860a95220f41c411c9029762eef0e">BinaryEntropyLoss::loss</a></div><div class="ttdeci">Scalar loss() const override</div><div class="ttdef"><b>Definition:</b> BinaryClassEntropy.h:66</div></div>
 <div class="ttc" id="aclass_binary_entropy_loss_html_af36820752e750b18e74d6fa7533bf54e"><div class="ttname"><a href="class_binary_entropy_loss.html#af36820752e750b18e74d6fa7533bf54e">BinaryEntropyLoss::backprop_data</a></div><div class="ttdeci">const Matrix &amp; backprop_data() const override</div><div class="ttdef"><b>Definition:</b> BinaryClassEntropy.h:59</div></div>
+<div class="ttc" id="aclass_output_html"><div class="ttname"><a href="class_output.html">Output</a></div><div class="ttdoc">Родительский класс функционала ошибки</div><div class="ttdef"><b>Definition:</b> Output.h:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f9811e3adbc859e43f8b172818d13685.html">neuralnetwork</a></li><li class="navelem"><a class="el" href="dir_3c40024dea6356eea8038123fd946b45.html">Output</a></li><li class="navelem"><b>BinaryClassEntropy.h</b></li>
+    <li class="navelem"><a class="el" href="dir_cc3a25714fcc7c6a0beb7fcc4161401a.html">xsDNN</a></li><li class="navelem"><a class="el" href="dir_35c61bc9545c7a79e3d2a34197e6e7e2.html">Output</a></li><li class="navelem"><b>BinaryClassEntropy.h</b></li>
     <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

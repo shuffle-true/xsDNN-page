@@ -1,6 +1,3 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,72,83"/>
-<area shape="rect" id="node2" href="$class_binary_entropy_loss.html" title="Класс функционала ошибки для бинарной классификации (BinaryClassEntropy)" alt="" coords="120,5,263,32"/>
-<area shape="rect" id="node3" href="$class_cross_entropy_loss.html" title="Класс функционала ошибки для мультиклассовой классификации (MultiClassEntropy)" alt="" coords="123,56,260,83"/>
-<area shape="rect" id="node4" href="$class_m_s_e_loss.html" title="Класс функционала ошибки для регрессии (RegressionMSE)" alt="" coords="152,107,231,133"/>
+<area shape="rect" id="node1" href="$classinit_1_1_constant.html" title=" " alt="" coords="5,5,115,32"/>
 </map>

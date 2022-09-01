@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="header_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -28,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xsDNN C++
-   &#160;<span id="projectnumber">0.0.0</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
   </td>
@@ -120,8 +119,8 @@ $(document).ready(function(){initNavTree('class_batch_norm1_d.html',''); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:af26ce8b1cc2f361a7106ae0affbaa345"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#af26ce8b1cc2f361a7106ae0affbaa345">BatchNorm1D</a> (const int &amp;<a class="el" href="class_layer.html#af2aa113e9b7938188d8da55b6950d0e5">in_size</a>, const Scalar &amp;tolerance=Scalar(0.0001), const Scalar &amp;momentum=Scalar(0.35))</td></tr>
-<tr class="separator:af26ce8b1cc2f361a7106ae0affbaa345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64575ddcf338dbc2c0d54186883f9f9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a64575ddcf338dbc2c0d54186883f9f9b">BatchNorm1D</a> (const int &amp;<a class="el" href="class_layer.html#af2aa113e9b7938188d8da55b6950d0e5">in_size</a>, const bool &amp;affine=true, const Scalar &amp;tolerance=Scalar(0.0001), const Scalar &amp;momentum=Scalar(0.35))</td></tr>
+<tr class="separator:a64575ddcf338dbc2c0d54186883f9f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc1bdf414525f733ceac594d465a4608"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#acc1bdf414525f733ceac594d465a4608">init</a> (const std::vector&lt; Scalar &gt; &amp;params, <a class="el" href="class_r_n_g.html">RNG</a> &amp;rng) override</td></tr>
 <tr class="separator:acc1bdf414525f733ceac594d465a4608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f6d95cb1c63811eed97b012ce502c92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a5f6d95cb1c63811eed97b012ce502c92">init</a> () override</td></tr>
@@ -131,11 +130,11 @@ $(document).ready(function(){initNavTree('class_batch_norm1_d.html',''); initRes
 <tr class="separator:a29b499df0c841307dc5b02e12b540ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e9168afbefce701ff85b543fe806c3a"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a0e9168afbefce701ff85b543fe806c3a">output</a> () const override</td></tr>
 <tr class="separator:a0e9168afbefce701ff85b543fe806c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00579c1e8f1af68413e78574f75ee49a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a00579c1e8f1af68413e78574f75ee49a">backprop</a> (const Matrix &amp;prev_layer_data, const Matrix &amp;next_layer_data) override</td></tr>
-<tr class="separator:a00579c1e8f1af68413e78574f75ee49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4e58e7236b09d0939815ac36d8dcac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a1c4e58e7236b09d0939815ac36d8dcac">backprop</a> (const Matrix &amp;prev_layer_data, const Matrix &amp;next_layer_backprop_data) override</td></tr>
+<tr class="separator:a1c4e58e7236b09d0939815ac36d8dcac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83325a899c78379c2fbf18ed0026e4c0"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a83325a899c78379c2fbf18ed0026e4c0">backprop_data</a> () const override</td></tr>
 <tr class="separator:a83325a899c78379c2fbf18ed0026e4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3429d6f38f448d093ae86733942d6141"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a3429d6f38f448d093ae86733942d6141">update</a> (Optimizer &amp;opt) override</td></tr>
+<tr class="memitem:a3429d6f38f448d093ae86733942d6141"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a3429d6f38f448d093ae86733942d6141">update</a> (<a class="el" href="class_optimizer.html">Optimizer</a> &amp;opt) override</td></tr>
 <tr class="separator:a3429d6f38f448d093ae86733942d6141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d94a991a3bcd6c4009cde79de78c2a5"><td class="memItemLeft" align="right" valign="top"><a id="a2d94a991a3bcd6c4009cde79de78c2a5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a2d94a991a3bcd6c4009cde79de78c2a5">train</a> () override</td></tr>
@@ -163,6 +162,18 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>distribution_t
 <tr class="memitem:a6187cec88496d4ed5ab9f4e8a5474b2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a6187cec88496d4ed5ab9f4e8a5474b2b">fill_meta_info</a> (Meta &amp;map, int index) const override</td></tr>
 <tr class="memdesc:a6187cec88496d4ed5ab9f4e8a5474b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод нужен для заполнения основной информации о слое - тип слоя, входные и выходные значения кол-ва нейронов и т.д. Нужен для импорта сетки в файл  <a href="class_batch_norm1_d.html#a6187cec88496d4ed5ab9f4e8a5474b2b">Подробнее...</a><br /></td></tr>
 <tr class="separator:a6187cec88496d4ed5ab9f4e8a5474b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f8b48b94c54a9296772d8deec5f31e"><td class="memItemLeft" align="right" valign="top"><a id="a54f8b48b94c54a9296772d8deec5f31e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_gamma</b> (Vector gamma)</td></tr>
+<tr class="separator:a54f8b48b94c54a9296772d8deec5f31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd7f343e48ea978e40b5d956c2aee99"><td class="memItemLeft" align="right" valign="top"><a id="a4bd7f343e48ea978e40b5d956c2aee99"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_beta</b> (Vector beta)</td></tr>
+<tr class="separator:a4bd7f343e48ea978e40b5d956c2aee99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab679932dacc3b13d2c2e799a1f42611b"><td class="memItemLeft" align="right" valign="top"><a id="ab679932dacc3b13d2c2e799a1f42611b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_stddev</b> (Vector stddev)</td></tr>
+<tr class="separator:ab679932dacc3b13d2c2e799a1f42611b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac12c7e3b38a2ca6ac246565deec1b509"><td class="memItemLeft" align="right" valign="top"><a id="ac12c7e3b38a2ca6ac246565deec1b509"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_m_z</b> (Matrix m_z_)</td></tr>
+<tr class="separator:ac12c7e3b38a2ca6ac246565deec1b509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_layer')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_layer.html">Layer</a></td></tr>
 <tr class="memitem:ad5fbb4a1e913bf70813390ca9685db0d inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top"><a id="ad5fbb4a1e913bf70813390ca9685db0d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Layer</b> (const int <a class="el" href="class_layer.html#af2aa113e9b7938188d8da55b6950d0e5">in_size</a>, const int <a class="el" href="class_layer.html#a10515e993c8de900ad32fa1884b5915f">out_size</a>, std::string init_workflow)</td></tr>
@@ -205,6 +216,18 @@ Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#af3b0cee2beb3b67da60a6a36cecb3b8a">m_betas</a></td></tr>
 <tr class="memdesc:af3b0cee2beb3b67da60a6a36cecb3b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">beta для линейного отображения <br /></td></tr>
 <tr class="separator:af3b0cee2beb3b67da60a6a36cecb3b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be89bf78eadb4db6e0d801908f22f34"><td class="memItemLeft" align="right" valign="top"><a id="a4be89bf78eadb4db6e0d801908f22f34"></a>
+Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a4be89bf78eadb4db6e0d801908f22f34">mean_curr</a></td></tr>
+<tr class="memdesc:a4be89bf78eadb4db6e0d801908f22f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">матожидание для текущего батча <br /></td></tr>
+<tr class="separator:a4be89bf78eadb4db6e0d801908f22f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a596076a927237b8eec9690ad12314b80"><td class="memItemLeft" align="right" valign="top"><a id="a596076a927237b8eec9690ad12314b80"></a>
+Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a596076a927237b8eec9690ad12314b80">var_curr</a></td></tr>
+<tr class="memdesc:a596076a927237b8eec9690ad12314b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">дисперсия для текущего батча <br /></td></tr>
+<tr class="separator:a596076a927237b8eec9690ad12314b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3eabb05721bf7905a19f8ac2c9ce125"><td class="memItemLeft" align="right" valign="top"><a id="ad3eabb05721bf7905a19f8ac2c9ce125"></a>
+Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#ad3eabb05721bf7905a19f8ac2c9ce125">m_stddev</a></td></tr>
+<tr class="memdesc:ad3eabb05721bf7905a19f8ac2c9ce125"><td class="mdescLeft">&#160;</td><td class="mdescRight">стандартное отклонение <br /></td></tr>
+<tr class="separator:ad3eabb05721bf7905a19f8ac2c9ce125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c57ea82adbcfe229ae6d6a6768f0bbb"><td class="memItemLeft" align="right" valign="top"><a id="a2c57ea82adbcfe229ae6d6a6768f0bbb"></a>
 Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a2c57ea82adbcfe229ae6d6a6768f0bbb">m_mean</a></td></tr>
 <tr class="memdesc:a2c57ea82adbcfe229ae6d6a6768f0bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">скользящее среднее мат ожидания <br /></td></tr>
@@ -222,22 +245,16 @@ Vector&#160;</td><td class="memItemRight" valign="bottom"><b>m_dg</b></td></tr>
 <tr class="memitem:a6441d777f35090d0705dd6543e4b396f"><td class="memItemLeft" align="right" valign="top"><a id="a6441d777f35090d0705dd6543e4b396f"></a>
 Vector&#160;</td><td class="memItemRight" valign="bottom"><b>m_db</b></td></tr>
 <tr class="separator:a6441d777f35090d0705dd6543e4b396f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab77648d62f0c73d78211218d4937ae6e"><td class="memItemLeft" align="right" valign="top"><a id="ab77648d62f0c73d78211218d4937ae6e"></a>
-Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#ab77648d62f0c73d78211218d4937ae6e">inmu</a></td></tr>
-<tr class="memdesc:ab77648d62f0c73d78211218d4937ae6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">in - mu <br /></td></tr>
-<tr class="separator:ab77648d62f0c73d78211218d4937ae6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9e2a995eac322b505eeb9f67419c59d"><td class="memItemLeft" align="right" valign="top">Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#aa9e2a995eac322b505eeb9f67419c59d">invvar</a></td></tr>
-<tr class="separator:aa9e2a995eac322b505eeb9f67419c59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f1ca559f72c0bf636004c4b5267ff79"><td class="memItemLeft" align="right" valign="top"><a id="a2f1ca559f72c0bf636004c4b5267ff79"></a>
 Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>eps</b></td></tr>
 <tr class="separator:a2f1ca559f72c0bf636004c4b5267ff79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d08701d9286324072a7ee03624a59ae"><td class="memItemLeft" align="right" valign="top"><a id="a0d08701d9286324072a7ee03624a59ae"></a>
 Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>moment</b></td></tr>
 <tr class="separator:a0d08701d9286324072a7ee03624a59ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a897b117a5508e7776962e5cd0fc77533"><td class="memItemLeft" align="right" valign="top"><a id="a897b117a5508e7776962e5cd0fc77533"></a>
-Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a897b117a5508e7776962e5cd0fc77533">lmbd</a></td></tr>
-<tr class="memdesc:a897b117a5508e7776962e5cd0fc77533"><td class="mdescLeft">&#160;</td><td class="mdescRight">коэфф при скользящем среднем статистик <br /></td></tr>
-<tr class="separator:a897b117a5508e7776962e5cd0fc77533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32878f831171c7fac9bd32c64147661a"><td class="memItemLeft" align="right" valign="top"><a id="a32878f831171c7fac9bd32c64147661a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batch_norm1_d.html#a32878f831171c7fac9bd32c64147661a">affine_</a></td></tr>
+<tr class="memdesc:a32878f831171c7fac9bd32c64147661a"><td class="mdescLeft">&#160;</td><td class="mdescRight">афинное преобразование m_a = m_gammas * m_z + m_betas. <br /></td></tr>
+<tr class="separator:a32878f831171c7fac9bd32c64147661a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Дополнительные унаследованные члены</h2></td></tr>
@@ -268,8 +285,8 @@ class BatchNorm1D&lt; Distribution, Activation &gt;</h3>
 <dl class="section version"><dt>Версия</dt><dd>0.0 </dd></dl>
 <dl class="section date"><dt>Дата</dt><dd>Август 2022 года </dd></dl>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
-<a id="af26ce8b1cc2f361a7106ae0affbaa345"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af26ce8b1cc2f361a7106ae0affbaa345">&#9670;&nbsp;</a></span>BatchNorm1D()</h2>
+<a id="a64575ddcf338dbc2c0d54186883f9f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64575ddcf338dbc2c0d54186883f9f9b">&#9670;&nbsp;</a></span>BatchNorm1D()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,6 +301,12 @@ template&lt;typename Distribution , typename Activation &gt; </div>
           <td>(</td>
           <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>in_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>affine</em> = <code>true</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -321,8 +344,8 @@ template&lt;typename Distribution , typename Activation &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
-<a id="a00579c1e8f1af68413e78574f75ee49a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00579c1e8f1af68413e78574f75ee49a">&#9670;&nbsp;</a></span>backprop()</h2>
+<a id="a1c4e58e7236b09d0939815ac36d8dcac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4e58e7236b09d0939815ac36d8dcac">&#9670;&nbsp;</a></span>backprop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -342,7 +365,7 @@ template&lt;typename Distribution , typename Activation &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const Matrix &amp;&#160;</td>
-          <td class="paramname"><em>next_layer_data</em>&#160;</td>
+          <td class="paramname"><em>next_layer_backprop_data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -368,7 +391,7 @@ template&lt;typename Distribution , typename Activation &gt; </div>
   </dd>
 </dl>
 
-<p>Замещает <a class="el" href="class_layer.html#a301b6101fc12b9b1578c72d93dfa029f">Layer</a>.</p>
+<p>Замещает <a class="el" href="class_layer.html#a0f982388361f0ac8af33409f951758f8">Layer</a>.</p>
 
 </div>
 </div>
@@ -710,7 +733,7 @@ template&lt;typename Distribution , typename Activation &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Distribution, Activation &gt;::update </td>
           <td>(</td>
-          <td class="paramtype">Optimizer &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_optimizer.html">Optimizer</a> &amp;&#160;</td>
           <td class="paramname"><em>opt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -723,7 +746,7 @@ template&lt;typename Distribution , typename Activation &gt; </div>
 </div><div class="memdoc">
 <p>Обновление параметров слоя - векторов <em>gammas</em> и <em>betas</em> </p><dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opt</td><td>- объект класса Optimizer </td></tr>
+    <tr><td class="paramname">opt</td><td>- объект класса <a class="el" href="class_optimizer.html" title="Родительский класс оптимизаторов">Optimizer</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -732,36 +755,8 @@ template&lt;typename Distribution , typename Activation &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Данные класса</h2>
-<a id="aa9e2a995eac322b505eeb9f67419c59d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9e2a995eac322b505eeb9f67419c59d">&#9670;&nbsp;</a></span>invvar</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Distribution , typename Activation &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector <a class="el" href="class_batch_norm1_d.html">BatchNorm1D</a>&lt; Distribution, Activation &gt;::invvar</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<ol type="1">
-<li>/ (var + eps) ** 0.5 </li>
-</ol>
-
-</div>
-</div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>/home/shuffle/xsDNN/xsDNN-include/neuralnetwork/Layer/<a class="el" href="_batch_normalization_8h_source.html">BatchNormalization.h</a></li>
+<li>/home/shuffle/xsDNN/xsDNN-include/xsDNN/Layer/<a class="el" href="_batch_normalization_8h_source.html">BatchNormalization.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

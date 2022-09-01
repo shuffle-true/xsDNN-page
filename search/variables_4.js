@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['inmu_244',['inmu',['../class_batch_norm1_d.html#ab77648d62f0c73d78211218d4937ae6e',1,'BatchNorm1D']]],
-  ['invvar_245',['invvar',['../class_batch_norm1_d.html#aa9e2a995eac322b505eeb9f67419c59d',1,'BatchNorm1D']]]
+  ['p_5fvalue_5f_248',['p_value_',['../classinternal_1_1random_1_1bernoulli.html#a760cefa1da5111e5a528d44e028d8fe7',1,'internal::random::bernoulli']]]
 ];

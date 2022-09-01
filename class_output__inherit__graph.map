@@ -1,6 +1,6 @@
 <map id="Output" name="Output">
 <area shape="rect" id="node1" title="Родительский класс функционала ошибки" alt="" coords="207,5,274,32"/>
 <area shape="rect" id="node2" href="$class_binary_entropy_loss.html" title="Класс функционала ошибки для бинарной классификации (BinaryClassEntropy)" alt="" coords="5,80,148,107"/>
-<area shape="rect" id="node3" href="$class_cross_entropy_loss.html" title=" " alt="" coords="172,80,309,107"/>
+<area shape="rect" id="node3" href="$class_cross_entropy_loss.html" title="Класс функционала ошибки для мультиклассовой классификации (MultiClassEntropy)" alt="" coords="172,80,309,107"/>
 <area shape="rect" id="node4" href="$class_m_s_e_loss.html" title="Класс функционала ошибки для регрессии (RegressionMSE)" alt="" coords="333,80,412,107"/>
 </map>

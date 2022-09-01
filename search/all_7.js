@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['generate_5fbatch_42',['generate_batch',['../class_neural_network.html#a1b357e88ad6f9eb4ce97583a2a37a5e5',1,'NeuralNetwork']]],
-  ['get_5fderivatives_43',['get_derivatives',['../class_neural_network.html#a6b9ed2f41de3a9380fc90577a5a17089',1,'NeuralNetwork::get_derivatives()'],['../class_batch_norm1_d.html#a5c09b01a94decc15a9c98f50ef691589',1,'BatchNorm1D::get_derivatives()'],['../class_fully_connected.html#a141846dc46d93c1ae6a28b9a713640a9',1,'FullyConnected::get_derivatives()']]],
-  ['get_5fexponential_44',['get_exponential',['../namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f',1,'internal']]],
-  ['get_5fmeta_5finfo_45',['get_meta_info',['../class_neural_network.html#ac593a1bd5f078eb93169ce362aa4892f',1,'NeuralNetwork']]],
-  ['get_5foutput_46',['get_output',['../class_neural_network.html#a7686eabf1c59519eda1bc3ca1ce9628e',1,'NeuralNetwork']]],
-  ['get_5fparameters_47',['get_parameters',['../class_neural_network.html#a623867db76a7e2e4f5e9549882b5898e',1,'NeuralNetwork']]],
-  ['get_5fparametrs_48',['get_parametrs',['../class_batch_norm1_d.html#a7216f2b9b4f345d77f29f29811344a0d',1,'BatchNorm1D::get_parametrs()'],['../class_fully_connected.html#a8f4b8a29d156db5fba7d872fb2ff0e10',1,'FullyConnected::get_parametrs()']]],
-  ['get_5fworkflow_49',['get_workflow',['../class_layer.html#af54895d12ba7cd85cb314e08965ece9c',1,'Layer']]]
+  ['identity_49',['Identity',['../classactivate_1_1_identity.html',1,'activate']]],
+  ['identity_50',['IDENTITY',['../namespaceinternal.html#af22b4eec9ac692a7334ea550be120eabad64825016900e252957c32c9c0851eec',1,'internal']]],
+  ['in_5fsize_51',['in_size',['../class_layer.html#af2aa113e9b7938188d8da55b6950d0e5',1,'Layer']]],
+  ['init_52',['init',['../class_batch_norm1_d.html#acc1bdf414525f733ceac594d465a4608',1,'BatchNorm1D::init(const std::vector&lt; Scalar &gt; &amp;params, RNG &amp;rng) override'],['../class_batch_norm1_d.html#a5f6d95cb1c63811eed97b012ce502c92',1,'BatchNorm1D::init() override'],['../class_dropout.html#afb8945fd6db508d3614ca149d56a642a',1,'Dropout::init(const std::vector&lt; Scalar &gt; &amp;params, RNG &amp;rng) override'],['../class_dropout.html#abd09220b5916204f12cb2eb2abaf541e',1,'Dropout::init() override'],['../class_fully_connected.html#af216a8c2effed00203593c457141a4ba',1,'FullyConnected::init(const std::vector&lt; Scalar &gt; &amp;params, RNG &amp;rng) override'],['../class_fully_connected.html#aa3a0a6dec4961193408578ec5e333d1d',1,'FullyConnected::init() override'],['../class_layer.html#ac908166e081edd9ff3b3a35e187b5b63',1,'Layer::init(const std::vector&lt; Scalar &gt; &amp;params, RNG &amp;rng)=0'],['../class_layer.html#ad87780b777d48e388a8f8ecf9a33b33f',1,'Layer::init()=0'],['../class_neural_network.html#a4764f886d7b44b4e461f5bacd9be7c3a',1,'NeuralNetwork::init(int seed, const std::vector&lt; std::vector&lt; Scalar &gt;&gt; &amp;params)']]],
+  ['init_53',['Init',['../class_neural_network.html#ad665996cec0d54e7685fa53eddfe0cd2',1,'NeuralNetwork']]],
+  ['internal_54',['internal',['../namespaceinternal.html',1,'']]]
 ];

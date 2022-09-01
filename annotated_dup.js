@@ -8,15 +8,20 @@ var annotated_dup =
       [ "Softmax", "classactivate_1_1_softmax.html", "classactivate_1_1_softmax" ]
     ] ],
     [ "init", null, [
+      [ "Constant", "classinit_1_1_constant.html", "classinit_1_1_constant" ],
       [ "Exponential", "classinit_1_1_exponential.html", "classinit_1_1_exponential" ],
       [ "Normal", "classinit_1_1_normal.html", "classinit_1_1_normal" ],
       [ "Uniform", "classinit_1_1_uniform.html", "classinit_1_1_uniform" ]
     ] ],
     [ "internal", "namespaceinternal.html", [
-      [ "Timer", "classinternal_1_1_timer.html", "classinternal_1_1_timer" ],
-      [ "ProgressBar", "classinternal_1_1_progress_bar.html", "classinternal_1_1_progress_bar" ],
-      [ "mnist_header", "structinternal_1_1mnist__header.html", "structinternal_1_1mnist__header" ],
-      [ "bernoulli", "classinternal_1_1bernoulli.html", "classinternal_1_1bernoulli" ]
+      [ "display", null, [
+        [ "Timer", "classinternal_1_1display_1_1_timer.html", "classinternal_1_1display_1_1_timer" ],
+        [ "ProgressBar", "classinternal_1_1display_1_1_progress_bar.html", "classinternal_1_1display_1_1_progress_bar" ]
+      ] ],
+      [ "random", null, [
+        [ "bernoulli", "classinternal_1_1random_1_1bernoulli.html", "classinternal_1_1random_1_1bernoulli" ]
+      ] ],
+      [ "mnist_header", "structinternal_1_1mnist__header.html", "structinternal_1_1mnist__header" ]
     ] ],
     [ "BatchNorm1D", "class_batch_norm1_d.html", "class_batch_norm1_d" ],
     [ "BinaryEntropyLoss", "class_binary_entropy_loss.html", "class_binary_entropy_loss" ],
@@ -26,6 +31,8 @@ var annotated_dup =
     [ "Layer", "class_layer.html", "class_layer" ],
     [ "MSELoss", "class_m_s_e_loss.html", "class_m_s_e_loss" ],
     [ "NeuralNetwork", "class_neural_network.html", "class_neural_network" ],
+    [ "Optimizer", "class_optimizer.html", "class_optimizer" ],
+    [ "Output", "class_output.html", "class_output" ],
     [ "RNG", "class_r_n_g.html", "class_r_n_g" ],
     [ "SGD", "class_s_g_d.html", "class_s_g_d" ]
 ];

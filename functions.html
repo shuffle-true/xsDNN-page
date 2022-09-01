@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="header_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -28,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xsDNN C++
-   &#160;<span id="projectnumber">0.0.0</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
   </td>
@@ -87,13 +86,6 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <div class="contents">
 <div class="textblock">Список всех документированных членов классов со ссылками на документацию по классу для каждого члена.</div>
 
-<h3><a id="index__5F"></a>- _ -</h3><ul>
-<li>_negative_slope
-: <a class="el" href="classactivate_1_1_leaky_re_l_u.html#a88cb813e216ad1a9322b09ba740e7abc">activate::LeakyReLU</a>
-</li>
-</ul>
-
-
 <h3><a id="index_a"></a>- a -</h3><ul>
 <li>activate()
 : <a class="el" href="classactivate_1_1_identity.html#ab9990f3e4aae366b1e79d548505da278">activate::Identity</a>
@@ -108,6 +100,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>add_layer()
 : <a class="el" href="class_neural_network.html#a9c93c9359d97a972a9f5217844232515">NeuralNetwork</a>
 </li>
+<li>affine_
+: <a class="el" href="class_batch_norm1_d.html#a32878f831171c7fac9bd32c64147661a">BatchNorm1D&lt; Distribution, Activation &gt;</a>
+</li>
 <li>apply_jacobian()
 : <a class="el" href="classactivate_1_1_identity.html#a9df32037c75feeea945e98c1da103bd0">activate::Identity</a>
 , <a class="el" href="classactivate_1_1_leaky_re_l_u.html#a27c372445eee84f58892c1ff52ec4715">activate::LeakyReLU</a>
@@ -116,17 +111,17 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 , <a class="el" href="classactivate_1_1_softmax.html#a10c8367ecfb0df4eaf8103368c729d9b">activate::Softmax</a>
 </li>
 <li>array_size_
-: <a class="el" href="classinternal_1_1bernoulli.html#ae3a23de6704d5a2ba4cad0c1013705ae">internal::bernoulli</a>
+: <a class="el" href="classinternal_1_1random_1_1bernoulli.html#a67582cebd0bb47e2ffff7bc446204606">internal::random::bernoulli</a>
 </li>
 </ul>
 
 
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>backprop()
-: <a class="el" href="class_batch_norm1_d.html#a00579c1e8f1af68413e78574f75ee49a">BatchNorm1D&lt; Distribution, Activation &gt;</a>
-, <a class="el" href="class_dropout.html#ad08260f163fc2ff4a36ae1694014393b">Dropout&lt; Activation &gt;</a>
-, <a class="el" href="class_fully_connected.html#ad30224a8257142e13f8186c9412ddd13">FullyConnected&lt; Distribution, Activation &gt;</a>
-, <a class="el" href="class_layer.html#a301b6101fc12b9b1578c72d93dfa029f">Layer</a>
+: <a class="el" href="class_batch_norm1_d.html#a1c4e58e7236b09d0939815ac36d8dcac">BatchNorm1D&lt; Distribution, Activation &gt;</a>
+, <a class="el" href="class_dropout.html#ad189d332de743373b132dd89f550b9a9">Dropout&lt; Activation &gt;</a>
+, <a class="el" href="class_fully_connected.html#ad4710d15776347dc9fbfbd66ecd5829e">FullyConnected&lt; Distribution, Activation &gt;</a>
+, <a class="el" href="class_layer.html#a0f982388361f0ac8af33409f951758f8">Layer</a>
 </li>
 <li>Backprop()
 : <a class="el" href="class_neural_network.html#a6c23e78607779f00a3ab336dc09cfa9a">NeuralNetwork</a>
@@ -144,10 +139,10 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 , <a class="el" href="class_m_s_e_loss.html#ad6768d36d56206721112f317858d4fc9">MSELoss</a>
 </li>
 <li>BatchNorm1D()
-: <a class="el" href="class_batch_norm1_d.html#af26ce8b1cc2f361a7106ae0affbaa345">BatchNorm1D&lt; Distribution, Activation &gt;</a>
+: <a class="el" href="class_batch_norm1_d.html#a64575ddcf338dbc2c0d54186883f9f9b">BatchNorm1D&lt; Distribution, Activation &gt;</a>
 </li>
 <li>bernoulli
-: <a class="el" href="class_dropout.html#ab797f6c32a43e2d20897f67a01cb2944">Dropout&lt; Activation &gt;</a>
+: <a class="el" href="class_dropout.html#a926ae6d7dd816b1ce9755d3d6e499578">Dropout&lt; Activation &gt;</a>
 </li>
 <li>BIAS_ACTIVATE
 : <a class="el" href="class_fully_connected.html#a2dfdfd0b55caee6550d266577996d8fd">FullyConnected&lt; Distribution, Activation &gt;</a>
@@ -159,6 +154,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>check_target_data()
 : <a class="el" href="class_binary_entropy_loss.html#aa528779b2abf7fd5e4754a5c5f8bf41b">BinaryEntropyLoss</a>
 , <a class="el" href="class_cross_entropy_loss.html#ab4b330c2dc717d59cde310bd7ea06ebc">CrossEntropyLoss</a>
+, <a class="el" href="class_output.html#ab3893f15f4682a8a31d0f5a5084fb033">Output</a>
 </li>
 <li>check_unit_sizes()
 : <a class="el" href="class_neural_network.html#aedb1edc218280dcd8bf11c5403999084">NeuralNetwork</a>
@@ -191,6 +187,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="class_binary_entropy_loss.html#a824e6bc9659c22c98024c9504df57efa">BinaryEntropyLoss</a>
 , <a class="el" href="class_cross_entropy_loss.html#a370ce9dd85a7ba5e50e4757e8b9331a3">CrossEntropyLoss</a>
 , <a class="el" href="class_m_s_e_loss.html#a047946b722896c8fc086d6ea73710ea4">MSELoss</a>
+, <a class="el" href="class_output.html#aeb03ae6e65e96b20666f227a71bf6ffc">Output</a>
 </li>
 <li>export_net()
 : <a class="el" href="class_neural_network.html#adf367188e3703049aec2687b3987a465">NeuralNetwork</a>
@@ -263,12 +260,6 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>Init()
 : <a class="el" href="class_neural_network.html#ad665996cec0d54e7685fa53eddfe0cd2">NeuralNetwork</a>
 </li>
-<li>inmu
-: <a class="el" href="class_batch_norm1_d.html#ab77648d62f0c73d78211218d4937ae6e">BatchNorm1D&lt; Distribution, Activation &gt;</a>
-</li>
-<li>invvar
-: <a class="el" href="class_batch_norm1_d.html#aa9e2a995eac322b505eeb9f67419c59d">BatchNorm1D&lt; Distribution, Activation &gt;</a>
-</li>
 </ul>
 
 
@@ -276,13 +267,11 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>layer_type()
 : <a class="el" href="class_fully_connected.html#ae7d295a073fe41451add832c2ed4b5fb">FullyConnected&lt; Distribution, Activation &gt;</a>
 </li>
-<li>lmbd
-: <a class="el" href="class_batch_norm1_d.html#a897b117a5508e7776962e5cd0fc77533">BatchNorm1D&lt; Distribution, Activation &gt;</a>
-</li>
 <li>loss()
 : <a class="el" href="class_binary_entropy_loss.html#ae9f860a95220f41c411c9029762eef0e">BinaryEntropyLoss</a>
 , <a class="el" href="class_cross_entropy_loss.html#a144b171ae67a5e9ab50725f73bf5d512">CrossEntropyLoss</a>
 , <a class="el" href="class_m_s_e_loss.html#a24fdad3b7ff10462f74c8e8923b4ba74">MSELoss</a>
+, <a class="el" href="class_output.html#a45d48c4933bf9ab6804ba1dafe7c6cfb">Output</a>
 </li>
 </ul>
 
@@ -333,6 +322,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>m_nesterov
 : <a class="el" href="class_s_g_d.html#a8f857296a4bb825814c319e88464fdc2">SGD</a>
 </li>
+<li>m_stddev
+: <a class="el" href="class_batch_norm1_d.html#ad3eabb05721bf7905a19f8ac2c9ce125">BatchNorm1D&lt; Distribution, Activation &gt;</a>
+</li>
 <li>m_var
 : <a class="el" href="class_batch_norm1_d.html#ac49f20d8369d180b7dbc442b539e00e7">BatchNorm1D&lt; Distribution, Activation &gt;</a>
 </li>
@@ -347,6 +339,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>mask_
 : <a class="el" href="class_dropout.html#a3cd76f079a8499dcbeedd077ce348d64">Dropout&lt; Activation &gt;</a>
 </li>
+<li>mean_curr
+: <a class="el" href="class_batch_norm1_d.html#a4be89bf78eadb4db6e0d801908f22f34">BatchNorm1D&lt; Distribution, Activation &gt;</a>
+</li>
 </ul>
 
 
@@ -359,7 +354,10 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 <h3><a id="index_o"></a>- o -</h3><ul>
 <li>operator()()
-: <a class="el" href="classinternal_1_1bernoulli.html#afd2f5c20c9126e1928d122227949654b">internal::bernoulli</a>
+: <a class="el" href="classinternal_1_1random_1_1bernoulli.html#abf06e709470bd1f91b93c51925031673">internal::random::bernoulli</a>
+</li>
+<li>operator[]()
+: <a class="el" href="class_neural_network.html#ac792b8324890be8fcdd3647c820c847e">NeuralNetwork</a>
 </li>
 <li>out_size()
 : <a class="el" href="class_layer.html#a10515e993c8de900ad32fa1884b5915f">Layer</a>
@@ -374,29 +372,31 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="class_binary_entropy_loss.html#a66e104e01e8d8750fb49525f9cbf59db">BinaryEntropyLoss</a>
 , <a class="el" href="class_cross_entropy_loss.html#a284d92375aab31dc79ed41a0ba6deb52">CrossEntropyLoss</a>
 , <a class="el" href="class_m_s_e_loss.html#acc0eefa97e47d480611d82b981713cf2">MSELoss</a>
+, <a class="el" href="class_output.html#a08be90646104d92d8d2897794ce6d4eb">Output</a>
 </li>
 </ul>
 
 
 <h3><a id="index_p"></a>- p -</h3><ul>
 <li>p()
-: <a class="el" href="classinternal_1_1bernoulli.html#a054a1377f14d856bb7d6da2d4e0ff5f9">internal::bernoulli</a>
+: <a class="el" href="classinternal_1_1random_1_1bernoulli.html#ac326853e6398042132247ff7c8b165d3">internal::random::bernoulli</a>
 </li>
 <li>p_value_
-: <a class="el" href="classinternal_1_1bernoulli.html#a1a7c7c1650d2d72c2420aae111340130">internal::bernoulli</a>
+: <a class="el" href="classinternal_1_1random_1_1bernoulli.html#a760cefa1da5111e5a528d44e028d8fe7">internal::random::bernoulli</a>
 </li>
 </ul>
 
 
 <h3><a id="index_r"></a>- r -</h3><ul>
 <li>rd
-: <a class="el" href="classinternal_1_1bernoulli.html#ad53b1db1e5a5e5acc5c1a78a7e8e25f4">internal::bernoulli</a>
+: <a class="el" href="classinternal_1_1random_1_1bernoulli.html#a5c9ba3fc7cdab4f258fad10829fa6630">internal::random::bernoulli</a>
 </li>
 <li>read_net()
 : <a class="el" href="class_neural_network.html#af8999f0e3a520af6b1822a2f2744f1e6">NeuralNetwork</a>
 </li>
 <li>reset()
-: <a class="el" href="class_s_g_d.html#a41d2538db3a3122f72572e71f902c806">SGD</a>
+: <a class="el" href="class_optimizer.html#aa65d38318c6da9ed15f7e56c9c4fc78e">Optimizer</a>
+, <a class="el" href="class_s_g_d.html#a41d2538db3a3122f72572e71f902c806">SGD</a>
 </li>
 <li>return_type()
 : <a class="el" href="classactivate_1_1_identity.html#a4e51141d2ce42f48d5a27b360f467a92">activate::Identity</a>
@@ -404,12 +404,13 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 , <a class="el" href="classactivate_1_1_re_l_u.html#a42292733fe96367a89e4629b518a2375">activate::ReLU</a>
 , <a class="el" href="classactivate_1_1_sigmoid.html#ac3795c9c74849a2c512115803183a4c2">activate::Sigmoid</a>
 , <a class="el" href="classactivate_1_1_softmax.html#a1e6d62bd6e0e3d42ff6d0f1a90acc9a9">activate::Softmax</a>
+, <a class="el" href="classinit_1_1_constant.html#a36591597004bc31a8bc4de256fabb8d6">init::Constant</a>
 , <a class="el" href="classinit_1_1_exponential.html#afd1d4bad9b41a1233753659898213915">init::Exponential</a>
 , <a class="el" href="classinit_1_1_normal.html#a63bc21a62880e1e1cfd9cadc0121c8b3">init::Normal</a>
 , <a class="el" href="classinit_1_1_uniform.html#adec3d949ec4457f224c29fd3252dc8e0">init::Uniform</a>
 </li>
 <li>rng_
-: <a class="el" href="classinternal_1_1bernoulli.html#a06e5a0aed6bf37fa0bc47d9df4b7a5c5">internal::bernoulli</a>
+: <a class="el" href="classinternal_1_1random_1_1bernoulli.html#a6e0b44c075d1e8c35590b729c73a54db">internal::random::bernoulli</a>
 </li>
 </ul>
 
@@ -419,7 +420,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="class_dropout.html#a210bf46b90143e5a53928f223ce03bd0">Dropout&lt; Activation &gt;</a>
 </li>
 <li>set_param()
-: <a class="el" href="classinternal_1_1bernoulli.html#a76416c68eba099c059c67078897cbab7">internal::bernoulli</a>
+: <a class="el" href="classinternal_1_1random_1_1bernoulli.html#a66d6874da860509e49e1d8019859d6c3">internal::random::bernoulli</a>
 </li>
 <li>set_parameters()
 : <a class="el" href="class_neural_network.html#a1fb4700cb175ea0899d4ba6230c4ad8e">NeuralNetwork</a>
@@ -429,7 +430,8 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 , <a class="el" href="class_fully_connected.html#ac4a92d50c7593aa21902d273e37e5ecd">FullyConnected&lt; Distribution, Activation &gt;</a>
 </li>
 <li>set_random_data()
-: <a class="el" href="classinit_1_1_exponential.html#a14f0fb71e7fa1601e502e36ccdda9108">init::Exponential</a>
+: <a class="el" href="classinit_1_1_constant.html#a47719bbf22decc46aa35dd219b7aa099">init::Constant</a>
+, <a class="el" href="classinit_1_1_exponential.html#a14f0fb71e7fa1601e502e36ccdda9108">init::Exponential</a>
 , <a class="el" href="classinit_1_1_normal.html#ac6fae62420c264be555200c9dc43c5bb">init::Normal</a>
 , <a class="el" href="classinit_1_1_uniform.html#a56b905e34c9539752fa464d9ee0f5ac4">init::Uniform</a>
 </li>
@@ -462,7 +464,15 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </li>
 <li>update()
 : <a class="el" href="class_neural_network.html#ae6de55b9112a4f00b2ea9534a10d0e68">NeuralNetwork</a>
+, <a class="el" href="class_optimizer.html#a9fa89b4d7564c785e7362b048babc21b">Optimizer</a>
 , <a class="el" href="class_s_g_d.html#a53613e375797f28878cf77ece7f85618">SGD</a>
+</li>
+</ul>
+
+
+<h3><a id="index_v"></a>- v -</h3><ul>
+<li>var_curr
+: <a class="el" href="class_batch_norm1_d.html#a596076a927237b8eec9690ad12314b80">BatchNorm1D&lt; Distribution, Activation &gt;</a>
 </li>
 </ul>
 

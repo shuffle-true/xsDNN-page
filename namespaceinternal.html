@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="header_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -28,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xsDNN C++
-   &#160;<span id="projectnumber">0.0.0</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
   </td>
@@ -96,14 +95,7 @@ $(document).ready(function(){initNavTree('namespaceinternal.html',''); initResiz
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinternal_1_1_timer.html">Timer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinternal_1_1_progress_bar.html">ProgressBar</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinternal_1_1mnist__header.html">mnist_header</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinternal_1_1bernoulli.html">bernoulli</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс генерации распределения Бернулли  <a href="classinternal_1_1bernoulli.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -128,6 +120,7 @@ $(document).ready(function(){initNavTree('namespaceinternal.html',''); initResiz
 <tr class="memitem:a5910af6de47727626e888443c7b18c43"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43">DISTRIBUTION_ENUM</a> { <a class="el" href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43acbe15420f02aa16c27d55f76d8a2a194">UNIFORM</a> = 0
 , <a class="el" href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43a4a07fb04f19594592981c91a9d4e165e">EXPONENTIAL</a>
 , <a class="el" href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43a45ca318653594bc78e971e0c84182d35">NORMAL</a>
+, <a class="el" href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43a49f37d01584b685307c1ecac83ac7010">CONSTANT</a>
  }</td></tr>
 <tr class="memdesc:a5910af6de47727626e888443c7b18c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID распределения при генерации весов  <a href="namespaceinternal.html#a5910af6de47727626e888443c7b18c43">Подробнее...</a><br /></td></tr>
 <tr class="separator:a5910af6de47727626e888443c7b18c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,17 +133,11 @@ $(document).ready(function(){initNavTree('namespaceinternal.html',''); initResiz
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Функции</h2></td></tr>
-<tr class="memitem:a5ffb5daa5e8432e0a6acd0c66f0df74f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a5ffb5daa5e8432e0a6acd0c66f0df74f">compute_statistic_graph1D_train</a> (const Matrix &amp;in, Matrix &amp;in_hat, Eigen::VectorXd &amp;m_mean, Eigen::VectorXd &amp;m_var, Matrix &amp;inmu, Eigen::VectorXd &amp;invvar, const Scalar &amp;eps, const Scalar &amp;momentum)</td></tr>
-<tr class="separator:a5ffb5daa5e8432e0a6acd0c66f0df74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a68b31820e82a6ec6387872ca5fabea"><td class="memItemLeft" align="right" valign="top"><a id="a6a68b31820e82a6ec6387872ca5fabea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_statistic_graph1D_eval</b> (Matrix &amp;in_hat, Eigen::VectorXd &amp;m_mean, Eigen::VectorXd &amp;m_var, const Scalar &amp;eps)</td></tr>
-<tr class="separator:a6a68b31820e82a6ec6387872ca5fabea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaec91d38d6255a91ec814f72a1a8f64"><td class="memItemLeft" align="right" valign="top"><a id="aeaec91d38d6255a91ec814f72a1a8f64"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_backward_graph1D</b> (const Matrix &amp;next_layer_data, Matrix &amp;dLz, Matrix &amp;m_z, Eigen::VectorXd &amp;m_gammas, Matrix &amp;m_din, Eigen::VectorXd &amp;m_dg, Eigen::VectorXd &amp;m_db, Eigen::VectorXd &amp;invvar, Matrix &amp;inmu)</td></tr>
-<tr class="separator:aeaec91d38d6255a91ec814f72a1a8f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6fcf5f606e1adec9ea4e231df1c718f"><td class="memItemLeft" align="right" valign="top">Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">get_exponential</a> (const Scalar &amp;rate, <a class="el" href="class_r_n_g.html">RNG</a> &amp;rng)</td></tr>
+<tr class="separator:ad6fcf5f606e1adec9ea4e231df1c718f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae71c57474250cf86dd7e46d54f044603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#ae71c57474250cf86dd7e46d54f044603">create_layer</a> (const std::map&lt; std::string, Scalar &gt; &amp;map, const int &amp;index)</td></tr>
 <tr class="separator:ae71c57474250cf86dd7e46d54f044603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58a90de85a907afc2ec45b98597c14cc"><td class="memItemLeft" align="right" valign="top">Output *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a58a90de85a907afc2ec45b98597c14cc">create_output</a> (const std::map&lt; std::string, Scalar &gt; &amp;map)</td></tr>
+<tr class="memitem:a58a90de85a907afc2ec45b98597c14cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_output.html">Output</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a58a90de85a907afc2ec45b98597c14cc">create_output</a> (const std::map&lt; std::string, Scalar &gt; &amp;map)</td></tr>
 <tr class="separator:a58a90de85a907afc2ec45b98597c14cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad429a1768927e66f1e6c2b64d946027"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#aad429a1768927e66f1e6c2b64d946027">layer_id</a> (const std::string &amp;type)</td></tr>
 <tr class="separator:aad429a1768927e66f1e6c2b64d946027"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,20 +147,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_backward_grap
 <tr class="separator:a132c969163b5898faa93428f39e68a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a868a36cb50dad3821255259ca79db479"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a868a36cb50dad3821255259ca79db479">output_id</a> (const std::string &amp;type)</td></tr>
 <tr class="separator:a868a36cb50dad3821255259ca79db479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4548c561725c1d1addf33716b619167"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#aa4548c561725c1d1addf33716b619167">create_directory</a> (const std::string &amp;directory_name)</td></tr>
-<tr class="separator:aa4548c561725c1d1addf33716b619167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3ce06b33fd4f205474a7c055b590737"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#ad3ce06b33fd4f205474a7c055b590737">write_one_vector</a> (const std::vector&lt; Scalar &gt; &amp;vec, std::string &amp;filename)</td></tr>
-<tr class="separator:ad3ce06b33fd4f205474a7c055b590737"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba1a0c067292e01ba5d405c7d843edf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#aba1a0c067292e01ba5d405c7d843edf1">write_vector</a> (std::string &amp;folder, const std::string &amp;filename, std::vector&lt; std::vector&lt; Scalar &gt; &gt; &amp;params)</td></tr>
-<tr class="separator:aba1a0c067292e01ba5d405c7d843edf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc9728409c3dec1a7e2532d77167f23d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Scalar &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#afc9728409c3dec1a7e2532d77167f23d">read_vector</a> (const std::string &amp;filename)</td></tr>
-<tr class="separator:afc9728409c3dec1a7e2532d77167f23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16b2e7aa60b2c8b30d0dbfba6d4fa0ef"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Scalar &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a16b2e7aa60b2c8b30d0dbfba6d4fa0ef">read_parameter</a> (const std::string &amp;folder, const std::string &amp;filename, const int &amp;nlayer)</td></tr>
-<tr class="separator:a16b2e7aa60b2c8b30d0dbfba6d4fa0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbfc481753e0341442b8dd30f04609af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#abbfc481753e0341442b8dd30f04609af">write_map</a> (const std::string &amp;filename, const std::map&lt; std::string, Scalar &gt; &amp;map)</td></tr>
-<tr class="separator:abbfc481753e0341442b8dd30f04609af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a986373a3bb1f04d18e5860715b595903"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a986373a3bb1f04d18e5860715b595903">read_map</a> (const std::string &amp;filename, std::map&lt; std::string, Scalar &gt; &amp;map)</td></tr>
-<tr class="separator:a986373a3bb1f04d18e5860715b595903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad117d9780efd3d4660d201a225151443"><td class="memItemLeft" align="right" valign="top"><a id="ad117d9780efd3d4660d201a225151443"></a>
 static Matrix&#160;</td><td class="memItemRight" valign="bottom"><b>build_confusion_matrix</b> (const Scalar *real, const Scalar *predict, const long &amp;sample_size)</td></tr>
 <tr class="separator:ad117d9780efd3d4660d201a225151443"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,20 +163,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>parse_mnist_header</b
 <tr class="memitem:a6552431ec68293b082f37fe81afb5e88"><td class="memItemLeft" align="right" valign="top"><a id="a6552431ec68293b082f37fe81afb5e88"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>parse_mnist_image</b> (std::ifstream &amp;ifs, const <a class="el" href="structinternal_1_1mnist__header.html">mnist_header</a> &amp;header, const int width, const int height, const Scalar &amp;scale_min, const Scalar &amp;scale_max, const int x_padding, const int y_padding, Eigen::VectorXd &amp;col)</td></tr>
 <tr class="separator:a6552431ec68293b082f37fe81afb5e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b8021e30d34fc051ac96750c5e4ea41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a1b8021e30d34fc051ac96750c5e4ea41">shuffle</a> (int *arr, const int n, <a class="el" href="class_r_n_g.html">RNG</a> &amp;rng)</td></tr>
-<tr class="separator:a1b8021e30d34fc051ac96750c5e4ea41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18cfbdb7ba8d1ae1092a2c8ce4c8d077"><td class="memTemplParams" colspan="2">template&lt;typename DerivedX , typename DerivedY , typename XType , typename YType &gt; </td></tr>
-<tr class="memitem:a18cfbdb7ba8d1ae1092a2c8ce4c8d077"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a18cfbdb7ba8d1ae1092a2c8ce4c8d077">create_shuffled_batches</a> (const Eigen::MatrixBase&lt; DerivedX &gt; &amp;x, const Eigen::MatrixBase&lt; DerivedY &gt; &amp;y, int batch_size, <a class="el" href="class_r_n_g.html">RNG</a> &amp;rng, std::vector&lt; XType &gt; &amp;x_batches, std::vector&lt; YType &gt; &amp;y_batches)</td></tr>
-<tr class="separator:a18cfbdb7ba8d1ae1092a2c8ce4c8d077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad23ce3155423fa432a24bfffc51793a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#ad23ce3155423fa432a24bfffc51793a6">set_normal_random</a> (Scalar *arr, const int n, <a class="el" href="class_r_n_g.html">RNG</a> &amp;rng, const Scalar &amp;mu=Scalar(0), const Scalar &amp;sigma=Scalar(1))</td></tr>
-<tr class="separator:ad23ce3155423fa432a24bfffc51793a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8977e6737be2f25d189c5e9b76232cd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#a8977e6737be2f25d189c5e9b76232cd5">set_uniform_random</a> (Scalar *arr, const int n, <a class="el" href="class_r_n_g.html">RNG</a> &amp;rng, const Scalar &amp;a=Scalar(0), const Scalar &amp;b=Scalar(1))</td></tr>
-<tr class="separator:a8977e6737be2f25d189c5e9b76232cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf4af6773b463d60b1d791e3b09d8d37"><td class="memItemLeft" align="right" valign="top"><a id="aaf4af6773b463d60b1d791e3b09d8d37"></a>
-Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform_random</b> (<a class="el" href="class_r_n_g.html">RNG</a> &amp;rng, const Scalar &amp;a=Scalar(0), const Scalar &amp;b=Scalar(1))</td></tr>
-<tr class="separator:aaf4af6773b463d60b1d791e3b09d8d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6fcf5f606e1adec9ea4e231df1c718f"><td class="memItemLeft" align="right" valign="top">Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">get_exponential</a> (const Scalar &amp;rate, <a class="el" href="class_r_n_g.html">RNG</a> &amp;rng)</td></tr>
-<tr class="separator:ad6fcf5f606e1adec9ea4e231df1c718f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Этот файл служит как вспомогательная утилита для определения типа слоя, его функции активации и выходного слоя сетки. Все представлено ввиде enum перечисления, что позволит масштабировать эту систему до нужных размеров. </p>
@@ -255,6 +214,8 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform_random<
 <tr><td class="fieldname"><a id="a5910af6de47727626e888443c7b18c43a4a07fb04f19594592981c91a9d4e165e"></a>EXPONENTIAL&#160;</td><td class="fielddoc"><p>Экспоненциальное </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a5910af6de47727626e888443c7b18c43a45ca318653594bc78e971e0c84182d35"></a>NORMAL&#160;</td><td class="fielddoc"><p>Нормальное </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5910af6de47727626e888443c7b18c43a49f37d01584b685307c1ecac83ac7010"></a>CONSTANT&#160;</td><td class="fielddoc"><p>Константное </p>
 </td></tr>
 </table>
 
@@ -340,109 +301,6 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform_random<
 
 </div>
 </div>
-<a id="a5ffb5daa5e8432e0a6acd0c66f0df74f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ffb5daa5e8432e0a6acd0c66f0df74f">&#9670;&nbsp;</a></span>compute_statistic_graph1D_train()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void internal::compute_statistic_graph1D_train </td>
-          <td>(</td>
-          <td class="paramtype">const Matrix &amp;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Matrix &amp;&#160;</td>
-          <td class="paramname"><em>in_hat</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Eigen::VectorXd &amp;&#160;</td>
-          <td class="paramname"><em>m_mean</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Eigen::VectorXd &amp;&#160;</td>
-          <td class="paramname"><em>m_var</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Matrix &amp;&#160;</td>
-          <td class="paramname"><em>inmu</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Eigen::VectorXd &amp;&#160;</td>
-          <td class="paramname"><em>invvar</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Scalar &amp;&#160;</td>
-          <td class="paramname"><em>eps</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Scalar &amp;&#160;</td>
-          <td class="paramname"><em>momentum</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Получение нормированного входа по вычислительному графу для слоя <a class="el" href="class_batch_norm1_d.html" title="Класс слоя пакетной нормализации (BatchNorm1D)">BatchNorm1D</a> </p><dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">in</td><td>исходные входные данные </td></tr>
-    <tr><td class="paramname">in_hat</td><td>отнормированные входные данные </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa4548c561725c1d1addf33716b619167"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4548c561725c1d1addf33716b619167">&#9670;&nbsp;</a></span>create_directory()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void internal::create_directory </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>directory_name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Создание директории при сохранении сетки </p><dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">directory_name</td><td>название директории </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ae71c57474250cf86dd7e46d54f044603"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae71c57474250cf86dd7e46d54f044603">&#9670;&nbsp;</a></span>create_layer()</h2>
 
@@ -497,7 +355,7 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform_random<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Output* internal::create_output </td>
+          <td class="memname"><a class="el" href="class_output.html">Output</a>* internal::create_output </td>
           <td>(</td>
           <td class="paramtype">const std::map&lt; std::string, Scalar &gt; &amp;&#160;</td>
           <td class="paramname"><em>map</em></td><td>)</td>
@@ -517,89 +375,6 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform_random<
   </dd>
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>указатель на выходной слой </dd></dl>
-
-</div>
-</div>
-<a id="a18cfbdb7ba8d1ae1092a2c8ce4c8d077"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18cfbdb7ba8d1ae1092a2c8ce4c8d077">&#9670;&nbsp;</a></span>create_shuffled_batches()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename DerivedX , typename DerivedY , typename XType , typename YType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int internal::create_shuffled_batches </td>
-          <td>(</td>
-          <td class="paramtype">const Eigen::MatrixBase&lt; DerivedX &gt; &amp;&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Eigen::MatrixBase&lt; DerivedY &gt; &amp;&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>batch_size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_r_n_g.html">RNG</a> &amp;&#160;</td>
-          <td class="paramname"><em>rng</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; XType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>x_batches</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; YType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>y_batches</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Генерация перетасованных батчей </p><dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">DerivedX</td><td></td></tr>
-    <tr><td class="paramname">DerivedY</td><td></td></tr>
-    <tr><td class="paramname">XType</td><td>тип данных на выборке </td></tr>
-    <tr><td class="paramname">YType</td><td>тип данных на целевой переменной </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>обучающая выборка </td></tr>
-    <tr><td class="paramname">y</td><td>целевая переменная </td></tr>
-    <tr><td class="paramname">batch_size</td><td>размер батча </td></tr>
-    <tr><td class="paramname">rng</td><td>генератор </td></tr>
-    <tr><td class="paramname">x_batches</td><td>полученные батчи для выборки </td></tr>
-    <tr><td class="paramname">y_batches</td><td>полученные батчи для целевой переменной </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -735,447 +510,6 @@ template&lt;typename DerivedX , typename DerivedY , typename XType , typename YT
   </dd>
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>ID выходного слоя </dd></dl>
-
-</div>
-</div>
-<a id="a986373a3bb1f04d18e5860715b595903"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a986373a3bb1f04d18e5860715b595903">&#9670;&nbsp;</a></span>read_map()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void internal::read_map </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::map&lt; std::string, Scalar &gt; &amp;&#160;</td>
-          <td class="paramname"><em>map</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Заполнение словаря с параметрами сетки </p><dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>название сетки </td></tr>
-    <tr><td class="paramname">map</td><td>словарь </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a16b2e7aa60b2c8b30d0dbfba6d4fa0ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16b2e7aa60b2c8b30d0dbfba6d4fa0ef">&#9670;&nbsp;</a></span>read_parameter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; std::vector&lt;Scalar&gt; &gt; internal::read_parameter </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>folder</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>nlayer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Чтение параметров сети из бинарного файла модели </p><dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">folder</td><td>папка с моделью </td></tr>
-    <tr><td class="paramname">filename</td><td>название файла с моделью </td></tr>
-    <tr><td class="paramname">nlayer</td><td>кол-во слоев в сети </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd>матрицу параметров </dd></dl>
-
-</div>
-</div>
-<a id="afc9728409c3dec1a7e2532d77167f23d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc9728409c3dec1a7e2532d77167f23d">&#9670;&nbsp;</a></span>read_vector()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;Scalar&gt; internal::read_vector </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Чтение параметров для одного слоя </p><dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>название файла </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd>вектор параметров для одного слоя </dd></dl>
-
-</div>
-</div>
-<a id="ad23ce3155423fa432a24bfffc51793a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad23ce3155423fa432a24bfffc51793a6">&#9670;&nbsp;</a></span>set_normal_random()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void internal::set_normal_random </td>
-          <td>(</td>
-          <td class="paramtype">Scalar *&#160;</td>
-          <td class="paramname"><em>arr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_r_n_g.html">RNG</a> &amp;&#160;</td>
-          <td class="paramname"><em>rng</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Scalar &amp;&#160;</td>
-          <td class="paramname"><em>mu</em> = <code>Scalar(0)</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Scalar &amp;&#160;</td>
-          <td class="paramname"><em>sigma</em> = <code>Scalar(1)</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Генерация нормального распределения через алгоритм <b>Бокса-Мюллера</b> </p><dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">arr</td><td>массив </td></tr>
-    <tr><td class="paramname">n</td><td>размер массива </td></tr>
-    <tr><td class="paramname">rng</td><td>генератор </td></tr>
-    <tr><td class="paramname">mu</td><td>мат.ожидание </td></tr>
-    <tr><td class="paramname">sigma</td><td>дисперсия </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8977e6737be2f25d189c5e9b76232cd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8977e6737be2f25d189c5e9b76232cd5">&#9670;&nbsp;</a></span>set_uniform_random()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void internal::set_uniform_random </td>
-          <td>(</td>
-          <td class="paramtype">Scalar *&#160;</td>
-          <td class="paramname"><em>arr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_r_n_g.html">RNG</a> &amp;&#160;</td>
-          <td class="paramname"><em>rng</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Scalar &amp;&#160;</td>
-          <td class="paramname"><em>a</em> = <code>Scalar(0)</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Scalar &amp;&#160;</td>
-          <td class="paramname"><em>b</em> = <code>Scalar(1)</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Генерация массива из равномерного распределения </p><dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">arr</td><td>массив </td></tr>
-    <tr><td class="paramname">n</td><td>размер массива </td></tr>
-    <tr><td class="paramname">rng</td><td>генератор натуральный чисел в диапазоне от 0 до RAND_MAX </td></tr>
-    <tr><td class="paramname">a</td><td>левая граница распределения </td></tr>
-    <tr><td class="paramname">b</td><td>правая граница распределения </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a1b8021e30d34fc051ac96750c5e4ea41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b8021e30d34fc051ac96750c5e4ea41">&#9670;&nbsp;</a></span>shuffle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void internal::shuffle </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>arr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_r_n_g.html">RNG</a> &amp;&#160;</td>
-          <td class="paramname"><em>rng</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Рандомизация массива </p><dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">arr</td><td>массив </td></tr>
-    <tr><td class="paramname">n</td><td>размер массива </td></tr>
-    <tr><td class="paramname">rng</td><td>генератор </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="abbfc481753e0341442b8dd30f04609af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbfc481753e0341442b8dd30f04609af">&#9670;&nbsp;</a></span>write_map()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void internal::write_map </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::map&lt; std::string, Scalar &gt; &amp;&#160;</td>
-          <td class="paramname"><em>map</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Запись файла с информацией о слоях в сети </p><dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>название файла с сеткой </td></tr>
-    <tr><td class="paramname">map</td><td>словарь, в которой хранится информация о слое </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ad3ce06b33fd4f205474a7c055b590737"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3ce06b33fd4f205474a7c055b590737">&#9670;&nbsp;</a></span>write_one_vector()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void internal::write_one_vector </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; Scalar &gt; &amp;&#160;</td>
-          <td class="paramname"><em>vec</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Запись 1-D вектора в файл </p><dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vec</td><td>вектор </td></tr>
-    <tr><td class="paramname">filename</td><td>название файла </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aba1a0c067292e01ba5d405c7d843edf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba1a0c067292e01ba5d405c7d843edf1">&#9670;&nbsp;</a></span>write_vector()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void internal::write_vector </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>folder</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; std::vector&lt; Scalar &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>params</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Запись n векторо в файл. n - кол-во слоев в сети. </p><dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">folder</td><td>директория сохранения </td></tr>
-    <tr><td class="paramname">filename</td><td>название файла с сеткой </td></tr>
-    <tr><td class="paramname">params</td><td>2-D вектор параметров </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

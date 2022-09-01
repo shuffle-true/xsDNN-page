@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>xsDNN C++: Исходный файл /home/shuffle/xsDNN/xsDNN-include/neuralnetwork/Output/MultiClassEntropy.h</title>
+<title>xsDNN C++: Исходный файл /home/shuffle/xsDNN/xsDNN-include/xsDNN/Output/MultiClassEntropy.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="header_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -28,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xsDNN C++
-   &#160;<span id="projectnumber">0.0.0</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
   </td>
@@ -96,7 +95,7 @@ $(document).ready(function(){initNavTree('_multi_class_entropy_8h_source.html','
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef XSDNN_INCLUDE_MULTICLASSENTROPY_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define XSDNN_INCLUDE_MULTICLASSENTROPY_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_cross_entropy_loss.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cross_entropy_loss.html">CrossEntropyLoss</a> : <span class="keyword">public</span> Output</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_cross_entropy_loss.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cross_entropy_loss.html">CrossEntropyLoss</a> : <span class="keyword">public</span> <a class="code" href="class_output.html">Output</a></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_cross_entropy_loss.html#a148b0b6b717d30edca0fc6bdbb838cc0">   17</a></span>&#160;    Matrix <a class="code" href="class_cross_entropy_loss.html#a148b0b6b717d30edca0fc6bdbb838cc0">m_din</a>;           </div>
@@ -182,12 +181,13 @@ $(document).ready(function(){initNavTree('_multi_class_entropy_8h_source.html','
 <div class="ttc" id="aclass_cross_entropy_loss_html_a370ce9dd85a7ba5e50e4757e8b9331a3"><div class="ttname"><a href="class_cross_entropy_loss.html#a370ce9dd85a7ba5e50e4757e8b9331a3">CrossEntropyLoss::evaluate</a></div><div class="ttdeci">void evaluate(const Matrix &amp;prev_layer_data, const Matrix &amp;target) override</div><div class="ttdef"><b>Definition:</b> MultiClassEntropy.h:51</div></div>
 <div class="ttc" id="aclass_cross_entropy_loss_html_aa7759d7aa2023203e3d4d372b24dc1fc"><div class="ttname"><a href="class_cross_entropy_loss.html#aa7759d7aa2023203e3d4d372b24dc1fc">CrossEntropyLoss::backprop_data</a></div><div class="ttdeci">const Matrix &amp; backprop_data() const override</div><div class="ttdef"><b>Definition:</b> MultiClassEntropy.h:67</div></div>
 <div class="ttc" id="aclass_cross_entropy_loss_html_ab4b330c2dc717d59cde310bd7ea06ebc"><div class="ttname"><a href="class_cross_entropy_loss.html#ab4b330c2dc717d59cde310bd7ea06ebc">CrossEntropyLoss::check_target_data</a></div><div class="ttdeci">void check_target_data(const Matrix &amp;target) const override</div><div class="ttdef"><b>Definition:</b> MultiClassEntropy.h:22</div></div>
+<div class="ttc" id="aclass_output_html"><div class="ttname"><a href="class_output.html">Output</a></div><div class="ttdoc">Родительский класс функционала ошибки</div><div class="ttdef"><b>Definition:</b> Output.h:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f9811e3adbc859e43f8b172818d13685.html">neuralnetwork</a></li><li class="navelem"><a class="el" href="dir_3c40024dea6356eea8038123fd946b45.html">Output</a></li><li class="navelem"><b>MultiClassEntropy.h</b></li>
+    <li class="navelem"><a class="el" href="dir_cc3a25714fcc7c6a0beb7fcc4161401a.html">xsDNN</a></li><li class="navelem"><a class="el" href="dir_35c61bc9545c7a79e3d2a34197e6e7e2.html">Output</a></li><li class="navelem"><b>MultiClassEntropy.h</b></li>
     <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

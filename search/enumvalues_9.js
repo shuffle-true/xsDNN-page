@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['uniform_284',['UNIFORM',['../namespaceinternal.html#a5910af6de47727626e888443c7b18c43acbe15420f02aa16c27d55f76d8a2a194',1,'internal']]]
+  ['sigmoid_268',['SIGMOID',['../namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba4bd840f2b352b2f8144f4bba33d18e4e',1,'internal']]],
+  ['softmax_269',['SOFTMAX',['../namespaceinternal.html#af22b4eec9ac692a7334ea550be120eabafbe869f0d87088abb0aefb6b5a506b71',1,'internal']]]
 ];

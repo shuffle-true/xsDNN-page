@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="header_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -28,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xsDNN C++
-   &#160;<span id="projectnumber">0.0.0</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
   </td>
@@ -114,9 +113,9 @@ $(document).ready(function(){initNavTree('class_dropout.html',''); initResizable
 <div class="center"><img src="class_dropout__coll__graph.png" border="0" usemap="#a_dropout_3_01_activation_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="a_dropout_3_01_activation_01_4_coll__map" id="a_dropout_3_01_activation_01_4_coll__map">
 <area shape="rect" title="Класс Dropout слоя" alt="" coords="5,184,176,211"/>
-<area shape="rect" href="class_layer.html" title="Родительский класс слоя" alt="" coords="40,95,99,121"/>
-<area shape="rect" href="classinternal_1_1bernoulli.html" title="Класс генерации распределения Бернулли" alt="" coords="123,95,261,121"/>
-<area shape="rect" href="class_r_n_g.html" title="Класс ГСЧ" alt="" coords="167,5,217,32"/>
+<area shape="rect" href="class_layer.html" title="Родительский класс слоя" alt="" coords="13,95,72,121"/>
+<area shape="rect" href="classinternal_1_1random_1_1bernoulli.html" title="Класс генерации распределения Бернулли" alt="" coords="96,95,291,121"/>
+<area shape="rect" href="class_r_n_g.html" title="Класс ГСЧ" alt="" coords="168,5,219,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
@@ -133,11 +132,11 @@ $(document).ready(function(){initNavTree('class_dropout.html',''); initResizable
 <tr class="separator:a8cdde824bbbf9b0df3d1cd94faf71b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0598af78f34d6cd2d282e82b9f511be"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#ac0598af78f34d6cd2d282e82b9f511be">output</a> () const override</td></tr>
 <tr class="separator:ac0598af78f34d6cd2d282e82b9f511be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad08260f163fc2ff4a36ae1694014393b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#ad08260f163fc2ff4a36ae1694014393b">backprop</a> (const Matrix &amp;prev_layer_data, const Matrix &amp;next_layer_data) override</td></tr>
-<tr class="separator:ad08260f163fc2ff4a36ae1694014393b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad189d332de743373b132dd89f550b9a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#ad189d332de743373b132dd89f550b9a9">backprop</a> (const Matrix &amp;prev_layer_data, const Matrix &amp;next_layer_backprop_data) override</td></tr>
+<tr class="separator:ad189d332de743373b132dd89f550b9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89bf126c1189d67c510136ed00c5f856"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a89bf126c1189d67c510136ed00c5f856">backprop_data</a> () const override</td></tr>
 <tr class="separator:a89bf126c1189d67c510136ed00c5f856"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dc41e6b75800dfb0a0c8212585bcc60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a1dc41e6b75800dfb0a0c8212585bcc60">update</a> (Optimizer &amp;opt) override</td></tr>
+<tr class="memitem:a1dc41e6b75800dfb0a0c8212585bcc60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a1dc41e6b75800dfb0a0c8212585bcc60">update</a> (<a class="el" href="class_optimizer.html">Optimizer</a> &amp;opt) override</td></tr>
 <tr class="separator:a1dc41e6b75800dfb0a0c8212585bcc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a349022cc840e162516fe2def5ce11b4d"><td class="memItemLeft" align="right" valign="top"><a id="a349022cc840e162516fe2def5ce11b4d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a349022cc840e162516fe2def5ce11b4d">train</a> () override</td></tr>
@@ -168,6 +167,9 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>distribution_t
 <tr class="memitem:a90cdf4fe31a0bee47a9ec3f48d10e73b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a90cdf4fe31a0bee47a9ec3f48d10e73b">fill_meta_info</a> (Meta &amp;map, int index) const override</td></tr>
 <tr class="memdesc:a90cdf4fe31a0bee47a9ec3f48d10e73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод нужен для заполнения основной информации о слое - тип слоя, входные и выходные значения кол-ва нейронов и т.д. Нужен для импорта сетки в файл  <a href="class_dropout.html#a90cdf4fe31a0bee47a9ec3f48d10e73b">Подробнее...</a><br /></td></tr>
 <tr class="separator:a90cdf4fe31a0bee47a9ec3f48d10e73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bd4a0e9e6df049a591b43449abcce60"><td class="memItemLeft" align="right" valign="top"><a id="a3bd4a0e9e6df049a591b43449abcce60"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><b>mask</b> ()</td></tr>
+<tr class="separator:a3bd4a0e9e6df049a591b43449abcce60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_layer')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_layer.html">Layer</a></td></tr>
 <tr class="memitem:ad5fbb4a1e913bf70813390ca9685db0d inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top"><a id="ad5fbb4a1e913bf70813390ca9685db0d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Layer</b> (const int <a class="el" href="class_layer.html#af2aa113e9b7938188d8da55b6950d0e5">in_size</a>, const int <a class="el" href="class_layer.html#a10515e993c8de900ad32fa1884b5915f">out_size</a>, std::string init_workflow)</td></tr>
@@ -209,10 +211,10 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a210bf46b90143e5a53928f223ce03bd0">scale_</a></td></tr>
 <tr class="memdesc:a210bf46b90143e5a53928f223ce03bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">коэффицент масштабирования || 1 / (1 - p) ||. <br /></td></tr>
 <tr class="separator:a210bf46b90143e5a53928f223ce03bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab797f6c32a43e2d20897f67a01cb2944"><td class="memItemLeft" align="right" valign="top"><a id="ab797f6c32a43e2d20897f67a01cb2944"></a>
-<a class="el" href="classinternal_1_1bernoulli.html">internal::bernoulli</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#ab797f6c32a43e2d20897f67a01cb2944">bernoulli</a></td></tr>
-<tr class="memdesc:ab797f6c32a43e2d20897f67a01cb2944"><td class="mdescLeft">&#160;</td><td class="mdescRight">заполнение маски слоя из распределения Бернулли <br /></td></tr>
-<tr class="separator:ab797f6c32a43e2d20897f67a01cb2944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926ae6d7dd816b1ce9755d3d6e499578"><td class="memItemLeft" align="right" valign="top"><a id="a926ae6d7dd816b1ce9755d3d6e499578"></a>
+<a class="el" href="classinternal_1_1random_1_1bernoulli.html">internal::random::bernoulli</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dropout.html#a926ae6d7dd816b1ce9755d3d6e499578">bernoulli</a></td></tr>
+<tr class="memdesc:a926ae6d7dd816b1ce9755d3d6e499578"><td class="mdescLeft">&#160;</td><td class="mdescRight">заполнение маски слоя из распределения Бернулли <br /></td></tr>
+<tr class="separator:a926ae6d7dd816b1ce9755d3d6e499578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Друзья</h2></td></tr>
@@ -292,8 +294,8 @@ template&lt;typename Activation &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
-<a id="ad08260f163fc2ff4a36ae1694014393b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad08260f163fc2ff4a36ae1694014393b">&#9670;&nbsp;</a></span>backprop()</h2>
+<a id="ad189d332de743373b132dd89f550b9a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad189d332de743373b132dd89f550b9a9">&#9670;&nbsp;</a></span>backprop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,7 +315,7 @@ template&lt;typename Activation &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const Matrix &amp;&#160;</td>
-          <td class="paramname"><em>next_layer_data</em>&#160;</td>
+          <td class="paramname"><em>next_layer_backprop_data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -339,7 +341,7 @@ template&lt;typename Activation &gt; </div>
   </dd>
 </dl>
 
-<p>Замещает <a class="el" href="class_layer.html#a301b6101fc12b9b1578c72d93dfa029f">Layer</a>.</p>
+<p>Замещает <a class="el" href="class_layer.html#a0f982388361f0ac8af33409f951758f8">Layer</a>.</p>
 
 </div>
 </div>
@@ -586,7 +588,7 @@ template&lt;typename Activation &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_dropout.html">Dropout</a>&lt; Activation &gt;::update </td>
           <td>(</td>
-          <td class="paramtype">Optimizer &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_optimizer.html">Optimizer</a> &amp;&#160;</td>
           <td class="paramname"><em>opt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -599,7 +601,7 @@ template&lt;typename Activation &gt; </div>
 </div><div class="memdoc">
 <p>В этом слое не участвуют алгоритмы оптимизации </p><dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opt</td><td>объект класса Optimizer </td></tr>
+    <tr><td class="paramname">opt</td><td>объект класса <a class="el" href="class_optimizer.html" title="Родительский класс оптимизаторов">Optimizer</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -609,7 +611,7 @@ template&lt;typename Activation &gt; </div>
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>/home/shuffle/xsDNN/xsDNN-include/neuralnetwork/Layer/<a class="el" href="_dropout_8h_source.html">Dropout.h</a></li>
+<li>/home/shuffle/xsDNN/xsDNN-include/xsDNN/Layer/<a class="el" href="_dropout_8h_source.html">Dropout.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

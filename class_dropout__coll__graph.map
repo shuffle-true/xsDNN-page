@@ -1,6 +1,6 @@
 <map id="Dropout&lt; Activation &gt;" name="Dropout&lt; Activation &gt;">
 <area shape="rect" id="node1" title="Класс Dropout слоя" alt="" coords="5,184,176,211"/>
-<area shape="rect" id="node2" href="$class_layer.html" title="Родительский класс слоя" alt="" coords="40,95,99,121"/>
-<area shape="rect" id="node3" href="$classinternal_1_1bernoulli.html" title="Класс генерации распределения Бернулли" alt="" coords="123,95,261,121"/>
-<area shape="rect" id="node4" href="$class_r_n_g.html" title="Класс ГСЧ" alt="" coords="167,5,217,32"/>
+<area shape="rect" id="node2" href="$class_layer.html" title="Родительский класс слоя" alt="" coords="13,95,72,121"/>
+<area shape="rect" id="node3" href="$classinternal_1_1random_1_1bernoulli.html" title="Класс генерации распределения Бернулли" alt="" coords="96,95,291,121"/>
+<area shape="rect" id="node4" href="$class_r_n_g.html" title="Класс ГСЧ" alt="" coords="168,5,219,32"/>
 </map>

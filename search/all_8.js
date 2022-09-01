@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['identity_50',['Identity',['../classactivate_1_1_identity.html',1,'activate']]],
-  ['identity_51',['IDENTITY',['../namespaceinternal.html#af22b4eec9ac692a7334ea550be120eabad64825016900e252957c32c9c0851eec',1,'internal']]],
-  ['in_5fsize_52',['in_size',['../class_layer.html#af2aa113e9b7938188d8da55b6950d0e5',1,'Layer']]],
-  ['init_53',['init',['../class_layer.html#ac908166e081edd9ff3b3a35e187b5b63',1,'Layer::init(const std::vector&lt; Scalar &gt; &amp;params, RNG &amp;rng)=0'],['../class_layer.html#ad87780b777d48e388a8f8ecf9a33b33f',1,'Layer::init()=0'],['../class_neural_network.html#a4764f886d7b44b4e461f5bacd9be7c3a',1,'NeuralNetwork::init()'],['../class_batch_norm1_d.html#acc1bdf414525f733ceac594d465a4608',1,'BatchNorm1D::init(const std::vector&lt; Scalar &gt; &amp;params, RNG &amp;rng) override'],['../class_batch_norm1_d.html#a5f6d95cb1c63811eed97b012ce502c92',1,'BatchNorm1D::init() override'],['../class_dropout.html#afb8945fd6db508d3614ca149d56a642a',1,'Dropout::init(const std::vector&lt; Scalar &gt; &amp;params, RNG &amp;rng) override'],['../class_dropout.html#abd09220b5916204f12cb2eb2abaf541e',1,'Dropout::init() override'],['../class_fully_connected.html#af216a8c2effed00203593c457141a4ba',1,'FullyConnected::init(const std::vector&lt; Scalar &gt; &amp;params, RNG &amp;rng) override'],['../class_fully_connected.html#aa3a0a6dec4961193408578ec5e333d1d',1,'FullyConnected::init() override']]],
-  ['init_54',['Init',['../class_neural_network.html#ad665996cec0d54e7685fa53eddfe0cd2',1,'NeuralNetwork']]],
-  ['inmu_55',['inmu',['../class_batch_norm1_d.html#ab77648d62f0c73d78211218d4937ae6e',1,'BatchNorm1D']]],
-  ['internal_56',['internal',['../namespaceinternal.html',1,'']]],
-  ['invvar_57',['invvar',['../class_batch_norm1_d.html#aa9e2a995eac322b505eeb9f67419c59d',1,'BatchNorm1D']]]
+  ['layer_55',['Layer',['../class_layer.html',1,'']]],
+  ['layer_5fid_56',['layer_id',['../namespaceinternal.html#aad429a1768927e66f1e6c2b64d946027',1,'internal']]],
+  ['layer_5ftype_57',['layer_type',['../class_fully_connected.html#ae7d295a073fe41451add832c2ed4b5fb',1,'FullyConnected']]],
+  ['layer_5ftype_5fenum_58',['LAYER_TYPE_ENUM',['../namespaceinternal.html#a17d1c6853385e58f806748015a2ad03f',1,'internal']]],
+  ['leakyrelu_59',['LeakyReLU',['../classactivate_1_1_leaky_re_l_u.html',1,'activate']]],
+  ['leakyrelu_60',['LEAKYRELU',['../namespaceinternal.html#af22b4eec9ac692a7334ea550be120eaba6a27db799aca688bb98d8b12a4e6c13e',1,'internal']]],
+  ['loss_61',['loss',['../class_binary_entropy_loss.html#ae9f860a95220f41c411c9029762eef0e',1,'BinaryEntropyLoss::loss()'],['../class_cross_entropy_loss.html#a144b171ae67a5e9ab50725f73bf5d512',1,'CrossEntropyLoss::loss()'],['../class_m_s_e_loss.html#a24fdad3b7ff10462f74c8e8923b4ba74',1,'MSELoss::loss()'],['../class_output.html#a45d48c4933bf9ab6804ba1dafe7c6cfb',1,'Output::loss()']]]
 ];

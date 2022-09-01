@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['check_5ftarget_5fdata_17',['check_target_data',['../class_binary_entropy_loss.html#aa528779b2abf7fd5e4754a5c5f8bf41b',1,'BinaryEntropyLoss::check_target_data()'],['../class_cross_entropy_loss.html#ab4b330c2dc717d59cde310bd7ea06ebc',1,'CrossEntropyLoss::check_target_data()']]],
-  ['check_5funit_5fsizes_18',['check_unit_sizes',['../class_neural_network.html#aedb1edc218280dcd8bf11c5403999084',1,'NeuralNetwork']]],
-  ['compute_5fstatistic_5fgraph1d_5ftrain_19',['compute_statistic_graph1D_train',['../namespaceinternal.html#a5ffb5daa5e8432e0a6acd0c66f0df74f',1,'internal']]],
-  ['count_5flayers_20',['count_layers',['../class_neural_network.html#a741eef5530cbbf605423a73ccfc0bea4',1,'NeuralNetwork']]],
-  ['create_5fdirectory_21',['create_directory',['../namespaceinternal.html#aa4548c561725c1d1addf33716b619167',1,'internal']]],
-  ['create_5flayer_22',['create_layer',['../namespaceinternal.html#ae71c57474250cf86dd7e46d54f044603',1,'internal']]],
-  ['create_5foutput_23',['create_output',['../namespaceinternal.html#a58a90de85a907afc2ec45b98597c14cc',1,'internal']]],
-  ['create_5fshuffled_5fbatches_24',['create_shuffled_batches',['../namespaceinternal.html#a18cfbdb7ba8d1ae1092a2c8ce4c8d077',1,'internal']]],
-  ['crossentropyloss_25',['CrossEntropyLoss',['../class_cross_entropy_loss.html',1,'']]]
+  ['dataset_25',['dataset',['../namespacedataset.html',1,'']]],
+  ['distribution_5fenum_26',['DISTRIBUTION_ENUM',['../namespaceinternal.html#a5910af6de47727626e888443c7b18c43',1,'internal']]],
+  ['distribution_5fid_27',['distribution_id',['../namespaceinternal.html#a132c969163b5898faa93428f39e68a74',1,'internal']]],
+  ['dropout_28',['Dropout',['../class_dropout.html',1,'Dropout&lt; Activation &gt;'],['../class_dropout.html#a2bea1add3c91bfa347bf1b861c018fa1',1,'Dropout::Dropout()']]],
+  ['dropout_29',['DROPOUT',['../namespaceinternal.html#a17d1c6853385e58f806748015a2ad03fa1f9ee6e0365b9b6008fe144ed66ecab3',1,'internal']]],
+  ['dropout_5frate_5f_30',['dropout_rate_',['../class_dropout.html#a15ec0d1802adcd5474919e758ff60bde',1,'Dropout']]]
 ];

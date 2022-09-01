@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>xsDNN C++: Исходный файл /home/shuffle/xsDNN/xsDNN-include/neuralnetwork/Optimizer/SGD.h</title>
+<title>xsDNN C++: Исходный файл /home/shuffle/xsDNN/xsDNN-include/xsDNN/Optimizer/SGD.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="header_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -28,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xsDNN C++
-   &#160;<span id="projectnumber">0.0.0</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
   </td>
@@ -91,7 +90,7 @@ $(document).ready(function(){initNavTree('_s_g_d_8h_source.html',''); initResiza
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_s_g_d.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_g_d.html">SGD</a> : <span class="keyword">public</span> Optimizer</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_s_g_d.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_g_d.html">SGD</a> : <span class="keyword">public</span> <a class="code" href="class_optimizer.html">Optimizer</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">typedef</span> Eigen::Array&lt;Scalar, Eigen::Dynamic, 1&gt; Vector;</div>
@@ -142,6 +141,7 @@ $(document).ready(function(){initNavTree('_s_g_d_8h_source.html',''); initResiza
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        theta.noalias() -= <a class="code" href="class_s_g_d.html#a022ad12dff64d757823467dda852c541">m_lrate</a> * grad;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="ttc" id="aclass_optimizer_html"><div class="ttname"><a href="class_optimizer.html">Optimizer</a></div><div class="ttdoc">Родительский класс оптимизаторов</div><div class="ttdef"><b>Definition:</b> Optimizer.h:10</div></div>
 <div class="ttc" id="aclass_s_g_d_html"><div class="ttname"><a href="class_s_g_d.html">SGD</a></div><div class="ttdoc">Класс стохастического градиентного спуска (SGD)</div><div class="ttdef"><b>Definition:</b> SGD.h:10</div></div>
 <div class="ttc" id="aclass_s_g_d_html_a022ad12dff64d757823467dda852c541"><div class="ttname"><a href="class_s_g_d.html#a022ad12dff64d757823467dda852c541">SGD::m_lrate</a></div><div class="ttdeci">Scalar m_lrate</div><div class="ttdoc">длина шага.</div><div class="ttdef"><b>Definition:</b> SGD.h:16</div></div>
 <div class="ttc" id="aclass_s_g_d_html_a02fa41d7868a9bb5272b4d7885422458"><div class="ttname"><a href="class_s_g_d.html#a02fa41d7868a9bb5272b4d7885422458">SGD::m_momentum</a></div><div class="ttdeci">Scalar m_momentum</div><div class="ttdoc">импульс спуска</div><div class="ttdef"><b>Definition:</b> SGD.h:18</div></div>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('_s_g_d_8h_source.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f9811e3adbc859e43f8b172818d13685.html">neuralnetwork</a></li><li class="navelem"><a class="el" href="dir_417bf6f7df45be2b146261314ab60c71.html">Optimizer</a></li><li class="navelem"><b>SGD.h</b></li>
+    <li class="navelem"><a class="el" href="dir_cc3a25714fcc7c6a0beb7fcc4161401a.html">xsDNN</a></li><li class="navelem"><a class="el" href="dir_cc489028852adf5483219c8a38acb1df.html">Optimizer</a></li><li class="navelem"><b>SGD.h</b></li>
     <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

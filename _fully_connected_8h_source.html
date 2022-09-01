@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>xsDNN C++: Исходный файл /home/shuffle/xsDNN/xsDNN-include/neuralnetwork/Layer/FullyConnected.h</title>
+<title>xsDNN C++: Исходный файл /home/shuffle/xsDNN/xsDNN-include/xsDNN/Layer/FullyConnected.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="header_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -28,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="graph.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xsDNN C++
-   &#160;<span id="projectnumber">0.0.0</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Мини-библиотека глубинного обучения C++</div>
   </td>
@@ -148,13 +147,13 @@ $(document).ready(function(){initNavTree('_fully_connected_8h_source.html',''); 
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_fully_connected.html#ab4f20e7a03cb96672d1809a1f847d14a">   75</a></span>&#160;    <span class="keyword">const</span> Matrix&amp; <a class="code" href="class_fully_connected.html#ab4f20e7a03cb96672d1809a1f847d14a">output</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <a class="code" href="class_fully_connected.html#a5a9c420a5f70f8d0558ed33dd2836143">m_a</a>; }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_fully_connected.html#ad30224a8257142e13f8186c9412ddd13">   85</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_fully_connected.html#ad30224a8257142e13f8186c9412ddd13">backprop</a>(<span class="keyword">const</span> Matrix&amp; prev_layer_data,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">const</span> Matrix&amp; next_layer_data)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_fully_connected.html#ad4710d15776347dc9fbfbd66ecd5829e">   85</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_fully_connected.html#ad4710d15776347dc9fbfbd66ecd5829e">backprop</a>(<span class="keyword">const</span> Matrix&amp; prev_layer_data,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                  <span class="keyword">const</span> Matrix&amp; next_layer_backprop_data)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">long</span> ncols = prev_layer_data.cols();</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        Matrix&amp; dLz = <a class="code" href="class_fully_connected.html#a9d6fcc2d4eaca8391f3540a4394170a6">m_z</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        Activation::apply_jacobian(<a class="code" href="class_fully_connected.html#a9d6fcc2d4eaca8391f3540a4394170a6">m_z</a>, <a class="code" href="class_fully_connected.html#a5a9c420a5f70f8d0558ed33dd2836143">m_a</a>, next_layer_data, dLz);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        Activation::apply_jacobian(<a class="code" href="class_fully_connected.html#a9d6fcc2d4eaca8391f3540a4394170a6">m_z</a>, <a class="code" href="class_fully_connected.html#a5a9c420a5f70f8d0558ed33dd2836143">m_a</a>, next_layer_backprop_data, dLz);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="class_fully_connected.html#a61ddb6188f06ecc1f04f5af6971ca5a6">m_dw</a>.noalias() = prev_layer_data * dLz.transpose() / ncols;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_fully_connected.html#a2dfdfd0b55caee6550d266577996d8fd">BIAS_ACTIVATE</a>) { <a class="code" href="class_fully_connected.html#a2cf2f1615c3654e146acf42578935f7d">m_db</a>.noalias() = dLz.rowwise().mean(); }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="class_fully_connected.html#a8b6b72c2e5f6ebdb8f2dbe8d9dce8553">m_din</a>.resize(this-&gt;m_in_size, ncols);</div>
@@ -164,15 +163,15 @@ $(document).ready(function(){initNavTree('_fully_connected_8h_source.html',''); 
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_fully_connected.html#ac3f35923ba3b084bf07dacdb176e630c">  100</a></span>&#160;    <span class="keyword">const</span> Matrix&amp; <a class="code" href="class_fully_connected.html#ac3f35923ba3b084bf07dacdb176e630c">backprop_data</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <a class="code" href="class_fully_connected.html#a8b6b72c2e5f6ebdb8f2dbe8d9dce8553">m_din</a>; }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_fully_connected.html#a076a7fb210d3e16086015adca1944b25">  105</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_fully_connected.html#a076a7fb210d3e16086015adca1944b25">update</a>(Optimizer&amp; opt)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_fully_connected.html#a076a7fb210d3e16086015adca1944b25">  105</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_fully_connected.html#a076a7fb210d3e16086015adca1944b25">update</a>(<a class="code" href="class_optimizer.html">Optimizer</a>&amp; opt)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        AlignedMapVec       dw(<a class="code" href="class_fully_connected.html#a61ddb6188f06ecc1f04f5af6971ca5a6">m_dw</a>.data(), <a class="code" href="class_fully_connected.html#a61ddb6188f06ecc1f04f5af6971ca5a6">m_dw</a>.size());</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        AlignedMapVec       w(<a class="code" href="class_fully_connected.html#a887cc503acbb885dd68cfad8efd533b8">m_weight</a>.data(), <a class="code" href="class_fully_connected.html#a887cc503acbb885dd68cfad8efd533b8">m_weight</a>.size());</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        AlignedMapVec       db(<a class="code" href="class_fully_connected.html#a2cf2f1615c3654e146acf42578935f7d">m_db</a>.data(), <a class="code" href="class_fully_connected.html#a2cf2f1615c3654e146acf42578935f7d">m_db</a>.size());</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        AlignedMapVec       b(<a class="code" href="class_fully_connected.html#ad0f55ff124981d34675dbddda13f34f0">m_bias</a>.data(), <a class="code" href="class_fully_connected.html#ad0f55ff124981d34675dbddda13f34f0">m_bias</a>.size());</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        opt.update(dw, w);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_fully_connected.html#a2dfdfd0b55caee6550d266577996d8fd">BIAS_ACTIVATE</a>) { opt.update(db, b); }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        opt.<a class="code" href="class_optimizer.html#a9fa89b4d7564c785e7362b048babc21b">update</a>(dw, w);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_fully_connected.html#a2dfdfd0b55caee6550d266577996d8fd">BIAS_ACTIVATE</a>) { opt.<a class="code" href="class_optimizer.html#a9fa89b4d7564c785e7362b048babc21b">update</a>(db, b); }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
@@ -326,15 +325,17 @@ $(document).ready(function(){initNavTree('_fully_connected_8h_source.html',''); 
 <div class="ttc" id="aclass_fully_connected_html_ac3f35923ba3b084bf07dacdb176e630c"><div class="ttname"><a href="class_fully_connected.html#ac3f35923ba3b084bf07dacdb176e630c">FullyConnected::backprop_data</a></div><div class="ttdeci">const Matrix &amp; backprop_data() const override</div><div class="ttdef"><b>Definition:</b> FullyConnected.h:100</div></div>
 <div class="ttc" id="aclass_fully_connected_html_ac4a92d50c7593aa21902d273e37e5ecd"><div class="ttname"><a href="class_fully_connected.html#ac4a92d50c7593aa21902d273e37e5ecd">FullyConnected::set_parametrs</a></div><div class="ttdeci">void set_parametrs(const std::vector&lt; Scalar &gt; &amp;param) override</div><div class="ttdef"><b>Definition:</b> FullyConnected.h:150</div></div>
 <div class="ttc" id="aclass_fully_connected_html_ad0f55ff124981d34675dbddda13f34f0"><div class="ttname"><a href="class_fully_connected.html#ad0f55ff124981d34675dbddda13f34f0">FullyConnected::m_bias</a></div><div class="ttdeci">Vector m_bias</div><div class="ttdoc">Смещение весов</div><div class="ttdef"><b>Definition:</b> FullyConnected.h:17</div></div>
-<div class="ttc" id="aclass_fully_connected_html_ad30224a8257142e13f8186c9412ddd13"><div class="ttname"><a href="class_fully_connected.html#ad30224a8257142e13f8186c9412ddd13">FullyConnected::backprop</a></div><div class="ttdeci">void backprop(const Matrix &amp;prev_layer_data, const Matrix &amp;next_layer_data) override</div><div class="ttdef"><b>Definition:</b> FullyConnected.h:85</div></div>
+<div class="ttc" id="aclass_fully_connected_html_ad4710d15776347dc9fbfbd66ecd5829e"><div class="ttname"><a href="class_fully_connected.html#ad4710d15776347dc9fbfbd66ecd5829e">FullyConnected::backprop</a></div><div class="ttdeci">void backprop(const Matrix &amp;prev_layer_data, const Matrix &amp;next_layer_backprop_data) override</div><div class="ttdef"><b>Definition:</b> FullyConnected.h:85</div></div>
 <div class="ttc" id="aclass_fully_connected_html_ae7d295a073fe41451add832c2ed4b5fb"><div class="ttname"><a href="class_fully_connected.html#ae7d295a073fe41451add832c2ed4b5fb">FullyConnected::layer_type</a></div><div class="ttdeci">std::string layer_type() const override</div><div class="ttdef"><b>Definition:</b> FullyConnected.h:200</div></div>
 <div class="ttc" id="aclass_fully_connected_html_af216a8c2effed00203593c457141a4ba"><div class="ttname"><a href="class_fully_connected.html#af216a8c2effed00203593c457141a4ba">FullyConnected::init</a></div><div class="ttdeci">void init(const std::vector&lt; Scalar &gt; &amp;params, RNG &amp;rng) override</div><div class="ttdef"><b>Definition:</b> FullyConnected.h:35</div></div>
 <div class="ttc" id="aclass_fully_connected_html_afc0fd23dc8d7f6e90d4e5e547930a8cc"><div class="ttname"><a href="class_fully_connected.html#afc0fd23dc8d7f6e90d4e5e547930a8cc">FullyConnected::fill_meta_info</a></div><div class="ttdeci">void fill_meta_info(Meta &amp;map, int index) const override</div><div class="ttdef"><b>Definition:</b> FullyConnected.h:211</div></div>
-<div class="ttc" id="aclass_layer_html"><div class="ttname"><a href="class_layer.html">Layer</a></div><div class="ttdoc">Родительский класс слоя</div><div class="ttdef"><b>Definition:</b> Layer.h:12</div></div>
-<div class="ttc" id="aclass_layer_html_a10515e993c8de900ad32fa1884b5915f"><div class="ttname"><a href="class_layer.html#a10515e993c8de900ad32fa1884b5915f">Layer::out_size</a></div><div class="ttdeci">int out_size() const</div><div class="ttdoc">None</div><div class="ttdef"><b>Definition:</b> Layer.h:41</div></div>
-<div class="ttc" id="aclass_layer_html_af2aa113e9b7938188d8da55b6950d0e5"><div class="ttname"><a href="class_layer.html#af2aa113e9b7938188d8da55b6950d0e5">Layer::in_size</a></div><div class="ttdeci">int in_size() const</div><div class="ttdoc">None</div><div class="ttdef"><b>Definition:</b> Layer.h:32</div></div>
+<div class="ttc" id="aclass_layer_html"><div class="ttname"><a href="class_layer.html">Layer</a></div><div class="ttdoc">Родительский класс слоя</div><div class="ttdef"><b>Definition:</b> Layer.h:11</div></div>
+<div class="ttc" id="aclass_layer_html_a10515e993c8de900ad32fa1884b5915f"><div class="ttname"><a href="class_layer.html#a10515e993c8de900ad32fa1884b5915f">Layer::out_size</a></div><div class="ttdeci">int out_size() const</div><div class="ttdoc">None</div><div class="ttdef"><b>Definition:</b> Layer.h:39</div></div>
+<div class="ttc" id="aclass_layer_html_af2aa113e9b7938188d8da55b6950d0e5"><div class="ttname"><a href="class_layer.html#af2aa113e9b7938188d8da55b6950d0e5">Layer::in_size</a></div><div class="ttdeci">int in_size() const</div><div class="ttdoc">None</div><div class="ttdef"><b>Definition:</b> Layer.h:31</div></div>
+<div class="ttc" id="aclass_optimizer_html"><div class="ttname"><a href="class_optimizer.html">Optimizer</a></div><div class="ttdoc">Родительский класс оптимизаторов</div><div class="ttdef"><b>Definition:</b> Optimizer.h:10</div></div>
+<div class="ttc" id="aclass_optimizer_html_a9fa89b4d7564c785e7362b048babc21b"><div class="ttname"><a href="class_optimizer.html#a9fa89b4d7564c785e7362b048babc21b">Optimizer::update</a></div><div class="ttdeci">virtual void update(AlignedMapVec &amp;dvec, AlignedMapVec &amp;vec)=0</div></div>
 <div class="ttc" id="aclass_r_n_g_html"><div class="ttname"><a href="class_r_n_g.html">RNG</a></div><div class="ttdoc">Класс ГСЧ</div><div class="ttdef"><b>Definition:</b> RNG.h:12</div></div>
-<div class="ttc" id="anamespaceinternal_html_a132c969163b5898faa93428f39e68a74"><div class="ttname"><a href="namespaceinternal.html#a132c969163b5898faa93428f39e68a74">internal::distribution_id</a></div><div class="ttdeci">int distribution_id(const std::string &amp;type)</div><div class="ttdef"><b>Definition:</b> Enum.h:66</div></div>
+<div class="ttc" id="anamespaceinternal_html_a132c969163b5898faa93428f39e68a74"><div class="ttname"><a href="namespaceinternal.html#a132c969163b5898faa93428f39e68a74">internal::distribution_id</a></div><div class="ttdeci">int distribution_id(const std::string &amp;type)</div><div class="ttdef"><b>Definition:</b> Enum.h:67</div></div>
 <div class="ttc" id="anamespaceinternal_html_aa764f1c79d0e36a83afe70d46d3cef7d"><div class="ttname"><a href="namespaceinternal.html#aa764f1c79d0e36a83afe70d46d3cef7d">internal::activation_id</a></div><div class="ttdeci">int activation_id(const std::string &amp;type)</div><div class="ttdef"><b>Definition:</b> Enum.h:44</div></div>
 <div class="ttc" id="anamespaceinternal_html_aad429a1768927e66f1e6c2b64d946027"><div class="ttname"><a href="namespaceinternal.html#aad429a1768927e66f1e6c2b64d946027">internal::layer_id</a></div><div class="ttdeci">int layer_id(const std::string &amp;type)</div><div class="ttdef"><b>Definition:</b> Enum.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -342,7 +343,7 @@ $(document).ready(function(){initNavTree('_fully_connected_8h_source.html',''); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f9811e3adbc859e43f8b172818d13685.html">neuralnetwork</a></li><li class="navelem"><a class="el" href="dir_ec221d7a8eceb5860a5138b2b39ebd85.html">Layer</a></li><li class="navelem"><b>FullyConnected.h</b></li>
+    <li class="navelem"><a class="el" href="dir_cc3a25714fcc7c6a0beb7fcc4161401a.html">xsDNN</a></li><li class="navelem"><a class="el" href="dir_742c278058bcca7e5056a715248627b4.html">Layer</a></li><li class="navelem"><b>FullyConnected.h</b></li>
     <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

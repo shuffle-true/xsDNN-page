@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['bernoulli_241',['bernoulli',['../class_dropout.html#ab797f6c32a43e2d20897f67a01cb2944',1,'Dropout']]],
-  ['bias_5factivate_242',['BIAS_ACTIVATE',['../class_fully_connected.html#a2dfdfd0b55caee6550d266577996d8fd',1,'FullyConnected']]]
+  ['dropout_5frate_5f_228',['dropout_rate_',['../class_dropout.html#a15ec0d1802adcd5474919e758ff60bde',1,'Dropout']]]
 ];
