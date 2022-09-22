@@ -1,6 +1,6 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" href="$class_output.html" title="Родительский класс функционала ошибки" alt="" coords="5,56,72,83"/>
-<area shape="rect" id="node2" href="$class_binary_entropy_loss.html" title="Класс функционала ошибки для бинарной классификации (BinaryClassEntropy)" alt="" coords="120,5,263,32"/>
-<area shape="rect" id="node3" href="$class_cross_entropy_loss.html" title="Класс функционала ошибки для мультиклассовой классификации (MultiClassEntropy)" alt="" coords="123,56,260,83"/>
-<area shape="rect" id="node4" href="$class_m_s_e_loss.html" title="Класс функционала ошибки для регрессии (RegressionMSE)" alt="" coords="152,107,231,133"/>
+<area shape="rect" id="node1" href="$class_layer.html" title="Родительский класс слоя" alt="" coords="5,71,64,98"/>
+<area shape="rect" id="node2" href="$class_batch_norm1_d.html" title="Класс слоя пакетной нормализации (BatchNorm1D)" alt="" coords="117,5,325,47"/>
+<area shape="rect" id="node3" href="$class_dropout.html" title="Класс Dropout слоя" alt="" coords="135,71,306,98"/>
+<area shape="rect" id="node4" href="$class_fully_connected.html" title="Класс FullyConnected слоя" alt="" coords="112,123,329,164"/>
 </map>

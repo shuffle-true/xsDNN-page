@@ -1,6 +1,7 @@
 var dir_cc3a25714fcc7c6a0beb7fcc4161401a =
 [
     [ "Activation", "dir_14caffa3a1619d717a4c1f1ad316804b.html", "dir_14caffa3a1619d717a4c1f1ad316804b" ],
+    [ "Core", "dir_ccfbe52fe3873cceb5e9e5f28d8f2421.html", "dir_ccfbe52fe3873cceb5e9e5f28d8f2421" ],
     [ "Distribution", "dir_8402f641b099666305730836333ec502.html", "dir_8402f641b099666305730836333ec502" ],
     [ "Layer", "dir_742c278058bcca7e5056a715248627b4.html", "dir_742c278058bcca7e5056a715248627b4" ],
     [ "Optimizer", "dir_cc489028852adf5483219c8a38acb1df.html", "dir_cc489028852adf5483219c8a38acb1df" ],

@@ -1,5 +1,15 @@
 var namespaceinternal =
 [
+    [ "conv2d", null, [
+      [ "algorithm", null, [
+        [ "compute_forward_direct", "_conv2_d___d_i_r_e_c_t_8h.html#a9e18d9da0f73bc6e4f525618bd423248", null ],
+        [ "compute_forward_fft", "_conv2_d___f_f_t_8h.html#a26b6980495c72b4c04a36e84888415a3", null ],
+        [ "compute_forward_im2col", "_conv2_d___i_m2_c_o_l_8h.html#a0f5b922b0fee4416c7b78e7272b4095c", null ],
+        [ "compute_forward_mec", "_conv2_d___m_e_c_8h.html#a054c139a25f36bbd2c57baf2ce52b4f1", null ]
+      ] ],
+      [ "Conv2DMeta", "structinternal_1_1conv2d_1_1_conv2_d_meta.html", null ],
+      [ "computeForward", "_conv2_d_core_8h.html#ab48eda81b449fb049c6a8305a082c73d", null ]
+    ] ],
     [ "debug", null, [
       [ "analytical_gradient", "_grad_check_8h.html#a4a08810f3e1f7dcfa52162a795eab883", null ],
       [ "numerical_gradient", "_grad_check_8h.html#a4089df207daa23975524e17e8992c5aa", null ]
@@ -8,18 +18,24 @@ var namespaceinternal =
       [ "Timer", "classinternal_1_1display_1_1_timer.html", "classinternal_1_1display_1_1_timer" ],
       [ "ProgressBar", "classinternal_1_1display_1_1_progress_bar.html", "classinternal_1_1display_1_1_progress_bar" ]
     ] ],
+    [ "except", null, [
+      [ "xs_error", "classinternal_1_1except_1_1xs__error.html", "classinternal_1_1except_1_1xs__error" ],
+      [ "xs_warn", "classinternal_1_1except_1_1xs__warn.html", "classinternal_1_1except_1_1xs__warn" ]
+    ] ],
     [ "io", null, [
       [ "create_directory", "_in_out_8h.html#a867fced7214a8bdbeb9c67afebf065c8", null ],
       [ "read_map", "_in_out_8h.html#a7edba1509152dcd2dcc6e1e0b3a8f8bd", null ],
-      [ "read_parameter", "_in_out_8h.html#ab2bcd44622f885bb7551babe033d4319", null ],
+      [ "read_parameter", "_in_out_8h.html#a9a28172c24c88e8a74bb772dc3f25454", null ],
       [ "read_vector", "_in_out_8h.html#af1d0fd367f74def81eb6524ead58607a", null ],
       [ "write_map", "_in_out_8h.html#afffbf9ae7a99f0b1ff33249e96b241af", null ],
       [ "write_one_vector", "_in_out_8h.html#ada35ef3bf8fe906a65d9e5faf496b1e1", null ],
-      [ "write_vector", "_in_out_8h.html#a24a6e2ae2dfbd4e20a4de088664dd11b", null ]
+      [ "write_vector", "_in_out_8h.html#af42c130c64d158919350709d3a4b0d8f", null ]
     ] ],
     [ "math", null, [
       [ "Vector", "_math_8h.html#a27f4d6fa2aab30379ece23e34aa3153f", null ],
       [ "calc_varience", "_math_8h.html#a1e3ebfd90c3605aa336f4ec5f6b08b44", null ],
+      [ "colargmax_vector", "_math_8h.html#aa7fe8cc803d2193b0d08455dfb9c0ffd", null ],
+      [ "colargmax_vector", "_math_8h.html#a64deb4fc2c98749d52f8eebadb08d8eb", null ],
       [ "update_statistics", "_math_8h.html#a15da819eda83137cf4b31d8554380023", null ]
     ] ],
     [ "random", null, [

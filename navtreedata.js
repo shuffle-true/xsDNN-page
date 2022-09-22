@@ -55,7 +55,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "",
-"class_optimizer.html"
+"class_neural_network.html#a4764f886d7b44b4e461f5bacd9be7c3a"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

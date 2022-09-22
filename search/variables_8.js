@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['scale_5f_272',['scale_',['../class_dropout.html#a210bf46b90143e5a53928f223ce03bd0',1,'Dropout']]]
+  ['var_5fcurr_294',['var_curr',['../class_batch_norm1_d.html#a596076a927237b8eec9690ad12314b80',1,'BatchNorm1D']]]
 ];

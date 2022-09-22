@@ -7,6 +7,16 @@ var namespaces_dup =
       [ "Sigmoid", "classactivate_1_1_sigmoid.html", "classactivate_1_1_sigmoid" ],
       [ "Softmax", "classactivate_1_1_softmax.html", "classactivate_1_1_softmax" ]
     ] ],
+    [ "core", null, [
+      [ "conv2d", "_core_8h.html#a938b683a23bfa3af75924f8166c9c9d8", [
+        [ "direct", "_core_8h.html#a938b683a23bfa3af75924f8166c9c9d8a7caa701b2bd5a182b80c72b9bdf88e2d", null ],
+        [ "mec", "_core_8h.html#a938b683a23bfa3af75924f8166c9c9d8a15d6426563381c7eca0c321abf131401", null ],
+        [ "im2col", "_core_8h.html#a938b683a23bfa3af75924f8166c9c9d8a5dabc9ed82cab5196ded256cb2bdec8f", null ],
+        [ "fft", "_core_8h.html#a938b683a23bfa3af75924f8166c9c9d8a9473db81d7af66f5e2a8319424834877", null ]
+      ] ],
+      [ "default_core", "_core_8h.html#ae4f6e8319f9486b1914a5368c39e4a79", null ],
+      [ "operator<<", "_core_8h.html#ad4cc1f2c7b16ad5c373ee3b20f917e76", null ]
+    ] ],
     [ "dataset", "namespacedataset.html", [
       [ "parse_mnist_image", "namespacedataset.html#a00bd78672877e899b3ad1373188508f2", null ],
       [ "parse_mnist_label", "namespacedataset.html#a5ad7f8b1238302bb99cb28e3f6877de1", null ]

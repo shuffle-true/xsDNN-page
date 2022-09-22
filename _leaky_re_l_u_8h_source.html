@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>xsDNN C++: Исходный файл /home/shuffle/xsDNN/xsDNN-include/xsDNN/Activation/LeakyReLU.h</title>
+<title>xsDNN C++: Исходный файл /home/shuffle/xsDNN/xsDNN/Activation/LeakyReLU.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,40 +89,37 @@ $(document).ready(function(){initNavTree('_leaky_re_l_u_8h_source.html',''); ini
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by shuffle on 03.08.22.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (c) 2022 xsDNN Inc. All rights reserved.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef XSDNN_INCLUDE_LEAKYRELU_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define XSDNN_INCLUDE_LEAKYRELU_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>activate{</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classactivate_1_1_leaky_re_l_u.html">   15</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classactivate_1_1_leaky_re_l_u.html">LeakyReLU</a>{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>activate {</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classactivate_1_1_leaky_re_l_u.html">   15</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classactivate_1_1_leaky_re_l_u.html">LeakyReLU</a> {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classactivate_1_1_leaky_re_l_u.html#a14ff4cb86c3b94687f7fe65419d7651a">   30</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classactivate_1_1_leaky_re_l_u.html#a14ff4cb86c3b94687f7fe65419d7651a">activate</a>(<span class="keyword">const</span> Matrix&amp; Z, Matrix&amp; A)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            A.array() = (Z.array() &gt; Scalar(0)).select(Z, 0.01 * Z);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classactivate_1_1_leaky_re_l_u.html#a14ff4cb86c3b94687f7fe65419d7651a">   30</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classactivate_1_1_leaky_re_l_u.html#a14ff4cb86c3b94687f7fe65419d7651a">activate</a>(<span class="keyword">const</span> Matrix &amp;Z, Matrix &amp;A) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            A.array() = (Z.array() &gt; Scalar(0)).select(Z, 0.01 * Z);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classactivate_1_1_leaky_re_l_u.html#a27c372445eee84f58892c1ff52ec4715">   54</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classactivate_1_1_leaky_re_l_u.html#a27c372445eee84f58892c1ff52ec4715">apply_jacobian</a>(<span class="keyword">const</span> Matrix&amp; Z, <span class="keyword">const</span> Matrix&amp; A,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                          <span class="keyword">const</span> Matrix&amp; F, Matrix&amp; G)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            G.array() = (A.array() &gt; Scalar(0)).select(F, 0.01 * A.array());</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classactivate_1_1_leaky_re_l_u.html#aa3067489d95097d6bb64b4e85d4ef718">   62</a></span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classactivate_1_1_leaky_re_l_u.html#aa3067489d95097d6bb64b4e85d4ef718">return_type</a>()</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;LeakyReLU&quot;</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    };</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//XSDNN_INCLUDE_LEAKYRELU_H</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classactivate_1_1_leaky_re_l_u.html#a27c372445eee84f58892c1ff52ec4715">   53</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classactivate_1_1_leaky_re_l_u.html#a27c372445eee84f58892c1ff52ec4715">apply_jacobian</a>(<span class="keyword">const</span> Matrix &amp;Z, <span class="keyword">const</span> Matrix &amp;A,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                          <span class="keyword">const</span> Matrix &amp;F, Matrix &amp;G) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            G.array() = (A.array() &gt; Scalar(0)).select(F, 0.01 * A.array());</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classactivate_1_1_leaky_re_l_u.html#aa3067489d95097d6bb64b4e85d4ef718">   60</a></span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classactivate_1_1_leaky_re_l_u.html#aa3067489d95097d6bb64b4e85d4ef718">return_type</a>() {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;LeakyReLU&quot;</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    };</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//XSDNN_INCLUDE_LEAKYRELU_H</span></div>
 <div class="ttc" id="aclassactivate_1_1_leaky_re_l_u_html"><div class="ttname"><a href="classactivate_1_1_leaky_re_l_u.html">activate::LeakyReLU</a></div><div class="ttdoc">Класс функции активации - LeakyReLU.</div><div class="ttdef"><b>Definition:</b> LeakyReLU.h:15</div></div>
 <div class="ttc" id="aclassactivate_1_1_leaky_re_l_u_html_a14ff4cb86c3b94687f7fe65419d7651a"><div class="ttname"><a href="classactivate_1_1_leaky_re_l_u.html#a14ff4cb86c3b94687f7fe65419d7651a">activate::LeakyReLU::activate</a></div><div class="ttdeci">static void activate(const Matrix &amp;Z, Matrix &amp;A)</div><div class="ttdef"><b>Definition:</b> LeakyReLU.h:30</div></div>
-<div class="ttc" id="aclassactivate_1_1_leaky_re_l_u_html_a27c372445eee84f58892c1ff52ec4715"><div class="ttname"><a href="classactivate_1_1_leaky_re_l_u.html#a27c372445eee84f58892c1ff52ec4715">activate::LeakyReLU::apply_jacobian</a></div><div class="ttdeci">static void apply_jacobian(const Matrix &amp;Z, const Matrix &amp;A, const Matrix &amp;F, Matrix &amp;G)</div><div class="ttdoc">Операция матричного дифференцирования.</div><div class="ttdef"><b>Definition:</b> LeakyReLU.h:54</div></div>
-<div class="ttc" id="aclassactivate_1_1_leaky_re_l_u_html_aa3067489d95097d6bb64b4e85d4ef718"><div class="ttname"><a href="classactivate_1_1_leaky_re_l_u.html#aa3067489d95097d6bb64b4e85d4ef718">activate::LeakyReLU::return_type</a></div><div class="ttdeci">static std::string return_type()</div><div class="ttdef"><b>Definition:</b> LeakyReLU.h:62</div></div>
+<div class="ttc" id="aclassactivate_1_1_leaky_re_l_u_html_a27c372445eee84f58892c1ff52ec4715"><div class="ttname"><a href="classactivate_1_1_leaky_re_l_u.html#a27c372445eee84f58892c1ff52ec4715">activate::LeakyReLU::apply_jacobian</a></div><div class="ttdeci">static void apply_jacobian(const Matrix &amp;Z, const Matrix &amp;A, const Matrix &amp;F, Matrix &amp;G)</div><div class="ttdoc">Операция матричного дифференцирования.</div><div class="ttdef"><b>Definition:</b> LeakyReLU.h:53</div></div>
+<div class="ttc" id="aclassactivate_1_1_leaky_re_l_u_html_aa3067489d95097d6bb64b4e85d4ef718"><div class="ttname"><a href="classactivate_1_1_leaky_re_l_u.html#aa3067489d95097d6bb64b4e85d4ef718">activate::LeakyReLU::return_type</a></div><div class="ttdeci">static std::string return_type()</div><div class="ttdef"><b>Definition:</b> LeakyReLU.h:60</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

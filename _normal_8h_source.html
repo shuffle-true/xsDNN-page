@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>xsDNN C++: Исходный файл /home/shuffle/xsDNN/xsDNN-include/xsDNN/Distribution/Normal.h</title>
+<title>xsDNN C++: Исходный файл /home/shuffle/xsDNN/xsDNN/Distribution/Normal.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('_normal_8h_source.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by shuffle on 25.06.22.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (c) 2022 xsDNN Inc. All rights reserved.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// https://habr.com/ru/post/263993/</span></div>
@@ -98,17 +98,17 @@ $(document).ready(function(){initNavTree('_normal_8h_source.html',''); initResiz
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define XSDNN_INCLUDE_NORMAL_H</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"># include &quot;Exponential.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>init{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">static</span> Scalar stairWidthNormal[257], stairHeightNormal[256];</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classinit_1_1_normal.html">   21</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classinit_1_1_normal.html">Normal</a></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"># include &quot;../Utils/Except.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>init {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">static</span> Scalar stairWidthNormal[257], stairHeightNormal[256];</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classinit_1_1_normal.html">   22</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classinit_1_1_normal.html">Normal</a> {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        constexpr <span class="keyword">static</span> <span class="keyword">const</span> Scalar x1 = 3.6541528853610088;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        constexpr <span class="keyword">static</span> <span class="keyword">const</span> Scalar A = 4.92867323399e-3;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">static</span> Scalar <a class="code" href="classinit_1_1_uniform.html">Uniform</a>(Scalar a, Scalar&amp; b, <a class="code" href="class_r_n_g.html">RNG</a>&amp; rng) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">static</span> Scalar <a class="code" href="classinit_1_1_uniform.html">Uniform</a>(Scalar a, Scalar &amp;b, <a class="code" href="class_r_n_g.html">RNG</a> &amp;rng) {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">return</span> a + rng.rand() * (b - a) / RAND_MAX;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
@@ -116,86 +116,83 @@ $(document).ready(function(){initNavTree('_normal_8h_source.html',''); initResiz
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            stairHeightNormal[0] = std::exp(-.5 * x1 * x1);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            stairWidthNormal[0] = A / stairHeightNormal[0];</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            stairWidthNormal[256] = 0;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 1; i &lt;= 255; ++i)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                stairWidthNormal[i] = std::sqrt(-2 * std::log(stairHeightNormal[i - 1]));</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                stairHeightNormal[i] = stairHeightNormal[i - 1] + A / stairWidthNormal[i];</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">static</span> Scalar NormalZiggurat(<a class="code" href="class_r_n_g.html">RNG</a>&amp; rng) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordtype">int</span> iter = 0;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                Scalar B = rng.rand();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordtype">int</span> stairId = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(B) &amp; 255;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                Scalar x = <a class="code" href="classinit_1_1_uniform.html">Uniform</a>(0, stairWidthNormal[stairId], rng);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">if</span> (x &lt; stairWidthNormal[stairId + 1])</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    <span class="keywordflow">return</span> ((<span class="keywordtype">signed</span>)B &gt; 0) ? x : -x;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">if</span> (stairId == 0)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="keyword">static</span> Scalar z = -1;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    Scalar y;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    <span class="keywordflow">if</span> (z &gt; 0)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        x = <a class="code" href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">internal::get_exponential</a>(x1, rng);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        z -= 0.5 * x * x;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    <span class="keywordflow">if</span> (z &lt;= 0)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                            x = <a class="code" href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">internal::get_exponential</a>(x1, rng);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                            y = <a class="code" href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">internal::get_exponential</a>(1, rng);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                            z = y - 0.5 * x * x;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        } <span class="keywordflow">while</span> (z &lt;= 0);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    x += x1;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    <span class="keywordflow">return</span> ((<span class="keywordtype">signed</span>)B &gt; 0) ? x : -x;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classinit_1_1_uniform.html">Uniform</a>(stairHeightNormal[stairId - 1], stairHeightNormal[stairId], rng) &lt; std::exp(-.5 * x * x))</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    <span class="keywordflow">return</span> ((<span class="keywordtype">signed</span>)B &gt; 0) ? x : -x;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            } <span class="keywordflow">while</span> (++iter &lt;= 1e9);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">return</span> NAN;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> check_distribution_param(<span class="keyword">const</span> std::vector&lt;Scalar&gt;&amp; params)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">if</span> (params.size() != 2) <span class="keywordflow">throw</span> std::length_error(<span class="stringliteral">&quot;[class Normal] Normal distribution have 2 params.&quot;</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                            <span class="stringliteral">&quot; Check input data.&quot;</span>);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">if</span> (params[1] &lt; 0) <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;[class Normal] Variance must be equal than zero.&quot;</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                           <span class="stringliteral">&quot; Check input data&quot;</span>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classinit_1_1_normal.html#ac6fae62420c264be555200c9dc43c5bb">   91</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classinit_1_1_normal.html#ac6fae62420c264be555200c9dc43c5bb">set_random_data</a>(Scalar* arr,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">int</span> n,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                    <a class="code" href="class_r_n_g.html">RNG</a>&amp; rng,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                    <span class="keyword">const</span> std::vector&lt;Scalar&gt;&amp; params)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            check_distribution_param(params);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            setupNormalTables();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 1; i &lt;= 255; ++i) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                stairWidthNormal[i] = std::sqrt(-2 * std::log(stairHeightNormal[i - 1]));</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                stairHeightNormal[i] = stairHeightNormal[i - 1] + A / stairWidthNormal[i];</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">static</span> Scalar NormalZiggurat(<a class="code" href="class_r_n_g.html">RNG</a> &amp;rng) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordtype">int</span> iter = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                Scalar B = rng.rand();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordtype">int</span> stairId = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(B) &amp; 255;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                Scalar x = <a class="code" href="classinit_1_1_uniform.html">Uniform</a>(0, stairWidthNormal[stairId], rng);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordflow">if</span> (x &lt; stairWidthNormal[stairId + 1])</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                    <span class="keywordflow">return</span> ((<span class="keywordtype">signed</span>) B &gt; 0) ? x : -x;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordflow">if</span> (stairId == 0) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    <span class="keyword">static</span> Scalar z = -1;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    Scalar y;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="keywordflow">if</span> (z &gt; 0) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                        x = <a class="code" href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">internal::get_exponential</a>(x1, rng);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        z -= 0.5 * x * x;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    <span class="keywordflow">if</span> (z &lt;= 0) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                            x = <a class="code" href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">internal::get_exponential</a>(x1, rng);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                            y = <a class="code" href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">internal::get_exponential</a>(1, rng);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                            z = y - 0.5 * x * x;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        } <span class="keywordflow">while</span> (z &lt;= 0);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    x += x1;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    <span class="keywordflow">return</span> ((<span class="keywordtype">signed</span>) B &gt; 0) ? x : -x;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classinit_1_1_uniform.html">Uniform</a>(stairHeightNormal[stairId - 1], stairHeightNormal[stairId], rng) &lt; std::exp(-.5 * x * x))</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    <span class="keywordflow">return</span> ((<span class="keywordtype">signed</span>) B &gt; 0) ? x : -x;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            } <span class="keywordflow">while</span> (++iter &lt;= 1e9);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">return</span> NAN;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> check_distribution_param(<span class="keyword">const</span> std::vector&lt;Scalar&gt; &amp;params) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">if</span> (params.size() != 2)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">throw</span> <a class="code" href="classinternal_1_1except_1_1xs__error.html">internal::except::xs_error</a>(<span class="stringliteral">&quot;[class Normal] Normal distribution have 2 params.&quot;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                        <span class="stringliteral">&quot; Check input data.&quot;</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> (params[1] &lt; 0)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordflow">throw</span> <a class="code" href="classinternal_1_1except_1_1xs__error.html">internal::except::xs_error</a>(<span class="stringliteral">&quot;[class Normal] Variance must be equal than zero.&quot;</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                            <span class="stringliteral">&quot; Check input data&quot;</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classinit_1_1_normal.html#ac6fae62420c264be555200c9dc43c5bb">   89</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classinit_1_1_normal.html#ac6fae62420c264be555200c9dc43c5bb">set_random_data</a>(Scalar *arr,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">int</span> n,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                    <a class="code" href="class_r_n_g.html">RNG</a> &amp;rng,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                    <span class="keyword">const</span> std::vector&lt;Scalar&gt; &amp;params) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            check_distribution_param(params);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            setupNormalTables();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keyword">const</span> Scalar mu = params[0];</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keyword">const</span> Scalar sigma = params[1];</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keyword">const</span> Scalar mu = params[0];</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keyword">const</span> Scalar sigma = params[1];</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                arr[i] = mu + NormalZiggurat(rng) * sigma;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classinit_1_1_normal.html#a63bc21a62880e1e1cfd9cadc0121c8b3">  111</a></span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classinit_1_1_normal.html#a63bc21a62880e1e1cfd9cadc0121c8b3">return_type</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;Normal&quot;</span>; }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    };</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//XSDNN_INCLUDE_NORMAL_H</span></div>
-<div class="ttc" id="aclass_r_n_g_html"><div class="ttname"><a href="class_r_n_g.html">RNG</a></div><div class="ttdoc">Класс ГСЧ</div><div class="ttdef"><b>Definition:</b> RNG.h:12</div></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                arr[i] = mu + NormalZiggurat(rng) * sigma;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classinit_1_1_normal.html#a63bc21a62880e1e1cfd9cadc0121c8b3">  107</a></span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classinit_1_1_normal.html#a63bc21a62880e1e1cfd9cadc0121c8b3">return_type</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;Normal&quot;</span>; }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    };</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//XSDNN_INCLUDE_NORMAL_H</span></div>
+<div class="ttc" id="aclass_r_n_g_html"><div class="ttname"><a href="class_r_n_g.html">RNG</a></div><div class="ttdoc">Класс ГСЧ</div><div class="ttdef"><b>Definition:</b> RNG.h:16</div></div>
 <div class="ttc" id="aclassinit_1_1_normal_html"><div class="ttname"><a href="classinit_1_1_normal.html">init::Normal</a></div><div class="ttdoc">Класс генерации нормального (Normal) распределения</div><div class="ttdef"><b>Definition:</b> Normal.h:22</div></div>
-<div class="ttc" id="aclassinit_1_1_normal_html_a63bc21a62880e1e1cfd9cadc0121c8b3"><div class="ttname"><a href="classinit_1_1_normal.html#a63bc21a62880e1e1cfd9cadc0121c8b3">init::Normal::return_type</a></div><div class="ttdeci">static std::string return_type()</div><div class="ttdef"><b>Definition:</b> Normal.h:111</div></div>
-<div class="ttc" id="aclassinit_1_1_normal_html_ac6fae62420c264be555200c9dc43c5bb"><div class="ttname"><a href="classinit_1_1_normal.html#ac6fae62420c264be555200c9dc43c5bb">init::Normal::set_random_data</a></div><div class="ttdeci">static void set_random_data(Scalar *arr, const int n, RNG &amp;rng, const std::vector&lt; Scalar &gt; &amp;params)</div><div class="ttdef"><b>Definition:</b> Normal.h:91</div></div>
-<div class="ttc" id="aclassinit_1_1_uniform_html"><div class="ttname"><a href="classinit_1_1_uniform.html">init::Uniform</a></div><div class="ttdoc">Класс генерации равномерного (Uniform) распределения</div><div class="ttdef"><b>Definition:</b> Uniform.h:19</div></div>
-<div class="ttc" id="anamespaceinternal_html_ad6fcf5f606e1adec9ea4e231df1c718f"><div class="ttname"><a href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">internal::get_exponential</a></div><div class="ttdeci">Scalar get_exponential(const Scalar &amp;rate, RNG &amp;rng)</div><div class="ttdef"><b>Definition:</b> Exponential.h:106</div></div>
+<div class="ttc" id="aclassinit_1_1_normal_html_a63bc21a62880e1e1cfd9cadc0121c8b3"><div class="ttname"><a href="classinit_1_1_normal.html#a63bc21a62880e1e1cfd9cadc0121c8b3">init::Normal::return_type</a></div><div class="ttdeci">static std::string return_type()</div><div class="ttdef"><b>Definition:</b> Normal.h:107</div></div>
+<div class="ttc" id="aclassinit_1_1_normal_html_ac6fae62420c264be555200c9dc43c5bb"><div class="ttname"><a href="classinit_1_1_normal.html#ac6fae62420c264be555200c9dc43c5bb">init::Normal::set_random_data</a></div><div class="ttdeci">static void set_random_data(Scalar *arr, const int n, RNG &amp;rng, const std::vector&lt; Scalar &gt; &amp;params)</div><div class="ttdef"><b>Definition:</b> Normal.h:89</div></div>
+<div class="ttc" id="aclassinit_1_1_uniform_html"><div class="ttname"><a href="classinit_1_1_uniform.html">init::Uniform</a></div><div class="ttdoc">Класс генерации равномерного (Uniform) распределения</div><div class="ttdef"><b>Definition:</b> Uniform.h:20</div></div>
+<div class="ttc" id="aclassinternal_1_1except_1_1xs__error_html"><div class="ttname"><a href="classinternal_1_1except_1_1xs__error.html">internal::except::xs_error</a></div><div class="ttdef"><b>Definition:</b> Except.h:14</div></div>
+<div class="ttc" id="anamespaceinternal_html_ad6fcf5f606e1adec9ea4e231df1c718f"><div class="ttname"><a href="namespaceinternal.html#ad6fcf5f606e1adec9ea4e231df1c718f">internal::get_exponential</a></div><div class="ttdeci">Scalar get_exponential(const Scalar &amp;rate, RNG &amp;rng)</div><div class="ttdef"><b>Definition:</b> Exponential.h:103</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

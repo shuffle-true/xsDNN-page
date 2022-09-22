@@ -145,15 +145,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>fit</b> (<a class="el
 <tr class="memitem:a9df496ee112c5db84fdda8dd2e07def5"><td class="memItemLeft" align="right" valign="top"><a id="a9df496ee112c5db84fdda8dd2e07def5"></a>
 Matrix&#160;</td><td class="memItemRight" valign="bottom"><b>predict</b> (const Matrix &amp;x)</td></tr>
 <tr class="separator:a9df496ee112c5db84fdda8dd2e07def5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a623867db76a7e2e4f5e9549882b5898e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Scalar &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a623867db76a7e2e4f5e9549882b5898e">get_parameters</a> () const</td></tr>
-<tr class="memdesc:a623867db76a7e2e4f5e9549882b5898e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить параметры сетки  <a href="class_neural_network.html#a623867db76a7e2e4f5e9549882b5898e">Подробнее...</a><br /></td></tr>
-<tr class="separator:a623867db76a7e2e4f5e9549882b5898e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6242c6193be12298f74f171a9da30760"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Scalar &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a6242c6193be12298f74f171a9da30760">get_parameters</a> () const</td></tr>
+<tr class="memdesc:a6242c6193be12298f74f171a9da30760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить параметры сетки  <a href="class_neural_network.html#a6242c6193be12298f74f171a9da30760">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6242c6193be12298f74f171a9da30760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fb4700cb175ea0899d4ba6230c4ad8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a1fb4700cb175ea0899d4ba6230c4ad8e">set_parameters</a> (const std::vector&lt; std::vector&lt; Scalar &gt; &gt; &amp;param)</td></tr>
 <tr class="memdesc:a1fb4700cb175ea0899d4ba6230c4ad8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить пользовательские параметры сетки  <a href="class_neural_network.html#a1fb4700cb175ea0899d4ba6230c4ad8e">Подробнее...</a><br /></td></tr>
 <tr class="separator:a1fb4700cb175ea0899d4ba6230c4ad8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b9ed2f41de3a9380fc90577a5a17089"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Scalar &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a6b9ed2f41de3a9380fc90577a5a17089">get_derivatives</a> () const</td></tr>
-<tr class="memdesc:a6b9ed2f41de3a9380fc90577a5a17089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить производные всех слоев  <a href="class_neural_network.html#a6b9ed2f41de3a9380fc90577a5a17089">Подробнее...</a><br /></td></tr>
-<tr class="separator:a6b9ed2f41de3a9380fc90577a5a17089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1ea4baf10b651024577be4b2336716"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Scalar &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#abb1ea4baf10b651024577be4b2336716">get_derivatives</a> () const</td></tr>
+<tr class="memdesc:abb1ea4baf10b651024577be4b2336716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить производные всех слоев  <a href="class_neural_network.html#abb1ea4baf10b651024577be4b2336716">Подробнее...</a><br /></td></tr>
+<tr class="separator:abb1ea4baf10b651024577be4b2336716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4764f886d7b44b4e461f5bacd9be7c3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a4764f886d7b44b4e461f5bacd9be7c3a">init</a> (int seed, const std::vector&lt; std::vector&lt; Scalar &gt;&gt; &amp;params)</td></tr>
 <tr class="separator:a4764f886d7b44b4e461f5bacd9be7c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b357e88ad6f9eb4ce97583a2a37a5e5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_network.html#a1b357e88ad6f9eb4ce97583a2a37a5e5">generate_batch</a> (const Matrix &amp;x, const Matrix &amp;y, const int batch_size, const int batch_seed) -&gt; std::tuple&lt; std::vector&lt; Matrix &gt;, std::vector&lt; Matrix &gt;, int &gt;</td></tr>
@@ -214,9 +214,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mean_loss_reset</b> (
 <tr class="memitem:a4ffb0db9be6839d7ed760f0e941234b5"><td class="memItemLeft" align="right" valign="top"><a id="a4ffb0db9be6839d7ed760f0e941234b5"></a>
 <a class="el" href="class_r_n_g.html">RNG</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_rng</b></td></tr>
 <tr class="separator:a4ffb0db9be6839d7ed760f0e941234b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0ccfa01f98822025cf642c8a0ae6ef0"><td class="memItemLeft" align="right" valign="top"><a id="ae0ccfa01f98822025cf642c8a0ae6ef0"></a>
+<tr class="memitem:a6e42bdbd6ad446ed227808069326bdef"><td class="memItemLeft" align="right" valign="top"><a id="a6e42bdbd6ad446ed227808069326bdef"></a>
 std::vector&lt; <a class="el" href="class_layer.html">Layer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_layers</b></td></tr>
-<tr class="separator:ae0ccfa01f98822025cf642c8a0ae6ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a6e42bdbd6ad446ed227808069326bdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd2352c46ee6e50b057c58ac48200ce"><td class="memItemLeft" align="right" valign="top"><a id="addd2352c46ee6e50b057c58ac48200ce"></a>
 <a class="el" href="class_output.html">Output</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_output</b></td></tr>
 <tr class="separator:addd2352c46ee6e50b057c58ac48200ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -649,8 +649,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; std::tuple&lt;std::vector&lt;Matrix&gt;, std::vector&lt;Matrix&gt;, int&gt;
-    </td>
+          <td></td><td> -&gt; std::tuple&lt;std::vector&lt;Matrix&gt;, std::vector&lt;Matrix&gt;, int&gt; </td>
         </tr>
       </table>
   </td>
@@ -673,8 +672,8 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 
 </div>
 </div>
-<a id="a6b9ed2f41de3a9380fc90577a5a17089"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b9ed2f41de3a9380fc90577a5a17089">&#9670;&nbsp;</a></span>get_derivatives()</h2>
+<a id="abb1ea4baf10b651024577be4b2336716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb1ea4baf10b651024577be4b2336716">&#9670;&nbsp;</a></span>get_derivatives()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -683,7 +682,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::vector&lt;Scalar&gt; &gt; NeuralNetwork::get_derivatives </td>
+          <td class="memname">std::vector&lt;std::vector&lt;Scalar&gt; &gt; NeuralNetwork::get_derivatives </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -757,8 +756,8 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 
 </div>
 </div>
-<a id="a623867db76a7e2e4f5e9549882b5898e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a623867db76a7e2e4f5e9549882b5898e">&#9670;&nbsp;</a></span>get_parameters()</h2>
+<a id="a6242c6193be12298f74f171a9da30760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6242c6193be12298f74f171a9da30760">&#9670;&nbsp;</a></span>get_parameters()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -767,7 +766,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::vector&lt;Scalar&gt; &gt; NeuralNetwork::get_parameters </td>
+          <td class="memname">std::vector&lt;std::vector&lt;Scalar&gt; &gt; NeuralNetwork::get_parameters </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1050,7 +1049,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>/home/shuffle/xsDNN/xsDNN-include/xsDNN/<a class="el" href="_neural_network_8h_source.html">NeuralNetwork.h</a></li>
+<li>/home/shuffle/xsDNN/xsDNN/<a class="el" href="_neural_network_8h_source.html">NeuralNetwork.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

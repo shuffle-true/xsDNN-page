@@ -14,9 +14,16 @@ var annotated_dup =
       [ "Uniform", "classinit_1_1_uniform.html", "classinit_1_1_uniform" ]
     ] ],
     [ "internal", "namespaceinternal.html", [
+      [ "conv2d", null, [
+        [ "Conv2DMeta", "structinternal_1_1conv2d_1_1_conv2_d_meta.html", null ]
+      ] ],
       [ "display", null, [
         [ "Timer", "classinternal_1_1display_1_1_timer.html", "classinternal_1_1display_1_1_timer" ],
         [ "ProgressBar", "classinternal_1_1display_1_1_progress_bar.html", "classinternal_1_1display_1_1_progress_bar" ]
+      ] ],
+      [ "except", null, [
+        [ "xs_error", "classinternal_1_1except_1_1xs__error.html", "classinternal_1_1except_1_1xs__error" ],
+        [ "xs_warn", "classinternal_1_1except_1_1xs__warn.html", "classinternal_1_1except_1_1xs__warn" ]
       ] ],
       [ "random", null, [
         [ "bernoulli", "classinternal_1_1random_1_1bernoulli.html", "classinternal_1_1random_1_1bernoulli" ]

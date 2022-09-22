@@ -9,5 +9,5 @@ var class_s_g_d =
     [ "m_lrate", "class_s_g_d.html#a022ad12dff64d757823467dda852c541", null ],
     [ "m_momentum", "class_s_g_d.html#a02fa41d7868a9bb5272b4d7885422458", null ],
     [ "m_nesterov", "class_s_g_d.html#a8f857296a4bb825814c319e88464fdc2", null ],
-    [ "momentum_history", "class_s_g_d.html#a08cb0c490f718ec89ecb73d338253800", null ]
+    [ "momentum_history", "class_s_g_d.html#ad11a5bcc135279d403a558029300d2e1", null ]
 ];

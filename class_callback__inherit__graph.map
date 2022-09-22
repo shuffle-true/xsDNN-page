@@ -1,4 +1,0 @@
-<map id="Callback" name="Callback">
-<area shape="rect" id="node1" title="Родительский класс вывода информации на экран" alt="" coords="31,5,110,32"/>
-<area shape="rect" id="node2" href="$class_verbose_callback.html" title="Класс отображения информации при обучении (VerboseCallback)" alt="" coords="5,80,136,107"/>
-</map>

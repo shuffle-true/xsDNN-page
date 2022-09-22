@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['alignedmapvec_328',['AlignedMapVec',['../class_optimizer.html#a008217325d5d27934b1a9aace340235e',1,'Optimizer']]]
+  ['datatuple_295',['DataTuple',['../class_variadic_table.html#a8a33421e8ca3dc09ab291f4af093b723',1,'VariadicTable']]]
 ];

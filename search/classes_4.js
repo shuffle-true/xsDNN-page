@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fullyconnected_145',['FullyConnected',['../class_fully_connected.html',1,'']]]
+  ['fullyconnected_149',['FullyConnected',['../class_fully_connected.html',1,'']]]
 ];
